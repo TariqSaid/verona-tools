@@ -12,6 +12,7 @@ interface VTProduct {
   description_fr: string
   price_MAD: number
   image_url: string
+  images?: string[]
   in_stock: boolean
   ref: string
 }
@@ -59,17 +60,15 @@ function loadQuincaillerie(): VTProduct[] {
   try {
     const filePath = join(process.cwd(), 'public', 'data', 'quincaillerie.js')
     const source = readFileSync(filePath, 'utf-8')
-    // Evaluate as a module-like context with a local var
-    const sandbox = { result: [] as unknown[] }
-    const wrapped = `result = ${source.replace(/^const \w+ =/, '').replace(/;$/, '').trim()}`
-    const ctx = createContext(sandbox)
-    new Script(wrapped).runInContext(ctx)
-    const raw = sandbox.result as Array<{
+    // Extract the array literal between the first [ and the last ]
+    const match = source.match(/\[[\s\S]*\]/)
+    if (!match) return []
+    const raw: Array<{
       name?: string; nameFr?: string; description?: string;
       images?: string[]; family?: string; category?: string
-    }>
+    }> = JSON.parse(match[0])
     return raw
-      .filter(p => p.nameFr && p.description)
+      .filter(p => p.images && p.images.length > 0)
       .map((p, i) => ({
         id: 1000 + i,
         category: 'Quincaillerie',
@@ -78,7 +77,8 @@ function loadQuincaillerie(): VTProduct[] {
         title: p.nameFr ?? p.name ?? '',
         description_fr: p.description ?? '',
         price_MAD: 0,
-        image_url: p.images?.[0] ?? '',
+        image_url: p.images![0],
+        images: p.images,
         in_stock: true,
         ref: '',
       }))
@@ -183,6 +183,7 @@ function ProductCard({
   product: VTProduct
   colors: { bg: string; text: string }
 }) {
+  const hasLocalImages = Boolean(product.images && product.images.length > 0)
   const hasImage = Boolean(product.image_url)
   const isUnsplash = product.image_url?.startsWith('https://images.unsplash.com')
 
@@ -190,7 +191,14 @@ function ProductCard({
     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow duration-200">
       {/* Image */}
       <div className="relative w-full h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-        {hasImage && isUnsplash ? (
+        {hasLocalImages ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={product.images![0]}
+            alt={product.title}
+            className="w-full h-full object-cover"
+          />
+        ) : hasImage && isUnsplash ? (
           <Image
             src={product.image_url}
             alt={product.title}
