@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -)",
+      "Bash(python3 -c ':*)",
+      "Bash(npm run:*)",
+      "Bash(npm install:*)",
+      "Bash(git -C /c/Users/K14/Desktop/verona-tools-main init)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)"
+    ]
+  }
+}
