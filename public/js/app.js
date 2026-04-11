@@ -466,7 +466,10 @@ let modalCurrentProduct = null;
 function getProductImages(p) {
   if (Array.isArray(p.images) && p.images.length > 0) return p.images;
   if (Array.isArray(p.image_url) && p.image_url.length > 0) return p.image_url;
-  const raw  = typeof p.image_url === 'string' ? p.image_url : '';
+  const raw = typeof p.image_url === 'string' ? p.image_url : '';
+  if (!raw) return [''];
+  // Local paths (/images/...) don't support Unsplash query variants — return as-is
+  if (raw.startsWith('/')) return [raw];
   const base = raw.split('?')[0];
   return [raw, base + '?w=400&q=75&crop=entropy', base + '?w=400&q=70&fit=crop'];
 }
