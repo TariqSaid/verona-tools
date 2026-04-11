@@ -182,7 +182,9 @@ function renderProductCard(p, i) {
   const brandClass    = getBrandClass(p.brand);
   const stockLabel    = p.in_stock ? t('in_stock') : t('out_of_stock');
   const stockBadgeCls = p.in_stock ? 'stock-in' : 'stock-out';
-  const imgSrc        = Array.isArray(p.image_url) ? p.image_url[0] : (p.image_url || '');
+  const imgSrc        = (Array.isArray(p.images) && p.images.length > 0)
+                          ? p.images[0]
+                          : (Array.isArray(p.image_url) ? p.image_url[0] : (p.image_url || ''));
   const isNew         = maxIds.includes(p.id);
   const delay         = `animation-delay:${i * 0.04}s`;
 
@@ -462,6 +464,7 @@ function hideLoader() { ensureLoaderHidden(); }
 let modalCurrentProduct = null;
 
 function getProductImages(p) {
+  if (Array.isArray(p.images) && p.images.length > 0) return p.images;
   if (Array.isArray(p.image_url) && p.image_url.length > 0) return p.image_url;
   const raw  = typeof p.image_url === 'string' ? p.image_url : '';
   const base = raw.split('?')[0];
