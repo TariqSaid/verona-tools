@@ -54,4 +54,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     ],
   },
 >>>>>>> 388763f2e1410bf5a4543b42d0bd8a2103c8305c
+  {
+    id          : 1776033945737,
+    category    : 'Peinture',
+    subcategory : 'Peintures décoratives intérieures',
+    brand       : 'Atlas',
+    title       : 'Peinture Murale Décorative Khayali Atlas',
+    description_fr: 'Peinture murale décorative haut de gamme Khayali d\'Atlas, formulée pour offrir une finition élégante et un excellent pouvoir couvrant. Idéale pour les applications intérieures résidentielles, cette peinture assure une protection durable et un rendu professionnel sur tous les supports muraux.',
+    price_MAD   : 280,
+    in_stock    : true,
+    ref         : 'VT-AUTO-5737',
+    images      : [
+      '/images/products/atlas-khayali-decorative-wall-paint-1-943229.png',
+      '/images/products/atlas-khayali-decorative-wall-paint-2-943229.png'
+    ],
+  },
 ]);
