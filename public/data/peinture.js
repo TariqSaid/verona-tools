@@ -105,4 +105,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/atlas-khayat-decorative-paint-white-2.png'
     ],
   },
+  {
+    id          : 1776028525159,
+    category    : 'Peinture',
+    subcategory : 'Peintures Décoratives',
+    brand       : 'Atlas Khayat',
+    title       : 'Peinture Décorative Atlas Khayat Blanc',
+    description_fr: 'Peinture décorative d\'intérieur en finition blanche pour applications murales et mobilières résidentielles.',
+    price_MAD   : 0,
+    in_stock    : true,
+    ref         : 'VT-AUTO-5159',
+    images      : [
+      '/images/products/atlas-khayat-decorative-paint-white-1-521246.png',
+      '/images/products/atlas-khayat-decorative-paint-white-2-521246.png'
+    ],
+  },
 ]);
