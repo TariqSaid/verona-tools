@@ -15,4 +15,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/makute-electric-air-blower-2.png'
     ],
   },
+  {
+    id          : 1776004438182,
+    category    : 'Quincaillerie',
+    subcategory : 'Air Blowers & Dust Collection',
+    brand       : 'Electric',
+    title       : 'Electric Air Blower',
+    description_fr: 'A professional-grade electric air blower by Makute designed for cleaning dust and debris from work surfaces and equipment.',
+    price_MAD   : 0,
+    in_stock    : true,
+    ref         : 'VT-AUTO-8182',
+    images      : [
+      '/images/products/electric-air-blower-1.png',
+      '/images/products/electric-air-blower-2.png'
+    ],
+  },
 ]);
