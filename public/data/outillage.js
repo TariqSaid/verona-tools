@@ -50,4 +50,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/bosch-professional-gbh-220-rotary-hammer-drill-2-685060.png'
     ],
   },
+  {
+    id          : 1776032692788,
+    category    : 'Outillage',
+    subcategory : 'Meuleuses et outils de coupe',
+    brand       : 'Bosch',
+    title       : 'Meuleuse d\'angle Bosch GWS 7-125',
+    description_fr: 'Meuleuse d\'angle filaire de marque Bosch conçue pour les travaux de meulage, de coupe et de préparation de surfaces. Équipée d\'un disque de 125mm de diamètre, d\'une puissance de 720W et d\'une vitesse de rotation de 11000 tr/min. Dispose d\'une poignée auxiliaire ergonomique et d\'un système de protection optimisé pour une sécurité maximale.',
+    price_MAD   : 650,
+    in_stock    : true,
+    ref         : 'VT-AUTO-2788',
+    images      : [
+      '/images/products/bosch-gws-7-125-angle-grinder-1-683820.png',
+      '/images/products/bosch-gws-7-125-angle-grinder-2-683820.png'
+    ],
+  },
 ]);
