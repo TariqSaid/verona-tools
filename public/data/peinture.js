@@ -90,4 +90,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/atlas-khayat-decorative-paint-white-2.png'
     ],
   },
+  {
+    id          : 1776024630064,
+    category    : 'Peinture',
+    subcategory : 'Peintures décoratives',
+    brand       : 'Atlas',
+    title       : 'Peinture Décorative Khayat Atlas Blanc',
+    description_fr: 'Peinture décorative intérieure de couleur blanche pour murs et plafonds avec design élégant de ciel étoilé.',
+    price_MAD   : 0,
+    in_stock    : true,
+    ref         : 'VT-AUTO-0064',
+    images      : [
+      '/images/products/atlas-khayat-decorative-paint-white-1.png',
+      '/images/products/atlas-khayat-decorative-paint-white-2.png'
+    ],
+  },
 ]);
