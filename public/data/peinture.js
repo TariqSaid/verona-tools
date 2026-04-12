@@ -84,4 +84,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/atlas-khayali-decorative-paint-2-981093.png'
     ],
   },
+  {
+    id          : 1776034204330,
+    category    : 'Peinture',
+    subcategory : 'Peintures décoratives intérieures',
+    brand       : 'Atlas',
+    title       : 'Peinture Décorative Atlas Khayal',
+    description_fr: 'Peinture décorative intérieure de marque Atlas, ligne Khayal, formulée pour les applications décoratives haut de gamme. Offre une finition lisse et élégante avec une excellente couvrance et durabilité. Idéale pour les murs intérieurs et les projets de décoration résidentielle.',
+    price_MAD   : 280,
+    in_stock    : true,
+    ref         : 'VT-AUTO-4330',
+    images      : [
+      '/images/products/atlas-khayal-decorative-paint-1-195133.png',
+      '/images/products/atlas-khayal-decorative-paint-2-195133.png'
+    ],
+  },
 ]);
