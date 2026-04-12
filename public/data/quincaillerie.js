@@ -45,4 +45,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/bosch-gbm-10-re-electric-drill-2.png'
     ],
   },
+  {
+    id          : 1776014284142,
+    category    : 'Quincaillerie',
+    subcategory : 'Impact Drills',
+    brand       : 'Bosch',
+    title       : 'Bosch Professional GSB 16 RE Impact Drill',
+    description_fr: 'A professional-grade corded impact drill with a 16mm chuck capacity, featuring variable speed control and dual-mode drilling capability for versatile fastening and drilling applications.',
+    price_MAD   : 0,
+    in_stock    : true,
+    ref         : 'VT-AUTO-4142',
+    images      : [
+      '/images/products/bosch-professional-gsb-16-re-impact-drill-1.png',
+      '/images/products/bosch-professional-gsb-16-re-impact-drill-2.png'
+    ],
+  },
 ]);
