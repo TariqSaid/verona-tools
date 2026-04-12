@@ -80,4 +80,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/bosch-gws-7-125-angle-grinder-2-625193.png'
     ],
   },
+  {
+    id          : 1776033816112,
+    category    : 'Outillage',
+    subcategory : 'Meuleuses et outils de meulage',
+    brand       : 'Bosch',
+    title       : 'Meuleuse d\'angle Bosch GWS 11-125',
+    description_fr: 'Meuleuse d\'angle compacte de 125 mm avec moteur puissant de 1100 W, conçue pour les travaux de meulage, de découpe et de préparation de surfaces. Dotée d\'une poignée ergonomique et d\'un système de protection efficace, elle offre une grande maniabilité et une sécurité optimale pour les travaux professionnels et de bricolage.',
+    price_MAD   : 890,
+    in_stock    : true,
+    ref         : 'VT-AUTO-6112',
+    images      : [
+      '/images/products/bosch-gws-11-125-angle-grinder-1-812378.png',
+      '/images/products/bosch-gws-11-125-angle-grinder-2-812378.png'
+    ],
+  },
 ]);
