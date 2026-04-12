@@ -110,4 +110,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/bosch-gws-7-125-professional-angle-grinder-2-948456.png'
     ],
   },
+  {
+    id          : 1776034200503,
+    category    : 'Outillage',
+    subcategory : 'Instruments de mesure et de traçage',
+    brand       : 'Bosch',
+    title       : 'Bosch BLAZE GLM165-40 Télémètre Laser',
+    description_fr: 'Télémètre laser portable Bosch BLAZE GLM165-40 avec portée maximale de 165 pieds (50 mètres). Doté d\'un écran numérique lumineux affichant les mesures en pieds et pouces, capable de calculer les surfaces et volumes. Appareil compact et robuste avec protection contre les chocs, idéal pour les applications de construction et de rénovation intérieure.',
+    price_MAD   : 1200,
+    in_stock    : true,
+    ref         : 'VT-AUTO-0503',
+    images      : [
+      '/images/products/bosch-blaze-glm165-40-laser-distance-measurer-1-196736.png',
+      '/images/products/bosch-blaze-glm165-40-laser-distance-measurer-2-196736.png'
+    ],
+  },
 ]);
