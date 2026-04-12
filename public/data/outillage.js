@@ -95,4 +95,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/bosch-gws-11-125-angle-grinder-2-812378.png'
     ],
   },
+  {
+    id          : 1776033952445,
+    category    : 'Outillage',
+    subcategory : 'Meuleuses et outils de découpe',
+    brand       : 'Bosch',
+    title       : 'Meuleuse d\'angle Bosch GWS 7-125 Professional',
+    description_fr: 'Meuleuse d\'angle filaire professionnelle de 125 mm avec moteur puissant de 720 W, idéale pour les travaux de meulage, découpe et polissage. Équipée d\'une poignée latérale ergonomique et d\'une protection amovible pour une sécurité optimale. Vitesse de rotation de 11000 tr/min permettant une coupe et un meulage efficaces des métaux et matériaux abrasifs.',
+    price_MAD   : 589,
+    in_stock    : true,
+    ref         : 'VT-AUTO-2445',
+    images      : [
+      '/images/products/bosch-gws-7-125-professional-angle-grinder-1-948456.png',
+      '/images/products/bosch-gws-7-125-professional-angle-grinder-2-948456.png'
+    ],
+  },
 ]);
