@@ -35,4 +35,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/bosch-professional-gbh-220-rotary-hammer-drill-2-543425.png'
     ],
   },
+  {
+    id          : 1776032688676,
+    category    : 'Outillage',
+    subcategory : 'Perceuses et burineuses',
+    brand       : 'Bosch',
+    title       : 'Perceuse-Burineur Bosch Professional GBH 220',
+    description_fr: 'Perceuse-burineur professionnelle Bosch GBH 220 conçue pour le forage et le burinage dans le béton, la maçonnerie et la pierre. Équipée d\'un système de percussion puissant, d\'une poignée ergonomique en caoutchouc noir et d\'un mandrin de précision. Livrée avec câble d\'alimentation, coffret de rangement bleu et accessoires.',
+    price_MAD   : 1800,
+    in_stock    : true,
+    ref         : 'VT-AUTO-8676',
+    images      : [
+      '/images/products/bosch-professional-gbh-220-rotary-hammer-drill-1-685060.png',
+      '/images/products/bosch-professional-gbh-220-rotary-hammer-drill-2-685060.png'
+    ],
+  },
 ]);
