@@ -81,4 +81,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/atlas-plastic-exterior-paint-2-970305.png'
     ],
   },
+  {
+    id          : 1776123923136,
+    category    : 'Peinture',
+    subcategory : 'Peinture façade et extérieur',
+    brand       : 'Atlassi',
+    title       : 'Peinture Atlassi Plastique pour Façades',
+    description_fr: 'Peinture façade à base plastique Atlassi spécialement formulée pour les applications extérieures. Cette peinture offre une excellente adhérence, une grande résistance aux intempéries et aux rayons UV, ainsi qu\'une durabilité prolongée. Idéale pour les façades résidentielles et commerciales.',
+    price_MAD   : 280,
+    in_stock    : true,
+    ref         : 'VT-AUTO-3136',
+    images      : [
+      '/images/products/atlassi-plastic-paint-for-facades-1-919400.png',
+      '/images/products/atlassi-plastic-paint-for-facades-2-919400.png'
+    ],
+  },
 ]);
