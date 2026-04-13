@@ -80,4 +80,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/atlas-ecoline-green-sat-interior-water-based-paint-2-971561.png'
     ],
   },
+  {
+    id          : 1776121980585,
+    category    : 'Peinture',
+    subcategory : 'Peintures et vernis extérieurs',
+    brand       : 'Atlas',
+    title       : 'Peinture Extérieure Atlas Plastique',
+    description_fr: 'Peinture extérieure de marque Atlas spécialement formulée pour la protection et la couverture des surfaces extérieures. Cette peinture plastique offre une excellente adhérence et durabilité contre les intempéries. Idéale pour les façades et travaux extérieurs.',
+    price_MAD   : 0,
+    in_stock    : true,
+    ref         : 'VT-AUTO-0585',
+    images      : [
+      '/images/products/atlas-plastic-exterior-paint-1-970305.png',
+      '/images/products/atlas-plastic-exterior-paint-2-970305.png'
+    ],
+  },
 ]);
