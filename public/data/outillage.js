@@ -125,4 +125,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/bosch-blaze-glm165-40-laser-distance-measurer-2-196736.png'
     ],
   },
+  {
+    id          : 1776111411411,
+    category    : 'Outillage',
+    subcategory : 'Instruments de mesure et détection',
+    brand       : 'Bosch',
+    title       : 'Télémètre Laser Numérique Bosch BLAZE GLM165-40',
+    description_fr: 'Télémètre laser numérique de marque Bosch modèle BLAZE GLM165-40 avec une portée maximale de 165 pieds (50 mètres). Dispose d\'un écran numérique rétroéclairé affichant les mesures en temps réel, d\'un pointeur laser intégré pour ciblage précis, et de touches de commande tactiles. Construction robuste avec boîtier en plastique renforcé noir et bleu. Idéal pour les applications de construction, d\'aménagement intérieur et de menuiserie.',
+    price_MAD   : 1250,
+    in_stock    : true,
+    ref         : 'VT-AUTO-1411',
+    images      : [
+      '/images/products/bosch-blaze-glm165-40-digital-laser-distance-measurer-1-405873.png',
+      '/images/products/bosch-blaze-glm165-40-digital-laser-distance-measurer-2-405873.png'
+    ],
+  },
 ]);
