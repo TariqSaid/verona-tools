@@ -145,4 +145,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/atlas-khayal-textured-decorative-paint-2-224725.png'
     ],
   },
+  {
+    id          : 1776119235703,
+    category    : 'Peinture',
+    subcategory : 'Peintures décoratives et texturées',
+    brand       : 'Atlas',
+    title       : 'Peinture Décorative Texturée Atlas Khayal',
+    description_fr: 'Peinture murale décorative texturée de la marque Atlas offrant un effet décoratif sophistiqué avec un fini étoilé et luminescent. Idéale pour créer une ambiance intérieure élégante et moderne. Disponible en pot de grande contenance, cette peinture premium allie esthétique et qualité professionnelle pour transformer les espaces intérieurs.',
+    price_MAD   : 850,
+    in_stock    : true,
+    ref         : 'VT-AUTO-5703',
+    images      : [
+      '/images/products/atlas-khayal-textured-decorative-paint-1-225308.png',
+      '/images/products/atlas-khayal-textured-decorative-paint-2-225308.png'
+    ],
+  },
 ]);
