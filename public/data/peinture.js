@@ -33,4 +33,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/atlas-khayal-textured-decorative-paint-2-371044.png'
     ],
   },
+  {
+    id          : 1776121380768,
+    category    : 'Peinture',
+    subcategory : 'Peintures intérieures',
+    brand       : 'Atlas Ecoline',
+    title       : 'Peinture Intérieure Atlas Ecoline Green Mat',
+    description_fr: 'Peinture intérieure mate à base d\'eau de la gamme Atlas Ecoline, formulée avec des ingrédients écologiques respectueux de l\'environnement. Idéale pour la peinture des murs et plafonds intérieurs, elle offre une finition mate élégante et durable. Peinture sans solvant, faible en COV, certifiée Ecolabel.',
+    price_MAD   : 280,
+    in_stock    : true,
+    ref         : 'VT-AUTO-0768',
+    images      : [
+      '/images/products/atlas-ecoline-green-mat-interior-paint-1-373471.png',
+      '/images/products/atlas-ecoline-green-mat-interior-paint-2-373471.png'
+    ],
+  },
 ]);
