@@ -129,4 +129,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/atlas-khayal-textured-decorative-paint-2-736968.png'
     ],
   },
+  {
+    id          : 1776113745585,
+    category    : 'Peinture',
+    subcategory : 'Peintures décoratives intérieures',
+    brand       : 'Atlas',
+    title       : 'Peinture Décorative Atlas Khayali',
+    description_fr: 'Peinture décorative intérieure haut de gamme Atlas Khayali offrant des finitions élégantes et raffinées. Cette peinture combine esthétique moderne et durabilité, idéale pour les projets de décoration d\'intérieur. Formule spécialement conçue pour une couverture uniforme et une brillance longue tenue.',
+    price_MAD   : 450,
+    in_stock    : true,
+    ref         : 'VT-AUTO-5585',
+    images      : [
+      '/images/products/atlas-khayali-decorative-paint-1-734349.png',
+      '/images/products/atlas-khayali-decorative-paint-2-734349.png'
+    ],
+  },
 ]);
