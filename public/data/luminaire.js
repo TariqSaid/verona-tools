@@ -65,4 +65,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/aluminum-led-strip-profile-channel-2-514953.png'
     ],
   },
+  {
+    id          : 1776124525818,
+    category    : 'Luminaire',
+    subcategory : 'Accessoires pour éclairage LED',
+    brand       : 'Generic/Standard',
+    title       : 'Profilé Aluminium pour Bande LED avec Diffuseur',
+    description_fr: 'Profilé d\'extrusion en aluminium anodisé noir conçu pour l\'installation de bandes LED. Inclut un diffuseur translucide en polycarbonate ou acrylique qui diffuse uniformément la lumière. Idéal pour créer des solutions d\'éclairage linéaire encastrées ou en saillie. Facilite le câblage et protège les composants électriques.',
+    price_MAD   : 85,
+    in_stock    : true,
+    ref         : 'VT-AUTO-5818',
+    images      : [
+      '/images/products/aluminum-led-profile-channel-with-diffuser-1-521302.png',
+      '/images/products/aluminum-led-profile-channel-with-diffuser-2-521302.png'
+    ],
+  },
 ]);
