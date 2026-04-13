@@ -160,4 +160,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/atlas-khayal-textured-decorative-paint-2-225308.png'
     ],
   },
+  {
+    id          : 1776119327907,
+    category    : 'Peinture',
+    subcategory : 'Peintures décoratives et texturées',
+    brand       : 'Atlas',
+    title       : 'Peinture Décorative Texturée Atlas Khayal',
+    description_fr: 'Peinture décorative texturée de marque Atlas proposant un design étoilé et scintillant. Cette peinture présente un dégradé de couleurs bleu et rose/magenta avec des motifs de scintillement blanc. Idéale pour créer des effets de décoration murale intérieure élégants et sophistiqués. Finition texturée de haute qualité.',
+    price_MAD   : 450,
+    in_stock    : true,
+    ref         : 'VT-AUTO-7907',
+    images      : [
+      '/images/products/atlas-khayal-textured-decorative-paint-1-323922.png',
+      '/images/products/atlas-khayal-textured-decorative-paint-2-323922.png'
+    ],
+  },
 ]);
