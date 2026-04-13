@@ -130,4 +130,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     ],
   },
 
+  {
+    id          : 1776119229292,
+    category    : 'Peinture',
+    subcategory : 'Peintures décoratives et texturées',
+    brand       : 'Atlas',
+    title       : 'Peinture Déccorative Texturée Atlas Khayal',
+    description_fr: 'Peinture déccorative texturée de marque Atlas Khayal offrant une finition brillante et scintillante pour la décoration intérieure des murs. Cette peinture crée un effet texturé élégant avec des reflets lumineux. Idéale pour les murs intérieurs résidentiels et commerciaux.',
+    price_MAD   : 350,
+    in_stock    : true,
+    ref         : 'VT-AUTO-9292',
+    images      : [
+      '/images/products/atlas-khayal-textured-decorative-paint-1-224725.png',
+      '/images/products/atlas-khayal-textured-decorative-paint-2-224725.png'
+    ],
+  },
 ]);
