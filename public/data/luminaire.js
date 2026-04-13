@@ -50,4 +50,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/aluminum-led-corner-profile-channel-2-112582.png'
     ],
   },
+  {
+    id          : 1776124518679,
+    category    : 'Luminaire',
+    subcategory : 'Accessoires et profilés LED',
+    brand       : 'Generic/Standard',
+    title       : 'Profilé aluminium pour ruban LED',
+    description_fr: 'Profilé en aluminium extrudé destiné à accueillir et protéger les rubans LED. Ce profil offre une dissipation thermique optimale, une finition anodisée blanche et peut être intégré dans diverses applications d\'éclairage. Longueur standard environ 2 mètres, section transversale adaptée aux rubans LED de 10mm de largeur.',
+    price_MAD   : 185,
+    in_stock    : true,
+    ref         : 'VT-AUTO-8679',
+    images      : [
+      '/images/products/aluminum-led-strip-profile-channel-1-514953.png',
+      '/images/products/aluminum-led-strip-profile-channel-2-514953.png'
+    ],
+  },
 ]);
