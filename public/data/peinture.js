@@ -63,4 +63,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/atlas-ecoline-green-mat-interior-paint-2-599243.png'
     ],
   },
+  {
+    id          : 1776121674657,
+    category    : 'Peinture',
+    subcategory : 'Peinture intérieure',
+    brand       : 'Atlas Ecoline',
+    title       : 'Peinture Intérieure Atlas Ecoline Green Sat',
+    description_fr: 'Peinture intérieure de finition satinée de la gamme Atlas Ecoline Green, formulée avec une approche écologique. Contenance de 10 kg, cette peinture offre une couverture optimale pour les travaux de peinture intérieure. Finition satinée résistante et lavable, idéale pour les murs et plafonds.',
+    price_MAD   : 450,
+    in_stock    : true,
+    ref         : 'VT-AUTO-4657',
+    images      : [
+      '/images/products/atlas-ecoline-green-sat-interior-paint-1-669999.png',
+      '/images/products/atlas-ecoline-green-sat-interior-paint-2-669999.png'
+    ],
+  },
 ]);
