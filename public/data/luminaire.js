@@ -35,4 +35,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/led-corner-aluminum-profile-channel-2-922595.png'
     ],
   },
+  {
+    id          : 1776124120459,
+    category    : 'Luminaire',
+    subcategory : 'Accessoires de bande LED',
+    brand       : 'Generic',
+    title       : 'Profilé d\'angle en aluminium pour bande LED',
+    description_fr: 'Profilé d\'angle en aluminium anodisé destiné à accueillir et protéger les bandes LED. Équipé d\'un diffuseur translucide laiteux qui diffuse uniformément la lumière. Le profil présente une section en V permettant une installation facile dans les coins à 45°. Dimensions typiques : longueur 1-2 mètres, largeur interne 8-10 mm, compatible avec bandes LED 5050 et 3528.',
+    price_MAD   : 85,
+    in_stock    : true,
+    ref         : 'VT-AUTO-0459',
+    images      : [
+      '/images/products/aluminum-led-corner-profile-channel-1-112582.png',
+      '/images/products/aluminum-led-corner-profile-channel-2-112582.png'
+    ],
+  },
 ]);
