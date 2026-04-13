@@ -99,4 +99,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/atlas-khayal-decorative-paint-2-195133.png'
     ],
   },
+  {
+    id          : 1776111645482,
+    category    : 'Peinture',
+    subcategory : 'Peintures décoratives et spécialisées',
+    brand       : 'Atlas',
+    title       : 'Peinture Décorative Atlas Khayyal',
+    description_fr: 'Peinture décorative de qualité supérieure Atlas Khayyal, idéale pour les applications intérieures sur murs et plafonds. Cette peinture offre une finition élégante et un rendu uniforme avec excellente couvrance. Formulée pour une application facile et une durabilité prolongée.',
+    price_MAD   : 0,
+    in_stock    : true,
+    ref         : 'VT-AUTO-5482',
+    images      : [
+      '/images/products/atlas-khayyal-decorative-paint-1-640748.png',
+      '/images/products/atlas-khayyal-decorative-paint-2-640748.png'
+    ],
+  },
 ]);
