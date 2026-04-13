@@ -65,4 +65,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/atlas-ecoline-green-sat-interior-paint-2-673847.png'
     ],
   },
+  {
+    id          : 1776121975600,
+    category    : 'Peinture',
+    subcategory : 'Peinture intérieure',
+    brand       : 'Atlas Ecoline',
+    title       : 'Peinture Atlas Ecoline Green Sat Intérieur à Base d\'Eau',
+    description_fr: 'Peinture intérieure satinée à base d\'eau de la marque Atlas Ecoline, certifiée écologique avec le label EU Ecolabel. Cette peinture satinée offre une excellente couvrance et une finition durable pour les surfaces intérieures. Capacité de 4 kg, formulation respectueuse de l\'environnement avec faibles émissions de COV.',
+    price_MAD   : 240,
+    in_stock    : true,
+    ref         : 'VT-AUTO-5600',
+    images      : [
+      '/images/products/atlas-ecoline-green-sat-interior-water-based-paint-1-971561.png',
+      '/images/products/atlas-ecoline-green-sat-interior-water-based-paint-2-971561.png'
+    ],
+  },
 ]);
