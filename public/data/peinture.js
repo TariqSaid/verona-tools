@@ -143,4 +143,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/borma-wachs-quick-wood-filler-sticks-set-2-569887.png'
     ],
   },
+  {
+    id          : 1776210698994,
+    category    : 'Peinture',
+    subcategory : 'Mastics et produits de finition bois',
+    brand       : 'Borma Wachs',
+    title       : 'Ensemble de Mastic Bois Borma Wachs Stucco Rapido Séchage Rapide',
+    description_fr: 'Ensemble professionnel de mastic bois à séchage rapide Borma Wachs Stucco Rapido, contenant plusieurs bâtons de différentes nuances pour le remplissage et la finition du bois. Conçu pour une application rapide et un séchage accéléré, idéal pour les travaux de menuiserie et de restauration de meubles. Formule à base de cire pour un rendu naturel et durable.',
+    price_MAD   : 280,
+    in_stock    : true,
+    ref         : 'VT-AUTO-8994',
+    images      : [
+      '/images/products/borma-wachs-stucco-rapido-fast-drying-wood-filler-set-1-694161.png',
+      '/images/products/borma-wachs-stucco-rapido-fast-drying-wood-filler-set-2-694161.png'
+    ],
+  },
 ]);
