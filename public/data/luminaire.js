@@ -80,4 +80,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/aluminum-led-profile-channel-with-diffuser-2-521302.png'
     ],
   },
+  {
+    id          : 1776200797313,
+    category    : 'Luminaire',
+    subcategory : 'Profilés et accessoires LED',
+    brand       : 'Generic',
+    title       : 'Profilé Aluminium pour Ruban LED Encastrable',
+    description_fr: 'Profilé en aluminium anodisé conçu pour l\'installation de bandes LED. Ce profil de surface offre une protection et une finition professionnelle pour les rubans LED. Compatible avec des rubans LED standards, il intègre un diffuseur translucide qui diffuse uniformément la lumière. Dimensions approximatives: longueur variable, section transversale environ 15-20mm de largeur.',
+    price_MAD   : 45,
+    in_stock    : true,
+    ref         : 'VT-AUTO-7313',
+    images      : [
+      '/images/products/aluminum-led-profile-channel-surface-mount-1-793657.png',
+      '/images/products/aluminum-led-profile-channel-surface-mount-2-793657.png'
+    ],
+  },
 ]);
