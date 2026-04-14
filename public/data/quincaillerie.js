@@ -26,7 +26,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     brand       : 'Blum',
     title       : 'Charnière Blum Clip Top Fermeture Douce',
     description_fr: 'Paire de charnières de meubles avec fermeture douce intégrée et système de montage Clip Top breveté. Ces charnières Blum sont conçues pour un perçage de tasse de 35 mm et garantissent une fermeture silencieuse et contrôlée des portes d\'armoires. Finition acier zingué antirouille, capacité de charge jusqu\'à 5 kg par charnière, angle d\'ouverture jusqu\'à 110°.',
-    price_MAD   : 280,
+    price_MAD   : 28,
     in_stock    : true,
     ref         : 'VT-AUTO-2781',
     images      : [
