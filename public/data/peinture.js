@@ -113,4 +113,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/atlas-exterior-paint-white-10l-2-515341.png'
     ],
   },
+  {
+    id          : 1776209651763,
+    category    : 'Peinture',
+    subcategory : 'Peintures spécialisées et enduits',
+    brand       : 'ACOP',
+    title       : 'Peinture Enduit Spéciale ACOP Blanc',
+    description_fr: 'Peinture enduit spécialisée ACOP blanc, formulée pour l\'application sur surfaces texturées et la finition de travaux de revêtement. Produit de qualité professionnelle offrant une bonne adhérence et une couverture uniforme pour les travaux de décoration intérieure et extérieure.',
+    price_MAD   : 185,
+    in_stock    : true,
+    ref         : 'VT-AUTO-1763',
+    images      : [
+      '/images/products/acop-special-stucco-paint-white-1-646958.png',
+      '/images/products/acop-special-stucco-paint-white-2-646958.png'
+    ],
+  },
 ]);
