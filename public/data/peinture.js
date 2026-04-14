@@ -112,4 +112,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/atlas-leader-plast-special-façade-paint-2-515845.png'
     ],
   },
+  {
+    id          : 1776201526235,
+    category    : 'Peinture',
+    subcategory : 'Peintures extérieures',
+    brand       : 'Atlas',
+    title       : 'Peinture Extérieure Atlas Blanc 10L',
+    description_fr: 'Peinture extérieure de haute qualité de la marque Atlas, formulée pour les surfaces extérieures avec une excellente résistance aux intempéries et aux UV. Disponible en blanc, offrant une couverture uniforme et durable. Capacité: 10 litres, idéale pour les grandes surfaces de façades, murs extérieurs et structures exposées.',
+    price_MAD   : 450,
+    in_stock    : true,
+    ref         : 'VT-AUTO-6235',
+    images      : [
+      '/images/products/atlas-exterior-paint-white-10l-1-515341.png',
+      '/images/products/atlas-exterior-paint-white-10l-2-515341.png'
+    ],
+  },
 ]);
