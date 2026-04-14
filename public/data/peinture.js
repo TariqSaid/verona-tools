@@ -128,4 +128,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/acop-special-stucco-paint-white-2-646958.png'
     ],
   },
+  {
+    id          : 1776210574320,
+    category    : 'Peinture',
+    subcategory : 'Mastics et produits de finition bois',
+    brand       : 'Borma Wachs',
+    title       : 'Assortiment de Bâtons de Mastic Bois Rapide Borma Wachs',
+    description_fr: 'Assortiment professionnel de bâtons de mastic bois à séchage rapide proposant plusieurs teintes de bois naturel pour la réparation et la finition de meubles. Cet ensemble comprend 10 bâtons numérotés de différentes teintes, idéal pour combler les fissures, les trous et les défauts du bois. Formule à séchage rapide permettant un ponçage et une finition rapides.',
+    price_MAD   : 180,
+    in_stock    : true,
+    ref         : 'VT-AUTO-4320',
+    images      : [
+      '/images/products/borma-wachs-quick-wood-filler-sticks-set-1-569887.png',
+      '/images/products/borma-wachs-quick-wood-filler-sticks-set-2-569887.png'
+    ],
+  },
 ]);
