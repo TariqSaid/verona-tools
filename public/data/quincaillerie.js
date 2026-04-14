@@ -6,11 +6,11 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
     id          : 1776201836722,
     category    : 'Quincaillerie',
-    subcategory : 'Charnières et accessoires de portes',
-    brand       : 'Salice',
-    title       : 'Charnière d\'Armoire à Fermeture Amortie Salice',
-    description_fr: 'Charnière de meuble professionnel à fermeture amortie avec mécanisme de fermeture régulable et système d\'amortissement intégré. Conçue pour assurer une fermeture silencieuse et progressive des portes de placards et d\'armoires. Construction en acier zingué de haute qualité avec plaques de montage robustes et billes de liaison à ressort pour une durabilité exceptionnelle.',
-    price_MAD   : 85,
+    subcategory : 'Charnières Meuble',
+    brand       : 'Still Bois',
+    title       : 'Charnières de Meuble Professionnelles STILL',
+    description_fr: 'Optimisez vos installations de menuiserie avec la gamme de charnières STILL à haute durabilité. Dotées d\'un système de freinage intégré pour une fermeture silencieuse et d\'un réglage 3D millimétrique, elles garantissent un alignement parfait de vos façades. Disponible en trois variantes pour s\'adapter à tous vos montages : de plein recouvrement, demi-coude ou encastré.',
+    price_MAD   : 15,
     in_stock    : true,
     ref         : 'VT-AUTO-6722',
     images      : [
