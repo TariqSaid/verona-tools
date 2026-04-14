@@ -97,4 +97,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/atlas-leader-plast-special-façade-paint-2-793029.png'
     ],
   },
+  {
+    id          : 1776201520313,
+    category    : 'Peinture',
+    subcategory : 'Peinture de façade',
+    brand       : 'Atlas',
+    title       : 'Peinture Atlas Leader Plast Façade Spéciale',
+    description_fr: 'Peinture spécialisée pour façades extérieures offrant une excellente adhérence et une résistance aux intempéries. Formule de qualité supérieure Leader Plast conçue pour une protection durable et un rendu uniforme sur tous types de surfaces extérieures.',
+    price_MAD   : 280,
+    in_stock    : true,
+    ref         : 'VT-AUTO-0313',
+    images      : [
+      '/images/products/atlas-leader-plast-special-façade-paint-1-515845.png',
+      '/images/products/atlas-leader-plast-special-façade-paint-2-515845.png'
+    ],
+  },
 ]);
