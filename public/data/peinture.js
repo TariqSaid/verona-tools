@@ -158,4 +158,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/borma-wachs-stucco-rapido-fast-drying-wood-filler-set-2-694161.png'
     ],
   },
+  {
+    id          : 1776211004298,
+    category    : 'Peinture',
+    subcategory : 'Mastics et produits de remplissage',
+    brand       : 'Borma Wachs',
+    title       : 'Mastic de Remplissage Écologique Ecostucco Borma Wachs',
+    description_fr: 'Mastic écologique de remplissage pour bois formulé à base de produits naturels et bio-sourcés. Idéal pour combler les fissures, trous et irrégularités du bois avant peinture ou vernis. Offre une excellente adhérence, sèche rapidement et peut être poncé facilement pour un fini lisse et professionnel.',
+    price_MAD   : 0,
+    in_stock    : true,
+    ref         : 'VT-AUTO-4298',
+    images      : [
+      '/images/products/borma-wachs-ecostucco-wood-filler-putty-1-000408.png',
+      '/images/products/borma-wachs-ecostucco-wood-filler-putty-2-000408.png'
+    ],
+  },
 ]);
