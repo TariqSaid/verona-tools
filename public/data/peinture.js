@@ -117,10 +117,10 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     id          : 1776209651763,
     category    : 'Peinture',
     subcategory : 'Peintures spécialisées et enduits',
-    brand       : 'ACOP',
-    title       : 'Peinture Enduit Spéciale ACOP Blanc',
+    brand       : 'FACOP',
+    title       : 'CIRAGE FACOP 1 kg FACOP',
     description_fr: 'Peinture enduit spécialisée ACOP blanc, formulée pour l\'application sur surfaces texturées et la finition de travaux de revêtement. Produit de qualité professionnelle offrant une bonne adhérence et une couverture uniforme pour les travaux de décoration intérieure et extérieure.',
-    price_MAD   : 185,
+    price_MAD   : 75,
     in_stock    : true,
     ref         : 'VT-AUTO-1763',
     images      : [
