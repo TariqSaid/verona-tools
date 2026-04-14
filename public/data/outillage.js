@@ -36,4 +36,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/bosch-professional-gst-650-jigsaw-2-601721.png'
     ],
   },
+  {
+    id          : 1776206272542,
+    category    : 'Outillage',
+    subcategory : 'Perceuses et Visseuses',
+    brand       : 'Bosch Professional',
+    title       : 'Perceuse-Burin Rotative Bosch Professional GBH 2-26',
+    description_fr: 'Perceuse-burin rotative professionnelle Bosch GBH 2-26 équipée d\'un mandrin SDS-plus pour le forage et le burinage dans le béton, la maçonnerie et la pierre. Puissance de 800W, vitesse de rotation jusqu\'à 900 tr/min et fréquence de percussion de 2,7 J. Livrée dans un coffret de transport rigide bleu avec accessoires.',
+    price_MAD   : 1200,
+    in_stock    : true,
+    ref         : 'VT-AUTO-2542',
+    images      : [
+      '/images/products/bosch-professional-gbh-2-26-rotary-hammer-drill-1-268034.png',
+      '/images/products/bosch-professional-gbh-2-26-rotary-hammer-drill-2-268034.png'
+    ],
+  },
 ]);
