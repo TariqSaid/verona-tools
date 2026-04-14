@@ -173,4 +173,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/borma-wachs-ecostucco-wood-filler-putty-2-000408.png'
     ],
   },
+  {
+    id          : 1776211010283,
+    category    : 'Peinture',
+    subcategory : 'Mastics et charges de bois',
+    brand       : 'Bogorodskoe',
+    title       : 'Mastic de Remplissage Bois Bogorodskoe Couleurs Assorties',
+    description_fr: 'Mastic de remplissage pour bois disponible en quatre teintes naturelles assorties (51, 512, 530 et autres références). Ce produit est conçu pour combler les fissures, trous et imperfections du bois avant peinture ou vernissage. Format tube de 200 ml environ avec applicateur pratique et fermeture hermétique.',
+    price_MAD   : 85,
+    in_stock    : true,
+    ref         : 'VT-AUTO-0283',
+    images      : [
+      '/images/products/bogorodskoe-wood-filler-putty-assorted-colors-1-000556.png',
+      '/images/products/bogorodskoe-wood-filler-putty-assorted-colors-2-000556.png'
+    ],
+  },
 ]);
