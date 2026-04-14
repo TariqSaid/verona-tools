@@ -36,4 +36,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/bosch-professional-gst-650-jigsaw-2-601721.png'
     ],
   },
+  {
+    id          : 1776205659163,
+    category    : 'Outillage',
+    subcategory : 'Scies et découpe',
+    brand       : 'Bosch Professional',
+    title       : 'Scie Sauteuse Bosch Professional GST 850',
+    description_fr: 'Scie sauteuse électrique professionnelle Bosch GST 850 dotée d\'un moteur puissant de 850W, idéale pour des coupes précises dans le bois, le plastique et les métaux. Équipée d\'une semelle de base réglable et d\'un système de guidage de lame performant pour une meilleure maîtrise de la coupe. Puissance moteur: 850W, Vitesse: 0-3000 tours/min.',
+    price_MAD   : 1850,
+    in_stock    : true,
+    ref         : 'VT-AUTO-9163',
+    images      : [
+      '/images/products/bosch-professional-gst-850-jigsaw-1-654244.png',
+      '/images/products/bosch-professional-gst-850-jigsaw-2-654244.png'
+    ],
+  },
 ]);
