@@ -7,9 +7,9 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
     id          : 1776205610612,
     category    : 'Quincaillerie',
-    subcategory : 'CHARNIERE AVEC FREINS PLAT REGLAGE 3D',
+    subcategory : 'Charnière d\'armoire à fermeture progressive Still Bois',
     brand       : 'Still Bois',
-    title       : 'Charnière d\'armoire à fermeture progressive Salice',
+    title       : 'CHARNIERE AVEC FREINS PLAT REGLAGE 3D',
     description_fr: 'Charnière de meuble à fermeture progressive avec système d\'amortissement intégré permettant une fermeture douce et silencieuse des portes d\'armoire. Fabrication en acier zingué haute qualité avec lames épaisses pour durabilité. Mécanisme de freinage hydraulique pour fermeture contrôlée. Montage sur plaque de base avec empreinte de perçage standardisée.',
     price_MAD   : 22,
     in_stock    : true,
