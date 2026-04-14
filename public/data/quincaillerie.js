@@ -34,4 +34,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/blum-clip-top-soft-close-cabinet-hinge-2-218619.png'
     ],
   },
+  {
+    id          : 1776210062560,
+    category    : 'Quincaillerie',
+    subcategory : 'Coulisses et accessoires de tiroir',
+    brand       : 'Generic/Standard',
+    title       : 'Assortiment de Coulisses de Tiroir à Billes',
+    description_fr: 'Assortiment de six coulisses de tiroir à billes en acier galvanisé de différentes longueurs. Ces coulisses professionnelles offrent un mouvement fluide et silencieux avec fermeture progressive. Idéales pour les meubles, armoires et rangements. Construction robuste en acier traité avec roulements à billes de qualité supérieure.',
+    price_MAD   : 320,
+    in_stock    : true,
+    ref         : 'VT-AUTO-2560',
+    images      : [
+      '/images/products/ball-bearing-drawer-slides-assortment-pack-1-058111.png',
+      '/images/products/ball-bearing-drawer-slides-assortment-pack-2-058111.png'
+    ],
+  },
 ]);
