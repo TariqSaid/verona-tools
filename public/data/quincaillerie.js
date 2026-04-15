@@ -40,9 +40,9 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     category    : 'Quincaillerie',
     subcategory : 'Roulettes et accessoires de mobilité',
     brand       : 'Generic/Unbranded',
-    title       : 'Ensemble de roulettes pivotantes robustes orange et noir',
+    title       : 'Ensemble de roulettes pivotantes robustes orange et noir 1.5 "no brake/2 "no brake',
     description_fr: 'Ensemble de deux roulettes pivotantes de qualité professionnelle dotées de roues en polyuréthane orange haute résistance et de supports en métal noir. Idéales pour les équipements industriels, les chariots, et les meubles mobiles. Chaque roulette est équipée d\'un roulement à billes pour une rotation fluide et d\'une plaque de montage robuste.',
-    price_MAD   : 180,
+    price_MAD   : 25,
     in_stock    : true,
     ref         : 'VT-AUTO-4250',
     images      : [
