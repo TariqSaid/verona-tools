@@ -131,4 +131,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
  
   
  
+  {
+    id          : 1776211908356,
+    category    : 'Peinture',
+    subcategory : 'Enduits et mastics',
+    brand       : 'Boehm Wachters',
+    title       : 'Enduit Écologique Ecostucco Boehm Wachters',
+    description_fr: 'Enduit de finition écologique Ecostucco à base de matières premières naturelles et bio-dégradables, idéal pour les travaux de peinture et de décoration intérieure et extérieure. Formule respectueuse de l\'environnement avec excellente adhérence et facilité d\'application. Séchage rapide et finition lisse et durable.',
+    price_MAD   : 285,
+    in_stock    : true,
+    ref         : 'VT-AUTO-8356',
+    images      : [
+      '/images/products/boehm-wachters-ecostucco-eco-friendly-plaster-putty-1-898003.png',
+      '/images/products/boehm-wachters-ecostucco-eco-friendly-plaster-putty-2-898003.png'
+    ],
+  },
 ]);
