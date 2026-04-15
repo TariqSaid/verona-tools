@@ -78,8 +78,8 @@ applyDarkMode();
 
 // ─── WhatsApp ────────────────────────────────────────────────────────────
 function openWhatsApp() {
-  const msg = encodeURIComponent('Bonjour Verona Tools, je souhaite obtenir plus d\'informations sur vos produits.');
-  window.open('https://wa.me/212600000000?text=' + msg, '_blank');
+  var msg = encodeURIComponent('Bonjour Verona Tools, je souhaite obtenir plus d\'informations sur vos produits.');
+  window.open('https://wa.me/212600960924?text=' + msg, '_blank');
 }
 
 // ─── View switching (core navigation) ───────────────────────────────────
@@ -553,6 +553,9 @@ function openProductModal(productId) {
     }
   }
 
+  // ── Render specs tabs (if product has specs) ──────────────
+  if (typeof renderSpecsTabs === 'function') renderSpecsTabs(p);
+
   if (modal) {
     modal.classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -617,16 +620,16 @@ function initImageZoom() {
 // ─── WhatsApp pre-filled message from modal ──────────────────────────────
 function modalSendWhatsApp() {
   if (!modalCurrentProduct) return;
-  const p   = modalCurrentProduct;
-  const ref = p.ref || 'VT-' + String(p.id).padStart(4, '0');
-  const msg = encodeURIComponent(
-    `Bonjour Verona Tools,\n\nJe souhaite avoir plus d'informations sur le produit suivant :\n\n` +
-    `*${p.title}*\n` +
-    `Prix affiché : ${p.price_MAD.toLocaleString('fr-MA')} MAD\n` +
-    `Réf. : ${ref}\n\n` +
-    `Merci de me contacter dès que possible.`
+  var p   = modalCurrentProduct;
+  var ref = p.ref || 'VT-' + String(p.id).padStart(4, '0');
+  var msg = encodeURIComponent(
+    'Bonjour Verona Tools,\n\nJe souhaite avoir plus d\'informations sur le produit suivant :\n\n' +
+    '*' + p.title + '*\n' +
+    'Prix affiché : ' + p.price_MAD.toLocaleString('fr-MA') + ' MAD\n' +
+    'Réf. : ' + ref + '\n\n' +
+    'Merci de me contacter dès que possible.'
   );
-  window.open('https://wa.me/212600000000?text=' + msg, '_blank');
+  window.open('https://wa.me/212600960924?text=' + msg, '_blank');
 }
 
 // ─── Keyboard shortcuts ──────────────────────────────────────────────────
@@ -647,7 +650,7 @@ try { startHeroSlider(); }        catch (e) { /* silent */ }
 // Sync data-cat attributes on pills (in case HTML and JS differ)
 try {
   document.querySelectorAll('.pill-btn').forEach(function (btn) {
-    const match = (btn.getAttribute('onclick') || '').match(/scrollToCategory\('([^']+)'\)/);
+    var match = (btn.getAttribute('onclick') || '').match(/scrollToCategory\('([^']+)'\)/);
     if (match) btn.setAttribute('data-cat', match[1]);
   });
 } catch (e) { /* silent */ }
