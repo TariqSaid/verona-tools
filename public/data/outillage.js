@@ -51,4 +51,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/bosch-professional-gbh-2-26-rotary-hammer-drill-2-268034.png'
     ],
   },
+    {
+    id          : 1776207905844,
+    category    : 'Outillage',
+    subcategory : 'Scies électriques',
+    brand       : 'Bosch',
+    title       : 'Meuleuse angulaire PRO GWS 750-115',
+    description_fr: 'Scie sauteuse professionnelle Bosch GST 650 dotée d\'un moteur puissant de 650W pour découpes précises dans le bois, le métal et les matériaux composites. Équipée d\'une lame oscillante haute fréquence, d\'une semelle inclinable et d\'un système de soufflage pour une meilleure visibilité. Poignée ergonomique antidérapante et cordon d\'alimentation pour une utilisation sécurisée et confortable.',
+    price_MAD   : 520,
+    in_stock    : true,
+    ref         : 'VT-AUTO-5844',
+    images      : [
+      '/images/products/bosch-gws-750-115-professional-angle-grinder-1-960119.png',
+      '/images/products/bosch-gws-750-115-professional-angle-grinder-2-960119.png'
+    ],
+  },
 ]);
