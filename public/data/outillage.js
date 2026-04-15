@@ -58,7 +58,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     brand       : 'Bosch',
     title       : 'Meuleuse angulaire PRO GWS 750-115',
     description_fr: 'Scie sauteuse professionnelle Bosch GST 650 dotée d\'un moteur puissant de 650W pour découpes précises dans le bois, le métal et les matériaux composites. Équipée d\'une lame oscillante haute fréquence, d\'une semelle inclinable et d\'un système de soufflage pour une meilleure visibilité. Poignée ergonomique antidérapante et cordon d\'alimentation pour une utilisation sécurisée et confortable.',
-    price_MAD   : 520,
+    price_MAD   : 715,
     in_stock    : true,
     ref         : 'VT-AUTO-5844',
     images      : [
