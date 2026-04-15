@@ -128,64 +128,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/acop-special-stucco-paint-white-2-646958.png'
     ],
   },
-  {
-    id          : 1776210574320,
-    category    : 'Peinture',
-    subcategory : 'Mastics et produits de finition bois',
-    brand       : 'Borma Wachs',
-    title       : 'Assortiment de Bâtons de Mastic Bois Rapide Borma Wachs',
-    description_fr: 'Assortiment professionnel de bâtons de mastic bois à séchage rapide proposant plusieurs teintes de bois naturel pour la réparation et la finition de meubles. Cet ensemble comprend 10 bâtons numérotés de différentes teintes, idéal pour combler les fissures, les trous et les défauts du bois. Formule à séchage rapide permettant un ponçage et une finition rapides.',
-    price_MAD   : 180,
-    in_stock    : true,
-    ref         : 'VT-AUTO-4320',
-    images      : [
-      '/images/products/borma-wachs-quick-wood-filler-sticks-set-1-569887.png',
-      '/images/products/borma-wachs-quick-wood-filler-sticks-set-2-569887.png'
-    ],
-  },
-  {
-    id          : 1776210698994,
-    category    : 'Peinture',
-    subcategory : 'Mastics et produits de finition bois',
-    brand       : 'Borma Wachs',
-    title       : 'Ensemble de Mastic Bois Borma Wachs Stucco Rapido Séchage Rapide',
-    description_fr: 'Ensemble professionnel de mastic bois à séchage rapide Borma Wachs Stucco Rapido, contenant plusieurs bâtons de différentes nuances pour le remplissage et la finition du bois. Conçu pour une application rapide et un séchage accéléré, idéal pour les travaux de menuiserie et de restauration de meubles. Formule à base de cire pour un rendu naturel et durable.',
-    price_MAD   : 280,
-    in_stock    : true,
-    ref         : 'VT-AUTO-8994',
-    images      : [
-      '/images/products/borma-wachs-stucco-rapido-fast-drying-wood-filler-set-1-694161.png',
-      '/images/products/borma-wachs-stucco-rapido-fast-drying-wood-filler-set-2-694161.png'
-    ],
-  },
-  {
-    id          : 1776211004298,
-    category    : 'Peinture',
-    subcategory : 'Mastics et produits de remplissage',
-    brand       : 'Borma Wachs',
-    title       : 'Mastic de Remplissage Écologique Ecostucco Borma Wachs',
-    description_fr: 'Mastic écologique de remplissage pour bois formulé à base de produits naturels et bio-sourcés. Idéal pour combler les fissures, trous et irrégularités du bois avant peinture ou vernis. Offre une excellente adhérence, sèche rapidement et peut être poncé facilement pour un fini lisse et professionnel.',
-    price_MAD   : 0,
-    in_stock    : true,
-    ref         : 'VT-AUTO-4298',
-    images      : [
-      '/images/products/borma-wachs-ecostucco-wood-filler-putty-1-000408.png',
-      '/images/products/borma-wachs-ecostucco-wood-filler-putty-2-000408.png'
-    ],
-  },
-  {
-    id          : 1776211010283,
-    category    : 'Peinture',
-    subcategory : 'Mastics et charges de bois',
-    brand       : 'Bogorodskoe',
-    title       : 'Mastic de Remplissage Bois Bogorodskoe Couleurs Assorties',
-    description_fr: 'Mastic de remplissage pour bois disponible en quatre teintes naturelles assorties (51, 512, 530 et autres références). Ce produit est conçu pour combler les fissures, trous et imperfections du bois avant peinture ou vernissage. Format tube de 200 ml environ avec applicateur pratique et fermeture hermétique.',
-    price_MAD   : 85,
-    in_stock    : true,
-    ref         : 'VT-AUTO-0283',
-    images      : [
-      '/images/products/bogorodskoe-wood-filler-putty-assorted-colors-1-000556.png',
-      '/images/products/bogorodskoe-wood-filler-putty-assorted-colors-2-000556.png'
-    ],
-  },
+ 
+  
+ 
 ]);
