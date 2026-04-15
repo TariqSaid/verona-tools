@@ -50,4 +50,19 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/heavy-duty-caster-wheels-set-orange-and-black-2-900338.png'
     ],
   },
+  {
+    id          : 1776285601215,
+    category    : 'Quincaillerie',
+    subcategory : 'Chevilles et Fixations',
+    brand       : 'Generic',
+    title       : 'Chevilles en Bois Rondes Assorties',
+    description_fr: 'Ensemble de chevilles en bois massif de différents diamètres, idéales pour l\'assemblage de meubles, la menuiserie et les travaux de jonction. Ces chevilles cylindriques lisses offrent une fixation solide et durable pour le bois, avec une finition naturelle et lisse.',
+    price_MAD   : 45,
+    in_stock    : true,
+    ref         : 'VT-AUTO-1215',
+    images      : [
+      '/images/products/wooden-dowel-pins-assorted-pack-1-596239.png',
+      '/images/products/wooden-dowel-pins-assorted-pack-2-596239.png'
+    ],
+  },
 ]);
