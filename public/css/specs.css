@@ -145,11 +145,17 @@
   .specs-hl-val { font-size: 17px; }
 }
 
-/* Fix modal scrolling */
-#product-modal .modal-box {
-  max-height: 90vh !important;
+/* Fix modal scrolling — full override */
+#product-modal.open {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
   overflow-y: auto !important;
+  padding: 20px 0 !important;
 }
-#product-modal {
-  overflow-y: auto !important;
+#product-modal .modal-box {
+  max-height: none !important;
+  overflow: visible !important;
+  margin: auto !important;
+  position: relative !important;
 }
