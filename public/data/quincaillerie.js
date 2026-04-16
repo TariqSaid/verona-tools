@@ -81,4 +81,20 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   "ref": "VT-AUTO-1776324207534",
   "specs": null
 },
+  {
+  "id": 1776371731161,
+  "category": "",
+  "subcategory": "",
+  "brand": "",
+  "title": "",
+  "description_fr": "",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/undefined",
+    "/images/products/undefined"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776371731161",
+  "specs": null
+},
 ]);
