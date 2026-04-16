@@ -1,26 +1,5 @@
-/**
- * ============================================================
- *  VERONA TOOLS — Catalogue · Outillage
- * ============================================================
- *  Ajoutez vos produits Outillage dans ce tableau.
- *
- *  Sous-catégories suggérées :
- *    "Perceuses & Visseuses"   "Meuleuses"
- *    "Tournevis & Clés"        "Scies & Découpe"
- *    "Mesure & Traçage"        "Marteaux & Masses"
- *    "Pistolets à colle"       "Ponceuses"
- *
- *  Marques courantes : Bosch, Makita, Ingco, Stanley, Tolsen, Wokin
- * ============================================================
- */
-
 'use strict';
-
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
-
-  // Ajoutez vos produits Outillage ici
-
-  
   {
     id          : 1776205605844,
     category    : 'Outillage',
@@ -51,7 +30,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/bosch-professional-gbh-2-26-rotary-hammer-drill-2-268034.png'
     ],
   },
-    {
+  {
     id          : 1776207905844,
     category    : 'Outillage',
     subcategory : 'Scies électriques',
@@ -64,6 +43,21 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     images      : [
       '/images/products/bosch-gws-750-115-professional-angle-grinder-1-960119.png',
       '/images/products/bosch-gws-750-115-professional-angle-grinder-2-960119.png'
+    ],
+  },
+  {
+    id          : 1776375977801,
+    category    : 'Outillage',
+    subcategory : 'Décapeurs thermiques',
+    brand       : 'Bosch',
+    title       : 'Décapeur Thermique Bosch Professional GHG 180',
+    description_fr: 'Décapeur thermique professionnel Bosch GHG 180 avec moteur puissant pour décapage de peinture, soudage de plastique et retrait d\'adhésifs. Température réglable et buse interchangeable pour une utilisation polyvalente sur chantier et en atelier.',
+    price_MAD   : 0,
+    in_stock    : true,
+    ref         : 'VT-AUTO-977801',
+    images      : [
+      '/images/products/product-1-977801.png',
+      '/images/products/product-2-977801.png'
     ],
   },
 ]);
