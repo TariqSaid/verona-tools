@@ -65,4 +65,20 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/wooden-dowel-pins-assorted-pack-2-596239.png'
     ],
   },
+  {
+  "id": 1776324207534,
+  "category": "",
+  "subcategory": "",
+  "brand": "",
+  "title": "",
+  "description_fr": "",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/undefined",
+    "/images/products/undefined"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776324207534",
+  "specs": null
+},
 ]);
