@@ -144,3 +144,9 @@
   .specs-panel { padding: 14px 16px; }
   .specs-hl-val { font-size: 17px; }
 }
+
+/* Fix modal scrolling */
+.modal-box {
+  max-height: 90vh;
+  overflow-y: auto;
+}
