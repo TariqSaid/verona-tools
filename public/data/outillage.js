@@ -1,34 +1,34 @@
 'use strict';
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
-  "id": 1776381225009,
+  "id": 1776381261229,
   "category": "Outillage",
   "subcategory": "Polisseuses et meuleuses",
   "brand": "Bosch",
-  "title": "Polisseuse Professionnelle",
-  "description_fr": "Polisseuse électrique professionnelle équipée d'un contrôle de vitesse variable pour des applications de polissage automobile, lustrage et finition de surface. Conçue pour offrir des résultats professionnels avec un confort optimal d'utilisation grâce à sa poignée ergonomique antivibratoire. Parfaite pour les travaux de détail automobile et les applications industrielles de finition.",
+  "title": "Polisseuse Bosch Professional GPO 14 CE",
+  "description_fr": "Polisseuse rotative professionnelle Bosch GPO 14 CE conçue pour le polissage automobile et les travaux de finition. Équipée d'un contrôle électronique de la vitesse et d'une poignée ergonomique avec revêtement souple. Idéale pour les professionnels et amateurs exigeants cherchant un résultat de qualité supérieure.",
   "price_MAD": 1299,
   "images": [
-    "/images/products/polishing-machine-professional-1-220493.png",
-    "/images/products/polishing-machine-professional-2-220493.png"
+    "/images/products/bosch-professional-polisher-gpo-14-ce-1-256306.png",
+    "/images/products/bosch-professional-polisher-gpo-14-ce-2-256306.png"
   ],
   "in_stock": true,
-  "ref": "VT-AUTO-1776381225009",
+  "ref": "VT-AUTO-1776381261229",
   "specs": {
     "highlight1_label": "Puissance nominale",
-    "highlight1_value": "1200 W",
-    "highlight2_label": "Plage de vitesse",
-    "highlight2_value": "600-3000 tr/min",
-    "highlight3_label": "Diamètre du plateau",
-    "highlight3_value": "170 mm",
+    "highlight1_value": "1400 W",
+    "highlight2_label": "Diamètre du plateau",
+    "highlight2_value": "140 mm",
+    "highlight3_label": "Vitesse de rotation",
+    "highlight3_value": "600-3000 tr/min",
     "details": [
       {
-        "label": "Tension électrique",
-        "value": "220-240 V"
+        "label": "Tension d'alimentation",
+        "value": "230 V"
       },
       {
         "label": "Fréquence",
-        "value": "50/60 Hz"
+        "value": "50 Hz"
       },
       {
         "label": "Poids",
@@ -36,34 +36,30 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       },
       {
         "label": "Longueur du câble",
-        "value": "2.4 m"
+        "value": "4 m"
       },
       {
-        "label": "Type de plateau",
-        "value": "Velcro auto-agrippant"
+        "label": "Contrôle électronique",
+        "value": "Oui"
       },
       {
-        "label": "Niveau de bruit",
-        "value": "89 dB"
+        "label": "Protection de surcharge",
+        "value": "Oui"
       },
       {
         "label": "Classe de sécurité",
         "value": "II"
-      },
-      {
-        "label": "Matériau de la poignée",
-        "value": "Caoutchouc antivibration"
       }
     ],
     "compatibles": [
-      "Disques de polissage Bosch 170mm",
-      "Bonnets de polissage microfibre",
-      "Pâtes de polissage automobiles",
-      "Disques de lustrage velcro 170mm"
+      "Tampons de polissage Bosch 140 mm",
+      "Produits de polissage professionnels",
+      "Disques de mouche 140 mm",
+      "Bonnets de lustrage microfibre"
     ],
     "incompatibles": [
-      "Disques de diamètre inférieur à 150mm - risque de déséquilibre",
-      "Disques de diamètre supérieur à 180mm - non compatibles avec le plateau"
+      "Meules abrasives (risque de surcharge moteur)",
+      "Disques de diamètre supérieur à 140 mm (incompatibilité mécanique)"
     ]
   }
 },
