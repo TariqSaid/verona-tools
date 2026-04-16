@@ -1,68 +1,61 @@
 'use strict';
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
-  "id": 1776383352261,
+  "id": 1776383424319,
   "category": "Outillage",
-  "subcategory": "Outils électriques - Pistolets thermiques",
+  "subcategory": "Pistolets thermiques et décapants",
   "brand": "Bosch",
-  "title": "Pistolet thermique professionnel Bosch GHG 500",
-  "description_fr": "Pistolet thermique professionnel Bosch GHG 500 conçu pour le décapage de peinture, le retrait d'adhésifs, le thermorétractage et les travaux de soudage. Dispose de deux niveaux de température réglables et d'une poignée ergonomique pour un confort optimal lors de travaux prolongés. Équipé d'accessoires interchangeables pour diverses applications. Idéal pour les professionnels du bâtiment et du bricolage exigeant.",
-  "price_MAD": 850,
+  "title": "Pistolet Thermique Professionnel Bosch GHG 500",
+  "description_fr": "Pistolet thermique professionnel Bosch GHG 500 idéal pour le décapage de peinture, le soudage et le rétreint de gaines. Doté de deux niveaux de température ajustables et d'une conception ergonomique pour un confort optimal. Cet outil professionnel offre une performance fiable et une durabilité exceptionnelle. Parfait pour les professionnels du bâtiment et les bricoleurs exigeants.",
+  "price_MAD": 890,
   "images": [
-    "/images/products/bosch-professional-heat-gun-ghg-500-1-347568.png",
-    "/images/products/bosch-professional-heat-gun-ghg-500-2-347568.png"
+    "/images/products/bosch-professional-heat-gun-ghg-500-1-420408.png",
+    "/images/products/bosch-professional-heat-gun-ghg-500-2-420408.png"
   ],
   "in_stock": true,
-  "ref": "VT-AUTO-1776383352261",
+  "ref": "VT-AUTO-1776383424319",
   "specs": {
     "highlight1_label": "Puissance nominale",
     "highlight1_value": "2000 W",
-    "highlight2_label": "Plage de température",
-    "highlight2_value": "50-650°C",
+    "highlight2_label": "Plages de température",
+    "highlight2_value": "50°C - 650°C (2 niveaux)",
     "highlight3_label": "Débit d'air",
     "highlight3_value": "300-500 l/min",
     "details": [
       {
-        "label": "Nombre de niveaux de température",
-        "value": "2"
-      },
-      {
-        "label": "Poids",
-        "value": "650 g"
-      },
-      {
-        "label": "Tension d'alimentation",
+        "label": "Tension nominale",
         "value": "220-240 V"
       },
       {
         "label": "Fréquence",
-        "value": "50/60 Hz"
+        "value": "50-60 Hz"
       },
       {
-        "label": "Longueur du câble d'alimentation",
-        "value": "2,5 m"
+        "label": "Poids",
+        "value": "680 g"
       },
       {
-        "label": "Buse fournie",
-        "value": "Buse plate standard"
+        "label": "Longueur du cordon",
+        "value": "2 m"
+      },
+      {
+        "label": "Type de nozzle",
+        "value": "Nozzle standard fourni"
       },
       {
         "label": "Classe de sécurité",
-        "value": "II"
-      },
-      {
-        "label": "Temps de préchauffage",
-        "value": "Environ 30 secondes"
+        "value": "IPX4 (résistant aux projections)"
       }
     ],
     "compatibles": [
-      "Buse plate Bosch GHG 500",
-      "Buse ronde Bosch GHG 500",
-      "Buse réflecteur Bosch GHG 500",
-      "Adaptateur de réduction Bosch"
+      "Accessoires de nozzles Bosch GHG 500",
+      "Support de rangement Bosch",
+      "Buse concentrée pour détails",
+      "Buse plate pour surfaces larges"
     ],
     "incompatibles": [
-      "Accessoires pour pistolets thermiques d'autres marques - risque d'incompatibilité et perte de performance"
+      "Accessoires de marques tierces non certifiés - risque de détérioration",
+      "Utilisation en environnement humide sans protection - électrocution"
     ]
   }
 },
