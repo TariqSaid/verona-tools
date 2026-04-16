@@ -1,61 +1,68 @@
 'use strict';
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
-  "id": 1776381338129,
+  "id": 1776383352261,
   "category": "Outillage",
-  "subcategory": "Polisseuses et meuleuses",
+  "subcategory": "Outils électriques - Pistolets thermiques",
   "brand": "Bosch",
-  "title": "Polisseuse Bosch Professional GPO 14 CE",
-  "description_fr": "Polisseuse électrique professionnelle Bosch dotée d'un moteur puissant de 1400W et d'une vitesse variable jusqu'à 3000 rpm. Elle est équipée d'une semelle de polissage de 140mm pour un travail efficace et des finitions de haute qualité. Idéale pour polir, lustrer et finir les surfaces en automobiles, menuiserie et travaux de décoration.",
-  "price_MAD": 1850,
+  "title": "Pistolet thermique professionnel Bosch GHG 500",
+  "description_fr": "Pistolet thermique professionnel Bosch GHG 500 conçu pour le décapage de peinture, le retrait d'adhésifs, le thermorétractage et les travaux de soudage. Dispose de deux niveaux de température réglables et d'une poignée ergonomique pour un confort optimal lors de travaux prolongés. Équipé d'accessoires interchangeables pour diverses applications. Idéal pour les professionnels du bâtiment et du bricolage exigeant.",
+  "price_MAD": 850,
   "images": [
-    "/images/products/bosch-professional-polisher-gpo-14-ce-1-333491.png",
-    "/images/products/bosch-professional-polisher-gpo-14-ce-2-333491.png"
+    "/images/products/bosch-professional-heat-gun-ghg-500-1-347568.png",
+    "/images/products/bosch-professional-heat-gun-ghg-500-2-347568.png"
   ],
   "in_stock": true,
-  "ref": "VT-AUTO-1776381338130",
+  "ref": "VT-AUTO-1776383352261",
   "specs": {
-    "highlight1_label": "Puissance moteur",
-    "highlight1_value": "1400 W",
-    "highlight2_label": "Vitesse variable maximale",
-    "highlight2_value": "3000 rpm",
-    "highlight3_label": "Diamètre de la semelle",
-    "highlight3_value": "140 mm",
+    "highlight1_label": "Puissance nominale",
+    "highlight1_value": "2000 W",
+    "highlight2_label": "Plage de température",
+    "highlight2_value": "50-650°C",
+    "highlight3_label": "Débit d'air",
+    "highlight3_value": "300-500 l/min",
     "details": [
       {
-        "label": "Type d'alimentation",
-        "value": "Cordon électrique 220V"
-      },
-      {
-        "label": "Nombre de vitesses",
-        "value": "Vitesse variable progressive"
+        "label": "Nombre de niveaux de température",
+        "value": "2"
       },
       {
         "label": "Poids",
-        "value": "3.1 kg"
+        "value": "650 g"
       },
       {
-        "label": "Longueur du cordon",
-        "value": "4 m"
+        "label": "Tension d'alimentation",
+        "value": "220-240 V"
       },
       {
-        "label": "Contrôle de vibration",
-        "value": "Système anti-vibration intégré"
+        "label": "Fréquence",
+        "value": "50/60 Hz"
       },
       {
-        "label": "Poignée",
-        "value": "Ergonomique avec sécurité"
+        "label": "Longueur du câble d'alimentation",
+        "value": "2,5 m"
+      },
+      {
+        "label": "Buse fournie",
+        "value": "Buse plate standard"
+      },
+      {
+        "label": "Classe de sécurité",
+        "value": "II"
+      },
+      {
+        "label": "Temps de préchauffage",
+        "value": "Environ 30 secondes"
       }
     ],
     "compatibles": [
-      "Bonnets de polissage 140mm",
-      "Disques abrasifs 140mm",
-      "Produits de polissage automobiles",
-      "Mousse de polissage douce et dure"
+      "Buse plate Bosch GHG 500",
+      "Buse ronde Bosch GHG 500",
+      "Buse réflecteur Bosch GHG 500",
+      "Adaptateur de réduction Bosch"
     ],
     "incompatibles": [
-      "Disques supérieurs à 140mm - risque de déséquilibre",
-      "Utilisation en humidité intensive - équipement électrique"
+      "Accessoires pour pistolets thermiques d'autres marques - risque d'incompatibilité et perte de performance"
     ]
   }
 },
