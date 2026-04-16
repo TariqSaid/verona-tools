@@ -1,48 +1,70 @@
 'use strict';
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
-    id          : 1776205605844,
-    category    : 'Outillage',
-    subcategory : 'Scies électriques',
-    brand       : 'Bosch',
-    title       : 'Scie Sauteuse Bosch Professional GST 650',
-    description_fr: 'Scie sauteuse professionnelle Bosch GST 650 dotée d\'un moteur puissant de 650W pour découpes précises dans le bois, le métal et les matériaux composites.',
-    price_MAD   : 449,
-    in_stock    : true,
-    ref         : 'VT-AUTO-5844',
-    images      : [
-      '/images/products/bosch-professional-gst-650-jigsaw-1-601721.png',
-      '/images/products/bosch-professional-gst-650-jigsaw-2-601721.png'
+  "id": 1776381225009,
+  "category": "Outillage",
+  "subcategory": "Polisseuses et meuleuses",
+  "brand": "Bosch",
+  "title": "Polisseuse Professionnelle",
+  "description_fr": "Polisseuse électrique professionnelle équipée d'un contrôle de vitesse variable pour des applications de polissage automobile, lustrage et finition de surface. Conçue pour offrir des résultats professionnels avec un confort optimal d'utilisation grâce à sa poignée ergonomique antivibratoire. Parfaite pour les travaux de détail automobile et les applications industrielles de finition.",
+  "price_MAD": 1299,
+  "images": [
+    "/images/products/polishing-machine-professional-1-220493.png",
+    "/images/products/polishing-machine-professional-2-220493.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776381225009",
+  "specs": {
+    "highlight1_label": "Puissance nominale",
+    "highlight1_value": "1200 W",
+    "highlight2_label": "Plage de vitesse",
+    "highlight2_value": "600-3000 tr/min",
+    "highlight3_label": "Diamètre du plateau",
+    "highlight3_value": "170 mm",
+    "details": [
+      {
+        "label": "Tension électrique",
+        "value": "220-240 V"
+      },
+      {
+        "label": "Fréquence",
+        "value": "50/60 Hz"
+      },
+      {
+        "label": "Poids",
+        "value": "2.1 kg"
+      },
+      {
+        "label": "Longueur du câble",
+        "value": "2.4 m"
+      },
+      {
+        "label": "Type de plateau",
+        "value": "Velcro auto-agrippant"
+      },
+      {
+        "label": "Niveau de bruit",
+        "value": "89 dB"
+      },
+      {
+        "label": "Classe de sécurité",
+        "value": "II"
+      },
+      {
+        "label": "Matériau de la poignée",
+        "value": "Caoutchouc antivibration"
+      }
     ],
-  },
-  {
-    id          : 1776206272542,
-    category    : 'Outillage',
-    subcategory : 'Perceuses et Visseuses',
-    brand       : 'Bosch Professional',
-    title       : 'Perceuse-Burin Rotative Bosch Professional GBH 220',
-    description_fr: 'Perceuse-burin rotative professionnelle Bosch GBH 2-26 équipée d\'un mandrin SDS-plus pour le forage et le burinage dans le béton, la maçonnerie et la pierre.',
-    price_MAD   : 1200,
-    in_stock    : true,
-    ref         : 'VT-AUTO-2542',
-    images      : [
-      '/images/products/bosch-professional-gbh-2-26-rotary-hammer-drill-1-268034.png',
-      '/images/products/bosch-professional-gbh-2-26-rotary-hammer-drill-2-268034.png'
+    "compatibles": [
+      "Disques de polissage Bosch 170mm",
+      "Bonnets de polissage microfibre",
+      "Pâtes de polissage automobiles",
+      "Disques de lustrage velcro 170mm"
     ],
-  },
-  {
-    id          : 1776207905844,
-    category    : 'Outillage',
-    subcategory : 'Scies électriques',
-    brand       : 'Bosch',
-    title       : 'Meuleuse angulaire PRO GWS 750-115',
-    description_fr: 'Meuleuse angulaire professionnelle Bosch GWS 750-115 avec moteur 750W et disque 115mm pour découpe et meulage.',
-    price_MAD   : 715,
-    in_stock    : true,
-    ref         : 'VT-AUTO-5844',
-    images      : [
-      '/images/products/bosch-gws-750-115-professional-angle-grinder-1-960119.png',
-      '/images/products/bosch-gws-750-115-professional-angle-grinder-2-960119.png'
-    ],
-  },
+    "incompatibles": [
+      "Disques de diamètre inférieur à 150mm - risque de déséquilibre",
+      "Disques de diamètre supérieur à 180mm - non compatibles avec le plateau"
+    ]
+  }
+},
 ]);
