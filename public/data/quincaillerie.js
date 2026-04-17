@@ -52,4 +52,52 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     images      : ['/images/products/wooden-dowel-pins-assorted-pack-1-596239.png', '/images/products/wooden-dowel-pins-assorted-pack-2-596239.png'],
     specs       : null,
   },
+  {
+  "id": 1776463761009,
+  "category": "Quincaillerie",
+  "subcategory": "Accessoires de porte",
+  "brand": "Generic/Standard",
+  "title": "Butée de Porte",
+  "description_fr": "Butée de porte cylindrique au design moderne, disponible en finition acier inoxydable ou noir mat. Dotée d'une bande de préhension en caoutchouc pour une meilleure adhérence et une utilisation optimale. Idéale pour maintenir les portes ouvertes en toute sécurité et prévenir les claques accidentelles.",
+  "price_MAD": 45,
+  "images": [
+    "/images/products/door-stopper-1-756770.png",
+    "/images/products/door-stopper-2-756770.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776463761010",
+  "specs": {
+    "details": [
+      {
+        "label": "Finitions disponibles",
+        "value": "Acier inoxydable brossé, Noir mat"
+      },
+      {
+        "label": "Bande de préhension",
+        "value": "Caoutchouc antidérapant"
+      },
+      {
+        "label": "Poids unitaire",
+        "value": "120 g"
+      },
+      {
+        "label": "Type de fixation",
+        "value": "Adhésif ou clou (selon modèle)"
+      },
+      {
+        "label": "Résistance à la compression",
+        "value": "jusqu'à 5 kg"
+      }
+    ],
+    "compatibles": [
+      "Portes intérieures standard",
+      "Portes extérieures légères",
+      "Portes coulissantes"
+    ],
+    "incompatibles": [
+      "Portes très lourdes (>10kg) - risque d'inefficacité",
+      "Surfaces mouillées permanentes - adhérence compromise"
+    ]
+  }
+},
 ]);
