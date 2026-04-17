@@ -7,7 +7,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   "brand": "Arkol",
   "title": "Peinture Intérieure",
   "description_fr": "Peinture d'intérieur de haute qualité conçue pour les murs et plafonds. Offre une couverture uniforme et un fini durable avec une excellente adhérence. Idéale pour les projets de peinture résidentielle et commerciale.",
-  "price_MAD": 0,
+  "price_MAD": 220,
   "images": [
     "/images/products/interior-paint-1-080750.png",
     "/images/products/interior-paint-2-080750.png"
@@ -18,7 +18,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "highlight1_label": "Type de Peinture",
     "highlight1_value": "Peinture d'intérieur acrylique",
     "highlight2_label": "Volume",
-    "highlight2_value": "10 litres",
+    "highlight2_value": "2.50 Kg",
     "highlight3_label": "Rendement",
     "highlight3_value": "10-12 m²/litre",
     "details": [
