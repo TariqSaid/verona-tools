@@ -120,4 +120,27 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     ]
   }
 },
+  {
+  "id": 1776461524702,
+  "category": "Outillage",
+  "subcategory": "Scies et tronçonneuses",
+  "brand": "Makute",
+  "title": "Tronçonneuse Électrique 12\"",
+  "description_fr": "Tronçonneuse électrique compacte équipée d'un guide de 12 pouces, parfaite pour les travaux de coupe légers à moyens, l'élagage des branches et les tâches de jardinage général. Moteur électrique silencieux et respectueux de l'environnement avec démarrage instantané. Conception ergonomique avec poignées antidérapantes pour un contrôle optimal et une sécurité accrue pendant l'utilisation.",
+  "price_MAD": 450,
+  "images": [
+    "/images/products/electric-chainsaw-12-1-519875.png",
+    "/images/products/electric-chainsaw-12-2-519875.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776461524702",
+  "specs": {
+    "highlight1_label": "Longueur du guide",
+    "highlight1_value": "12 pouces (30 cm)",
+    "highlight2_label": "Type de moteur",
+    "highlight2_value": "Moteur électrique",
+    "highlight3_label": "Tension d'alimentation",
+    "highlight3_value": "220V AC"
+  }
+},
 ]);
