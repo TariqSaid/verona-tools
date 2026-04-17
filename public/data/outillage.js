@@ -52,4 +52,72 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     images      : ['/images/products/bosch-professional-ghg-500-heat-gun-1-520125.png', '/images/products/bosch-professional-ghg-500-heat-gun-2-520125.png'],
     specs       : { highlight1_label: "Puissance", highlight1_value: "2000 W", highlight2_label: "Température", highlight2_value: "50-550 °C", highlight3_label: "Débit", highlight3_value: "300-500 l/min", details: [{ label: "Puissance nominale", value: "2000 W" }, { label: "Plage de température", value: "50-550 °C" }, { label: "Débit d'air", value: "300-500 l/min" }, { label: "Tension", value: "230 V / 50 Hz" }, { label: "Poids", value: "680 g" }, { label: "Longueur câble", value: "2 m" }, { label: "Niveaux de chaleur", value: "2 positions" }], compatibles: ["Buses de réduction GHG 500", "Buses de concentration", "Buse verre de protection", "Sacoche Bosch Professional"], incompatibles: ["Batterie lithium — secteur uniquement", "Milieux très humides — risque électrique"] },
   },
+  {
+  "id": 1776460811485,
+  "category": "Outillage",
+  "subcategory": "Souffleurs et aspirateurs",
+  "brand": "Makita",
+  "title": "Souffleur d'air électrique",
+  "description_fr": "Souffleur d'air électrique puissant conçu pour le nettoyage et l'élimination des débris. Parfait pour les terrasses, jardins et espaces de travail avec contrôle de vitesse variable. Doté d'une conception ergonomique et d'une poignée comfortable pour une utilisation prolongée. Équipé d'un système de refroidissement efficace et d'une portée de soufflage optimale.",
+  "price_MAD": 450,
+  "images": [
+    "/images/products/electric-air-blower-1-806622.png",
+    "/images/products/electric-air-blower-2-806622.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776460811485",
+  "specs": {
+    "highlight1_label": "Puissance nominale",
+    "highlight1_value": "600 W",
+    "highlight2_label": "Débit d'air maximum",
+    "highlight2_value": "3.6 m³/min",
+    "highlight3_label": "Vitesse de rotation",
+    "highlight3_value": "6000-8000 tr/min",
+    "details": [
+      {
+        "label": "Tension d'alimentation",
+        "value": "230 V - 50 Hz"
+      },
+      {
+        "label": "Courant nominal",
+        "value": "2.6 A"
+      },
+      {
+        "label": "Vitesse du vent",
+        "value": "25 m/s"
+      },
+      {
+        "label": "Diamètre de la buse",
+        "value": "32 mm"
+      },
+      {
+        "label": "Longueur de la buse",
+        "value": "250 mm"
+      },
+      {
+        "label": "Poids",
+        "value": "2.2 kg"
+      },
+      {
+        "label": "Niveau sonore",
+        "value": "82 dB"
+      },
+      {
+        "label": "Longueur du cordon",
+        "value": "2 m"
+      }
+    ],
+    "compatibles": [
+      "Extension de buse 500 mm",
+      "Adaptateur de tuyau d'aspiration",
+      "Rallonge électrique 10 m",
+      "Sac de collecte des débris"
+    ],
+    "incompatibles": [
+      "Utilisation en milieu humide - risque d'électrocution",
+      "Aspiration de liquides - endommagement du moteur",
+      "Matériaux abrasifs fins (ciment, poudre) - usure prématurée"
+    ]
+  }
+},
 ]);
