@@ -67,4 +67,62 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       '/images/products/aluminum-led-profile-channel-surface-mount-2-793657.png'
     ],
   },
+  {
+  "id": 1776466206353,
+  "category": "Luminaire",
+  "subcategory": "Lampes de Bureau",
+  "brand": "Generic/Standard",
+  "title": "Lampe de Bureau LED Rechargeable Rio",
+  "description_fr": "Lampe de bureau LED rechargeable Rio avec technologie RGB pour changement de couleur. Équipée d'un interrupteur tactile sensible et de 3 niveaux d'intensité lumineuse réglables. Idéale pour illuminer votre espace de travail avec un design moderne et élégant. Base dorée stable et abat-jour texturé pour une diffusion de lumière optimale.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/rio-rechargeable-led-desk-lamp-1-202126.png",
+    "/images/products/rio-rechargeable-led-desk-lamp-2-202126.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776466206353",
+  "specs": {
+    "highlight1_label": "Source d'énergie",
+    "highlight1_value": "Batterie rechargeable",
+    "highlight2_label": "Modes de couleur",
+    "highlight2_value": "3 modes RGB avec changement de couleur",
+    "highlight3_label": "Niveaux d'intensité",
+    "highlight3_value": "3 intensités lumineuses",
+    "details": [
+      {
+        "label": "Type de contrôle",
+        "value": "Interrupteur tactile sensible"
+      },
+      {
+        "label": "Type de LED",
+        "value": "LED blanc + RGB"
+      },
+      {
+        "label": "Matériau de la base",
+        "value": "Métal doré"
+      },
+      {
+        "label": "Matériau de l'abat-jour",
+        "value": "Tissu plissé blanc"
+      },
+      {
+        "label": "Hauteur estimée",
+        "value": "35-40 cm"
+      },
+      {
+        "label": "Utilisation recommandée",
+        "value": "Bureau, chambre, espace de travail"
+      }
+    ],
+    "compatibles": [
+      "Câble USB de recharge standard",
+      "Adaptateur secteur USB",
+      "Rallonge électrique USB"
+    ],
+    "incompatibles": [
+      "Ampoules incandescentes (technologie LED intégrée)",
+      "Connexion électrique directe 220V (batterie rechargeable uniquement)"
+    ]
+  }
+},
 ]);
