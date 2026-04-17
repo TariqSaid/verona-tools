@@ -70,13 +70,13 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "highlight1_label": "Puissance nominale",
     "highlight1_value": "600 W",
     "highlight2_label": "Débit d'air maximum",
-    "highlight2_value": "3.6 m³/min",
+    "highlight2_value": "3 m³/min",
     "highlight3_label": "Vitesse de rotation",
-    "highlight3_value": "6000-8000 tr/min",
+    "highlight3_value": "14000 tr/min",
     "details": [
       {
         "label": "Tension d'alimentation",
-        "value": "230 V - 50 Hz"
+        "value": "240 V - 50 Hz"
       },
       {
         "label": "Courant nominal",
