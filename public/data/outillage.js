@@ -140,7 +140,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "highlight2_label": "Type de moteur",
     "highlight2_value": "Moteur électrique",
     "highlight3_label": "Tension d'alimentation",
-    "highlight3_value": "220V AC"
+    "highlight3_value": "220-240V AC"
   }
 },
 ]);
