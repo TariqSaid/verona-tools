@@ -100,4 +100,68 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     ]
   }
 },
+  {
+  "id": 1776463998983,
+  "category": "Quincaillerie",
+  "subcategory": "Accessoires de portes et armoires",
+  "brand": "Generic/Standard",
+  "title": "Kit Amortisseur de Fermeture Douce pour Portes d'Armoire",
+  "description_fr": "Kit complet d'amortisseur de fermeture douce pour portes d'armoires et placards. Comprend un mécanisme hydraulique avec bras de levier télescopique et quatre charnières réglables. Permet une fermeture progressive et silencieuse des portes tout en évitant les claquements. Installation facile avec tous les accessoires de montage inclus.",
+  "price_MAD": 280,
+  "images": [
+    "/images/products/soft-close-cabinet-door-damper-kit-1-994974.png",
+    "/images/products/soft-close-cabinet-door-damper-kit-2-994974.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776463998983",
+  "specs": {
+    "highlight1_label": "Type de mécanisme",
+    "highlight1_value": "Amortisseur hydraulique",
+    "highlight2_label": "Nombre de charnières incluses",
+    "highlight2_value": "4 pièces",
+    "highlight3_label": "Type de fermeture",
+    "highlight3_value": "Fermeture douce et silencieuse",
+    "details": [
+      {
+        "label": "Matériau du bras",
+        "value": "Acier inoxydable et aluminium"
+      },
+      {
+        "label": "Poignée de commande",
+        "value": "Plastique noir résistant"
+      },
+      {
+        "label": "Charge maximale supportée",
+        "value": "25 kg par porte"
+      },
+      {
+        "label": "Angle d'ouverture",
+        "value": "90° à 120°"
+      },
+      {
+        "label": "Type de charnière",
+        "value": "Charnière à tasse avec réglage 3D"
+      },
+      {
+        "label": "Longueur du bras télescopique",
+        "value": "250-350 mm (variable)"
+      },
+      {
+        "label": "Finition des charnières",
+        "value": "Laiton nickelé"
+      }
+    ],
+    "compatibles": [
+      "Portes d'armoires de cuisine",
+      "Portes de placards",
+      "Portes de meubles à rangement",
+      "Façades de meubles bas et hauts"
+    ],
+    "incompatibles": [
+      "Portes coulissantes - mécanisme non adapté",
+      "Portes pesant plus de 25 kg - surcharge du système",
+      "Portes avec charnières en surface - nécessite charnières à encastrer"
+    ]
+  }
+},
 ]);
