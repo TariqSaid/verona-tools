@@ -6,7 +6,7 @@
   <title>Verona Tools | Quincaillerie & Outillage Professionnel à Casablanca</title>
   <meta name="description" content="Verona Tools — Votre droguerie et quincaillerie professionnelle à Casablanca. Plus de 1000 références en outillage, électricité, plomberie, peinture et bien plus. Livraison rapide à Casablanca." />
   <meta name="keywords" content="quincaillerie casablanca, outillage professionnel maroc, droguerie casablanca, bosch maroc, makita maroc, ingco maroc, verona tools" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none' stroke='%23C0392B' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='32' height='32' rx='6' fill='%231E293B'/%3E%3Cpath d='M20 4l-2 2-4-4-6 6 4 4-8 8a2.83 2.83 0 004 4l8-8 4 4 6-6-4-4 2-2z' stroke='%23C0392B'/%3E%3Cpath d='M5 17l4 4' stroke='%23C0392B'/%3E%3C/svg%3E" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'%3E%3Crect width='32' height='32' rx='6' fill='%231B2D3E'/%3E%3Cpath d='M8 14h16l-2 14H10L8 14z' stroke='%2322B8CF' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 14v-3a4 4 0 018 0v3' stroke='%2322B8CF' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M14 20l4 4M18 20l-4 4' stroke='%23ffffff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;;700;800;900&display=swap" rel="stylesheet" />
@@ -16,11 +16,11 @@
       theme: {
         extend: {
           colors: {
-            primary: '#C0392B',
-            'primary-dark': '#A93226',
-            navy: '#1E293B',
-            'navy-light': '#2D3F55',
-            surface: '#F8FAFC',
+            primary: '#22B8CF',
+            'primary-dark': '#1A9AAE',
+            navy: '#1B2D3E',
+            'navy-light': '#243B50',
+            surface: '#F0F6FA',
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', 'sans-serif'],
@@ -40,9 +40,10 @@
 <header id="main-header" class="bg-navy shadow-xl border-b border-navy-light">
   <div class="max-w-[1400px] mx-auto px-4 py-3 flex items-center gap-4">
     <a href="#" class="flex items-center gap-2 min-w-max">
-      <svg class="w-8 h-8 text-primary flex-shrink-0" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M20 4l-2 2-4-4-6 6 4 4-8 8a2.83 2.83 0 004 4l8-8 4 4 6-6-4-4 2-2z"/>
-        <path d="M5 17l4 4"/>
+      <svg class="w-8 h-8 text-primary flex-shrink-0" viewBox="0 0 32 32" fill="none">
+        <path d="M8 14h16l-2 14H10L8 14z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 14v-3a4 4 0 018 0v3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M14 20l4 4M18 20l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
       </svg>
       <div class="leading-none">
         <div class="text-white font-black text-lg tracking-tight">VERONA</div>
@@ -153,10 +154,24 @@
 
 <!-- PAGE LOADER -->
 <div id="page-loader">
-  <div class="loader-logo flex flex-col items-center gap-2">
-    <svg width="56" height="56" viewBox="0 0 32 32" fill="none" stroke="#C0392B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4l-2 2-4-4-6 6 4 4-8 8a2.83 2.83 0 004 4l8-8 4 4 6-6-4-4 2-2z"/><path d="M5 17l4 4"/></svg>
-    <div style="color:#fff;font-weight:900;font-size:22px;letter-spacing:-0.5px;">VERONA <span style="color:#C0392B;">TOOLS</span></div>
-    <div style="color:#64748b;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">Chargement...</div>
+  <div class="loader-logo flex flex-col items-center gap-3">
+    <div style="position:relative;width:72px;height:72px;">
+      <svg width="72" height="72" viewBox="0 0 72 72" fill="none" style="position:absolute;top:0;left:0;">
+        <circle cx="36" cy="36" r="30" stroke="#22B8CF" stroke-width="2" opacity="0.15"/>
+        <path d="M36 6a30 30 0 0130 30" stroke="#22B8CF" stroke-width="2.5" stroke-linecap="round" style="animation:loaderSpin 1.2s linear infinite;transform-origin:36px 36px"/>
+      </svg>
+      <svg width="40" height="40" viewBox="0 0 32 32" fill="none" style="position:absolute;top:16px;left:16px;">
+        <path d="M8 14h16l-2 14H10L8 14z" stroke="#22B8CF" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+        <path d="M12 14v-3a4 4 0 018 0v3" stroke="#22B8CF" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+        <path d="M14 20l4 4M18 20l-4 4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity="0.9"/>
+      </svg>
+    </div>
+    <div style="color:#fff;font-weight:900;font-size:22px;letter-spacing:-0.5px;">VERONA <span style="color:#22B8CF;">TOOLS</span></div>
+    <div style="display:flex;gap:6px;margin-top:4px;">
+      <span style="width:6px;height:6px;border-radius:50%;background:#22B8CF;animation:loaderDot 1.2s ease-in-out infinite"></span>
+      <span style="width:6px;height:6px;border-radius:50%;background:#22B8CF;animation:loaderDot 1.2s ease-in-out 0.2s infinite"></span>
+      <span style="width:6px;height:6px;border-radius:50%;background:#22B8CF;animation:loaderDot 1.2s ease-in-out 0.4s infinite"></span>
+    </div>
   </div>
 </div>
 
@@ -179,7 +194,7 @@
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path d="M4 6h16M4 12h16M4 18h7"/></svg>
           <span data-i18n="see_catalog">Voir le Catalogue</span>
         </a>
-        <button onclick="openWhatsApp()" class="border-2 border-white/60 hover:border-white text-white hover:bg-white/10 font-bold px-8 py-3.5 rounded-xl transition-all flex items-center gap-2">
+        <button onclick="openWhatsApp()" class="bg-[#FF6B35] hover:bg-[#e55a2b] text-white font-bold px-8 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-lg shadow-[#FF6B35]/20">
           <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg>
           <span data-i18n="request_quote">Demander un Devis</span>
         </button>
@@ -337,7 +352,7 @@
 <footer class="bg-navy text-white mt-20">
   <div class="max-w-[1400px] mx-auto px-4 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
     <div>
-      <div class="flex items-center gap-2 mb-4"><svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4l-2 2-4-4-6 6 4 4-8 8a2.83 2.83 0 004 4l8-8 4 4 6-6-4-4 2-2z"/><path d="M5 17l4 4"/></svg><div><div class="font-black text-xl tracking-tight">VERONA TOOLS</div><div class="text-primary text-[10px] font-bold tracking-widest uppercase">Droguerie & Quincaillerie</div></div></div>
+      <div class="flex items-center gap-2 mb-4"><svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="none"><path d="M8 14h16l-2 14H10L8 14z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 14v-3a4 4 0 018 0v3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M14 20l4 4M18 20l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><div><div class="font-black text-xl tracking-tight">VERONA TOOLS</div><div class="text-primary text-[10px] font-bold tracking-widest uppercase">Droguerie & Quincaillerie</div></div></div>
       <p class="text-gray-400 text-sm leading-relaxed mb-5">Votre partenaire de confiance pour tous vos besoins en outillage, quincaillerie et matériaux de construction à Casablanca depuis 2010.</p>
       <div class="flex items-center gap-3">
         <a href="#" aria-label="Facebook" class="w-9 h-9 bg-white/10 hover:bg-primary rounded-lg flex items-center justify-center transition-all"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
@@ -401,7 +416,7 @@
   <div id="mobile-nav-backdrop" onclick="toggleMobileNav()"></div>
   <div id="mobile-nav-panel">
     <div class="flex items-center justify-between px-5 py-4 border-b border-white/10 flex-shrink-0">
-      <div class="flex items-center gap-2"><svg class="w-7 h-7 text-primary" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4l-2 2-4-4-6 6 4 4-8 8a2.83 2.83 0 004 4l8-8 4 4 6-6-4-4 2-2z"/><path d="M5 17l4 4"/></svg><span class="text-white font-black text-base tracking-tight">VERONA <span class="text-primary">TOOLS</span></span></div>
+      <div class="flex items-center gap-2"><svg class="w-7 h-7 text-primary" viewBox="0 0 32 32" fill="none"><path d="M8 14h16l-2 14H10L8 14z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 14v-3a4 4 0 018 0v3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M14 20l4 4M18 20l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="text-white font-black text-base tracking-tight">VERONA <span class="text-primary">TOOLS</span></span></div>
       <button onclick="toggleMobileNav()" class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-white transition-colors" aria-label="Fermer le menu"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
     </div>
     <div class="px-4 py-3 flex-1 overflow-y-auto">
@@ -455,7 +470,7 @@
           <span>›</span>
           <span id="modal-bc-sub" style="color:#64748b"></span>
           <span>›</span>
-          <span id="modal-bc-title" style="color:#1E293B;font-weight:;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;vertical-align:middle"></span>
+          <span id="modal-bc-title" style="color:#1B2D3E;font-weight:;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;vertical-align:middle"></span>
         </nav>
         <div><span id="modal-brand-tag" class="modal-brand-tag"></span></div>
         <h2 id="modal-product-title" class="modal-title"></h2>
@@ -473,8 +488,8 @@
           Nous Contacter via WhatsApp
         </button>
         <a id="modal-call-btn" href="tel:+212522976636"
-           style="width:100%;background:#1E293B;color:#fff;font-weight:700;font-size:13px;padding:11px 20px;border-radius:14px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;transition:background 0.18s;"
-           onmouseover="this.style.background='#2D3F55'" onmouseout="this.style.background='#1E293B'">
+           style="width:100%;background:#1B2D3E;color:#fff;font-weight:700;font-size:13px;padding:11px 20px;border-radius:14px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;transition:background 0.18s;"
+           onmouseover="this.style.background='#243B50'" onmouseout="this.style.background='#1B2D3E'">
           <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 12.85 19.79 19.79 0 01.83 4.18 2 2 0 012.81 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l.97-.97a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
           Appeler le Magasin
         </a>
