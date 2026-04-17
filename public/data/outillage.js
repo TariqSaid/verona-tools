@@ -127,7 +127,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   "brand": "Makute",
   "title": "Tronçonneuse Électrique 12\"",
   "description_fr": "Tronçonneuse électrique compacte équipée d'un guide de 12 pouces, parfaite pour les travaux de coupe légers à moyens, l'élagage des branches et les tâches de jardinage général. Moteur électrique silencieux et respectueux de l'environnement avec démarrage instantané. Conception ergonomique avec poignées antidérapantes pour un contrôle optimal et une sécurité accrue pendant l'utilisation.",
-  "price_MAD": 450,
+  "price_MAD": 950,
   "images": [
     "/images/products/electric-chainsaw-12-1-519875.png",
     "/images/products/electric-chainsaw-12-2-519875.png"
