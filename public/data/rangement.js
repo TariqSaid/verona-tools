@@ -21,64 +21,31 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   // Ajoutez vos produits Rangement & Organisation ici
 
   
-  {
-  "id": 1776464180671,
-  "category": "Rangement",
-  "subcategory": "Accessoires de meuble",
-  "brand": "Generic/Standard",
-  "title": "Protections de pieds de meuble",
-  "description_fr": "Ensemble de protections de pieds de meuble cylindriques disponibles en trois finitions : gris, noir et bois naturel. Ces protecteurs sont conçus pour protéger vos sols et les pieds de vos meubles tout en améliorant leur aspect esthétique. Faciles à installer et durables, elles conviennent à une variété de meubles modernes et classiques.",
-  "price_MAD": 0,
-  "images": [
-    "/images/products/furniture-leg-covers-1-175996.png",
-    "/images/products/furniture-leg-covers-2-175996.png"
-  ],
-  "in_stock": true,
-  "ref": "VT-AUTO-1776464180671",
-  "specs": {
-    "highlight1_label": "Diamètre intérieur",
-    "highlight1_value": "25-30 mm",
-    "highlight2_label": "Longueur",
-    "highlight2_value": "80-100 mm",
-    "highlight3_label": "Finitions disponibles",
-    "highlight3_value": "3 (gris, noir, bois naturel)",
-    "details": [
-      {
-        "label": "Forme de la section",
-        "value": "Ovale/elliptique"
-      },
-      {
-        "label": "Matériau principal",
-        "value": "PVC/caoutchouc et bois"
-      },
-      {
-        "label": "Type de base",
-        "value": "Monture plastique noire"
-      },
-      {
-        "label": "Compatibilité",
-        "value": "Meubles avec pieds 25-30 mm"
-      },
-      {
-        "label": "Installation",
-        "value": "À enfiler sans outil"
-      },
-      {
-        "label": "Usage",
-        "value": "Protection sol et isolation thermique"
-      }
-    ],
-    "compatibles": [
-      "Pieds de chaise de bureau",
-      "Pieds de table basse",
-      "Pieds de meuble bas",
-      "Pieds de canapé"
-    ],
-    "incompatibles": [
-      "Pieds de diamètre supérieur à 30 mm",
-      "Pieds carrés de section > 30 mm",
-      "Meubles avec pieds côniques"
-    ]
-  }
-},
+ {
+    id          : 1776472001,
+    category    : 'Rangement & Organisation',
+    subcategory : 'Organiseurs de tiroir',
+    brand       : 'Generic',
+    title       : 'Organiseur de Tiroir Marbré',
+    description_fr: "Organiseur de tiroir en plastique ABS avec finition marbrée dorée. Plusieurs tailles disponibles.",
+    price_MAD   : 189,
+    in_stock    : true,
+    ref         : 'VT-ORG-001',
+    images      : ['/images/products/organizer-gold-1.png'],
+    specs       : null,
+    variants    : {
+      sizes: [
+        { label: '47 x 49', width: 47, depth: 49, slots: 8, price_MAD: 189, ref: 'D01' },
+        { label: '55 x 49', width: 55, depth: 49, slots: 10, price_MAD: 219, ref: 'F01' },
+        { label: '62 x 49', width: 62, depth: 49, slots: 12, price_MAD: 249, ref: 'G01' },
+        { label: '75 x 49', width: 75, depth: 49, slots: 16, price_MAD: 329, ref: 'NCR811' }
+      ],
+      colors: [
+        { name: 'Or marbré', hex: '#c4a882' },
+        { name: 'Blanc pur', hex: '#f0f0f0' },
+        { name: 'Noir mat', hex: '#2a2a2a' },
+        { name: 'Gris perle', hex: '#b0b0b0' }
+      ]
+    },
+  },
 ]);
