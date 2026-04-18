@@ -68,3 +68,84 @@
   #product-modal .modal-title{font-size:16px !important}
   #product-modal .modal-price{font-size:22px !important}
 }
+/* Fix modal image centering */
+#product-modal .modal-image-col {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+#product-modal .modal-main-img {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+#product-modal #modal-main-img {
+  max-width: 100% !important;
+  max-height: 340px !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+
+/* Tablet responsive */
+@media (max-width: 1024px) {
+  #product-modal .modal-box {
+    width: 90% !important;
+    max-width: 700px !important;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  #product-modal .modal-box {
+    width: 95% !important;
+    max-width: 100% !important;
+    margin: 10px auto !important;
+    border-radius: 16px !important;
+  }
+  #product-modal .modal-body {
+    flex-direction: column !important;
+  }
+  #product-modal .modal-image-col,
+  #product-modal .modal-info-col {
+    width: 100% !important;
+  }
+  #product-modal .modal-image-col {
+    min-height: 220px !important;
+    padding: 16px !important;
+  }
+  #product-modal #modal-main-img {
+    max-height: 240px !important;
+  }
+  #product-modal .modal-title {
+    font-size: 18px !important;
+  }
+  #product-modal .modal-price {
+    font-size: 24px !important;
+  }
+  #product-modal .modal-wa-btn,
+  #product-modal #modal-call-btn {
+    font-size: 14px !important;
+    padding: 12px 16px !important;
+  }
+  #variants-section {
+    padding: 12px 16px !important;
+  }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+  #product-modal .modal-image-col {
+    min-height: 180px !important;
+  }
+  #product-modal #modal-main-img {
+    max-height: 200px !important;
+  }
+  #product-modal .modal-title {
+    font-size: 16px !important;
+  }
+}
