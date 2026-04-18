@@ -555,6 +555,7 @@ function openProductModal(productId) {
 
   // ── Render specs tabs (if product has specs) ──────────────
   if (typeof renderSpecsTabs === 'function') renderSpecsTabs(p);
+  if (typeof renderVariants === 'function') renderVariants(p);
 
   if (modal) {
     modal.classList.add('open');
