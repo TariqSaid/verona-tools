@@ -125,4 +125,27 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     ]
   }
 },
+  {
+  "id": 1776470654913,
+  "category": "Luminaire",
+  "subcategory": "Lampes de Bureau et Lecture",
+  "brand": "Generic/Standard",
+  "title": "Lampe de Lecture Soins Avancés pour les Yeux",
+  "description_fr": "Lampe de lecture LED pliable et réglable avec technologie avancée de soins oculaires. Dotée d'un contrôle tactile intuitif, de trois niveaux de luminosité ajustables et d'une protection contre la lumière bleue pour protéger vos yeux lors de longues lectures. Base stable et flexible, alimentée par câble USB, parfaite pour le bureau, l'étude ou la lecture au lit.",
+  "price_MAD": 299,
+  "images": [
+    "/images/products/advanced-eye-care-reading-lamp-1-615252.png",
+    "/images/products/advanced-eye-care-reading-lamp-2-615252.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776470654913",
+  "specs": {
+    "highlight1_label": "Protection Lumière Bleue",
+    "highlight1_value": "Oui - Technologie Anti-Fatigue Oculaire",
+    "highlight2_label": "Niveaux de Luminosité",
+    "highlight2_value": "3 niveaux ajustables",
+    "highlight3_label": "Alimentation",
+    "highlight3_value": "USB 5V"
+  }
+},
 ]);
