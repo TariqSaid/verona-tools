@@ -148,4 +148,27 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "highlight3_value": "USB 5V"
   }
 },
+  {
+  "id": 1776471065280,
+  "category": "Luminaire",
+  "subcategory": "Éclairage de camping solaire",
+  "brand": "SHAMSS",
+  "title": "Lampe de Camping Solaire LED 150W",
+  "description_fr": "Lampe de camping solaire portable équipée d'une ampoule LED haute performance et d'un panneau solaire intégré. Dispose d'une charge USB pour une flexibilité maximale et d'une batterie rechargeable offrant 7 à 8 heures d'autonomie. Affiche un rendement énergétique de 90% avec une brillance de 90 Lm/w, idéale pour les activités en plein air.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/solar-camping-light-led-bulb-150w-1-061156.png",
+    "/images/products/solar-camping-light-led-bulb-150w-2-061156.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776471065280",
+  "specs": {
+    "highlight1_label": "Équivalent puissance",
+    "highlight1_value": "150W",
+    "highlight2_label": "Luminosité",
+    "highlight2_value": "90 Lm/w",
+    "highlight3_label": "Autonomie",
+    "highlight3_value": "7-8 heures"
+  }
+},
 ]);
