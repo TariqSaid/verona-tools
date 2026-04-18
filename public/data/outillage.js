@@ -143,4 +143,75 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "highlight3_value": "220-240V AC"
   }
 },
+  {
+  "id": 1776547336342,
+  "category": "Outillage",
+  "subcategory": "Appareils de mesure et détection",
+  "brand": "Bosch",
+  "title": "Télémètre Laser Bosch GLM 50-27 CG Professionnel",
+  "description_fr": "Télémètre laser professionnel dotée de la connectivité Bluetooth et d'une caméra intégrée pour des mesures précises jusqu'à 50 mètres avec capacité de mesure 3D. Affichage graphique haute résolution pour visualiser les distances et les angles. Idéal pour les professionnels du bâtiment, de l'architecture et de la construction nécessitant des mesures rapides et fiables.",
+  "price_MAD": 1200,
+  "images": [
+    "/images/products/bosch-glm-50-27-cg-professional-laser-distance-meter-1-331902.png",
+    "/images/products/bosch-glm-50-27-cg-professional-laser-distance-meter-2-331902.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776547336342",
+  "specs": {
+    "highlight1_label": "Portée maximale",
+    "highlight1_value": "50 m",
+    "highlight2_label": "Précision",
+    "highlight2_value": "±2 mm",
+    "highlight3_label": "Écran tactile couleur",
+    "highlight3_value": "3.2 pouces HD",
+    "details": [
+      {
+        "label": "Connectivité",
+        "value": "Bluetooth 4.2"
+      },
+      {
+        "label": "Caméra intégrée",
+        "value": "Oui - 8 MP"
+      },
+      {
+        "label": "Mesure 3D",
+        "value": "Oui"
+      },
+      {
+        "label": "Batterie",
+        "value": "Lithium-ion 2600 mAh"
+      },
+      {
+        "label": "Autonomie",
+        "value": "20 heures"
+      },
+      {
+        "label": "Fonctions de mesure",
+        "value": "Distance, surface, volume, indirecte"
+      },
+      {
+        "label": "Poids",
+        "value": "620 g"
+      },
+      {
+        "label": "Dimensions",
+        "value": "130 x 75 x 46 mm"
+      },
+      {
+        "label": "Classe de protection",
+        "value": "IP 54"
+      }
+    ],
+    "compatibles": [
+      "Support mural Bosch",
+      "Adaptateur trépied standard 1/4 pouce",
+      "Câble USB-C pour recharge",
+      "Application Bosch Measure"
+    ],
+    "incompatibles": [
+      "Mesures en plein soleil intense (réduction de précision)",
+      "Surfaces réfléchissantes excessives (erreurs de lecture)"
+    ]
+  }
+},
 ]);
