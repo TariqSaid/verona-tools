@@ -1,3 +1,4 @@
+'use strict';
 window.VT_CATALOG = window.VT_CATALOG || {};
 window.VT_CATALOG["quincaillerie"] = [
   {
