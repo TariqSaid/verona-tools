@@ -237,4 +237,28 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     ]
   }
 }
+,
+  {
+  "id": 1776635194350,
+  "category": "Quincaillerie",
+  "subcategory": "Coulisses et glissières",
+  "brand": "Hafele",
+  "title": "Coulisses de tiroir à billes",
+  "description_fr": "Ensemble de six coulisses de tiroir à billes en acier zingué de différentes longueurs. Ces coulisses permettent l'ouverture et la fermeture fluide des tiroirs avec un système de guidage latéral précis.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/coulisses-de-tiroir-1-185364.png",
+    "/images/products/coulisses-de-tiroir-2-185364.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-194350",
+  "specs": {
+    "materiau": "Acier zingué",
+    "type": "Coulisse à billes",
+    "longueurs_disponibles": "Multiples (450mm à 550mm estimé)",
+    "capacite_charge": "Standard",
+    "nombre_pieces": "6",
+    "ouverture": "Fermeture complète avec système de roulement à billes"
+  }
+}
 ]);
