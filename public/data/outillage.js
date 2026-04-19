@@ -66,7 +66,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     specs       : { highlight1_label: "Puissance", highlight1_value: "1 700 W", highlight2_label: "Température", highlight2_value: "50-550 °C", highlight3_label: "Débit", highlight3_value: "2800 - 11,500 l/min", details: [{ label: "Puissance nominale", value: "1700 W" }, { label: "Plage de température", value: "50-550 °C" }, { label: "Débit d'air", value: "300-500 l/min" }, { label: "Tension", value: "1010 V" }, { label: "Poids", value: "2.4 Kg" }, { label: "Longueur câble", value: "2 m" }, { label: "Niveaux de chaleur", value: "2 positions" }], compatibles: ["Buses de réduction GHG 500", "Buses de concentration", "Buse verre de protection", "Sacoche Bosch Professional"], incompatibles: ["Batterie lithium — secteur uniquement", "Milieux très humides — risque électrique"] },
   },
   {
-    id          : 1776205605844,
+    id          : 1776205605864,
     category    : 'Outillage',
     subcategory : 'Perceuses',
     brand       : 'Bosch',
