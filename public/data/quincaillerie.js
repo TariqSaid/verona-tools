@@ -77,8 +77,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "poids": "2.8 kg",
     "classe_protection": "II"
   }
-}
-,
+},
   {
   "id": 1776632071208,
   "category": "Power Tools",
@@ -109,8 +108,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       "Corded electric"
     ]
   }
-}
-,
+},
   {
   "id": 1776634634213,
   "category": "Quincaillerie",
@@ -146,8 +144,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     ],
     "installation": "Montage dans les côtés internes du caisson de meuble"
   }
-}
-,
+},
   {
   "id": 1776634638448,
   "category": "Outils électriques",
@@ -173,10 +170,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "poids": "2.3 kg",
     "couleur": "Bleu et noir"
   }
-}
-,
-  
-,
+},
   {
   "id": 1776635189371,
   "category": "Quincaillerie",
@@ -206,10 +200,8 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       "Réduction du bruit"
     ]
   }
-}
-,
+},
 
-,
   {
   "id": 1776635656796,
   "category": "Quincaillerie",
@@ -234,10 +226,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "mecanisme": "Coulisse télescopique automatique",
     "installation": "Sur les côtés intérieurs du cadre du tiroir"
   }
-}
-,
-
-,
+},
   {
   "id": 1776638592037,
   "category": "Quincaillerie",
@@ -260,5 +249,5 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "marque": "Winsor & Newton"
   }
 }
-,
+
 ]);
