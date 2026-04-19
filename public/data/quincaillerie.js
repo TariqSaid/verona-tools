@@ -110,4 +110,41 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     ]
   }
 }
+,
+  {
+  "id": 1776634634213,
+  "category": "Quincaillerie",
+  "subcategory": "Accessoires de meuble - Systèmes de tiroirs",
+  "brand": "BILLI",
+  "title": "Kit de tiroir coulissant avec fermeture douce",
+  "description_fr": "Kit complet de tiroir coulissant avec rails de guidage, amortisseurs de fermeture douce et accessoires de montage. Conçu pour meubles de cuisine, salle de bain et rangement général.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/tiroir-coulissant-avec-amortisseurs-1-630334.png",
+    "/images/products/tiroir-coulissant-avec-amortisseurs-2-630334.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-634213",
+  "specs": {
+    "type": "Système de tiroir coulissant avec soft-close",
+    "marque": "BILLI",
+    "matériau_rails": "Acier zingué",
+    "matériau_support": "Acier galvanisé avec revêtement noir",
+    "caractéristiques": [
+      "Rails de guidage de précision",
+      "Amortisseurs de fermeture douce",
+      "Supports de montage ajustables",
+      "Visserie complète incluse",
+      "Capacité de charge standard"
+    ],
+    "nombre_éléments": 2,
+    "composants": [
+      "2 rails coulissants latéraux",
+      "2 supports métalliques avec amortisseurs",
+      "2 unités de fermeture progressive (soft-close)",
+      "Accessoires de fixation et d'assemblage"
+    ],
+    "installation": "Montage dans les côtés internes du caisson de meuble"
+  }
+}
 ]);
