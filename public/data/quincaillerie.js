@@ -52,4 +52,29 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     images      : ['/images/products/wooden-dowel-pins-assorted-pack-1-596239.png', '/images/products/wooden-dowel-pins-assorted-pack-2-596239.png'],
     specs       : null,
   },
+  {
+  "id": 1776622410098,
+  "category": "Outils de mesure et de traçage",
+  "subcategory": "Niveaux laser",
+  "brand": "Makule",
+  "title": "Niveau Laser 4D Makule",
+  "description_fr": "Niveau laser 4D multifonctionnel avec projection de lignes croisées en 360 degrés. Idéal pour les travaux de construction, de carrelage et d'aménagement intérieur. Dotée d'une base magnétique et de pieds télescopiques pour une stabilité optimale.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/makule-4d-laser-level-1-406015.png",
+    "/images/products/makule-4d-laser-level-2-406015.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776622410098",
+  "specs": {
+    "projection": "4D - Lignes croisées 360°",
+    "couleurLaser": "Rouge",
+    "autonomie": "Variable selon les piles",
+    "base": "Magnétique avec pieds télescopiques",
+    "precisionAuto": "Auto-nivellement",
+    "portee": "À déterminer selon modèle",
+    "protection": "Classe de laser II/III",
+    "alimentation": "Piles"
+  }
+},
 ]);
