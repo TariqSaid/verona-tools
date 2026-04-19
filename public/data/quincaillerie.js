@@ -185,7 +185,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   "price_MAD": 0,
   "images": [
     "/images/products/glissi-res-de-tiroir-avec-amortisseurs-1-939396.png",
-    "/images/products/glissi-res-de-tiroir-avec-amortisseurs-2-939396.png"
+    ""
   ],
   "in_stock": true,
   "ref": "VT-AUTO-945854",
