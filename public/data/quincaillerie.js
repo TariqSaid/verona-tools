@@ -52,4 +52,30 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     images      : ['/images/products/wooden-dowel-pins-assorted-pack-1-596239.png', '/images/products/wooden-dowel-pins-assorted-pack-2-596239.png'],
     specs       : null,
   },
+
+  {
+  "id": 1776632066311,
+  "category": "Outils électriques",
+  "subcategory": "Perceuses",
+  "brand": "Bosch",
+  "title": "Perceuse à percussion GSB 21-2 AE",
+  "description_fr": "Perceuse à percussion filaire Bosch GSB 21-2 AE avec technologie de percussion pour perçage dans le béton, la maçonnerie et le bois. Équipée d'une poignée auxiliaire ergonomique et d'un mandrin rapide.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/gsb-21-2-ae-1-062119.png",
+    "/images/products/gsb-21-2-ae-2-062119.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-066311",
+  "specs": {
+    "puissance": "550 W",
+    "vitesse": "3000 tr/min",
+    "capacité_mandrin": "13 mm",
+    "profondeur_percussion": "23 mm",
+    "mode_fonctionnement": "Percussion + Rotation",
+    "alimentation": "Filaire 220V",
+    "poids": "2.8 kg",
+    "classe_protection": "II"
+  }
+}
 ]);
