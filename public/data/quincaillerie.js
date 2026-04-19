@@ -174,4 +174,36 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "couleur": "Bleu et noir"
   }
 }
+,
+  {
+  "id": 1776634945854,
+  "category": "Quincaillerie",
+  "subcategory": "Glissières et accessoires de tiroir",
+  "brand": "Unknown",
+  "title": "Glissières de tiroir avec amortisseurs",
+  "description_fr": "Ensemble de glissières de tiroir de haute qualité avec amortisseurs intégrés. Comprend deux rails de glissière métalliques gris et deux amortisseurs de fermeture en orange/rouge pour une fermeture douce et contrôlée des tiroirs.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/glissi-res-de-tiroir-avec-amortisseurs-1-939396.png",
+    "/images/products/glissi-res-de-tiroir-avec-amortisseurs-2-939396.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-945854",
+  "specs": {
+    "type": "Glissière de tiroir avec amortisseurs",
+    "materiau_rail": "Acier galvanisé",
+    "materiau_amortisseur": "Plastique renforcé",
+    "nombre_rails": 2,
+    "nombre_amortisseurs": 2,
+    "caracteristiques": [
+      "Fermeture douce et silencieuse",
+      "Amortisseurs intégrés",
+      "Capacité de charge moyenne",
+      "Installation facile",
+      "Finition gris métallisé"
+    ],
+    "couleur_rail": "Gris",
+    "couleur_amortisseur": "Orange/Rouge avec bleu"
+  }
+}
 ]);
