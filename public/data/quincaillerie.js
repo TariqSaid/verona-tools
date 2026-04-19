@@ -206,4 +206,35 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "couleur_amortisseur": "Orange/Rouge avec bleu"
   }
 }
+,
+  {
+  "id": 1776635189371,
+  "category": "Quincaillerie",
+  "subcategory": "Coulisses et accessoires de tiroir",
+  "brand": "Unknown",
+  "title": "Coulisses de tiroir avec amortisseurs",
+  "description_fr": "Ensemble de coulisses de tiroir en métal avec amortisseurs en plastique rouge et bleu. Système de fermeture douce à fermeture progressive pour tiroirs.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/coulisses-de-tiroir-avec-amortisseurs-1-185275.png",
+    "/images/products/coulisses-de-tiroir-avec-amortisseurs-2-185275.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-189371",
+  "specs": {
+    "type": "Coulisses de tiroir avec amortisseurs",
+    "materiau_rail": "Métal galvanisé",
+    "materiau_amortisseur": "Plastique renforcé",
+    "couleur_amortisseur": "Rouge et bleu",
+    "fonction": "Fermeture douce/amortie",
+    "nombre_pieces": "2 paires (4 éléments principaux)",
+    "installation": "Rails latéraux intérieurs",
+    "caracteristiques": [
+      "Fermeture progressive",
+      "Amortisseurs intégrés",
+      "Mouvement fluide",
+      "Réduction du bruit"
+    ]
+  }
+}
 ]);
