@@ -111,4 +111,31 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "protectionRating": "IP65"
   }
 },
+  {
+  "id": 1776615422189,
+  "category": "Outils de mesure et de nivellement",
+  "subcategory": "Niveaux laser",
+  "brand": "Makule",
+  "title": "Niveau Laser 4D Makule",
+  "description_fr": "Niveau laser 4D professionnel avec projection multi-plans. Équipé d'un système de nivellement automatique et d'une base trépied intégrée pour un positionnement stable sur les surfaces de travail.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/makule-4d-laser-level-1-415205.png",
+    "/images/products/makule-4d-laser-level-2-415205.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776615422189",
+  "specs": {
+    "projection": "4D (lignes et points laser multidirectionnels)",
+    "couleurLaser": "Rouge",
+    "portée": "Jusqu'à 30 mètres",
+    "precisio": "±3mm à 10m",
+    "nivellement": "Automatique",
+    "baseIntegree": "Trépied magnétique intégré",
+    "alimentationElectrique": "Batterie rechargeable",
+    "classeLaser": "Classe II",
+    "material": "ABS renforcé",
+    "couleur": "Bleu marine et rouge"
+  }
+},
 ]);
