@@ -164,4 +164,29 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     ]
   }
 },
+  {
+  "id": 1776602816996,
+  "category": "Outils électriques",
+  "subcategory": "Meuleuses d'angle",
+  "brand": "Bosch",
+  "title": "Meuleuse d'angle Bosch GWS 13-125 CIE",
+  "description_fr": "Meuleuse d'angle compacte et puissante de 1300 W avec disque de 125 mm, équipée d'un système de protection avancé et d'une poignée ergonomique pour un contrôle optimal.",
+  "price_MAD": 1299,
+  "images": [
+    "/images/products/bosch-gws-13-125-cie-1-341985.png",
+    "/images/products/bosch-gws-13-125-cie-2-341985.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776602816996",
+  "specs": {
+    "puissance": "1300 W",
+    "diametre_disque": "125 mm",
+    "vitesse_rotation": "13000 tr/min",
+    "poids": "2.4 kg",
+    "tension": "230 V",
+    "type_protection": "Système anti-redémarrage, protection contre les surcharges",
+    "poignee_auxiliaire": "Incluse",
+    "longueur_cable": "4 m"
+  }
+},
 ]);
