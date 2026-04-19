@@ -1,245 +1,208 @@
-'use strict';
-window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
-  {
-    id          : 1776205610612,
-    category    : 'Quincaillerie',
-    subcategory : 'Charnières et accessoires',
-    brand       : 'Still Bois',
-    title       : 'CHARNIERE AVEC FREINS PLAT REGLAGE 3D',
-    description_fr: "Charnière de meuble à fermeture progressive avec système d'amortissement intégré. Acier zingué haute qualité, freinage hydraulique pour fermeture contrôlée.",
-    price_MAD   : 22,
-    in_stock    : true,
-    ref         : 'VT-AUTO-0612',
-    images      : ['/images/products/salice-soft-close-cabinet-hinge-1-600118.png', '/images/products/salice-soft-close-cabinet-hinge-2-600118.png'],
-    specs       : null,
-  },
-  {
-    id          : 1776207222781,
-    category    : 'Quincaillerie',
-    subcategory : 'Charnières et accessoires',
-    brand       : 'Blum',
-    title       : 'Charnière Blum Clip Top Fermeture Douce',
-    description_fr: "Paire de charnières Blum avec fermeture douce intégrée et système Clip Top breveté. Perçage 35mm, angle d'ouverture 110°, capacité 5kg par charnière.",
-    price_MAD   : 28,
-    in_stock    : true,
-    ref         : 'VT-AUTO-2781',
-    images      : ['/images/products/blum-clip-top-soft-close-cabinet-hinge-1-218619.png', '/images/products/blum-clip-top-soft-close-cabinet-hinge-2-218619.png'],
-    specs       : null,
-  },
-  {
-    id          : 1776211904250,
-    category    : 'Quincaillerie',
-    subcategory : 'Roulettes et accessoires',
-    brand       : 'Generic',
-    title       : 'Ensemble de roulettes pivotantes robustes orange et noir',
-    description_fr: "Ensemble de roulettes pivotantes professionnelles en polyuréthane orange et supports métal noir. Roulement à billes pour rotation fluide, plaque de montage robuste.",
-    price_MAD   : 25,
-    in_stock    : true,
-    ref         : 'VT-AUTO-4250',
-    images      : ['/images/products/heavy-duty-caster-wheels-set-orange-and-black-1-900338.png', '/images/products/heavy-duty-caster-wheels-set-orange-and-black-2-900338.png'],
-    specs       : null,
-  },
-  {
-    id          : 1776285601215,
-    category    : 'Quincaillerie',
-    subcategory : 'Chevilles et Fixations',
-    brand       : 'Generic',
-    title       : 'Chevilles en Bois Rondes Assorties',
-    description_fr: "Ensemble de chevilles en bois massif de différents diamètres pour assemblage de meubles et menuiserie. Fixation solide et durable, finition naturelle lisse.",
-    price_MAD   : 45,
-    in_stock    : true,
-    ref         : 'VT-AUTO-1215',
-    images      : ['/images/products/wooden-dowel-pins-assorted-pack-1-596239.png', '/images/products/wooden-dowel-pins-assorted-pack-2-596239.png'],
-    specs       : null,
-  },
-  {
-  "id": 1776463761009,
-  "category": "Quincaillerie",
-  "subcategory": "Accessoires de porte",
-  "brand": "Generic/Standard",
-  "title": "Butée de Porte",
-  "description_fr": "Butée de porte cylindrique au design moderne, disponible en finition acier inoxydable ou noir mat. Dotée d'une bande de préhension en caoutchouc pour une meilleure adhérence et une utilisation optimale. Idéale pour maintenir les portes ouvertes en toute sécurité et prévenir les claques accidentelles.",
-  "price_MAD": 45,
-  "images": [
-    "/images/products/door-stopper-1-756770.png",
-    "/images/products/door-stopper-2-756770.png"
-  ],
-  "in_stock": true,
-  "ref": "VT-AUTO-1776463761010",
-  "specs": {
-    "details": [
-      {
-        "label": "Finitions disponibles",
-        "value": "Acier inoxydable brossé, Noir mat"
-      },
-      {
-        "label": "Bande de préhension",
-        "value": "Caoutchouc antidérapant"
-      },
-      {
-        "label": "Poids unitaire",
-        "value": "120 g"
-      },
-      {
-        "label": "Type de fixation",
-        "value": "Adhésif ou clou (selon modèle)"
-      },
-      {
-        "label": "Résistance à la compression",
-        "value": "jusqu'à 5 kg"
-      }
-    ],
-    "compatibles": [
-      "Portes intérieures standard",
-      "Portes extérieures légères",
-      "Portes coulissantes"
-    ],
-    "incompatibles": [
-      "Portes très lourdes (>10kg) - risque d'inefficacité",
-      "Surfaces mouillées permanentes - adhérence compromise"
-    ]
-  }
-},
-  {
-  "id": 1776463998983,
-  "category": "Quincaillerie",
-  "subcategory": "Accessoires de portes et armoires",
-  "brand": "Generic/Standard",
-  "title": "Kit Amortisseur de Fermeture Douce pour Portes d'Armoire",
-  "description_fr": "Kit complet d'amortisseur de fermeture douce pour portes d'armoires et placards. Comprend un mécanisme hydraulique avec bras de levier télescopique et quatre charnières réglables. Permet une fermeture progressive et silencieuse des portes tout en évitant les claquements. Installation facile avec tous les accessoires de montage inclus.",
-  "price_MAD": 280,
-  "images": [
-    "/images/products/soft-close-cabinet-door-damper-kit-1-994974.png",
-    "/images/products/soft-close-cabinet-door-damper-kit-2-994974.png"
-  ],
-  "in_stock": true,
-  "ref": "VT-AUTO-1776463998983",
-  "specs": {
-    "highlight1_label": "Type de mécanisme",
-    "highlight1_value": "Amortisseur hydraulique",
-    "highlight2_label": "Nombre de charnières incluses",
-    "highlight2_value": "4 pièces",
-    "highlight3_label": "Type de fermeture",
-    "highlight3_value": "Fermeture douce et silencieuse",
-    "details": [
-      {
-        "label": "Matériau du bras",
-        "value": "Acier inoxydable et aluminium"
-      },
-      {
-        "label": "Poignée de commande",
-        "value": "Plastique noir résistant"
-      },
-      {
-        "label": "Charge maximale supportée",
-        "value": "25 kg par porte"
-      },
-      {
-        "label": "Angle d'ouverture",
-        "value": "90° à 120°"
-      },
-      {
-        "label": "Type de charnière",
-        "value": "Charnière à tasse avec réglage 3D"
-      },
-      {
-        "label": "Longueur du bras télescopique",
-        "value": "250-350 mm (variable)"
-      },
-      {
-        "label": "Finition des charnières",
-        "value": "Laiton nickelé"
-      }
-    ],
-    "compatibles": [
-      "Portes d'armoires de cuisine",
-      "Portes de placards",
-      "Portes de meubles à rangement",
-      "Façades de meubles bas et hauts"
-    ],
-    "incompatibles": [
-      "Portes coulissantes - mécanisme non adapté",
-      "Portes pesant plus de 25 kg - surcharge du système",
-      "Portes avec charnières en surface - nécessite charnières à encastrer"
-    ]
-  }
-},
-  {
-  "id": 1776602816996,
-  "category": "Outils électriques",
-  "subcategory": "Meuleuses d'angle",
-  "brand": "Bosch",
-  "title": "Meuleuse d'angle Bosch GWS 13-125 CIE",
-  "description_fr": "Meuleuse d'angle compacte et puissante de 1300 W avec disque de 125 mm, équipée d'un système de protection avancé et d'une poignée ergonomique pour un contrôle optimal.",
-  "price_MAD": 1299,
-  "images": [
-    "/images/products/bosch-gws-13-125-cie-1-341985.png",
-    "/images/products/bosch-gws-13-125-cie-2-341985.png"
-  ],
-  "in_stock": true,
-  "ref": "VT-AUTO-1776602816996",
-  "specs": {
-    "puissance": "1300 W",
-    "diametre_disque": "125 mm",
-    "vitesse_rotation": "13000 tr/min",
-    "poids": "2.4 kg",
-    "tension": "230 V",
-    "type_protection": "Système anti-redémarrage, protection contre les surcharges",
-    "poignee_auxiliaire": "Incluse",
-    "longueur_cable": "4 m"
-  }
-},
-  {
-  "id": 1776605036028,
-  "category": "Outils électriques",
-  "subcategory": "Meuleuses angulaires",
-  "brand": "Bosch",
-  "title": "Meuleuse angulaire 1000W",
-  "description_fr": "Meuleuse angulaire compacte et puissante de 1000W avec disque de 125mm, équipée d'une poignée de protection et d'un système de sécurité. Idéale pour le meulage, le tronçonnage et le polissage de matériaux de construction.",
-  "price_MAD": 0,
-  "images": [
-    "/images/products/meuleuse-angulaire-bosch-gws-1000-1-031618.png",
-    "/images/products/meuleuse-angulaire-bosch-gws-1000-2-031618.png"
-  ],
-  "in_stock": true,
-  "ref": "VT-AUTO-1776605036028",
-  "specs": {
-    "puissance": "1000W",
-    "diametre_disque": "125mm",
-    "vitesse_nominal": "11000 tr/min",
-    "poids": "2.0kg",
-    "tension": "220-240V",
-    "frequence": "50Hz",
-    "poignee_protection": "Incluse",
-    "type_moteur": "Universel",
-    "classe_protection": "II"
-  }
-},
-  {
-  "id": 1776605431345,
-  "category": "Outils électriques",
-  "subcategory": "Meuleuses angulaires",
-  "brand": "Bosch",
-  "title": "Meuleuse angulaire Bosch GWS 13-125 CIE",
-  "description_fr": "Meuleuse angulaire filaire compacte avec disque de 125 mm, équipée d'un système de protection innovant et d'une poignée ergonomique pour un contrôle optimal lors du meulage et du tronçonnage.",
-  "price_MAD": 0,
-  "images": [
-    "/images/products/bosch-gws-13-125-cie-1-426951.png",
-    "/images/products/bosch-gws-13-125-cie-2-426951.png"
-  ],
-  "in_stock": true,
-  "ref": "VT-AUTO-1776605431345",
-  "specs": {
-    "puissance": "1300W",
-    "diamètre_disque": "125mm",
-    "vitesse_nominale": "13000 tr/min",
-    "poids": "2.4kg",
-    "tension": "230V",
-    "filetage_arbre": "M14",
-    "longueur": "340mm",
-    "protection": "Cardan ajustable",
-    "poignée_auxiliaire": "Oui",
-    "cordon": "Filaire"
-  }
-},
-]);
+J3VzZSBzdHJpY3QnOw0Kd2luZG93LlZUX1BST0RVQ1RTID0gKHdpbmRvdy5W
+VF9QUk9EVUNUUyB8fCBbXSkuY29uY2F0KFsNCiAgew0KICAgIGlkICAgICAg
+ICAgIDogMTc3NjIwNTYxMDYxMiwNCiAgICBjYXRlZ29yeSAgICA6ICdRdWlu
+Y2FpbGxlcmllJywNCiAgICBzdWJjYXRlZ29yeSA6ICdDaGFybmnDqHJlcyBl
+dCBhY2Nlc3NvaXJlcycsDQogICAgYnJhbmQgICAgICAgOiAnU3RpbGwgQm9p
+cycsDQogICAgdGl0bGUgICAgICAgOiAnQ0hBUk5JRVJFIEFWRUMgRlJFSU5T
+IFBMQVQgUkVHTEFHRSAzRCcsDQogICAgZGVzY3JpcHRpb25fZnI6ICJDaGFy
+bmnDqHJlIGRlIG1ldWJsZSDDoCBmZXJtZXR1cmUgcHJvZ3Jlc3NpdmUgYXZl
+YyBzeXN0w6htZSBkJ2Ftb3J0aXNzZW1lbnQgaW50w6lncsOpLiBBY2llciB6
+aW5ndcOpIGhhdXRlIHF1YWxpdMOpLCBmcmVpbmFnZSBoeWRyYXVsaXF1ZSBw
+b3VyIGZlcm1ldHVyZSBjb250csO0bMOpZS4iLA0KICAgIHByaWNlX01BRCAg
+IDogMjIsDQogICAgaW5fc3RvY2sgICAgOiB0cnVlLA0KICAgIHJlZiAgICAg
+ICAgIDogJ1ZULUFVVE8tMDYxMicsDQogICAgaW1hZ2VzICAgICAgOiBbJy9p
+bWFnZXMvcHJvZHVjdHMvc2FsaWNlLXNvZnQtY2xvc2UtY2FiaW5ldC1oaW5n
+ZS0xLTYwMDExOC5wbmcnLCAnL2ltYWdlcy9wcm9kdWN0cy9zYWxpY2Utc29m
+dC1jbG9zZS1jYWJpbmV0LWhpbmdlLTItNjAwMTE4LnBuZyddLA0KICAgIHNw
+ZWNzICAgICAgIDogbnVsbCwNCiAgfSwNCiAgew0KICAgIGlkICAgICAgICAg
+IDogMTc3NjIwNzIyMjc4MSwNCiAgICBjYXRlZ29yeSAgICA6ICdRdWluY2Fp
+bGxlcmllJywNCiAgICBzdWJjYXRlZ29yeSA6ICdDaGFybmnDqHJlcyBldCBh
+Y2Nlc3NvaXJlcycsDQogICAgYnJhbmQgICAgICAgOiAnQmx1bScsDQogICAg
+dGl0bGUgICAgICAgOiAnQ2hhcm5pw6hyZSBCbHVtIENsaXAgVG9wIEZlcm1l
+dHVyZSBEb3VjZScsDQogICAgZGVzY3JpcHRpb25fZnI6ICJQYWlyZSBkZSBj
+aGFybmnDqHJlcyBCbHVtIGF2ZWMgZmVybWV0dXJlIGRvdWNlIGludMOpZ3LD
+qWUgZXQgc3lzdMOobWUgQ2xpcCBUb3AgYnJldmV0w6kuIFBlcsOnYWdlIDM1
+bW0sIGFuZ2xlIGQnb3V2ZXJ0dXJlIDExMMKwLCBjYXBhY2l0w6kgNWtnIHBh
+ciBjaGFybmnDqHJlLiIsDQogICAgcHJpY2VfTUFEICAgOiAyOCwNCiAgICBp
+bl9zdG9jayAgICA6IHRydWUsDQogICAgcmVmICAgICAgICAgOiAnVlQtQVVU
+Ty0yNzgxJywNCiAgICBpbWFnZXMgICAgICA6IFsnL2ltYWdlcy9wcm9kdWN0
+cy9ibHVtLWNsaXAtdG9wLXNvZnQtY2xvc2UtY2FiaW5ldC1oaW5nZS0xLTIx
+ODYxOS5wbmcnLCAnL2ltYWdlcy9wcm9kdWN0cy9ibHVtLWNsaXAtdG9wLXNv
+ZnQtY2xvc2UtY2FiaW5ldC1oaW5nZS0yLTIxODYxOS5wbmcnXSwNCiAgICBz
+cGVjcyAgICAgICA6IG51bGwsDQogIH0sDQogIHsNCiAgICBpZCAgICAgICAg
+ICA6IDE3NzYyMTE5MDQyNTAsDQogICAgY2F0ZWdvcnkgICAgOiAnUXVpbmNh
+aWxsZXJpZScsDQogICAgc3ViY2F0ZWdvcnkgOiAnUm91bGV0dGVzIGV0IGFj
+Y2Vzc29pcmVzJywNCiAgICBicmFuZCAgICAgICA6ICdHZW5lcmljJywNCiAg
+ICB0aXRsZSAgICAgICA6ICdFbnNlbWJsZSBkZSByb3VsZXR0ZXMgcGl2b3Rh
+bnRlcyByb2J1c3RlcyBvcmFuZ2UgZXQgbm9pcicsDQogICAgZGVzY3JpcHRp
+b25fZnI6ICJFbnNlbWJsZSBkZSByb3VsZXR0ZXMgcGl2b3RhbnRlcyBwcm9m
+ZXNzaW9ubmVsbGVzIGVuIHBvbHl1csOpdGhhbmUgb3JhbmdlIGV0IHN1cHBv
+cnRzIG3DqXRhbCBub2lyLiBSb3VsZW1lbnQgw6AgYmlsbGVzIHBvdXIgcm90
+YXRpb24gZmx1aWRlLCBwbGFxdWUgZGUgbW9udGFnZSByb2J1c3RlLiIsDQog
+ICAgcHJpY2VfTUFEICAgOiAyNSwNCiAgICBpbl9zdG9jayAgICA6IHRydWUs
+DQogICAgcmVmICAgICAgICAgOiAnVlQtQVVUTy00MjUwJywNCiAgICBpbWFn
+ZXMgICAgICA6IFsnL2ltYWdlcy9wcm9kdWN0cy9oZWF2eS1kdXR5LWNhc3Rl
+ci13aGVlbHMtc2V0LW9yYW5nZS1hbmQtYmxhY2stMS05MDAzMzgucG5nJywg
+Jy9pbWFnZXMvcHJvZHVjdHMvaGVhdnktZHV0eS1jYXN0ZXItd2hlZWxzLXNl
+dC1vcmFuZ2UtYW5kLWJsYWNrLTItOTAwMzM4LnBuZyddLA0KICAgIHNwZWNz
+ICAgICAgIDogbnVsbCwNCiAgfSwNCiAgew0KICAgIGlkICAgICAgICAgIDog
+MTc3NjI4NTYwMTIxNSwNCiAgICBjYXRlZ29yeSAgICA6ICdRdWluY2FpbGxl
+cmllJywNCiAgICBzdWJjYXRlZ29yeSA6ICdDaGV2aWxsZXMgZXQgRml4YXRp
+b25zJywNCiAgICBicmFuZCAgICAgICA6ICdHZW5lcmljJywNCiAgICB0aXRs
+ZSAgICAgICA6ICdDaGV2aWxsZXMgZW4gQm9pcyBSb25kZXMgQXNzb3J0aWVz
+JywNCiAgICBkZXNjcmlwdGlvbl9mcjogIkVuc2VtYmxlIGRlIGNoZXZpbGxl
+cyBlbiBib2lzIG1hc3NpZiBkZSBkaWZmw6lyZW50cyBkaWFtw6h0cmVzIHBv
+dXIgYXNzZW1ibGFnZSBkZSBtZXVibGVzIGV0IG1lbnVpc2VyaWUuIEZpeGF0
+aW9uIHNvbGlkZSBldCBkdXJhYmxlLCBmaW5pdGlvbiBuYXR1cmVsbGUgbGlz
+c2UuIiwNCiAgICBwcmljZV9NQUQgICA6IDQ1LA0KICAgIGluX3N0b2NrICAg
+IDogdHJ1ZSwNCiAgICByZWYgICAgICAgICA6ICdWVC1BVVRPLTEyMTUnLA0K
+ICAgIGltYWdlcyAgICAgIDogWycvaW1hZ2VzL3Byb2R1Y3RzL3dvb2Rlbi1k
+b3dlbC1waW5zLWFzc29ydGVkLXBhY2stMS01OTYyMzkucG5nJywgJy9pbWFn
+ZXMvcHJvZHVjdHMvd29vZGVuLWRvd2VsLXBpbnMtYXNzb3J0ZWQtcGFjay0y
+LTU5NjIzOS5wbmcnXSwNCiAgICBzcGVjcyAgICAgICA6IG51bGwsDQogIH0s
+DQogIHsKICAiaWQiOiAxNzc2NDYzNzYxMDA5LAogICJjYXRlZ29yeSI6ICJR
+dWluY2FpbGxlcmllIiwKICAic3ViY2F0ZWdvcnkiOiAiQWNjZXNzb2lyZXMg
+ZGUgcG9ydGUiLAogICJicmFuZCI6ICJHZW5lcmljL1N0YW5kYXJkIiwKICAi
+dGl0bGUiOiAiQnV0w6llIGRlIFBvcnRlIiwKICAiZGVzY3JpcHRpb25fZnIi
+OiAiQnV0w6llIGRlIHBvcnRlIGN5bGluZHJpcXVlIGF1IGRlc2lnbiBtb2Rl
+cm5lLCBkaXNwb25pYmxlIGVuIGZpbml0aW9uIGFjaWVyIGlub3h5ZGFibGUg
+b3Ugbm9pciBtYXQuIERvdMOpZSBkJ3VuZSBiYW5kZSBkZSBwcsOpaGVuc2lv
+biBlbiBjYW91dGNob3VjIHBvdXIgdW5lIG1laWxsZXVyZSBhZGjDqXJlbmNl
+IGV0IHVuZSB1dGlsaXNhdGlvbiBvcHRpbWFsZS4gSWTDqWFsZSBwb3VyIG1h
+aW50ZW5pciBsZXMgcG9ydGVzIG91dmVydGVzIGVuIHRvdXRlIHPDqWN1cml0
+w6kgZXQgcHLDqXZlbmlyIGxlcyBjbGFxdWVzIGFjY2lkZW50ZWxsZXMuIiwK
+ICAicHJpY2VfTUFEIjogNDUsCiAgImltYWdlcyI6IFsKICAgICIvaW1hZ2Vz
+L3Byb2R1Y3RzL2Rvb3Itc3RvcHBlci0xLTc1Njc3MC5wbmciLAogICAgIi9p
+bWFnZXMvcHJvZHVjdHMvZG9vci1zdG9wcGVyLTItNzU2NzcwLnBuZyIKICBd
+LAogICJpbl9zdG9jayI6IHRydWUsCiAgInJlZiI6ICJWVC1BVVRPLTE3NzY0
+NjM3NjEwMTAiLAogICJzcGVjcyI6IHsKICAgICJkZXRhaWxzIjogWwogICAg
+ICB7CiAgICAgICAgImxhYmVsIjogIkZpbml0aW9ucyBkaXNwb25pYmxlcyIs
+CiAgICAgICAgInZhbHVlIjogIkFjaWVyIGlub3h5ZGFibGUgYnJvc3PDqSwg
+Tm9pciBtYXQiCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAibGFiZWwiOiAi
+QmFuZGUgZGUgcHLDqWhlbnNpb24iLAogICAgICAgICJ2YWx1ZSI6ICJDYW91
+dGNob3VjIGFudGlkw6lyYXBhbnQiCiAgICAgIH0sCiAgICAgIHsKICAgICAg
+ICAibGFiZWwiOiAiUG9pZHMgdW5pdGFpcmUiLAogICAgICAgICJ2YWx1ZSI6
+ICIxMjAgZyIKICAgICAgfSwKICAgICAgewogICAgICAgICJsYWJlbCI6ICJU
+eXBlIGRlIGZpeGF0aW9uIiwKICAgICAgICAidmFsdWUiOiAiQWRow6lzaWYg
+b3UgY2xvdSAoc2Vsb24gbW9kw6hsZSkiCiAgICAgIH0sCiAgICAgIHsKICAg
+ICAgICAibGFiZWwiOiAiUsOpc2lzdGFuY2Ugw6AgbGEgY29tcHJlc3Npb24i
+LAogICAgICAgICJ2YWx1ZSI6ICJqdXNxdSfDoCA1IGtnIgogICAgICB9CiAg
+ICBdLAogICAgImNvbXBhdGlibGVzIjogWwogICAgICAiUG9ydGVzIGludMOp
+cmlldXJlcyBzdGFuZGFyZCIsCiAgICAgICJQb3J0ZXMgZXh0w6lyaWV1cmVz
+IGzDqWfDqHJlcyIsCiAgICAgICJQb3J0ZXMgY291bGlzc2FudGVzIgogICAg
+XSwKICAgICJpbmNvbXBhdGlibGVzIjogWwogICAgICAiUG9ydGVzIHRyw6hz
+IGxvdXJkZXMgKD4xMGtnKSAtIHJpc3F1ZSBkJ2luZWZmaWNhY2l0w6kiLAog
+ICAgICAiU3VyZmFjZXMgbW91aWxsw6llcyBwZXJtYW5lbnRlcyAtIGFkaMOp
+cmVuY2UgY29tcHJvbWlzZSIKICAgIF0KICB9Cn0sCiAgewogICJpZCI6IDE3
+NzY0NjM5OTg5ODMsCiAgImNhdGVnb3J5IjogIlF1aW5jYWlsbGVyaWUiLAog
+ICJzdWJjYXRlZ29yeSI6ICJBY2Nlc3NvaXJlcyBkZSBwb3J0ZXMgZXQgYXJt
+b2lyZXMiLAogICJicmFuZCI6ICJHZW5lcmljL1N0YW5kYXJkIiwKICAidGl0
+bGUiOiAiS2l0IEFtb3J0aXNzZXVyIGRlIEZlcm1ldHVyZSBEb3VjZSBwb3Vy
+IFBvcnRlcyBkJ0FybW9pcmUiLAogICJkZXNjcmlwdGlvbl9mciI6ICJLaXQg
+Y29tcGxldCBkJ2Ftb3J0aXNzZXVyIGRlIGZlcm1ldHVyZSBkb3VjZSBwb3Vy
+IHBvcnRlcyBkJ2FybW9pcmVzIGV0IHBsYWNhcmRzLiBDb21wcmVuZCB1biBt
+w6ljYW5pc21lIGh5ZHJhdWxpcXVlIGF2ZWMgYnJhcyBkZSBsZXZpZXIgdMOp
+bGVzY29waXF1ZSBldCBxdWF0cmUgY2hhcm5pw6hyZXMgcsOpZ2xhYmxlcy4g
+UGVybWV0IHVuZSBmZXJtZXR1cmUgcHJvZ3Jlc3NpdmUgZXQgc2lsZW5jaWV1
+c2UgZGVzIHBvcnRlcyB0b3V0IGVuIMOpdml0YW50IGxlcyBjbGFxdWVtZW50
+cy4gSW5zdGFsbGF0aW9uIGZhY2lsZSBhdmVjIHRvdXMgbGVzIGFjY2Vzc29p
+cmVzIGRlIG1vbnRhZ2UgaW5jbHVzLiIsCiAgInByaWNlX01BRCI6IDI4MCwK
+ICAiaW1hZ2VzIjogWwogICAgIi9pbWFnZXMvcHJvZHVjdHMvc29mdC1jbG9z
+ZS1jYWJpbmV0LWRvb3ItZGFtcGVyLWtpdC0xLTk5NDk3NC5wbmciLAogICAg
+Ii9pbWFnZXMvcHJvZHVjdHMvc29mdC1jbG9zZS1jYWJpbmV0LWRvb3ItZGFt
+cGVyLWtpdC0yLTk5NDk3NC5wbmciCiAgXSwKICAiaW5fc3RvY2siOiB0cnVl
+LAogICJyZWYiOiAiVlQtQVVUTy0xNzc2NDYzOTk4OTgzIiwKICAic3BlY3Mi
+OiB7CiAgICAiaGlnaGxpZ2h0MV9sYWJlbCI6ICJUeXBlIGRlIG3DqWNhbmlz
+bWUiLAogICAgImhpZ2hsaWdodDFfdmFsdWUiOiAiQW1vcnRpc3NldXIgaHlk
+cmF1bGlxdWUiLAogICAgImhpZ2hsaWdodDJfbGFiZWwiOiAiTm9tYnJlIGRl
+IGNoYXJuacOocmVzIGluY2x1c2VzIiwKICAgICJoaWdobGlnaHQyX3ZhbHVl
+IjogIjQgcGnDqGNlcyIsCiAgICAiaGlnaGxpZ2h0M19sYWJlbCI6ICJUeXBl
+IGRlIGZlcm1ldHVyZSIsCiAgICAiaGlnaGxpZ2h0M192YWx1ZSI6ICJGZXJt
+ZXR1cmUgZG91Y2UgZXQgc2lsZW5jaWV1c2UiLAogICAgImRldGFpbHMiOiBb
+CiAgICAgIHsKICAgICAgICAibGFiZWwiOiAiTWF0w6lyaWF1IGR1IGJyYXMi
+LAogICAgICAgICJ2YWx1ZSI6ICJBY2llciBpbm94eWRhYmxlIGV0IGFsdW1p
+bml1bSIKICAgICAgfSwKICAgICAgewogICAgICAgICJsYWJlbCI6ICJQb2ln
+bsOpZSBkZSBjb21tYW5kZSIsCiAgICAgICAgInZhbHVlIjogIlBsYXN0aXF1
+ZSBub2lyIHLDqXNpc3RhbnQiCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAi
+bGFiZWwiOiAiQ2hhcmdlIG1heGltYWxlIHN1cHBvcnTDqWUiLAogICAgICAg
+ICJ2YWx1ZSI6ICIyNSBrZyBwYXIgcG9ydGUiCiAgICAgIH0sCiAgICAgIHsK
+ICAgICAgICAibGFiZWwiOiAiQW5nbGUgZCdvdXZlcnR1cmUiLAogICAgICAg
+ICJ2YWx1ZSI6ICI5MMKwIMOgIDEyMMKwIgogICAgICB9LAogICAgICB7CiAg
+ICAgICAgImxhYmVsIjogIlR5cGUgZGUgY2hhcm5pw6hyZSIsCiAgICAgICAg
+InZhbHVlIjogIkNoYXJuacOocmUgw6AgdGFzc2UgYXZlYyByw6lnbGFnZSAz
+RCIKICAgICAgfSwKICAgICAgewogICAgICAgICJsYWJlbCI6ICJMb25ndWV1
+ciBkdSBicmFzIHTDqWxlc2NvcGlxdWUiLAogICAgICAgICJ2YWx1ZSI6ICIy
+NTAtMzUwIG1tICh2YXJpYWJsZSkiCiAgICAgIH0sCiAgICAgIHsKICAgICAg
+ICAibGFiZWwiOiAiRmluaXRpb24gZGVzIGNoYXJuacOocmVzIiwKICAgICAg
+ICAidmFsdWUiOiAiTGFpdG9uIG5pY2tlbMOpIgogICAgICB9CiAgICBdLAog
+ICAgImNvbXBhdGlibGVzIjogWwogICAgICAiUG9ydGVzIGQnYXJtb2lyZXMg
+ZGUgY3Vpc2luZSIsCiAgICAgICJQb3J0ZXMgZGUgcGxhY2FyZHMiLAogICAg
+ICAiUG9ydGVzIGRlIG1ldWJsZXMgw6AgcmFuZ2VtZW50IiwKICAgICAgIkZh
+w6dhZGVzIGRlIG1ldWJsZXMgYmFzIGV0IGhhdXRzIgogICAgXSwKICAgICJp
+bmNvbXBhdGlibGVzIjogWwogICAgICAiUG9ydGVzIGNvdWxpc3NhbnRlcyAt
+IG3DqWNhbmlzbWUgbm9uIGFkYXB0w6kiLAogICAgICAiUG9ydGVzIHBlc2Fu
+dCBwbHVzIGRlIDI1IGtnIC0gc3VyY2hhcmdlIGR1IHN5c3TDqG1lIiwKICAg
+ICAgIlBvcnRlcyBhdmVjIGNoYXJuacOocmVzIGVuIHN1cmZhY2UgLSBuw6lj
+ZXNzaXRlIGNoYXJuacOocmVzIMOgIGVuY2FzdHJlciIKICAgIF0KICB9Cn0s
+CiAgewogICJpZCI6IDE3NzY2MDI4MTY5OTYsCiAgImNhdGVnb3J5IjogIk91
+dGlscyDDqWxlY3RyaXF1ZXMiLAogICJzdWJjYXRlZ29yeSI6ICJNZXVsZXVz
+ZXMgZCdhbmdsZSIsCiAgImJyYW5kIjogIkJvc2NoIiwKICAidGl0bGUiOiAi
+TWV1bGV1c2UgZCdhbmdsZSBCb3NjaCBHV1MgMTMtMTI1IENJRSIsCiAgImRl
+c2NyaXB0aW9uX2ZyIjogIk1ldWxldXNlIGQnYW5nbGUgY29tcGFjdGUgZXQg
+cHVpc3NhbnRlIGRlIDEzMDAgVyBhdmVjIGRpc3F1ZSBkZSAxMjUgbW0sIMOp
+cXVpcMOpZSBkJ3VuIHN5c3TDqG1lIGRlIHByb3RlY3Rpb24gYXZhbmPDqSBl
+dCBkJ3VuZSBwb2lnbsOpZSBlcmdvbm9taXF1ZSBwb3VyIHVuIGNvbnRyw7Rs
+ZSBvcHRpbWFsLiIsCiAgInByaWNlX01BRCI6IDEyOTksCiAgImltYWdlcyI6
+IFsKICAgICIvaW1hZ2VzL3Byb2R1Y3RzL2Jvc2NoLWd3cy0xMy0xMjUtY2ll
+LTEtMzQxOTg1LnBuZyIsCiAgICAiL2ltYWdlcy9wcm9kdWN0cy9ib3NjaC1n
+d3MtMTMtMTI1LWNpZS0yLTM0MTk4NS5wbmciCiAgXSwKICAiaW5fc3RvY2si
+OiB0cnVlLAogICJyZWYiOiAiVlQtQVVUTy0xNzc2NjAyODE2OTk2IiwKICAi
+c3BlY3MiOiB7CiAgICAicHVpc3NhbmNlIjogIjEzMDAgVyIsCiAgICAiZGlh
+bWV0cmVfZGlzcXVlIjogIjEyNSBtbSIsCiAgICAidml0ZXNzZV9yb3RhdGlv
+biI6ICIxMzAwMCB0ci9taW4iLAogICAgInBvaWRzIjogIjIuNCBrZyIsCiAg
+ICAidGVuc2lvbiI6ICIyMzAgViIsCiAgICAidHlwZV9wcm90ZWN0aW9uIjog
+IlN5c3TDqG1lIGFudGktcmVkw6ltYXJyYWdlLCBwcm90ZWN0aW9uIGNvbnRy
+ZSBsZXMgc3VyY2hhcmdlcyIsCiAgICAicG9pZ25lZV9hdXhpbGlhaXJlIjog
+IkluY2x1c2UiLAogICAgImxvbmd1ZXVyX2NhYmxlIjogIjQgbSIKICB9Cn0s
+CiAgewogICJpZCI6IDE3NzY2MDUwMzYwMjgsCiAgImNhdGVnb3J5IjogIk91
+dGlscyDDqWxlY3RyaXF1ZXMiLAogICJzdWJjYXRlZ29yeSI6ICJNZXVsZXVz
+ZXMgYW5ndWxhaXJlcyIsCiAgImJyYW5kIjogIkJvc2NoIiwKICAidGl0bGUi
+OiAiTWV1bGV1c2UgYW5ndWxhaXJlIDEwMDBXIiwKICAiZGVzY3JpcHRpb25f
+ZnIiOiAiTWV1bGV1c2UgYW5ndWxhaXJlIGNvbXBhY3RlIGV0IHB1aXNzYW50
+ZSBkZSAxMDAwVyBhdmVjIGRpc3F1ZSBkZSAxMjVtbSwgw6lxdWlww6llIGQn
+dW5lIHBvaWduw6llIGRlIHByb3RlY3Rpb24gZXQgZCd1biBzeXN0w6htZSBk
+ZSBzw6ljdXJpdMOpLiBJZMOpYWxlIHBvdXIgbGUgbWV1bGFnZSwgbGUgdHJv
+bsOnb25uYWdlIGV0IGxlIHBvbGlzc2FnZSBkZSBtYXTDqXJpYXV4IGRlIGNv
+bnN0cnVjdGlvbi4iLAogICJwcmljZV9NQUQiOiAwLAogICJpbWFnZXMiOiBb
+CiAgICAiL2ltYWdlcy9wcm9kdWN0cy9tZXVsZXVzZS1hbmd1bGFpcmUtYm9z
+Y2gtZ3dzLTEwMDAtMS0wMzE2MTgucG5nIiwKICAgICIvaW1hZ2VzL3Byb2R1
+Y3RzL21ldWxldXNlLWFuZ3VsYWlyZS1ib3NjaC1nd3MtMTAwMC0yLTAzMTYx
+OC5wbmciCiAgXSwKICAiaW5fc3RvY2siOiB0cnVlLAogICJyZWYiOiAiVlQt
+QVVUTy0xNzc2NjA1MDM2MDI4IiwKICAic3BlY3MiOiB7CiAgICAicHVpc3Nh
+bmNlIjogIjEwMDBXIiwKICAgICJkaWFtZXRyZV9kaXNxdWUiOiAiMTI1bW0i
+LAogICAgInZpdGVzc2Vfbm9taW5hbCI6ICIxMTAwMCB0ci9taW4iLAogICAg
+InBvaWRzIjogIjIuMGtnIiwKICAgICJ0ZW5zaW9uIjogIjIyMC0yNDBWIiwK
+ICAgICJmcmVxdWVuY2UiOiAiNTBIeiIsCiAgICAicG9pZ25lZV9wcm90ZWN0
+aW9uIjogIkluY2x1c2UiLAogICAgInR5cGVfbW90ZXVyIjogIlVuaXZlcnNl
+bCIsCiAgICAiY2xhc3NlX3Byb3RlY3Rpb24iOiAiSUkiCiAgfQp9LAogIHsK
+ICAiaWQiOiAxNzc2NjA1NDMxMzQ1LAogICJjYXRlZ29yeSI6ICJPdXRpbHMg
+w6lsZWN0cmlxdWVzIiwKICAic3ViY2F0ZWdvcnkiOiAiTWV1bGV1c2VzIGFu
+Z3VsYWlyZXMiLAogICJicmFuZCI6ICJCb3NjaCIsCiAgInRpdGxlIjogIk1l
+dWxldXNlIGFuZ3VsYWlyZSBCb3NjaCBHV1MgMTMtMTI1IENJRSIsCiAgImRl
+c2NyaXB0aW9uX2ZyIjogIk1ldWxldXNlIGFuZ3VsYWlyZSBmaWxhaXJlIGNv
+bXBhY3RlIGF2ZWMgZGlzcXVlIGRlIDEyNSBtbSwgw6lxdWlww6llIGQndW4g
+c3lzdMOobWUgZGUgcHJvdGVjdGlvbiBpbm5vdmFudCBldCBkJ3VuZSBwb2ln
+bsOpZSBlcmdvbm9taXF1ZSBwb3VyIHVuIGNvbnRyw7RsZSBvcHRpbWFsIGxv
+cnMgZHUgbWV1bGFnZSBldCBkdSB0cm9uw6dvbm5hZ2UuIiwKICAicHJpY2Vf
+TUFEIjogMCwKICAiaW1hZ2VzIjogWwogICAgIi9pbWFnZXMvcHJvZHVjdHMv
+Ym9zY2gtZ3dzLTEzLTEyNS1jaWUtMS00MjY5NTEucG5nIiwKICAgICIvaW1h
+Z2VzL3Byb2R1Y3RzL2Jvc2NoLWd3cy0xMy0xMjUtY2llLTItNDI2OTUxLnBu
+ZyIKICBdLAogICJpbl9zdG9jayI6IHRydWUsCiAgInJlZiI6ICJWVC1BVVRP
+LTE3NzY2MDU0MzEzNDUiLAogICJzcGVjcyI6IHsKICAgICJwdWlzc2FuY2Ui
+OiAiMTMwMFciLAogICAgImRpYW3DqHRyZV9kaXNxdWUiOiAiMTI1bW0iLAog
+ICAgInZpdGVzc2Vfbm9taW5hbGUiOiAiMTMwMDAgdHIvbWluIiwKICAgICJw
+b2lkcyI6ICIyLjRrZyIsCiAgICAidGVuc2lvbiI6ICIyMzBWIiwKICAgICJm
+aWxldGFnZV9hcmJyZSI6ICJNMTQiLAogICAgImxvbmd1ZXVyIjogIjM0MG1t
+IiwKICAgICJwcm90ZWN0aW9uIjogIkNhcmRhbiBhanVzdGFibGUiLAogICAg
+InBvaWduw6llX2F1eGlsaWFpcmUiOiAiT3VpIiwKICAgICJjb3Jkb24iOiAi
+RmlsYWlyZSIKICB9Cn0sCl0pOw0K
