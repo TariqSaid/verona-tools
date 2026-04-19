@@ -65,4 +65,17 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     images      : ['/images/products/meuleuse-angulaire-bosch-professional-gws-1000-1-233469.png', '/images/products/meuleuse-angulaire-bosch-professional-gws-1000-2-233469.png'],
     specs       : { highlight1_label: "Puissance", highlight1_value: "1 700 W", highlight2_label: "Température", highlight2_value: "50-550 °C", highlight3_label: "Débit", highlight3_value: "2800 - 11,500 l/min", details: [{ label: "Puissance nominale", value: "1700 W" }, { label: "Plage de température", value: "50-550 °C" }, { label: "Débit d'air", value: "300-500 l/min" }, { label: "Tension", value: "1010 V" }, { label: "Poids", value: "2.4 Kg" }, { label: "Longueur câble", value: "2 m" }, { label: "Niveaux de chaleur", value: "2 positions" }], compatibles: ["Buses de réduction GHG 500", "Buses de concentration", "Buse verre de protection", "Sacoche Bosch Professional"], incompatibles: ["Batterie lithium — secteur uniquement", "Milieux très humides — risque électrique"] },
   },
+  {
+    id          : 1776205605844,
+    category    : 'Outillage',
+    subcategory : 'Perceuses',
+    brand       : 'Bosch',
+    title       : 'Perceuse à percussion GSB 21-2 AE',
+    description_fr: 'Perceuse à percussion filaire Bosch GSB 21-2 AE avec technologie de percussion pour perçage dans le béton, la maçonnerie et le bois. Équipée d une poignée auxiliaire ergonomique et d un mandrin rapide.',
+    price_MAD   : 449,
+    in_stock    : true,
+    ref         : 'VT-AUTO-423373',
+    images      : ['/images/products/bosch-gsb-21-2-ae-1-062306.png', '/images/products/bosch-gsb-21-2-ae-2-062306.png'],
+    specs       : { highlight1_label: "Puissance", highlight1_value: "650 W", highlight2_label: "Vitesse", highlight2_value: "3100 tr/min", highlight3_label: "Coupe bois", highlight3_value: "65 mm", details: [{ label: "Puissance absorbée", value: "650 W" }, { label: "Course de la lame", value: "18 mm" }, { label: "Vitesse à vide", value: "500-3100 tr/min" }, { label: "Coupe bois", value: "65 mm" }, { label: "Coupe acier", value: "6 mm" }, { label: "Poids", value: "1.7 kg" }], compatibles: ["Lames T-shank standards", "Lames Bosch T 111 C (bois)", "Lames Bosch T 118 A (métal)", "Guide parallèle Bosch"], incompatibles: ["Lames U-shank (ancien système)"] },
+  },
 ]);
