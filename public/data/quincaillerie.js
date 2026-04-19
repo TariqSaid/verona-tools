@@ -1,80 +1,84 @@
-'use strict';
-window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
-  {
-    id          : 1776205610612,
-    category    : 'Quincaillerie',
-    subcategory : 'Charnières et accessoires',
-    brand       : 'Still Bois',
-    title       : 'CHARNIERE AVEC FREINS PLAT REGLAGE 3D',
-    description_fr: "Charnière de meuble à fermeture progressive avec système d'amortissement intégré. Acier zingué haute qualité, freinage hydraulique pour fermeture contrôlée.",
-    price_MAD   : 22,
-    in_stock    : true,
-    ref         : 'VT-AUTO-0612',
-    images      : ['/images/products/salice-soft-close-cabinet-hinge-1-600118.png', '/images/products/salice-soft-close-cabinet-hinge-2-600118.png'],
-    specs       : null,
-  },
-  {
-    id          : 1776207222781,
-    category    : 'Quincaillerie',
-    subcategory : 'Charnières et accessoires',
-    brand       : 'Blum',
-    title       : 'Charnière Blum Clip Top Fermeture Douce',
-    description_fr: "Paire de charnières Blum avec fermeture douce intégrée et système Clip Top breveté. Perçage 35mm, angle d'ouverture 110°, capacité 5kg par charnière.",
-    price_MAD   : 28,
-    in_stock    : true,
-    ref         : 'VT-AUTO-2781',
-    images      : ['/images/products/blum-clip-top-soft-close-cabinet-hinge-1-218619.png', '/images/products/blum-clip-top-soft-close-cabinet-hinge-2-218619.png'],
-    specs       : null,
-  },
-  {
-    id          : 1776211904250,
-    category    : 'Quincaillerie',
-    subcategory : 'Roulettes et accessoires',
-    brand       : 'Generic',
-    title       : 'Ensemble de roulettes pivotantes robustes orange et noir',
-    description_fr: "Ensemble de roulettes pivotantes professionnelles en polyuréthane orange et supports métal noir. Roulement à billes pour rotation fluide, plaque de montage robuste.",
-    price_MAD   : 25,
-    in_stock    : true,
-    ref         : 'VT-AUTO-4250',
-    images      : ['/images/products/heavy-duty-caster-wheels-set-orange-and-black-1-900338.png', '/images/products/heavy-duty-caster-wheels-set-orange-and-black-2-900338.png'],
-    specs       : null,
-  },
-  {
-    id          : 1776285601215,
-    category    : 'Quincaillerie',
-    subcategory : 'Chevilles et Fixations',
-    brand       : 'Generic',
-    title       : 'Chevilles en Bois Rondes Assorties',
-    description_fr: "Ensemble de chevilles en bois massif de différents diamètres pour assemblage de meubles et menuiserie. Fixation solide et durable, finition naturelle lisse.",
-    price_MAD   : 45,
-    in_stock    : true,
-    ref         : 'VT-AUTO-1215',
-    images      : ['/images/products/wooden-dowel-pins-assorted-pack-1-596239.png', '/images/products/wooden-dowel-pins-assorted-pack-2-596239.png'],
-    specs       : null,
-  },
-  {
-  "id": 1776622410098,
-  "category": "Outils de mesure et de traçage",
-  "subcategory": "Niveaux laser",
-  "brand": "Makule",
-  "title": "Niveau Laser 4D Makule",
-  "description_fr": "Niveau laser 4D multifonctionnel avec projection de lignes croisées en 360 degrés. Idéal pour les travaux de construction, de carrelage et d'aménagement intérieur. Dotée d'une base magnétique et de pieds télescopiques pour une stabilité optimale.",
-  "price_MAD": 0,
-  "images": [
-    "/images/products/makule-4d-laser-level-1-406015.png",
-    "/images/products/makule-4d-laser-level-2-406015.png"
-  ],
-  "in_stock": true,
-  "ref": "VT-AUTO-1776622410098",
-  "specs": {
-    "projection": "4D - Lignes croisées 360°",
-    "couleurLaser": "Rouge",
-    "autonomie": "Variable selon les piles",
-    "base": "Magnétique avec pieds télescopiques",
-    "precisionAuto": "Auto-nivellement",
-    "portee": "À déterminer selon modèle",
-    "protection": "Classe de laser II/III",
-    "alimentation": "Piles"
-  }
-},
-]);
+J3VzZSBzdHJpY3QnOwp3aW5kb3cuVlRfUFJPRFVDVFMgPSAod2luZG93LlZU
+X1BST0RVQ1RTIHx8IFtdKS5jb25jYXQoWwogIHsKICAgIGlkICAgICAgICAg
+IDogMTc3NjIwNTYxMDYxMiwKICAgIGNhdGVnb3J5ICAgIDogJ1F1aW5jYWls
+bGVyaWUnLAogICAgc3ViY2F0ZWdvcnkgOiAnQ2hhcm5pw6hyZXMgZXQgYWNj
+ZXNzb2lyZXMnLAogICAgYnJhbmQgICAgICAgOiAnU3RpbGwgQm9pcycsCiAg
+ICB0aXRsZSAgICAgICA6ICdDSEFSTklFUkUgQVZFQyBGUkVJTlMgUExBVCBS
+RUdMQUdFIDNEJywKICAgIGRlc2NyaXB0aW9uX2ZyOiAiQ2hhcm5pw6hyZSBk
+ZSBtZXVibGUgw6AgZmVybWV0dXJlIHByb2dyZXNzaXZlIGF2ZWMgc3lzdMOo
+bWUgZCdhbW9ydGlzc2VtZW50IGludMOpZ3LDqS4gQWNpZXIgemluZ3XDqSBo
+YXV0ZSBxdWFsaXTDqSwgZnJlaW5hZ2UgaHlkcmF1bGlxdWUgcG91ciBmZXJt
+ZXR1cmUgY29udHLDtGzDqWUuIiwKICAgIHByaWNlX01BRCAgIDogMjIsCiAg
+ICBpbl9zdG9jayAgICA6IHRydWUsCiAgICByZWYgICAgICAgICA6ICdWVC1B
+VVRPLTA2MTInLAogICAgaW1hZ2VzICAgICAgOiBbJy9pbWFnZXMvcHJvZHVj
+dHMvc2FsaWNlLXNvZnQtY2xvc2UtY2FiaW5ldC1oaW5nZS0xLTYwMDExOC5w
+bmcnLCAnL2ltYWdlcy9wcm9kdWN0cy9zYWxpY2Utc29mdC1jbG9zZS1jYWJp
+bmV0LWhpbmdlLTItNjAwMTE4LnBuZyddLAogICAgc3BlY3MgICAgICAgOiBu
+dWxsLAogIH0sCiAgewogICAgaWQgICAgICAgICAgOiAxNzc2MjA3MjIyNzgx
+LAogICAgY2F0ZWdvcnkgICAgOiAnUXVpbmNhaWxsZXJpZScsCiAgICBzdWJj
+YXRlZ29yeSA6ICdDaGFybmnDqHJlcyBldCBhY2Nlc3NvaXJlcycsCiAgICBi
+cmFuZCAgICAgICA6ICdCbHVtJywKICAgIHRpdGxlICAgICAgIDogJ0NoYXJu
+acOocmUgQmx1bSBDbGlwIFRvcCBGZXJtZXR1cmUgRG91Y2UnLAogICAgZGVz
+Y3JpcHRpb25fZnI6ICJQYWlyZSBkZSBjaGFybmnDqHJlcyBCbHVtIGF2ZWMg
+ZmVybWV0dXJlIGRvdWNlIGludMOpZ3LDqWUgZXQgc3lzdMOobWUgQ2xpcCBU
+b3AgYnJldmV0w6kuIFBlcsOnYWdlIDM1bW0sIGFuZ2xlIGQnb3V2ZXJ0dXJl
+IDExMMKwLCBjYXBhY2l0w6kgNWtnIHBhciBjaGFybmnDqHJlLiIsCiAgICBw
+cmljZV9NQUQgICA6IDI4LAogICAgaW5fc3RvY2sgICAgOiB0cnVlLAogICAg
+cmVmICAgICAgICAgOiAnVlQtQVVUTy0yNzgxJywKICAgIGltYWdlcyAgICAg
+IDogWycvaW1hZ2VzL3Byb2R1Y3RzL2JsdW0tY2xpcC10b3Atc29mdC1jbG9z
+ZS1jYWJpbmV0LWhpbmdlLTEtMjE4NjE5LnBuZycsICcvaW1hZ2VzL3Byb2R1
+Y3RzL2JsdW0tY2xpcC10b3Atc29mdC1jbG9zZS1jYWJpbmV0LWhpbmdlLTIt
+MjE4NjE5LnBuZyddLAogICAgc3BlY3MgICAgICAgOiBudWxsLAogIH0sCiAg
+ewogICAgaWQgICAgICAgICAgOiAxNzc2MjExOTA0MjUwLAogICAgY2F0ZWdv
+cnkgICAgOiAnUXVpbmNhaWxsZXJpZScsCiAgICBzdWJjYXRlZ29yeSA6ICdS
+b3VsZXR0ZXMgZXQgYWNjZXNzb2lyZXMnLAogICAgYnJhbmQgICAgICAgOiAn
+R2VuZXJpYycsCiAgICB0aXRsZSAgICAgICA6ICdFbnNlbWJsZSBkZSByb3Vs
+ZXR0ZXMgcGl2b3RhbnRlcyByb2J1c3RlcyBvcmFuZ2UgZXQgbm9pcicsCiAg
+ICBkZXNjcmlwdGlvbl9mcjogIkVuc2VtYmxlIGRlIHJvdWxldHRlcyBwaXZv
+dGFudGVzIHByb2Zlc3Npb25uZWxsZXMgZW4gcG9seXVyw6l0aGFuZSBvcmFu
+Z2UgZXQgc3VwcG9ydHMgbcOpdGFsIG5vaXIuIFJvdWxlbWVudCDDoCBiaWxs
+ZXMgcG91ciByb3RhdGlvbiBmbHVpZGUsIHBsYXF1ZSBkZSBtb250YWdlIHJv
+YnVzdGUuIiwKICAgIHByaWNlX01BRCAgIDogMjUsCiAgICBpbl9zdG9jayAg
+ICA6IHRydWUsCiAgICByZWYgICAgICAgICA6ICdWVC1BVVRPLTQyNTAnLAog
+ICAgaW1hZ2VzICAgICAgOiBbJy9pbWFnZXMvcHJvZHVjdHMvaGVhdnktZHV0
+eS1jYXN0ZXItd2hlZWxzLXNldC1vcmFuZ2UtYW5kLWJsYWNrLTEtOTAwMzM4
+LnBuZycsICcvaW1hZ2VzL3Byb2R1Y3RzL2hlYXZ5LWR1dHktY2FzdGVyLXdo
+ZWVscy1zZXQtb3JhbmdlLWFuZC1ibGFjay0yLTkwMDMzOC5wbmcnXSwKICAg
+IHNwZWNzICAgICAgIDogbnVsbCwKICB9LAogIHsKICAgIGlkICAgICAgICAg
+IDogMTc3NjI4NTYwMTIxNSwKICAgIGNhdGVnb3J5ICAgIDogJ1F1aW5jYWls
+bGVyaWUnLAogICAgc3ViY2F0ZWdvcnkgOiAnQ2hldmlsbGVzIGV0IEZpeGF0
+aW9ucycsCiAgICBicmFuZCAgICAgICA6ICdHZW5lcmljJywKICAgIHRpdGxl
+ICAgICAgIDogJ0NoZXZpbGxlcyBlbiBCb2lzIFJvbmRlcyBBc3NvcnRpZXMn
+LAogICAgZGVzY3JpcHRpb25fZnI6ICJFbnNlbWJsZSBkZSBjaGV2aWxsZXMg
+ZW4gYm9pcyBtYXNzaWYgZGUgZGlmZsOpcmVudHMgZGlhbcOodHJlcyBwb3Vy
+IGFzc2VtYmxhZ2UgZGUgbWV1YmxlcyBldCBtZW51aXNlcmllLiBGaXhhdGlv
+biBzb2xpZGUgZXQgZHVyYWJsZSwgZmluaXRpb24gbmF0dXJlbGxlIGxpc3Nl
+LiIsCiAgICBwcmljZV9NQUQgICA6IDQ1LAogICAgaW5fc3RvY2sgICAgOiB0
+cnVlLAogICAgcmVmICAgICAgICAgOiAnVlQtQVVUTy0xMjE1JywKICAgIGlt
+YWdlcyAgICAgIDogWycvaW1hZ2VzL3Byb2R1Y3RzL3dvb2Rlbi1kb3dlbC1w
+aW5zLWFzc29ydGVkLXBhY2stMS01OTYyMzkucG5nJywgJy9pbWFnZXMvcHJv
+ZHVjdHMvd29vZGVuLWRvd2VsLXBpbnMtYXNzb3J0ZWQtcGFjay0yLTU5NjIz
+OS5wbmcnXSwKICAgIHNwZWNzICAgICAgIDogbnVsbCwKICB9LAogIHsKICAi
+aWQiOiAxNzc2NjIyNDEwMDk4LAogICJjYXRlZ29yeSI6ICJPdXRpbHMgZGUg
+bWVzdXJlIGV0IGRlIHRyYcOnYWdlIiwKICAic3ViY2F0ZWdvcnkiOiAiTml2
+ZWF1eCBsYXNlciIsCiAgImJyYW5kIjogIk1ha3VsZSIsCiAgInRpdGxlIjog
+Ik5pdmVhdSBMYXNlciA0RCBNYWt1bGUiLAogICJkZXNjcmlwdGlvbl9mciI6
+ICJOaXZlYXUgbGFzZXIgNEQgbXVsdGlmb25jdGlvbm5lbCBhdmVjIHByb2pl
+Y3Rpb24gZGUgbGlnbmVzIGNyb2lzw6llcyBlbiAzNjAgZGVncsOpcy4gSWTD
+qWFsIHBvdXIgbGVzIHRyYXZhdXggZGUgY29uc3RydWN0aW9uLCBkZSBjYXJy
+ZWxhZ2UgZXQgZCdhbcOpbmFnZW1lbnQgaW50w6lyaWV1ci4gRG90w6llIGQn
+dW5lIGJhc2UgbWFnbsOpdGlxdWUgZXQgZGUgcGllZHMgdMOpbGVzY29waXF1
+ZXMgcG91ciB1bmUgc3RhYmlsaXTDqSBvcHRpbWFsZS4iLAogICJwcmljZV9N
+QUQiOiAwLAogICJpbWFnZXMiOiBbCiAgICAiL2ltYWdlcy9wcm9kdWN0cy9t
+YWt1bGUtNGQtbGFzZXItbGV2ZWwtMS00MDYwMTUucG5nIiwKICAgICIvaW1h
+Z2VzL3Byb2R1Y3RzL21ha3VsZS00ZC1sYXNlci1sZXZlbC0yLTQwNjAxNS5w
+bmciCiAgXSwKICAiaW5fc3RvY2siOiB0cnVlLAogICJyZWYiOiAiVlQtQVVU
+Ty0xNzc2NjIyNDEwMDk4IiwKICAic3BlY3MiOiB7CiAgICAicHJvamVjdGlv
+biI6ICI0RCAtIExpZ25lcyBjcm9pc8OpZXMgMzYwwrAiLAogICAgImNvdWxl
+dXJMYXNlciI6ICJSb3VnZSIsCiAgICAiYXV0b25vbWllIjogIlZhcmlhYmxl
+IHNlbG9uIGxlcyBwaWxlcyIsCiAgICAiYmFzZSI6ICJNYWduw6l0aXF1ZSBh
+dmVjIHBpZWRzIHTDqWxlc2NvcGlxdWVzIiwKICAgICJwcmVjaXNpb25BdXRv
+IjogIkF1dG8tbml2ZWxsZW1lbnQiLAogICAgInBvcnRlZSI6ICLDgCBkw6l0
+ZXJtaW5lciBzZWxvbiBtb2TDqGxlIiwKICAgICJwcm90ZWN0aW9uIjogIkNs
+YXNzZSBkZSBsYXNlciBJSS9JSUkiLAogICAgImFsaW1lbnRhdGlvbiI6ICJQ
+aWxlcyIKICB9Cn0sCl0pOwo=
