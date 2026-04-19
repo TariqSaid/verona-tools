@@ -1,214 +1,201 @@
 /* ══════════════════════════════════════════════════════════
-   VERONA TOOLS — Product Variants Logic
-   Renders size pills, color swatches, and texture swatches
-   inside the product modal.
-   
-   Each product can have a "variants" field like:
-   variants: {
-     sizes:    [{label:"47X49", width:47, depth:49, slots:6, price_MAD:120, ref:"D01-47"}, ...],
-     colors:   [{name:"Marbre Blanc", hex:"#f4f4f4", image:"/images/variants/white.jpg"}, ...],
-     textures: [{name:"Lisse",   swatch:"/images/variants/smooth.jpg", image:"/images/..."}, ...]
-   }
+   INTERACTIVE VARIANTS (sizes / colors / textures)
+   Renders inside the product modal above the action buttons
 ═══════════════════════════════════════════════════════════ */
 
-(function() {
-  'use strict';
+.variants-block {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 14px 0;
+}
 
-  // Remember user's current selection per product
-  var selection = { size: 0, color: 0, texture: 0 };
-  var currentProduct = null;
+.variant-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
-  /**
-   * Main entry point — call from openProductModal(product)
-   */
-  window.renderVariants = function(product) {
-    currentProduct = product;
-    selection = { size: 0, color: 0, texture: 0 };
+.variant-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+}
+.variant-label strong {
+  color: #1B2D3E;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+body.dark .variant-label { color: #94a3b8; }
+body.dark .variant-label strong { color: #e2e8f0; }
 
-    var container = document.getElementById('variants-section');
-    if (!container) return;
+.variant-selected-value {
+  color: #22B8CF;
+  font-weight: 800;
+  font-size: 13px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-feature-settings: 'tnum';
+}
 
-    if (!product || !product.variants ||
-        (!product.variants.sizes && !product.variants.colors && !product.variants.textures)) {
-      container.style.display = 'none';
-      container.innerHTML = '';
-      return;
-    }
+/* ── Size pills (stillbois style) ──────────────────────── */
+.variant-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 
-    container.style.display = 'block';
-    container.innerHTML = buildVariantsHTML(product.variants);
-    attachListeners();
-    updateSelectedDisplay();
-  };
+.variant-size {
+  padding: 9px 16px;
+  border: 1.5px solid #e2e8f0;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1B2D3E;
+  cursor: pointer;
+  font-family: 'Inter', monospace;
+  transition: border-color 0.18s, background 0.18s, color 0.18s, transform 0.15s;
+  user-select: none;
+  white-space: nowrap;
+}
+.variant-size:hover {
+  border-color: #22B8CF;
+  transform: translateY(-1px);
+}
+.variant-size.active {
+  background: #22B8CF;
+  border-color: #22B8CF;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(34,184,207,0.30);
+}
+body.dark .variant-size {
+  background: #1B2D3E;
+  border-color: #374151;
+  color: #e2e8f0;
+}
+body.dark .variant-size.active {
+  background: #22B8CF;
+  border-color: #22B8CF;
+  color: #fff;
+}
 
-  function buildVariantsHTML(v) {
-    var html = '<div class="variants-block">';
+/* ── Color swatches ────────────────────────────────────── */
+.variant-colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
-    // ── Sizes ──
-    if (v.sizes && v.sizes.length) {
-      html += '<div class="variant-group">';
-      html += '<div class="variant-label">' +
-        '<strong>Taille</strong>' +
-        '<span class="variant-selected-value" data-selected="size">' + esc(v.sizes[0].label) + '</span>' +
-      '</div>';
-      html += '<div class="variant-sizes">';
-      v.sizes.forEach(function(s, i) {
-        html += '<button type="button" class="variant-size ' + (i === 0 ? 'active' : '') + '" ' +
-          'data-kind="size" data-index="' + i + '">' +
-          esc(s.label) +
-        '</button>';
-      });
-      html += '</div>';
+.variant-color {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1.5px #e2e8f0;
+  transition: box-shadow 0.18s, transform 0.15s;
+  position: relative;
+}
+.variant-color:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 1.5px #22B8CF;
+}
+.variant-color.active {
+  box-shadow: 0 0 0 2.5px #22B8CF;
+}
+.variant-color.active::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.9);
+  pointer-events: none;
+}
 
-      // Dimension summary
-      var first = v.sizes[0];
-      if (first.width || first.depth || first.slots !== undefined) {
-        html += '<div class="variant-dims" id="variant-dims">';
-        if (first.width)  html += dimHTML('Largeur', first.width + ' cm', 'width');
-        if (first.depth)  html += dimHTML('Profondeur', first.depth + ' cm', 'depth');
-        if (first.slots !== undefined) html += dimHTML('Compartiments', first.slots, 'slots');
-        html += '</div>';
-      }
-      html += '</div>';
-    }
+/* ── Texture swatches ──────────────────────────────────── */
+.variant-textures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 
-    // ── Colors ──
-    if (v.colors && v.colors.length) {
-      html += '<div class="variant-group">';
-      html += '<div class="variant-label">' +
-        '<strong>Couleur</strong>' +
-        '<span class="variant-selected-value" data-selected="color">' + esc(v.colors[0].name) + '</span>' +
-      '</div>';
-      html += '<div class="variant-colors">';
-      v.colors.forEach(function(c, i) {
-        var bg = c.hex || '#ccc';
-        html += '<button type="button" class="variant-color ' + (i === 0 ? 'active' : '') + '" ' +
-          'data-kind="color" data-index="' + i + '" ' +
-          'style="background:' + bg + ';" ' +
-          'title="' + esc(c.name) + '" aria-label="' + esc(c.name) + '"></button>';
-      });
-      html += '</div>';
-      html += '</div>';
-    }
+.variant-texture {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid #e2e8f0;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: border-color 0.18s, transform 0.15s;
+  position: relative;
+}
+.variant-texture:hover {
+  border-color: #22B8CF;
+  transform: translateY(-1px);
+}
+.variant-texture.active {
+  border-color: #22B8CF;
+  border-width: 2.5px;
+  box-shadow: 0 4px 10px rgba(34,184,207,0.25);
+}
+.variant-texture.active::after {
+  content: '✓';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  background: rgba(34,184,207,0.3);
+}
 
-    // ── Textures ──
-    if (v.textures && v.textures.length) {
-      html += '<div class="variant-group">';
-      html += '<div class="variant-label">' +
-        '<strong>Motif</strong>' +
-        '<span class="variant-selected-value" data-selected="texture">' + esc(v.textures[0].name) + '</span>' +
-      '</div>';
-      html += '<div class="variant-textures">';
-      v.textures.forEach(function(t, i) {
-        var style = t.swatch
-          ? ('background-image:url(\'' + t.swatch + '\');')
-          : ('background:' + (t.hex || '#eee') + ';');
-        html += '<button type="button" class="variant-texture ' + (i === 0 ? 'active' : '') + '" ' +
-          'data-kind="texture" data-index="' + i + '" ' +
-          'style="' + style + '" ' +
-          'title="' + esc(t.name) + '" aria-label="' + esc(t.name) + '"></button>';
-      });
-      html += '</div>';
-      html += '</div>';
-    }
+/* ── Dimension summary card (shows width/depth/slots) ──── */
+.variant-dims {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  background: #f0f6fa;
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 4px;
+}
+.variant-dim {
+  text-align: center;
+}
+.variant-dim-label {
+  font-size: 10px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+.variant-dim-value {
+  font-size: 15px;
+  font-weight: 800;
+  color: #22B8CF;
+  font-family: 'Inter', monospace;
+  margin-top: 2px;
+}
+body.dark .variant-dims { background: #1B2D3E; }
+body.dark .variant-dim-label { color: #94a3b8; }
 
-    html += '</div>';
-    return html;
-  }
-
-  function dimHTML(label, value, key) {
-    return '<div class="variant-dim" data-dim="' + key + '">' +
-      '<div class="variant-dim-label">' + esc(label) + '</div>' +
-      '<div class="variant-dim-value">' + esc(value) + '</div>' +
-    '</div>';
-  }
-
-  function attachListeners() {
-    var buttons = document.querySelectorAll('#variants-section [data-kind]');
-    buttons.forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var kind = this.getAttribute('data-kind');
-        var idx = parseInt(this.getAttribute('data-index'), 10);
-
-        // Deactivate siblings of same kind
-        document.querySelectorAll('#variants-section [data-kind="' + kind + '"]').forEach(function(el) {
-          el.classList.remove('active');
-        });
-        this.classList.add('active');
-
-        selection[kind] = idx;
-        applySelection(kind);
-      });
-    });
-  }
-
-  function applySelection(kind) {
-    if (!currentProduct || !currentProduct.variants) return;
-    var v = currentProduct.variants;
-
-    // Update selected-value label
-    var data = null;
-    if (kind === 'size' && v.sizes)       data = v.sizes[selection.size];
-    if (kind === 'color' && v.colors)     data = v.colors[selection.color];
-    if (kind === 'texture' && v.textures) data = v.textures[selection.texture];
-    if (data) {
-      var labelEl = document.querySelector('#variants-section [data-selected="' + kind + '"]');
-      if (labelEl) labelEl.textContent = data.label || data.name || '';
-    }
-
-    // Size change → update price, ref, dimensions
-    if (kind === 'size') {
-      var size = v.sizes[selection.size];
-      if (size) {
-        if (size.price_MAD !== undefined) {
-          var priceEl = document.getElementById('modal-price');
-          if (priceEl) priceEl.textContent = Number(size.price_MAD).toLocaleString('fr-MA');
-        }
-        if (size.ref) {
-          var skuEl = document.getElementById('modal-sku');
-          if (skuEl) {
-            skuEl.textContent = 'Réf. ' + size.ref +
-              (currentProduct.subcategory ? ' · ' + currentProduct.subcategory : '');
-          }
-        }
-        var dimBox = document.getElementById('variant-dims');
-        if (dimBox) {
-          var widthEl  = dimBox.querySelector('[data-dim="width"] .variant-dim-value');
-          var depthEl  = dimBox.querySelector('[data-dim="depth"] .variant-dim-value');
-          var slotsEl  = dimBox.querySelector('[data-dim="slots"] .variant-dim-value');
-          if (widthEl && size.width)  widthEl.textContent = size.width + ' cm';
-          if (depthEl && size.depth)  depthEl.textContent = size.depth + ' cm';
-          if (slotsEl && size.slots !== undefined) slotsEl.textContent = size.slots;
-        }
-      }
-    }
-
-    // Color/texture change → swap main image if variant has an image
-    if (kind === 'color' || kind === 'texture') {
-      var arr = kind === 'color' ? v.colors : v.textures;
-      var selected = arr[selection[kind]];
-      if (selected && selected.image) {
-        var mainImg = document.getElementById('modal-main-img');
-        if (mainImg) {
-          mainImg.src = selected.image;
-          mainImg.style.transform = '';
-        }
-        document.querySelectorAll('.modal-thumb').forEach(function(t) { t.classList.remove('active'); });
-      }
-    }
-  }
-
-  function updateSelectedDisplay() {
-    // Initialize price/ref from selected size if sizes exist
-    if (currentProduct && currentProduct.variants && currentProduct.variants.sizes) {
-      applySelection('size');
-    }
-  }
-
-  function esc(str) {
-    if (str === null || str === undefined) return '';
-    var d = document.createElement('div');
-    d.textContent = String(str);
-    return d.innerHTML;
-  }
-})();
+/* ── Mobile ─────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .variant-size { padding: 8px 12px; font-size: 12px; }
+  .variant-color { width: 30px; height: 30px; }
+  .variant-texture { width: 42px; height: 42px; }
+  .variant-dim-value { font-size: 13px; }
+}
