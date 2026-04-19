@@ -288,29 +288,4 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   }
 }
 ,
-  {
-  "id": 1776635766762,
-  "category": "Quincaillerie",
-  "subcategory": "Coulisses et guides de tiroir",
-  "brand": "Unknown",
-  "title": "Coulisses de tiroir télescopiques",
-  "description_fr": "Ensemble de quatre coulisses télescopiques métalliques pour tiroir, disponibles en différentes longueurs. Conçues pour un fonctionnement fluide et silencieux des tiroirs de meubles, armoires et caissons. Finition chromée brillante avec mécanisme de glissement à billes.",
-  "price_MAD": 0,
-  "images": [
-    "/images/products/coulisses-de-tiroir-1-763064.png",
-    "/images/products/coulisses-de-tiroir-2-763064.png"
-  ],
-  "in_stock": true,
-  "ref": "VT-AUTO-766762",
-  "specs": {
-    "type": "Coulisse télescopique à billes",
-    "matériau": "Acier zingué/chromé",
-    "longueurs_variées": true,
-    "capacité_charge": "Variable selon modèle",
-    "mécanisme": "Glissement à billes",
-    "finition": "Chromée brillante",
-    "quantity_in_set": 4,
-    "fermeture": "Fermeture progressive"
-  }
-}
 ]);
