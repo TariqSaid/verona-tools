@@ -78,4 +78,36 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "classe_protection": "II"
   }
 }
+,
+  {
+  "id": 1776632071208,
+  "category": "Power Tools",
+  "subcategory": "Corded Drill",
+  "brand": "Bosch",
+  "title": "Bosch GSB 21-2 AE",
+  "description_fr": "Perceuse à percussion filaire Bosch GSB 21-2 AE avec système de percussion pour perçage dans le béton, la brique et la maçonnerie. Équipée d'un mandrin 13 mm et d'une poignée auxiliaire pour un contrôle optimal.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/bosch-gsb-21-2-ae-1-062306.png",
+    "/images/products/bosch-gsb-21-2-ae-2-062306.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-071208",
+  "specs": {
+    "model": "GSB 21-2 AE",
+    "power": "550W",
+    "chuckSize": "13mm",
+    "maxDrillingCapacity": "21mm (concrete/masonry)",
+    "impactRate": "0-3000 rpm",
+    "weight": "2.5kg",
+    "voltage": "220-240V",
+    "features": [
+      "Percussion drill",
+      "Auxiliary handle included",
+      "3000 impacts per minute",
+      "Ergonomic design",
+      "Corded electric"
+    ]
+  }
+}
 ]);
