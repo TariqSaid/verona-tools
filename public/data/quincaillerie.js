@@ -217,7 +217,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   "price_MAD": 0,
   "images": [
     "/images/products/coulisses-de-tiroir-avec-amortisseurs-1-185275.png",
-    "/images/products/coulisses-de-tiroir-avec-amortisseurs-2-185275.png"
+    ""
   ],
   "in_stock": true,
   "ref": "VT-AUTO-189371",
