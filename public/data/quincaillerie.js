@@ -78,4 +78,37 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "protectionSécurité": "Oui"
   }
 },
+  {
+  "id": 1776615419520,
+  "category": "Outils de mesure",
+  "subcategory": "Télémètres laser",
+  "brand": "Bosch",
+  "title": "Télémètre laser Bosch GLM 50-27 CG Professionnel",
+  "description_fr": "Télémètre laser professionnel avec technologie Bluetooth et mesure jusqu'à 50 mètres. Écran couleur haute résolution pour affichage des mesures multiples et calculs de surfaces/volumes.",
+  "price_MAD": 1890,
+  "images": [
+    "/images/products/bosch-glm-50-27-cg-professional-1-415132.png",
+    "/images/products/bosch-glm-50-27-cg-professional-2-415132.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776615419520",
+  "specs": {
+    "maxRange": "50 m",
+    "accuracy": "±1.5 mm",
+    "display": "Écran couleur haute résolution",
+    "connectivity": "Bluetooth",
+    "functions": [
+      "Mesure simple",
+      "Calcul de surface",
+      "Calcul de volume",
+      "Fonction d'addition/soustraction",
+      "Mesure d'inclinaison",
+      "Mise en niveau"
+    ],
+    "batteryType": "Lithium-ion",
+    "weight": "0.345 kg",
+    "dimensions": "127 x 62 x 38 mm",
+    "protectionRating": "IP65"
+  }
+},
 ]);
