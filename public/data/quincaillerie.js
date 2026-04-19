@@ -237,33 +237,10 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
 }
 ,
 
-  {
-  "id": 1776636023332,
-  "category": "Plomberie et traitement de l'eau",
-  "subcategory": "Filtres à eau",
-  "brand": "Unknown",
-  "title": "Cartouche de filtre à eau",
-  "description_fr": "Ensemble de cartouches de filtration d'eau disponibles en quatre tailles différentes. Ces cartouches sont conçues pour être installées dans des systèmes de filtration d'eau domestiques ou commerciaux pour éliminer les impuretés, le chlore et autres contaminants.",
-  "price_MAD": 0,
-  "images": [
-    "/images/products/cartouche-de-filtre-eau-1-019426.png",
-    "/images/products/cartouche-de-filtre-eau-2-019426.png"
-  ],
-  "in_stock": true,
-  "ref": "VT-AUTO-023332",
-  "specs": {
-    "material": "Plastique transparent avec capot noir",
-    "sizes_available": 4,
-    "height_range": "De petit à grand format",
-    "connection_type": "Filetée",
-    "filtration_type": "Cartouche remplaçable",
-    "application": "Systèmes de filtration d'eau domestiques et commerciaux"
-  }
-}
 ,
   {
-  "id": 1776638591937,
-  "category": "Peinture et revêtements",
+  "id": 1776638592937,
+  "category": "Quincaillerie",
   "subcategory": "Peinture acrylique",
   "brand": "Winsor & Newton",
   "title": "Peinture acrylique en tube",
