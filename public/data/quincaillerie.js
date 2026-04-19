@@ -239,7 +239,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
 
 ,
   {
-  "id": 1776638592937,
+  "id": 1776638592037,
   "category": "Quincaillerie",
   "subcategory": "Peinture acrylique",
   "brand": "Winsor & Newton",
@@ -260,4 +260,5 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "marque": "Winsor & Newton"
   }
 }
+,
 ]);
