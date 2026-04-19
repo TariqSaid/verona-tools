@@ -121,7 +121,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   "price_MAD": 0,
   "images": [
     "/images/products/tiroir-coulissant-avec-amortisseurs-1-630334.png",
-    "/images/products/tiroir-coulissant-avec-amortisseurs-2-630334.png"
+    ""
   ],
   "in_stock": true,
   "ref": "VT-AUTO-634213",
