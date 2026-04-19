@@ -189,4 +189,30 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "longueur_cable": "4 m"
   }
 },
+  {
+  "id": 1776605036028,
+  "category": "Outils électriques",
+  "subcategory": "Meuleuses angulaires",
+  "brand": "Bosch",
+  "title": "Meuleuse angulaire 1000W",
+  "description_fr": "Meuleuse angulaire compacte et puissante de 1000W avec disque de 125mm, équipée d'une poignée de protection et d'un système de sécurité. Idéale pour le meulage, le tronçonnage et le polissage de matériaux de construction.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/meuleuse-angulaire-bosch-gws-1000-1-031618.png",
+    "/images/products/meuleuse-angulaire-bosch-gws-1000-2-031618.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776605036028",
+  "specs": {
+    "puissance": "1000W",
+    "diametre_disque": "125mm",
+    "vitesse_nominal": "11000 tr/min",
+    "poids": "2.0kg",
+    "tension": "220-240V",
+    "frequence": "50Hz",
+    "poignee_protection": "Incluse",
+    "type_moteur": "Universel",
+    "classe_protection": "II"
+  }
+},
 ]);
