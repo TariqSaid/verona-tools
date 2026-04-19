@@ -261,4 +261,30 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "ouverture": "Fermeture complète avec système de roulement à billes"
   }
 }
+,
+  {
+  "id": 1776635656796,
+  "category": "Quincaillerie",
+  "subcategory": "Accessoires de tiroir",
+  "brand": "Unknown",
+  "title": "Glissière de tiroir télescopique",
+  "description_fr": "Ensemble de glissières de tiroir télescopiques en acier zingué, disponibles en plusieurs longueurs. Ces glissières permettent l'ouverture et la fermeture fluide des tiroirs avec un mécanisme d'extension complète.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/glissi-re-de-tiroir-1-652413.png",
+    "/images/products/glissi-re-de-tiroir-2-652413.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-656796",
+  "specs": {
+    "material": "Acier zingué galvanisé",
+    "type": "Glissière télescopique d'extension complète",
+    "finition": "Chromée/Zinguée",
+    "nombre_de_pieces": 4,
+    "longueurs_disponibles": "Plusieurs longueurs standards",
+    "charge_supportee": "Charge moyenne",
+    "mecanisme": "Coulisse télescopique automatique",
+    "installation": "Sur les côtés intérieurs du cadre du tiroir"
+  }
+}
 ]);
