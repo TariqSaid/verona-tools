@@ -260,4 +260,27 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "application": "Systèmes de filtration d'eau domestiques et commerciaux"
   }
 }
+,
+  {
+  "id": 1776638591937,
+  "category": "Peinture et revêtements",
+  "subcategory": "Peinture acrylique",
+  "brand": "Winsor & Newton",
+  "title": "Peinture acrylique en tube",
+  "description_fr": "Set de peintures acryliques en tubes de différentes couleurs, idéal pour la peinture artistique, les projets créatifs et les travaux manuels. Palette de couleurs variées allant des teintes claires aux teintes foncées.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/peinture-acrylique-en-tube-1-587515.png",
+    "/images/products/peinture-acrylique-en-tube-2-587515.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-591937",
+  "specs": {
+    "format": "Tube",
+    "nombreCouleurs": 6,
+    "type": "Peinture acrylique",
+    "utilisation": "Peinture artistique, loisirs créatifs",
+    "marque": "Winsor & Newton"
+  }
+}
 ]);
