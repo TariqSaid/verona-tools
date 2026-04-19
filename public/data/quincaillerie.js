@@ -215,4 +215,31 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "classe_protection": "II"
   }
 },
+  {
+  "id": 1776605431345,
+  "category": "Outils électriques",
+  "subcategory": "Meuleuses angulaires",
+  "brand": "Bosch",
+  "title": "Meuleuse angulaire Bosch GWS 13-125 CIE",
+  "description_fr": "Meuleuse angulaire filaire compacte avec disque de 125 mm, équipée d'un système de protection innovant et d'une poignée ergonomique pour un contrôle optimal lors du meulage et du tronçonnage.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/bosch-gws-13-125-cie-1-426951.png",
+    "/images/products/bosch-gws-13-125-cie-2-426951.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776605431345",
+  "specs": {
+    "puissance": "1300W",
+    "diamètre_disque": "125mm",
+    "vitesse_nominale": "13000 tr/min",
+    "poids": "2.4kg",
+    "tension": "230V",
+    "filetage_arbre": "M14",
+    "longueur": "340mm",
+    "protection": "Cardan ajustable",
+    "poignée_auxiliaire": "Oui",
+    "cordon": "Filaire"
+  }
+},
 ]);
