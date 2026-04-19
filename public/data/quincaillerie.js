@@ -52,4 +52,30 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     images      : ['/images/products/wooden-dowel-pins-assorted-pack-1-596239.png', '/images/products/wooden-dowel-pins-assorted-pack-2-596239.png'],
     specs       : null,
   },
+  {
+  "id": 1776614237916,
+  "category": "Outils électriques",
+  "subcategory": "Meuleuses angulaires",
+  "brand": "Bosch Professional",
+  "title": "Meuleuse angulaire Bosch Professional GWS 1000",
+  "description_fr": "Meuleuse angulaire compacte et puissante de Bosch Professional, idéale pour le meulage, le polissage et le tronçonnage de matériaux. Équipée d'un disque abrasif de 125 mm et d'une poignée de guidage ergonomique pour un contrôle optimal.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/meuleuse-angulaire-bosch-professional-gws-1000-1-233469.png",
+    "/images/products/meuleuse-angulaire-bosch-professional-gws-1000-2-233469.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776614237916",
+  "specs": {
+    "puissance": "1000 W",
+    "diamètreDuDisque": "125 mm",
+    "vitesseAVide": "11000 tr/min",
+    "poidsNet": "2.2 kg",
+    "tension": "220-240 V",
+    "fréquence": "50 Hz",
+    "typeDisque": "Disque abrasif 125 mm",
+    "poigneeLatérale": "Oui",
+    "protectionSécurité": "Oui"
+  }
+},
 ]);
