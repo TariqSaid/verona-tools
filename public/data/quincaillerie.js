@@ -147,4 +147,31 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "installation": "Montage dans les côtés internes du caisson de meuble"
   }
 }
+,
+  {
+  "id": 1776634638448,
+  "category": "Outils électriques",
+  "subcategory": "Perceuses",
+  "brand": "Bosch",
+  "title": "Perceuse à percussion GSB 21-2 AE",
+  "description_fr": "Perceuse à percussion filaire Bosch GSB 21-2 AE avec mandrin de précision et système anti-choc pour perçage dans le béton, la pierre et l'acier.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/gsb-21-2-ae-1-628387.png",
+    "/images/products/gsb-21-2-ae-2-628387.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-638448",
+  "specs": {
+    "modele": "GSB 21-2 AE",
+    "puissance": "550 W",
+    "vitesse": "3000 tr/min",
+    "capacite_mandrin": "13 mm",
+    "type": "Perceuse à percussion",
+    "applications": "Béton, pierre, acier, bois",
+    "alimentation": "Filaire 220V",
+    "poids": "2.3 kg",
+    "couleur": "Bleu et noir"
+  }
+}
 ]);
