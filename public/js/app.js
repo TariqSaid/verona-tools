@@ -177,6 +177,12 @@ function getBrandClass(brand) {
   return map[brand] || 'badge-default';
 }
 
+// ─── Price formatter — "Prix sur demande" when 0 ─────────────────────────
+function formatPrice(price_MAD) {
+  if (!price_MAD || price_MAD === 0) return null; // null = "Prix sur demande"
+  return Number(price_MAD).toLocaleString('fr-MA');
+}
+
 // ─── Card variant state (keyed by product id) ────────────────────────────
 var _cardState = {};
 
@@ -346,8 +352,11 @@ function renderProductCard(p, i) {
         <div class="mt-auto pt-2 border-t border-gray-50 space-y-2" style="margin-top:10px;">
           <div class="flex items-center justify-between gap-2">
             <div>
-              <span class="card-price-val price-tag text-xl font-black text-navy">${p.price_MAD.toLocaleString('fr-MA')}</span>
-              <span class="text-sm font-semibold text-gray-400 ml-1">MAD</span>
+              ${formatPrice(p.price_MAD)
+                ? `<span class="card-price-val price-tag text-xl font-black text-navy">${formatPrice(p.price_MAD)}</span>
+                   <span class="text-sm font-semibold text-gray-400 ml-1">MAD</span>`
+                : `<span class="card-price-val text-xs font-bold text-gray-400 italic">Prix sur demande</span>`
+              }
             </div>
             <span class="text-[10px] font-bold px-2.5 py-1 rounded-full ${stockBadgeCls}">${stockLabel}</span>
           </div>
@@ -620,7 +629,21 @@ function openProductModal(productId) {
   if (skuEl) skuEl.textContent = `Réf. ${p.ref || 'VT-' + String(p.id).padStart(4, '0')} · ${p.subcategory}`;
 
   const priceEl = document.getElementById('modal-price');
-  if (priceEl) priceEl.textContent = p.price_MAD.toLocaleString('fr-MA');
+  const currencyEl = document.querySelector('.modal-currency');
+  if (priceEl) {
+    const fp = formatPrice(p.price_MAD);
+    if (fp) {
+      priceEl.textContent = fp;
+      priceEl.style.fontSize = '';
+      priceEl.style.color = '';
+      if (currencyEl) currencyEl.style.display = '';
+    } else {
+      priceEl.textContent = 'Prix sur demande';
+      priceEl.style.fontSize = '15px';
+      priceEl.style.color = '#94a3b8';
+      if (currencyEl) currencyEl.style.display = 'none';
+    }
+  }
 
   const stockEl = document.getElementById('modal-stock');
   if (stockEl) {
@@ -642,6 +665,10 @@ function openProductModal(productId) {
     mainImg.alt   = p.title;
     mainImg.style.transform       = '';
     mainImg.style.transformOrigin = '0 0';
+    mainImg.onerror = function() {
+      this.onerror = null;
+      this.src = 'https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&q=80';
+    };
   }
 
   const thumbsEl = document.getElementById('modal-thumbs');
@@ -665,7 +692,12 @@ function openProductModal(productId) {
   if (modal) {
     modal.classList.add('open');
     document.body.style.overflow = 'hidden';
-    requestAnimationFrame(initImageZoom);
+    // Always scroll modal to top when opening a new product
+    requestAnimationFrame(function() {
+      const box = modal.querySelector('.modal-box');
+      if (box) box.scrollTop = 0;
+      initImageZoom();
+    });
   }
 }
 
@@ -727,11 +759,28 @@ function modalSendWhatsApp() {
   if (!modalCurrentProduct) return;
   var p   = modalCurrentProduct;
   var ref = p.ref || 'VT-' + String(p.id).padStart(4, '0');
+
+  // Get selected variant label if any
+  var variantLine = '';
+  var vtSec = document.getElementById('variants-section');
+  if (vtSec && vtSec.style.display !== 'none') {
+    var badge = vtSec.querySelector('#vt-selected-label, #vt-selected-color');
+    var colorBadge = vtSec.querySelector('#vt-selected-color');
+    var optBadge   = vtSec.querySelector('#vt-selected-label');
+    if (optBadge && optBadge.textContent.trim())   variantLine += '\nOption : *' + optBadge.textContent.trim() + '*';
+    if (colorBadge && colorBadge.textContent.trim()) variantLine += '\nCouleur : *' + colorBadge.textContent.trim() + '*';
+  }
+
+  var priceStr = formatPrice(p.price_MAD) ? formatPrice(p.price_MAD) + ' MAD' : 'Sur demande';
+
   var msg = encodeURIComponent(
-    'Bonjour Verona Tools,\n\nJe souhaite avoir plus d\'informations sur le produit suivant :\n\n' +
-    '*' + p.title + '*\n' +
-    'Prix affiché : ' + p.price_MAD.toLocaleString('fr-MA') + ' MAD\n' +
-    'Réf. : ' + ref + '\n\n' +
+    'Bonjour Verona Tools 👋\n\n' +
+    'Je suis intéressé(e) par le produit suivant :\n\n' +
+    '🛠️ *' + p.title + '*\n' +
+    '📦 Réf. : ' + ref + '\n' +
+    '🏷️ Catégorie : ' + p.category +
+    variantLine + '\n' +
+    '💰 Prix : ' + priceStr + '\n\n' +
     'Merci de me contacter dès que possible.'
   );
   window.open('https://wa.me/212600960924?text=' + msg, '_blank');
