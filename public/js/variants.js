@@ -1,130 +1,227 @@
 /* ═══════════════════════════════════════════════════
-   VERONA TOOLS — Interactive Variants
-   Supports: volume, size, length, color
-   Mobile-first, teal theme
+   VERONA TOOLS — Variants Logic
+   Called from openProductModal(product) in app.js:
+   if (typeof renderVariants === 'function') renderVariants(p);
 ═══════════════════════════════════════════════════ */
+(function() {
+  'use strict';
 
-.variants-block {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 16px 0 8px;
-  border-top: 1px solid #f1f5f9;
-}
+  var _product = null;
+  var _selectedOption = 0;
+  var _selectedColor = 0;
 
-.variant-group {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+  /* ── Main entry point ─────────────────────────── */
+  window.renderVariants = function(product) {
+    _product = product;
+    _selectedOption = 0;
+    _selectedColor = 0;
 
-.variant-label-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-}
-.variant-type-label {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #94a3b8;
-}
-.variant-selected-badge {
-  font-size: 13px;
-  font-weight: 800;
-  color: #22B8CF;
-  background: rgba(34,184,207,0.08);
-  padding: 2px 10px;
-  border-radius: 20px;
-  transition: all 0.2s ease;
-}
-body.dark .variant-type-label { color: #64748b; }
-body.dark .variant-selected-badge { background: rgba(34,184,207,0.15); }
+    var container = document.getElementById('variants-section');
+    if (!container) return;
 
-.variant-pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
+    var v = product && product.variants;
+    if (!v || (!v.options && !v.colors)) {
+      container.style.display = 'none';
+      container.innerHTML = '';
+      return;
+    }
 
-.variant-pill {
-  padding: 9px 18px;
-  border: 1.5px solid #e2e8f0;
-  background: #fff;
-  border-radius: 10px;
-  font-size: 13px;
-  font-weight: 700;
-  color: #1B2D3E;
-  cursor: pointer;
-  font-family: 'Inter', system-ui, sans-serif;
-  transition: border-color 0.18s, background 0.18s, color 0.18s, transform 0.15s, box-shadow 0.18s;
-  user-select: none;
-  white-space: nowrap;
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
-}
-.variant-pill:hover { border-color: #22B8CF; transform: translateY(-1px); }
-.variant-pill:active { transform: scale(0.96); }
-.variant-pill.active {
-  background: #22B8CF;
-  border-color: #22B8CF;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(34,184,207,0.35);
-}
-body.dark .variant-pill { background: #1B2D3E; border-color: #334155; color: #e2e8f0; }
-body.dark .variant-pill.active { background: #22B8CF; border-color: #22B8CF; color: #fff; }
+    container.style.display = 'block';
+    container.innerHTML = buildHTML(v);
+    bindEvents(v);
+    applyOptionAt(0, v);
+  };
 
-.variant-colors {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-}
+  /* ── HTML builder ─────────────────────────────── */
+  function buildHTML(v) {
+    var html = '<div class="variants-block">';
 
-.variant-color-btn {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 2.5px solid #fff;
-  box-shadow: 0 0 0 1.5px #e2e8f0;
-  transition: box-shadow 0.18s, transform 0.15s;
-  position: relative;
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
-  flex-shrink: 0;
-}
-.variant-color-btn:hover { transform: scale(1.1); box-shadow: 0 0 0 2px #22B8CF; }
-.variant-color-btn:active { transform: scale(0.95); }
-.variant-color-btn.active { box-shadow: 0 0 0 2.5px #22B8CF; }
-.variant-color-btn.active::after {
-  content: '';
-  position: absolute;
-  inset: 3px;
-  border-radius: 50%;
-  border: 2px solid rgba(255,255,255,0.9);
-  pointer-events: none;
-}
+    // Volume / size / length pills
+    if (v.options && v.options.length) {
+      var typeLabel = getTypeLabel(v.type);
+      var firstLabel = v.options[0].label || '';
 
-.variant-dims-card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  background: #f0f6fa;
-  border-radius: 12px;
-  padding: 12px;
-  margin-top: 4px;
-}
-.variant-dim-item { text-align: center; }
-.variant-dim-label { font-size: 10px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
-.variant-dim-value { font-size: 16px; font-weight: 800; color: #22B8CF; font-feature-settings: 'tnum'; margin-top: 2px; }
-body.dark .variant-dims-card { background: #1B2D3E; }
+      html += '<div class="variant-group">';
+      html += '<div class="variant-label-row">';
+      html += '<span class="variant-type-label">' + esc(typeLabel) + '</span>';
+      html += '<span class="variant-selected-badge" id="vt-selected-label">' + esc(firstLabel) + '</span>';
+      html += '</div>';
+      html += '<div class="variant-pills">';
+      v.options.forEach(function(opt, i) {
+        html += '<button type="button" class="variant-pill' + (i === 0 ? ' active' : '') + '" ' +
+          'data-vt-index="' + i + '" aria-pressed="' + (i === 0) + '">' +
+          esc(opt.label) + '</button>';
+      });
+      html += '</div>';
 
-@media (max-width: 480px) {
-  .variant-pill { padding: 10px 14px; font-size: 13px; }
-  .variant-color-btn { width: 40px; height: 40px; }
-  .variant-dim-value { font-size: 15px; }
-  .variants-block { gap: 14px; padding: 14px 0 6px; }
-}
+      // Dimension card for size type
+      if (v.type === 'size' && v.options[0].width) {
+        html += buildDimsCard(v.options[0]);
+      }
+      html += '</div>';
+    }
+
+    // Color swatches
+    if (v.colors && v.colors.length) {
+      html += '<div class="variant-group">';
+      html += '<div class="variant-label-row">';
+      html += '<span class="variant-type-label">Couleur</span>';
+      html += '<span class="variant-selected-badge" id="vt-selected-color">' + esc(v.colors[0].name) + '</span>';
+      html += '</div>';
+      html += '<div class="variant-colors">';
+      v.colors.forEach(function(c, i) {
+        var bg = c.hex || '#ccc';
+        html += '<button type="button" class="variant-color-btn' + (i === 0 ? ' active' : '') + '" ' +
+          'data-vt-color="' + i + '" ' +
+          'style="background:' + bg + ';" ' +
+          'title="' + esc(c.name) + '" aria-label="' + esc(c.name) + '" ' +
+          'aria-pressed="' + (i === 0) + '"></button>';
+      });
+      html += '</div>';
+      html += '</div>';
+    }
+
+    html += '</div>';
+    return html;
+  }
+
+  function buildDimsCard(opt) {
+    var html = '<div class="variant-dims-card" id="vt-dims">';
+    if (opt.width !== undefined && opt.width !== null) {
+      html += dimItem('Largeur', opt.width + ' cm', 'vt-dim-width');
+    }
+    if (opt.depth !== undefined && opt.depth !== null) {
+      html += dimItem('Profondeur', opt.depth + ' cm', 'vt-dim-depth');
+    }
+    if (opt.slots !== undefined && opt.slots !== null) {
+      html += dimItem('Compartiments', opt.slots, 'vt-dim-slots');
+    }
+    html += '</div>';
+    return html;
+  }
+
+  function dimItem(label, value, id) {
+    return '<div class="variant-dim-item">' +
+      '<div class="variant-dim-label">' + esc(label) + '</div>' +
+      '<div class="variant-dim-value" id="' + id + '">' + esc(String(value)) + '</div>' +
+    '</div>';
+  }
+
+  /* ── Event binding ────────────────────────────── */
+  function bindEvents(v) {
+    var container = document.getElementById('variants-section');
+    if (!container) return;
+
+    // Option pills
+    container.querySelectorAll('[data-vt-index]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var idx = parseInt(this.getAttribute('data-vt-index'), 10);
+        container.querySelectorAll('[data-vt-index]').forEach(function(b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        this.classList.add('active');
+        this.setAttribute('aria-pressed', 'true');
+        _selectedOption = idx;
+        applyOptionAt(idx, v);
+      });
+    });
+
+    // Color swatches
+    container.querySelectorAll('[data-vt-color]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var idx = parseInt(this.getAttribute('data-vt-color'), 10);
+        container.querySelectorAll('[data-vt-color]').forEach(function(b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        this.classList.add('active');
+        this.setAttribute('aria-pressed', 'true');
+        _selectedColor = idx;
+        applyColorAt(idx, v);
+      });
+    });
+  }
+
+  /* ── Apply option selection ───────────────────── */
+  function applyOptionAt(idx, v) {
+    if (!v.options || !v.options[idx]) return;
+    var opt = v.options[idx];
+
+    // Update selected label
+    var labelEl = document.getElementById('vt-selected-label');
+    if (labelEl) labelEl.textContent = opt.label || '';
+
+    // Update price if option has one
+    if (opt.price_MAD !== undefined && opt.price_MAD > 0) {
+      var priceEl = document.getElementById('modal-price');
+      if (priceEl) priceEl.textContent = Number(opt.price_MAD).toLocaleString('fr-MA');
+    }
+
+    // Update ref if option has one
+    if (opt.ref) {
+      var skuEl = document.getElementById('modal-sku');
+      if (skuEl && _product) {
+        skuEl.textContent = 'Réf. ' + opt.ref +
+          (_product.subcategory ? ' · ' + _product.subcategory : '');
+      }
+    }
+
+    // Update dimension card for size type
+    if (v.type === 'size') {
+      var w = document.getElementById('vt-dim-width');
+      var d = document.getElementById('vt-dim-depth');
+      var s = document.getElementById('vt-dim-slots');
+      if (w && opt.width != null) w.textContent = opt.width + ' cm';
+      if (d && opt.depth != null) d.textContent = opt.depth + ' cm';
+      if (s && opt.slots != null) s.textContent = opt.slots;
+    }
+
+    // Swap image if option has one
+    if (opt.image) swapImage(opt.image);
+  }
+
+  /* ── Apply color selection ────────────────────── */
+  function applyColorAt(idx, v) {
+    if (!v.colors || !v.colors[idx]) return;
+    var color = v.colors[idx];
+
+    var labelEl = document.getElementById('vt-selected-color');
+    if (labelEl) labelEl.textContent = color.name || '';
+
+    if (color.image) swapImage(color.image);
+  }
+
+  /* ── Swap main product image ──────────────────── */
+  function swapImage(url) {
+    var mainImg = document.getElementById('modal-main-img');
+    if (mainImg) {
+      mainImg.style.opacity = '0';
+      mainImg.style.transition = 'opacity 0.2s ease';
+      setTimeout(function() {
+        mainImg.src = url;
+        mainImg.onload = function() {
+          mainImg.style.opacity = '1';
+        };
+        mainImg.style.opacity = '1';
+      }, 150);
+    }
+  }
+
+  /* ── Helpers ──────────────────────────────────── */
+  function getTypeLabel(type) {
+    var labels = {
+      'volume': 'Contenance',
+      'size': 'Taille',
+      'length': 'Longueur'
+    };
+    return labels[type] || 'Options';
+  }
+
+  function esc(str) {
+    if (str === null || str === undefined) return '';
+    var d = document.createElement('div');
+    d.textContent = String(str);
+    return d.innerHTML;
+  }
+})();
