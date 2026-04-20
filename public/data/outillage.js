@@ -9,8 +9,8 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   "description_fr": "Polisseuse rotative électrique Bosch conçue pour le polissage et l'entretien de surfaces variées. Équipée d'un disque de polissage blanc et d'une poignée ergonomique avec commandes intuitives. Idéale pour les travaux de finition, de polissage automobile et de nettoyage des surfaces dures.",
   "price_MAD": 0,
   "images": [
-    "/public/images/products/rotary-polisher-1-400511.png",
-    "/public/images/products/rotary-polisher-2-400511.png"
+    "/images/products/rotary-polisher-1-400511.png",
+    "/images/products/rotary-polisher-2-400511.png"
   ],
   "in_stock": true,
   "ref": "VT-AUTO-1776644404767",
