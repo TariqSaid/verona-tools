@@ -24,4 +24,28 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   },
   "variants": null
 },
+  {
+  "id": 1776717959107,
+  "category": "Outillage",
+  "subcategory": "Perceuses et perforateurs",
+  "brand": "Bosch Professional",
+  "title": "Perceuse à percussion",
+  "description_fr": "Perceuse à percussion professionnelle Bosch avec système de serrage rapide pour forets et accessoires. Conçue pour percer le bois, le métal et les matériaux de construction. Équipée d'une poignée auxiliaire ergonomique et d'un système de protection contre les à-coups pour une meilleure maîtrise.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/impact-drill-1-949257.png",
+    "/images/products/impact-drill-2-949257.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776717959107",
+  "specs": {
+    "highlight1_label": "Type de perceuse",
+    "highlight1_value": "Perceuse à percussion",
+    "highlight2_label": "Alimentation",
+    "highlight2_value": "Filaire électrique",
+    "highlight3_label": "Type de mandrin",
+    "highlight3_value": "Mandrin de serrage rapide"
+  },
+  "variants": null
+},
 ]);
