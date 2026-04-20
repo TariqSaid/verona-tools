@@ -1,51 +1,47 @@
-'use strict';
-window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
-  {
-  "id": 1776644404767,
-  "category": "Outillage",
-  "subcategory": "Outils électriques de polissage",
-  "brand": "Bosch",
-  "title": "Polisseuse Rotative",
-  "description_fr": "Polisseuse rotative électrique Bosch conçue pour le polissage et l'entretien de surfaces variées. Équipée d'un disque de polissage blanc et d'une poignée ergonomique avec commandes intuitives. Idéale pour les travaux de finition, de polissage automobile et de nettoyage des surfaces dures.",
-  "price_MAD": 0,
-  "images": [
-    "/images/products/rotary-polisher-1-400511.png",
-    "/images/products/rotary-polisher-2-400511.png"
-  ],
-  "in_stock": true,
-  "ref": "VT-AUTO-1776644404767",
-  "specs": {
-    "highlight1_label": "Type d'outil",
-    "highlight1_value": "Polisseuse rotative électrique",
-    "highlight2_label": "Alimentation",
-    "highlight2_value": "Secteur (cordon électrique)",
-    "highlight3_label": "Diamètre du disque",
-    "highlight3_value": "Environ 200 mm"
-  },
-  "variants": null
-},
-  {
-  "id": 1776717959107,
-  "category": "Outillage",
-  "subcategory": "Perceuses et perforateurs",
-  "brand": "Bosch Professional",
-  "title": "Perceuse à percussion",
-  "description_fr": "Perceuse à percussion professionnelle Bosch avec système de serrage rapide pour forets et accessoires. Conçue pour percer le bois, le métal et les matériaux de construction. Équipée d'une poignée auxiliaire ergonomique et d'un système de protection contre les à-coups pour une meilleure maîtrise.",
-  "price_MAD": 0,
-  "images": [
-    "/images/products/impact-drill-1-949257.png",
-    "/images/products/impact-drill-2-949257.png"
-  ],
-  "in_stock": true,
-  "ref": "VT-AUTO-1776717959107",
-  "specs": {
-    "highlight1_label": "Type de perceuse",
-    "highlight1_value": "Perceuse à percussion",
-    "highlight2_label": "Alimentation",
-    "highlight2_value": "Filaire électrique",
-    "highlight3_label": "Type de mandrin",
-    "highlight3_value": "Mandrin de serrage rapide"
-  },
-  "variants": null
-},
-]);
+J3VzZSBzdHJpY3QnOw0Kd2luZG93LlZUX1BST0RVQ1RTID0gKHdpbmRvdy5W
+VF9QUk9EVUNUUyB8fCBbXSkuY29uY2F0KFsNCiAgew0KICAiaWQiOiAxNzc2
+NjQ0NDA0NzY3LA0KICAiY2F0ZWdvcnkiOiAiT3V0aWxsYWdlIiwNCiAgInN1
+YmNhdGVnb3J5IjogIk91dGlscyDDqWxlY3RyaXF1ZXMgZGUgcG9saXNzYWdl
+IiwNCiAgImJyYW5kIjogIkJvc2NoIiwNCiAgInRpdGxlIjogIlBvbGlzc2V1
+c2UgUm90YXRpdmUiLA0KICAiZGVzY3JpcHRpb25fZnIiOiAiUG9saXNzZXVz
+ZSByb3RhdGl2ZSDDqWxlY3RyaXF1ZSBCb3NjaCBjb27Dp3VlIHBvdXIgbGUg
+cG9saXNzYWdlIGV0IGwnZW50cmV0aWVuIGRlIHN1cmZhY2VzIHZhcmnDqWVz
+LiDDiXF1aXDDqWUgZCd1biBkaXNxdWUgZGUgcG9saXNzYWdlIGJsYW5jIGV0
+IGQndW5lIHBvaWduw6llIGVyZ29ub21pcXVlIGF2ZWMgY29tbWFuZGVzIGlu
+dHVpdGl2ZXMuIElkw6lhbGUgcG91ciBsZXMgdHJhdmF1eCBkZSBmaW5pdGlv
+biwgZGUgcG9saXNzYWdlIGF1dG9tb2JpbGUgZXQgZGUgbmV0dG95YWdlIGRl
+cyBzdXJmYWNlcyBkdXJlcy4iLA0KICAicHJpY2VfTUFEIjogMCwNCiAgImlt
+YWdlcyI6IFsNCiAgICAiL2ltYWdlcy9wcm9kdWN0cy9yb3RhcnktcG9saXNo
+ZXItMS00MDA1MTEucG5nIiwNCiAgICAiL2ltYWdlcy9wcm9kdWN0cy9yb3Rh
+cnktcG9saXNoZXItMi00MDA1MTEucG5nIg0KICBdLA0KICAiaW5fc3RvY2si
+OiB0cnVlLA0KICAicmVmIjogIlZULUFVVE8tMTc3NjY0NDQwNDc2NyIsDQog
+ICJzcGVjcyI6IHsNCiAgICAiaGlnaGxpZ2h0MV9sYWJlbCI6ICJUeXBlIGQn
+b3V0aWwiLA0KICAgICJoaWdobGlnaHQxX3ZhbHVlIjogIlBvbGlzc2V1c2Ug
+cm90YXRpdmUgw6lsZWN0cmlxdWUiLA0KICAgICJoaWdobGlnaHQyX2xhYmVs
+IjogIkFsaW1lbnRhdGlvbiIsDQogICAgImhpZ2hsaWdodDJfdmFsdWUiOiAi
+U2VjdGV1ciAoY29yZG9uIMOpbGVjdHJpcXVlKSIsDQogICAgImhpZ2hsaWdo
+dDNfbGFiZWwiOiAiRGlhbcOodHJlIGR1IGRpc3F1ZSIsDQogICAgImhpZ2hs
+aWdodDNfdmFsdWUiOiAiRW52aXJvbiAyMDAgbW0iDQogIH0sDQogICJ2YXJp
+YW50cyI6IG51bGwNCn0sDQogIHsKICAiaWQiOiAxNzc2NzE3OTU5MTA3LAog
+ICJjYXRlZ29yeSI6ICJPdXRpbGxhZ2UiLAogICJzdWJjYXRlZ29yeSI6ICJQ
+ZXJjZXVzZXMgZXQgcGVyZm9yYXRldXJzIiwKICAiYnJhbmQiOiAiQm9zY2gg
+UHJvZmVzc2lvbmFsIiwKICAidGl0bGUiOiAiUGVyY2V1c2Ugw6AgcGVyY3Vz
+c2lvbiIsCiAgImRlc2NyaXB0aW9uX2ZyIjogIlBlcmNldXNlIMOgIHBlcmN1
+c3Npb24gcHJvZmVzc2lvbm5lbGxlIEJvc2NoIGF2ZWMgc3lzdMOobWUgZGUg
+c2VycmFnZSByYXBpZGUgcG91ciBmb3JldHMgZXQgYWNjZXNzb2lyZXMuIENv
+bsOndWUgcG91ciBwZXJjZXIgbGUgYm9pcywgbGUgbcOpdGFsIGV0IGxlcyBt
+YXTDqXJpYXV4IGRlIGNvbnN0cnVjdGlvbi4gw4lxdWlww6llIGQndW5lIHBv
+aWduw6llIGF1eGlsaWFpcmUgZXJnb25vbWlxdWUgZXQgZCd1biBzeXN0w6ht
+ZSBkZSBwcm90ZWN0aW9uIGNvbnRyZSBsZXMgw6AtY291cHMgcG91ciB1bmUg
+bWVpbGxldXJlIG1hw650cmlzZS4iLAogICJwcmljZV9NQUQiOiAwLAogICJp
+bWFnZXMiOiBbCiAgICAiL2ltYWdlcy9wcm9kdWN0cy9pbXBhY3QtZHJpbGwt
+MS05NDkyNTcucG5nIiwKICAgICIvaW1hZ2VzL3Byb2R1Y3RzL2ltcGFjdC1k
+cmlsbC0yLTk0OTI1Ny5wbmciCiAgXSwKICAiaW5fc3RvY2siOiB0cnVlLAog
+ICJyZWYiOiAiVlQtQVVUTy0xNzc2NzE3OTU5MTA3IiwKICAic3BlY3MiOiB7
+CiAgICAiaGlnaGxpZ2h0MV9sYWJlbCI6ICJUeXBlIGRlIHBlcmNldXNlIiwK
+ICAgICJoaWdobGlnaHQxX3ZhbHVlIjogIlBlcmNldXNlIMOgIHBlcmN1c3Np
+b24iLAogICAgImhpZ2hsaWdodDJfbGFiZWwiOiAiQWxpbWVudGF0aW9uIiwK
+ICAgICJoaWdobGlnaHQyX3ZhbHVlIjogIkZpbGFpcmUgw6lsZWN0cmlxdWUi
+LAogICAgImhpZ2hsaWdodDNfbGFiZWwiOiAiVHlwZSBkZSBtYW5kcmluIiwK
+ICAgICJoaWdobGlnaHQzX3ZhbHVlIjogIk1hbmRyaW4gZGUgc2VycmFnZSBy
+YXBpZGUiCiAgfSwKICAidmFyaWFudHMiOiBudWxsCn0sCl0pOw0K
