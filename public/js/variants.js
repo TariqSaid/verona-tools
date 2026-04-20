@@ -34,7 +34,7 @@
 
   /* ── HTML builder ─────────────────────────────── */
   function buildHTML(v) {
-    var html = '<div class="variants-block">';
+    var html = '<div class="variants-block" style="border-top:1px solid #f1f5f9;padding-top:14px;margin-top:2px;">';
 
     // Volume / size / length pills
     if (v.options && v.options.length) {
