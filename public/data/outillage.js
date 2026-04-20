@@ -1,47 +1,27 @@
-J3VzZSBzdHJpY3QnOw0Kd2luZG93LlZUX1BST0RVQ1RTID0gKHdpbmRvdy5W
-VF9QUk9EVUNUUyB8fCBbXSkuY29uY2F0KFsNCiAgew0KICAiaWQiOiAxNzc2
-NjQ0NDA0NzY3LA0KICAiY2F0ZWdvcnkiOiAiT3V0aWxsYWdlIiwNCiAgInN1
-YmNhdGVnb3J5IjogIk91dGlscyDDqWxlY3RyaXF1ZXMgZGUgcG9saXNzYWdl
-IiwNCiAgImJyYW5kIjogIkJvc2NoIiwNCiAgInRpdGxlIjogIlBvbGlzc2V1
-c2UgUm90YXRpdmUiLA0KICAiZGVzY3JpcHRpb25fZnIiOiAiUG9saXNzZXVz
-ZSByb3RhdGl2ZSDDqWxlY3RyaXF1ZSBCb3NjaCBjb27Dp3VlIHBvdXIgbGUg
-cG9saXNzYWdlIGV0IGwnZW50cmV0aWVuIGRlIHN1cmZhY2VzIHZhcmnDqWVz
-LiDDiXF1aXDDqWUgZCd1biBkaXNxdWUgZGUgcG9saXNzYWdlIGJsYW5jIGV0
-IGQndW5lIHBvaWduw6llIGVyZ29ub21pcXVlIGF2ZWMgY29tbWFuZGVzIGlu
-dHVpdGl2ZXMuIElkw6lhbGUgcG91ciBsZXMgdHJhdmF1eCBkZSBmaW5pdGlv
-biwgZGUgcG9saXNzYWdlIGF1dG9tb2JpbGUgZXQgZGUgbmV0dG95YWdlIGRl
-cyBzdXJmYWNlcyBkdXJlcy4iLA0KICAicHJpY2VfTUFEIjogMCwNCiAgImlt
-YWdlcyI6IFsNCiAgICAiL2ltYWdlcy9wcm9kdWN0cy9yb3RhcnktcG9saXNo
-ZXItMS00MDA1MTEucG5nIiwNCiAgICAiL2ltYWdlcy9wcm9kdWN0cy9yb3Rh
-cnktcG9saXNoZXItMi00MDA1MTEucG5nIg0KICBdLA0KICAiaW5fc3RvY2si
-OiB0cnVlLA0KICAicmVmIjogIlZULUFVVE8tMTc3NjY0NDQwNDc2NyIsDQog
-ICJzcGVjcyI6IHsNCiAgICAiaGlnaGxpZ2h0MV9sYWJlbCI6ICJUeXBlIGQn
-b3V0aWwiLA0KICAgICJoaWdobGlnaHQxX3ZhbHVlIjogIlBvbGlzc2V1c2Ug
-cm90YXRpdmUgw6lsZWN0cmlxdWUiLA0KICAgICJoaWdobGlnaHQyX2xhYmVs
-IjogIkFsaW1lbnRhdGlvbiIsDQogICAgImhpZ2hsaWdodDJfdmFsdWUiOiAi
-U2VjdGV1ciAoY29yZG9uIMOpbGVjdHJpcXVlKSIsDQogICAgImhpZ2hsaWdo
-dDNfbGFiZWwiOiAiRGlhbcOodHJlIGR1IGRpc3F1ZSIsDQogICAgImhpZ2hs
-aWdodDNfdmFsdWUiOiAiRW52aXJvbiAyMDAgbW0iDQogIH0sDQogICJ2YXJp
-YW50cyI6IG51bGwNCn0sDQogIHsKICAiaWQiOiAxNzc2NzE3OTU5MTA3LAog
-ICJjYXRlZ29yeSI6ICJPdXRpbGxhZ2UiLAogICJzdWJjYXRlZ29yeSI6ICJQ
-ZXJjZXVzZXMgZXQgcGVyZm9yYXRldXJzIiwKICAiYnJhbmQiOiAiQm9zY2gg
-UHJvZmVzc2lvbmFsIiwKICAidGl0bGUiOiAiUGVyY2V1c2Ugw6AgcGVyY3Vz
-c2lvbiIsCiAgImRlc2NyaXB0aW9uX2ZyIjogIlBlcmNldXNlIMOgIHBlcmN1
-c3Npb24gcHJvZmVzc2lvbm5lbGxlIEJvc2NoIGF2ZWMgc3lzdMOobWUgZGUg
-c2VycmFnZSByYXBpZGUgcG91ciBmb3JldHMgZXQgYWNjZXNzb2lyZXMuIENv
-bsOndWUgcG91ciBwZXJjZXIgbGUgYm9pcywgbGUgbcOpdGFsIGV0IGxlcyBt
-YXTDqXJpYXV4IGRlIGNvbnN0cnVjdGlvbi4gw4lxdWlww6llIGQndW5lIHBv
-aWduw6llIGF1eGlsaWFpcmUgZXJnb25vbWlxdWUgZXQgZCd1biBzeXN0w6ht
-ZSBkZSBwcm90ZWN0aW9uIGNvbnRyZSBsZXMgw6AtY291cHMgcG91ciB1bmUg
-bWVpbGxldXJlIG1hw650cmlzZS4iLAogICJwcmljZV9NQUQiOiAwLAogICJp
-bWFnZXMiOiBbCiAgICAiL2ltYWdlcy9wcm9kdWN0cy9pbXBhY3QtZHJpbGwt
-MS05NDkyNTcucG5nIiwKICAgICIvaW1hZ2VzL3Byb2R1Y3RzL2ltcGFjdC1k
-cmlsbC0yLTk0OTI1Ny5wbmciCiAgXSwKICAiaW5fc3RvY2siOiB0cnVlLAog
-ICJyZWYiOiAiVlQtQVVUTy0xNzc2NzE3OTU5MTA3IiwKICAic3BlY3MiOiB7
-CiAgICAiaGlnaGxpZ2h0MV9sYWJlbCI6ICJUeXBlIGRlIHBlcmNldXNlIiwK
-ICAgICJoaWdobGlnaHQxX3ZhbHVlIjogIlBlcmNldXNlIMOgIHBlcmN1c3Np
-b24iLAogICAgImhpZ2hsaWdodDJfbGFiZWwiOiAiQWxpbWVudGF0aW9uIiwK
-ICAgICJoaWdobGlnaHQyX3ZhbHVlIjogIkZpbGFpcmUgw6lsZWN0cmlxdWUi
-LAogICAgImhpZ2hsaWdodDNfbGFiZWwiOiAiVHlwZSBkZSBtYW5kcmluIiwK
-ICAgICJoaWdobGlnaHQzX3ZhbHVlIjogIk1hbmRyaW4gZGUgc2VycmFnZSBy
-YXBpZGUiCiAgfSwKICAidmFyaWFudHMiOiBudWxsCn0sCl0pOw0K
+'use strict';
+window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
+  {
+  "id": 1776718181467,
+  "category": "Outillage",
+  "subcategory": "Perceuses et visseuses",
+  "brand": "Bosch",
+  "title": "Perceuse-Visseuse sans fil",
+  "description_fr": "Perceuse-visseuse sans fil compacte Bosch avec batterie lithium intégrée. Outil polyvalent idéal pour le perçage et le vissage dans le bois, le métal et les matériaux composites. Conception ergonomique avec poignée antidérapante pour un confort de travail optimal.",
+  "price_MAD": 0,
+  "images": [
+    "/images/products/cordless-drill-driver-1-171778.png",
+    "/images/products/cordless-drill-driver-2-171778.png"
+  ],
+  "in_stock": true,
+  "ref": "VT-AUTO-1776718181467",
+  "specs": {
+    "highlight1_label": "Type d'outil",
+    "highlight1_value": "Perceuse-visseuse sans fil",
+    "highlight2_label": "Alimentation",
+    "highlight2_value": "Batterie lithium-ion",
+    "highlight3_label": "Mandrin",
+    "highlight3_value": "13 mm"
+  },
+  "variants": null
+},
+]);
