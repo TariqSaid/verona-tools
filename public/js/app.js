@@ -24,7 +24,7 @@ const maxIds = products.map(p => p.id).sort((a, b) => b - a).slice(0, 3);
 let currentLang     = 'fr';
 let activeSearch    = '';
 let activeBrand     = '';
-let currentCategory = null; // null = all-categories view
+let currentCategory = null;
 
 // ─── Translation helper ──────────────────────────────────────────────────
 function t(key) {
@@ -82,7 +82,7 @@ function openWhatsApp() {
   window.open('https://wa.me/212600960924?text=' + msg, '_blank');
 }
 
-// ─── View switching (core navigation) ───────────────────────────────────
+// ─── View switching ──────────────────────────────────────────────────────
 function setView(cat) {
   currentCategory = cat || null;
   activeSearch    = '';
@@ -177,6 +177,75 @@ function getBrandClass(brand) {
   return map[brand] || 'badge-default';
 }
 
+// ─── Card variant state (keyed by product id) ────────────────────────────
+var _cardState = {};
+
+// ─── Card pill click handler ─────────────────────────────────────────────
+function vtCardPill(productId, optIdx, e) {
+  if (e) { e.stopPropagation(); e.preventDefault(); }
+  var p = products.find(function(x) { return x.id === productId; });
+  if (!p || !p.variants || !p.variants.options) return;
+
+  _cardState[productId] = _cardState[productId] || {};
+  _cardState[productId].optIdx = optIdx;
+
+  var opt = p.variants.options[optIdx];
+  var card = document.querySelector('[data-card-id="' + productId + '"]');
+  if (!card) return;
+
+  card.querySelectorAll('.card-pill').forEach(function(btn, i) {
+    btn.classList.toggle('active', i === optIdx);
+    btn.setAttribute('aria-pressed', i === optIdx ? 'true' : 'false');
+  });
+
+  var selLabel = card.querySelector('.card-variant-selected');
+  if (selLabel && opt) selLabel.textContent = opt.label;
+
+  if (opt && opt.price_MAD > 0) {
+    var priceEl = card.querySelector('.card-price-val');
+    if (priceEl) priceEl.textContent = Number(opt.price_MAD).toLocaleString('fr-MA');
+  }
+
+  if (opt && opt.image) vtSwapCardImg(card, opt.image);
+}
+
+// ─── Card color click handler ────────────────────────────────────────────
+function vtCardColor(productId, colorIdx, e) {
+  if (e) { e.stopPropagation(); e.preventDefault(); }
+  var p = products.find(function(x) { return x.id === productId; });
+  if (!p || !p.variants || !p.variants.colors) return;
+
+  _cardState[productId] = _cardState[productId] || {};
+  _cardState[productId].colorIdx = colorIdx;
+
+  var color = p.variants.colors[colorIdx];
+  var card = document.querySelector('[data-card-id="' + productId + '"]');
+  if (!card) return;
+
+  card.querySelectorAll('.card-color-btn').forEach(function(btn, i) {
+    btn.classList.toggle('active', i === colorIdx);
+    btn.setAttribute('aria-pressed', i === colorIdx ? 'true' : 'false');
+  });
+
+  var selLabel = card.querySelector('.card-variant-selected');
+  if (selLabel && color) selLabel.textContent = color.name;
+
+  if (color && color.image) vtSwapCardImg(card, color.image);
+}
+
+// ─── Card image swap ─────────────────────────────────────────────────────
+function vtSwapCardImg(card, url) {
+  var img = card.querySelector('.product-img');
+  if (!img) return;
+  img.style.opacity = '0';
+  img.style.transition = 'opacity 0.2s ease';
+  setTimeout(function() {
+    img.src = url;
+    img.onload = function() { img.style.opacity = '1'; };
+    img.style.opacity = '1';
+  }, 150);
+}
+
 // ─── Product card renderer ───────────────────────────────────────────────
 function renderProductCard(p, i) {
   const brandClass    = getBrandClass(p.brand);
@@ -187,17 +256,73 @@ function renderProductCard(p, i) {
                           : (Array.isArray(p.image_url) ? p.image_url[0] : (p.image_url || ''));
   const isNew         = maxIds.includes(p.id);
   const delay         = `animation-delay:${i * 0.04}s`;
+  const v             = p.variants || null;
+  const hasVariants   = v && (v.options || v.colors);
+
+  // ── Spec highlight tags ──────────────────────────────────
+  let specsHtml = '';
+  if (p.specs) {
+    const tags = [];
+    if (p.specs.highlight1_value) tags.push(p.specs.highlight1_value);
+    if (p.specs.highlight2_value) tags.push(p.specs.highlight2_value);
+    if (p.specs.highlight3_value) tags.push(p.specs.highlight3_value);
+    if (tags.length) {
+      specsHtml = '<div class="card-specs">' +
+        tags.map(tag => `<span class="card-spec-tag">${tag}</span>`).join('') +
+      '</div>';
+    }
+  }
+
+  // ── Card variants HTML ───────────────────────────────────
+  let variantsHtml = '';
+  if (hasVariants) {
+    const typeLabel = v.type === 'volume' ? 'Contenance' :
+                     v.type === 'size'   ? 'Taille' :
+                     v.type === 'length' ? 'Longueur' : 'Options';
+    const firstLabel = (v.options && v.options[0]) ? v.options[0].label :
+                       (v.colors  && v.colors[0])  ? v.colors[0].name  : '';
+
+    variantsHtml = `<div class="card-variants" onclick="event.stopPropagation()">`;
+
+    if (v.options && v.options.length) {
+      variantsHtml +=
+        `<div class="card-variant-label">
+          <span>${typeLabel}</span>
+          <span class="card-variant-selected">${firstLabel}</span>
+        </div>
+        <div class="card-pills">`;
+      v.options.forEach((opt, idx) => {
+        variantsHtml += `<button type="button" class="card-pill${idx === 0 ? ' active' : ''}"
+          onclick="vtCardPill(${p.id},${idx},event)"
+          aria-pressed="${idx === 0}">${opt.label}</button>`;
+      });
+      variantsHtml += `</div>`;
+    }
+
+    if (v.colors && v.colors.length) {
+      variantsHtml += `<div class="card-colors">`;
+      v.colors.forEach((c, idx) => {
+        variantsHtml += `<button type="button" class="card-color-btn${idx === 0 ? ' active' : ''}"
+          onclick="vtCardColor(${p.id},${idx},event)"
+          style="background:${c.hex || '#ccc'};"
+          title="${c.name}" aria-label="${c.name}"
+          aria-pressed="${idx === 0}"></button>`;
+      });
+      variantsHtml += `</div>`;
+    }
+
+    variantsHtml += `</div>`;
+  }
 
   return `
-    <article class="product-card bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col fade-in" style="${delay}">
-      <div class="relative bg-gray-50 overflow-hidden cursor-pointer" style="padding-top:70%;" onclick="openProductModal(${p.id})">
-        <img
-          src="${imgSrc}"
-          alt="${p.title}"
-          loading="lazy"
-          class="product-img absolute inset-0 w-full h-full object-contain p-3"
-          onerror="this.src='https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&q=80'"
-        />
+    <article class="product-card bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col fade-in"
+             style="${delay}" data-card-id="${p.id}">
+
+      <div class="relative bg-gray-50 overflow-hidden cursor-pointer" style="padding-top:70%;"
+           onclick="openProductModal(${p.id})">
+        <img src="${imgSrc}" alt="${p.title}" loading="lazy"
+             class="product-img absolute inset-0 w-full h-full object-contain p-3"
+             onerror="this.src='https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&q=80'" />
         <span class="${brandClass} absolute top-2 left-2 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide shadow-sm"
               style="${p.brand === 'Stanley' ? 'color:#1a1a1a;' : ''}">
           ${p.brand}
@@ -210,24 +335,27 @@ function renderProductCard(p, i) {
           </span>
         </div>
       </div>
+
       <div class="p-3.5 flex flex-col flex-1">
         <p class="text-gray-400 text-[10px] uppercase tracking-widest font-semibold mb-1">${p.subcategory || p.category}</p>
-        <h3 class="text-sm font-bold text-navy leading-tight mb-2 line-clamp-2 flex-1 cursor-pointer hover:text-primary transition-colors"
+        <h3 class="text-sm font-bold text-navy leading-tight mb-1.5 line-clamp-2 flex-1 cursor-pointer hover:text-primary transition-colors"
             onclick="openProductModal(${p.id})">${p.title}</h3>
-        <p class="text-gray-500 text-xs leading-relaxed mb-3 line-clamp-2">${p.description_fr}</p>
-        <div class="mt-auto pt-2 border-t border-gray-50 space-y-2">
+        <p class="text-gray-500 text-xs leading-relaxed mb-2 line-clamp-2">${p.description_fr}</p>
+        ${specsHtml}
+        ${variantsHtml}
+        <div class="mt-auto pt-2 border-t border-gray-50 space-y-2" style="margin-top:10px;">
           <div class="flex items-center justify-between gap-2">
             <div>
-              <span class="price-tag text-xl font-black text-navy">${p.price_MAD.toLocaleString('fr-MA')}</span>
+              <span class="card-price-val price-tag text-xl font-black text-navy">${p.price_MAD.toLocaleString('fr-MA')}</span>
               <span class="text-sm font-semibold text-gray-400 ml-1">MAD</span>
             </div>
             <span class="text-[10px] font-bold px-2.5 py-1 rounded-full ${stockBadgeCls}">${stockLabel}</span>
           </div>
-          <button
-            onclick="openProductModal(${p.id})"
-            class="w-full bg-primary hover:bg-primary-dark text-white text-xs font-bold py-2.5 rounded-xl transition-all flex items-center justify-center gap-1.5"
-          >
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <button onclick="openProductModal(${p.id})"
+            class="w-full bg-primary hover:bg-primary-dark text-white text-xs font-bold py-2.5 rounded-xl transition-all flex items-center justify-center gap-1.5">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
             Voir Produit
           </button>
         </div>
@@ -252,16 +380,10 @@ function renderCategorySections() {
   const sortVal     = sortEl.value;
   const inCatView   = !!currentCategory;
 
-  // Show / hide the homepage category grid
   if (gridSec) gridSec.style.display = inCatView ? 'none' : '';
-
-  // Back button
   if (backBtn) backBtn.classList.toggle('visible', inCatView);
-
-  // Section heading text
   if (headingEl) headingEl.textContent = currentCategory || t('our_products');
 
-  // ── Filter ────────────────────────────────────────────────
   const filtered = products.filter(p => {
     if (currentCategory && p.category !== currentCategory) return false;
     if (activeBrand     && p.brand    !== activeBrand)     return false;
@@ -273,16 +395,13 @@ function renderCategorySections() {
     return true;
   });
 
-  // ── Sort ──────────────────────────────────────────────────
   if      (sortVal === 'price-asc')  filtered.sort((a, b) => a.price_MAD - b.price_MAD);
   else if (sortVal === 'price-desc') filtered.sort((a, b) => b.price_MAD - a.price_MAD);
   else if (sortVal === 'name')       filtered.sort((a, b) => a.title.localeCompare(b.title, 'fr'));
 
-  // ── Result count ──────────────────────────────────────────
   const rc = document.getElementById('result-count');
   if (rc) rc.textContent = `${filtered.length} ${t('products_found')}`;
 
-  // ── Category banner ───────────────────────────────────────
   if (bannerEl) {
     if (inCatView) {
       const cfg        = CATEGORY_CONFIG.find(c => c.name === currentCategory) || {};
@@ -326,7 +445,6 @@ function renderCategorySections() {
     }
   }
 
-  // ── Empty state ───────────────────────────────────────────
   if (filtered.length === 0) {
     container.innerHTML = '';
     emptyEl.classList.remove('hidden');
@@ -334,16 +452,13 @@ function renderCategorySections() {
   }
   emptyEl.classList.add('hidden');
 
-  // ── Build HTML ────────────────────────────────────────────
   let html = '';
 
   if (inCatView) {
-    // Single-category: clean grid with fade-in
     html = '<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 view-enter">';
     filtered.forEach((p, i) => { html += renderProductCard(p, i); });
     html += '</div>';
   } else {
-    // All-categories: stacked section blocks
     CATEGORY_CONFIG.forEach(cfg => {
       const catProds = filtered.filter(p => p.category === cfg.name);
       const safeId   = cfg.name.replace(/[^a-zA-Z0-9]/g, '-');
@@ -468,7 +583,6 @@ function getProductImages(p) {
   if (Array.isArray(p.image_url) && p.image_url.length > 0) return p.image_url;
   const raw = typeof p.image_url === 'string' ? p.image_url : '';
   if (!raw) return [''];
-  // Local paths (/images/...) don't support Unsplash query variants — return as-is
   if (raw.startsWith('/')) return [raw];
   const base = raw.split('?')[0];
   return [raw, base + '?w=400&q=75&crop=entropy', base + '?w=400&q=70&fit=crop'];
@@ -483,7 +597,6 @@ function openProductModal(productId) {
   const imgs       = getProductImages(p);
   const brandClass = getBrandClass(p.brand);
 
-  // Breadcrumb
   const bcCat = document.getElementById('modal-bc-cat');
   if (bcCat) {
     bcCat.textContent = p.category;
@@ -494,7 +607,6 @@ function openProductModal(productId) {
   if (bcSub)   bcSub.textContent   = p.subcategory;
   if (bcTitle) bcTitle.textContent = p.title;
 
-  // Brand tag
   const brandTag = document.getElementById('modal-brand-tag');
   if (brandTag) {
     brandTag.textContent  = p.brand;
@@ -502,17 +614,14 @@ function openProductModal(productId) {
     brandTag.style.color  = p.brand === 'Stanley' ? '#1a1a1a' : '#fff';
   }
 
-  // Title + ref
   const titleEl = document.getElementById('modal-product-title');
   if (titleEl) titleEl.textContent = p.title;
   const skuEl = document.getElementById('modal-sku');
   if (skuEl) skuEl.textContent = `Réf. ${p.ref || 'VT-' + String(p.id).padStart(4, '0')} · ${p.subcategory}`;
 
-  // Price
   const priceEl = document.getElementById('modal-price');
   if (priceEl) priceEl.textContent = p.price_MAD.toLocaleString('fr-MA');
 
-  // Stock
   const stockEl = document.getElementById('modal-stock');
   if (stockEl) {
     if (p.in_stock) {
@@ -524,11 +633,9 @@ function openProductModal(productId) {
     }
   }
 
-  // Description
   const descEl = document.getElementById('modal-desc');
   if (descEl) descEl.textContent = p.description_fr;
 
-  // Main image
   const mainImg = document.getElementById('modal-main-img');
   if (mainImg) {
     mainImg.src   = imgs[0];
@@ -537,7 +644,6 @@ function openProductModal(productId) {
     mainImg.style.transformOrigin = '0 0';
   }
 
-  // Thumbnails
   const thumbsEl = document.getElementById('modal-thumbs');
   if (thumbsEl) {
     if (imgs.length > 1) {
@@ -553,8 +659,8 @@ function openProductModal(productId) {
     }
   }
 
-  // ── Render specs tabs (if product has specs) ──────────────
   if (typeof renderSpecsTabs === 'function') renderSpecsTabs(p);
+  if (typeof renderVariants  === 'function') renderVariants(p);
 
   if (modal) {
     modal.classList.add('open');
@@ -581,14 +687,13 @@ function closeProductModal() {
   modalCurrentProduct = null;
 }
 
-// ─── Image zoom (magnifier lens) ─────────────────────────────────────────
+// ─── Image zoom ──────────────────────────────────────────────────────────
 function initImageZoom() {
   const container = document.getElementById('zoom-container');
   const img  = document.getElementById('modal-main-img');
   const lens = document.getElementById('zoom-lens');
   if (!container || !img || !lens) return;
 
-  // Replace to clear old listeners
   const fresh = container.cloneNode(true);
   container.parentNode.replaceChild(fresh, container);
 
@@ -599,7 +704,7 @@ function initImageZoom() {
 
   function onMove(e) {
     e.preventDefault();
-    const rect   = c.getBoundingClientRect();
+    const rect    = c.getBoundingClientRect();
     const clientX = e.touches ? e.touches[0].clientX : e.clientX;
     const clientY = e.touches ? e.touches[0].clientY : e.clientY;
     const x = Math.max(0, Math.min(clientX - rect.left, rect.width));
@@ -617,7 +722,7 @@ function initImageZoom() {
   c.addEventListener('mouseenter', onEnter);
 }
 
-// ─── WhatsApp pre-filled message from modal ──────────────────────────────
+// ─── WhatsApp from modal ─────────────────────────────────────────────────
 function modalSendWhatsApp() {
   if (!modalCurrentProduct) return;
   var p   = modalCurrentProduct;
@@ -647,7 +752,6 @@ try { renderCategorySections(); } catch (e) { console.error('renderCategorySecti
 try { applyTranslations(); }      catch (e) { /* silent */ }
 try { startHeroSlider(); }        catch (e) { /* silent */ }
 
-// Sync data-cat attributes on pills (in case HTML and JS differ)
 try {
   document.querySelectorAll('.pill-btn').forEach(function (btn) {
     var match = (btn.getAttribute('onclick') || '').match(/scrollToCategory\('([^']+)'\)/);
@@ -655,6 +759,5 @@ try {
   });
 } catch (e) { /* silent */ }
 
-// Page loader — dual mechanism: window.load + fallback timer
 setTimeout(ensureLoaderHidden, 800);
 window.addEventListener('load', function () { setTimeout(ensureLoaderHidden, 400); });
