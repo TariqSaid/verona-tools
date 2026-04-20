@@ -9,7 +9,7 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'%3E%3Crect width='32' height='32' rx='6' fill='%231B2D3E'/%3E%3Cpath d='M8 14h16l-2 14H10L8 14z' stroke='%2322B8CF' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 14v-3a4 4 0 018 0v3' stroke='%2322B8CF' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M14 20l4 4M18 20l-4 4' stroke='%23ffffff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,9 +22,7 @@
             'navy-light': '#243B50',
             surface: '#F0F6FA',
           },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
         }
       }
     }
@@ -35,9 +33,7 @@
 </head>
 <body class="bg-surface text-gray-900 antialiased">
 
-<!-- ═══════════════════════════════════════════════════════════
-     STICKY HEADER
-══════════════════════════════════════════════════════════════ -->
+<!-- STICKY HEADER -->
 <header id="main-header" class="bg-navy shadow-xl border-b border-navy-light">
   <div class="max-w-[1400px] mx-auto px-4 py-3 flex items-center gap-4">
     <a href="#" class="flex items-center gap-2 min-w-max">
@@ -88,37 +84,37 @@
             <div>
               <div class="text-xs font-black text-primary uppercase tracking-widest mb-3">Électricité & Outillage</div>
               <ul class="space-y-1.5">
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Électricité')">Câbles & Fils</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Électricité')">Disjoncteurs & Coffrets</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Électricité')">Interrupteurs & Prises</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Outillage')">Perceuses & Visseuses</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Outillage')">Meuleuses & Scies</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Outillage')">Tournevis & Clés</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Quincaillerie')">Visserie & Boulonnerie</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Électricité')">Câbles & Fils</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Électricité')">Disjoncteurs & Coffrets</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Électricité')">Interrupteurs & Prises</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Outillage')">Perceuses & Visseuses</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Outillage')">Meuleuses & Scies</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Outillage')">Tournevis & Clés</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Quincaillerie')">Visserie & Boulonnerie</a></li>
               </ul>
             </div>
             <div>
               <div class="text-xs font-black text-primary uppercase tracking-widest mb-3">Peinture & Luminaire</div>
               <ul class="space-y-1.5">
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Peinture')">Peinture Acrylique</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Peinture')">Peinture Epoxy</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Peinture')">Rouleaux & Pinceaux</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Luminaire')">Spots LED</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Luminaire')">Ampoules & Tubes</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Droguerie')">Colles & Mastics</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Droguerie')">Produits Chimiques</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Peinture')">Peinture Acrylique</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Peinture')">Peinture Epoxy</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Peinture')">Rouleaux & Pinceaux</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Luminaire')">Spots LED</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Luminaire')">Ampoules & Tubes</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Droguerie')">Colles & Mastics</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Droguerie')">Produits Chimiques</a></li>
               </ul>
             </div>
             <div>
               <div class="text-xs font-black text-primary uppercase tracking-widest mb-3">Autres Rayons</div>
               <ul class="space-y-1.5">
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Échelles & Travaux en Hauteur')">Escabeaux</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Échelles & Travaux en Hauteur')">Échafaudages</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Rangement & Organisation')">Servantes d'atelier</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Rangement & Organisation')">Boites à outils</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Jardinage & Plein Air')">Arrosage</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Jardinage & Plein Air')">Outils de jardin</a></li>
-                <li><a href="#" class="text-sm text-gray- hover:text-primary transition-colors" onclick="scrollToCategory('Quincaillerie')">Serrures & Sécurité</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Échelles & Travaux en Hauteur')">Escabeaux</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Échelles & Travaux en Hauteur')">Échafaudages</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Rangement & Organisation')">Servantes d'atelier</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Rangement & Organisation')">Boites à outils</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Jardinage & Plein Air')">Arrosage</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Jardinage & Plein Air')">Outils de jardin</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Quincaillerie')">Serrures & Sécurité</a></li>
               </ul>
             </div>
             <div>
@@ -178,10 +174,10 @@
 
 <!-- HERO SLIDER -->
 <section id="hero-section" class="hero-slider relative min-h-[580px] flex flex-col justify-center bg-navy">
-  <div class="hero-slide active" aria-label="Slide 1"><img src="https://images.unsplash.com/photo-1671543565338-8b22a87b8359?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Atelier professionnel outillage" loading="eager" /><div class="slide-overlay"></div></div>
-  <div class="hero-slide" aria-label="Slide 2"><img src="https://images.unsplash.com/photo-1635335874521-7987db781153?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Matériel électrique professionnel" loading="lazy" /><div class="slide-overlay"></div></div>
-  <div class="hero-slide" aria-label="Slide 3"><img src="https://images.unsplash.com/photo-1672659605632-895c18f09563?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Outillage à main qualité professionnelle" loading="lazy" /><div class="slide-overlay"></div></div>
-  <div class="hero-slide" aria-label="Slide 4"><img src="https://images.unsplash.com/photo-1652829069862-87874e119527?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Peinture et rénovation" loading="lazy" /><div class="slide-overlay"></div></div>
+  <div class="hero-slide active" aria-label="Slide 1"><img src="https://images.unsplash.com/photo-1671543565338-8b22a87b8359?q=80&w=1170&auto=format&fit=crop" alt="Atelier professionnel outillage" loading="eager" /><div class="slide-overlay"></div></div>
+  <div class="hero-slide" aria-label="Slide 2"><img src="https://images.unsplash.com/photo-1635335874521-7987db781153?q=80&w=1170&auto=format&fit=crop" alt="Matériel électrique professionnel" loading="lazy" /><div class="slide-overlay"></div></div>
+  <div class="hero-slide" aria-label="Slide 3"><img src="https://images.unsplash.com/photo-1672659605632-895c18f09563?q=80&w=1170&auto=format&fit=crop" alt="Outillage à main qualité professionnelle" loading="lazy" /><div class="slide-overlay"></div></div>
+  <div class="hero-slide" aria-label="Slide 4"><img src="https://images.unsplash.com/photo-1652829069862-87874e119527?q=80&w=1170&auto=format&fit=crop" alt="Peinture et rénovation" loading="lazy" /><div class="slide-overlay"></div></div>
   <div class="relative z-10 max-w-[1400px] mx-auto px-6 py-20 md:py-28 w-full">
     <div class="max-w-3xl">
       <div class="inline-flex items-center gap-2 bg-primary/20 border border-primary/40 rounded-full px-4 py-1.5 mb-6">
@@ -248,15 +244,15 @@
     </div>
   </div>
   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4">
-    <button onclick="scrollToCategory('Électricité')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1553873002-785d775854c9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Électricité" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Électricité</span></div></button>
+    <button onclick="scrollToCategory('Électricité')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1553873002-785d775854c9?q=80&w=400" alt="Électricité" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Électricité</span></div></button>
     <button onclick="scrollToCategory('Outillage')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?w=400&q=80" alt="Outillage" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Outillage</span></div></button>
-    <button onclick="scrollToCategory('Quincaillerie')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1617048530929-0edab8608369?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Quincaillerie" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Quincaillerie</span></div></button>
-    <button onclick="scrollToCategory('Peinture')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Peinture" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M2 13.5V20a2 2 0 002 2h16a2 2 0 002-2v-6.5"/><path d="M12 2v13"/><path d="M8 6l4-4 4 4"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Peinture</span></div></button>
-    <button onclick="scrollToCategory('Luminaire')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1601698015099-9459a95728fd?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Luminaire" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 006 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6M10 22h4"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Luminaire</span></div></button>
-    <button onclick="scrollToCategory('Droguerie')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1599256631012-9c2b32bfa8bc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Droguerie" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 11-4 0"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Droguerie</span></div></button>
-    <button onclick="scrollToCategory('Échelles & Travaux en Hauteur')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1748344477811-ec6ec9a60c8b?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Échelles et Travaux en Hauteur" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="18" x2="16" y2="18"/><line x1="6" y1="3" x2="6" y2="21"/><line x1="18" y1="3" x2="18" y2="21"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Échelles</span></div></button>
-    <button onclick="scrollToCategory('Rangement & Organisation')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1631342816586-30462a1d30d0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rangement et Organisation" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Rangement</span></div></button>
-    <button onclick="scrollToCategory('Jardinage & Plein Air')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1523301551780-cd17359a95d0?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jardinage et Plein Air" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M12 22V12M12 12C12 7 7 3 2 3c0 5 4 9 10 9M12 12c0-5 5-9 10-9-1 5-5 9-10 9"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Jardinage</span></div></button>
+    <button onclick="scrollToCategory('Quincaillerie')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1617048530929-0edab8608369?q=80&w=400" alt="Quincaillerie" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Quincaillerie</span></div></button>
+    <button onclick="scrollToCategory('Peinture')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=400" alt="Peinture" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M2 13.5V20a2 2 0 002 2h16a2 2 0 002-2v-6.5"/><path d="M12 2v13"/><path d="M8 6l4-4 4 4"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Peinture</span></div></button>
+    <button onclick="scrollToCategory('Luminaire')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1601698015099-9459a95728fd?q=80&w=400" alt="Luminaire" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 006 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6M10 22h4"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Luminaire</span></div></button>
+    <button onclick="scrollToCategory('Droguerie')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1599256631012-9c2b32bfa8bc?q=80&w=400" alt="Droguerie" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 11-4 0"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Droguerie</span></div></button>
+    <button onclick="scrollToCategory('Échelles & Travaux en Hauteur')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1748344477811-ec6ec9a60c8b?q=80&w=400" alt="Échelles" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="18" x2="16" y2="18"/><line x1="6" y1="3" x2="6" y2="21"/><line x1="18" y1="3" x2="18" y2="21"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Échelles</span></div></button>
+    <button onclick="scrollToCategory('Rangement & Organisation')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1631342816586-30462a1d30d0?q=80&w=400" alt="Rangement" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Rangement</span></div></button>
+    <button onclick="scrollToCategory('Jardinage & Plein Air')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1523301551780-cd17359a95d0?q=80&w=400" alt="Jardinage" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M12 22V12M12 12C12 7 7 3 2 3c0 5 4 9 10 9M12 12c0-5 5-9 10-9-1 5-5 9-10 9"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Jardinage</span></div></button>
   </div>
 </section>
 
@@ -265,11 +261,11 @@
   <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-6 pb-4 border-b border-gray-100">
     <div>
       <h2 id="products-heading" class="text-2xl font-black text-navy" data-i18n="our_products">Nos Produits</h2>
-      <p class="text-gray-500 text-sm mt-0.5" id="result-count">20 produits</p>
+      <p class="text-gray-500 text-sm mt-0.5" id="result-count">0 produits</p>
     </div>
     <div class="flex items-center gap-3 flex-wrap">
       <div class="flex items-center gap-2">
-        <label class="text-sm text-gray- font-medium whitespace-nowrap">Trier :</label>
+        <label class="text-sm text-gray-600 font-medium whitespace-nowrap">Trier :</label>
         <select id="sort-select" onchange="renderCategorySections()" class="border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-primary bg-white">
           <option value="default">Pertinence</option>
           <option value="price-asc">Prix croissant</option>
@@ -301,7 +297,7 @@
 <!-- TOAST -->
 <div id="toast" class="bg-navy text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 max-w-xs">
   <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
-  <span id="toast-msg" class="text-sm font-semibold">Ajouté au panier !</span>
+  <span id="toast-msg" class="text-sm font-semibold">OK</span>
 </div>
 
 <!-- NOTRE MAGASIN -->
@@ -309,31 +305,31 @@
   <div class="max-w-[1400px] mx-auto px-4">
     <div class="mb-10 text-center">
       <span class="inline-block text-xs font-black text-primary uppercase tracking-widest mb-2">Notre Adresse</span>
-      <h2 class="text-3xl md:text-4xl font-black text-navy dark:text-gray-100">Notre Magasin</h2>
+      <h2 class="text-3xl md:text-4xl font-black text-navy">Notre Magasin</h2>
       <p class="text-gray-500 mt-2 text-sm">Venez nous rendre visite — nous sommes là pour vous conseiller</p>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
       <div class="rounded-2xl overflow-hidden shadow-lg border border-gray-100 min-h-[360px]">
-        <iframe title="Verona Tools Casablanca" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.3621618809034!2d-7.6506862!3d33.5179684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62d46701ac6af%3A0xb12f7d75aac68688!2sVERONA%20TOOLS!5e0!3m2!1sfr!2sma!4v1776385391941!5m2!1sfr!2sma" width="100%" height="100%" style="border:0; min-height:360px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Verona Tools Casablanca" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.3621618809034!2d-7.6506862!3d33.5179684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62d46701ac6af%3A0xb12f7d75aac68688!2sVERONA%20TOOLS!5e0!3m2!1sfr!2sma!4v1776385391941!5m2!1sfr!2sma" width="100%" height="100%" style="border:0;min-height:360px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="flex flex-col gap-4">
         <div class="store-info-card">
           <div class="text-xs font-black text-primary uppercase tracking-widest mb-4">Informations &amp; Contact</div>
           <a href="https://maps.app.goo.gl/9HHp8oNdy6jyPoWV7" target="_blank" rel="noopener" class="store-link">
             <span class="store-icon" style="background:#FEF2F2;"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-            <div><div class="font-semibold text-sm" style="color:inherit">Lot B111, Lot ASK Tranche B, Casablanca 20450</div><div class="text-xs text-gray-400 mt-0.5">Casablanca 20250, Maroc — Ouvrir dans Maps</div></div>
+            <div><div class="font-semibold text-sm">Lot B111, Lot ASK Tranche B, Casablanca 20450</div><div class="text-xs text-gray-400 mt-0.5">Ouvrir dans Maps</div></div>
           </a>
           <a href="tel:+212522976636" class="store-link">
-            <span class="store-icon" style="background:#EFF6FF;"><svg class="w-4 h-4 text-blue-" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 12.85 19.79 19.79 0 01.83 4.18 2 2 0 012.81 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l.97-.97a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></span>
-            <div><div class="font-semibold text-sm" style="color:inherit">+212 522 97 66 36</div><div class="text-xs text-gray-400 mt-0.5">Appeler le magasin</div></div>
+            <span class="store-icon" style="background:#EFF6FF;"><svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 12.85 19.79 19.79 0 01.83 4.18 2 2 0 012.81 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l.97-.97a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></span>
+            <div><div class="font-semibold text-sm">+212 522 97 66 36</div><div class="text-xs text-gray-400 mt-0.5">Appeler le magasin</div></div>
           </a>
           <a href="https://wa.me/212600960924" target="_blank" rel="noopener" class="store-link">
             <span class="store-icon" style="background:#F0FDF4;"><svg class="w-4 h-4" style="color:#25D366" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg></span>
-            <div><div class="font-semibold text-sm" style="color:inherit">+212 6 00 96 09 24</div><div class="text-xs text-gray-400 mt-0.5">Écrire sur WhatsApp</div></div>
+            <div><div class="font-semibold text-sm">+212 6 00 96 09 24</div><div class="text-xs text-gray-400 mt-0.5">Écrire sur WhatsApp</div></div>
           </a>
           <a href="mailto:contact@veronatools.ma" class="store-link">
             <span class="store-icon" style="background:#FFF7ED;"><svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
-            <div><div class="font-semibold text-sm" style="color:inherit">contact@veronatools.ma</div><div class="text-xs text-gray-400 mt-0.5">Envoyer un e-mail</div></div>
+            <div><div class="font-semibold text-sm">contact@veronatools.ma</div><div class="text-xs text-gray-400 mt-0.5">Envoyer un e-mail</div></div>
           </a>
           <div class="store-link" style="cursor:default;">
             <span class="store-icon" style="background:#F5F3FF;"><svg class="w-4 h-4 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></span>
@@ -384,7 +380,6 @@
         <li><a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors">Retours & Échanges</a></li>
         <li><a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors">Contactez-nous</a></li>
         <li><a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors">FAQ</a></li>
-        <li><a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors">Marques</a></li>
       </ul>
     </div>
     <div>
@@ -445,24 +440,32 @@
 </button>
 
 <!-- ═══════════════════════════════════════════════════════════
-     PRODUCT DETAIL MODAL (with specs tabs)
+     PRODUCT DETAIL MODAL
 ══════════════════════════════════════════════════════════════ -->
 <div id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-product-title">
   <div class="modal-backdrop" onclick="closeProductModal()"></div>
   <div class="modal-box">
+
     <button class="modal-close-btn" onclick="closeProductModal()" aria-label="Fermer">
       <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
     </button>
+
+    <!-- Top section: image left + info right -->
     <div class="modal-body">
+
+      <!-- Left: main image + thumbnails -->
       <div class="modal-image-col">
         <div class="modal-main-img" style="padding:0;">
           <div class="zoom-container" id="zoom-container" style="width:100%;height:100%;min-height:280px;">
             <div class="zoom-lens" id="zoom-lens"></div>
-            <img id="modal-main-img" src="" alt="" class="zoomable" style="max-height:340px;object-fit:contain;padding:16px;" />
+            <img id="modal-main-img" src="" alt="" class="zoomable"
+                 style="max-height:340px;object-fit:contain;padding:16px;" />
           </div>
         </div>
         <div class="modal-thumbs" id="modal-thumbs"></div>
       </div>
+
+      <!-- Right: all product info -->
       <div class="modal-info-col">
         <nav class="modal-breadcrumb" aria-label="Fil d'Ariane">
           <a href="#" onclick="closeProductModal()" style="color:#94a3b8;text-decoration:none;">Accueil</a>
@@ -471,23 +474,31 @@
           <span>›</span>
           <span id="modal-bc-sub" style="color:#64748b"></span>
           <span>›</span>
-          <span id="modal-bc-title" style="color:#1B2D3E;font-weight:;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;vertical-align:middle"></span>
+          <span id="modal-bc-title" style="color:#1B2D3E;font-weight:700;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;vertical-align:middle"></span>
         </nav>
+
         <div><span id="modal-brand-tag" class="modal-brand-tag"></span></div>
         <h2 id="modal-product-title" class="modal-title"></h2>
         <p class="modal-sku" id="modal-sku"></p>
+
         <div class="modal-price-line">
           <span class="modal-price" id="modal-price"></span>
           <span class="modal-currency">MAD</span>
         </div>
+
         <div id="modal-stock" class="modal-stock-badge"></div>
         <hr class="modal-divider" />
         <p class="modal-desc" id="modal-desc"></p>
         <hr class="modal-divider" />
-        <button class="modal-wa-btn" id="modal-wa-btn" onclick="modalSendWhatsApp()">
+
+        <!-- ═══ VARIANTS — inside the info column, above action buttons ═══ -->
+        <div id="variants-section" style="display:none;"></div>
+
+        <button class="modal-wa-btn" onclick="modalSendWhatsApp()">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg>
           Nous Contacter via WhatsApp
         </button>
+
         <a id="modal-call-btn" href="tel:+212522976636"
            style="width:100%;background:#1B2D3E;color:#fff;font-weight:700;font-size:13px;padding:11px 20px;border-radius:14px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;transition:background 0.18s;"
            onmouseover="this.style.background='#243B50'" onmouseout="this.style.background='#1B2D3E'">
@@ -495,13 +506,12 @@
           Appeler le Magasin
         </a>
       </div>
-    </div>
+      <!-- ── /modal-info-col ── -->
 
-    <!-- ═══ SPECS TABS (auto-populated by js/specs.js) ═══ -->
-   </div>
-    <!-- ═══ VARIANTS SELECTOR ═══ -->
-    <div id="variants-section" style="display:none;"></div>
-    <!-- ═══ SPECS TABS (auto-populated by js/specs.js) ═══ -->
+    </div>
+    <!-- ── /modal-body ── -->
+
+    <!-- ═══ SPECS TABS — below modal-body, still inside modal-box ═══ -->
     <div id="specs-section" class="specs-section" style="display:none;">
       <div class="specs-tabs">
         <button class="specs-tab active" data-tab="fiche" onclick="showSpecsTab('fiche')">Fiche technique</button>
@@ -517,7 +527,9 @@
     </div>
 
   </div>
+  <!-- ── /modal-box ── -->
 </div>
+<!-- ── /product-modal ── -->
 
 <!-- JAVASCRIPT -->
 <script>window.VT_PRODUCTS = [];</script>
