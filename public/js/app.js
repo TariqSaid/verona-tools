@@ -253,32 +253,90 @@ function vtSwapCardImg(card, url) {
 }
 
 // ─── Product card renderer ───────────────────────────────────────────────
-function renderProductCard(p, i) {
-  const brandClass    = getBrandClass(p.brand);
-  const stockLabel    = p.in_stock ? t('in_stock') : t('out_of_stock');
-  const stockBadgeCls = p.in_stock ? 'stock-in' : 'stock-out';
-  const imgSrc        = (Array.isArray(p.images) && p.images.length > 0)
-                          ? p.images[0]
-                          : (Array.isArray(p.image_url) ? p.image_url[0] : (p.image_url || ''));
+: (Array.isArray(p.image_url) ? p.image_url[0] : (p.image_url || ''));
   const isNew         = maxIds.includes(p.id);
   const delay         = `animation-delay:${i * 0.04}s`;
-  const v             = p.variants || null;
-  const hasVariants   = v && (v.options || v.colors);
+  const displayPrice  = Number.isFinite(p.price_MAD) && p.price_MAD > 0
+    ? `${p.price_MAD.toLocaleString('fr-MA')} <span class="text-sm font-semibold text-slate-400 ml-1">MAD</span>`
+    : '<span class="product-price-request">Prix sur demande</span>';
+  const thumbCount    = Array.isArray(p.images) ? p.images.length : (p.image_url ? 1 : 0);
 
-  // ── Spec highlight tags ──────────────────────────────────
-  let specsHtml = '';
-  if (p.specs) {
-    const tags = [];
-    if (p.specs.highlight1_value) tags.push(p.specs.highlight1_value);
-    if (p.specs.highlight2_value) tags.push(p.specs.highlight2_value);
-    if (p.specs.highlight3_value) tags.push(p.specs.highlight3_value);
-    if (tags.length) {
-      specsHtml = '<div class="card-specs">' +
-        tags.map(tag => `<span class="card-spec-tag">${tag}</span>`).join('') +
-      '</div>';
-    }
-  }
-
+  return `
+    <article class="product-card bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col fade-in" style="${delay}">
+      <div class="relative bg-gray-50 overflow-hidden cursor-pointer" style="padding-top:70%;" onclick="openProductModal(${p.id})">
+      <div class="product-card-media relative bg-gray-50 overflow-hidden cursor-pointer" style="padding-top:70%;" onclick="openProductModal(${p.id})">
+        <img
+          src="${imgSrc}"
+          alt="${p.title}"
+          loading="lazy"
+          class="product-img absolute inset-0 w-full h-full object-contain p-3"
+          onerror="this.src='https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&q=80'"
+        />
+        <span class="${brandClass} absolute top-2 left-2 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide shadow-sm"
+        <div class="product-card-topbar">
+          <span class="${brandClass} absolute top-2 left-2 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide shadow-sm"
+              style="${p.brand === 'Stanley' ? 'color:#1a1a1a;' : ''}">
+          ${p.brand}
+        </span>
+            ${p.brand}
+          </span>
+          <span class="product-card-cat">${p.subcategory || p.category}</span>
+        </div>
+        ${isNew ? '<span class="badge-new">Nouveau</span>' : ''}
+        ${thumbCount > 1 ? `<span class="product-card-gallery">${thumbCount} vues</span>` : ''}
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-all duration-200"
+             style="background:rgba(30,41,59,0.08);">
+          <span style="background:rgba(255,255,255,0.95);color:#1E293B;font-size:12px;font-weight:700;padding:6px 16px;border-radius:20px;letter-spacing:.04em;box-shadow:0 2px 8px rgba(0,0,0,0.10);">
+          <span style="background:rgba(255,255,255,0.96);color:#1E293B;font-size:12px;font-weight:800;padding:7px 16px;border-radius:20px;letter-spacing:.04em;box-shadow:0 8px 20px rgba(0,0,0,0.10);">
+            Voir Produit
+          </span>
+        </div>
+      </div>
+      <div class="p-3.5 flex flex-col flex-1">
+        <p class="text-gray-400 text-[10px] uppercase tracking-widest font-semibold mb-1">${p.subcategory || p.category}</p>
+        <h3 class="text-sm font-bold text-navy leading-tight mb-2 line-clamp-2 flex-1 cursor-pointer hover:text-primary transition-colors"
+      <div class="product-card-body p-4 flex flex-col flex-1">
+        <div class="product-card-header">
+          <p class="product-card-kicker">${p.category}</p>
+          <h3 class="text-[15px] font-extrabold text-navy leading-snug mb-2 line-clamp-2 flex-1 cursor-pointer hover:text-primary transition-colors"
+            onclick="openProductModal(${p.id})">${p.title}</h3>
+        <p class="text-gray-500 text-xs leading-relaxed mb-3 line-clamp-2">${p.description_fr}</p>
+        <div class="mt-auto pt-2 border-t border-gray-50 space-y-2">
+          <div class="flex items-center justify-between gap-2">
+            <div>
+              <span class="price-tag text-xl font-black text-navy">${p.price_MAD.toLocaleString('fr-MA')}</span>
+              <span class="text-sm font-semibold text-gray-400 ml-1">MAD</span>
+        </div>
+        <p class="product-card-desc">${p.description_fr}</p>
+        <div class="product-card-meta">
+          <span class="product-card-ref">${p.ref || 'VT-' + String(p.id).padStart(4, '0')}</span>
+          <span class="text-[10px] font-bold px-2.5 py-1 rounded-full ${stockBadgeCls}">${stockLabel}</span>
+        </div>
+        <div class="mt-auto pt-3 border-t border-gray-50 space-y-3">
+          <div class="flex items-end justify-between gap-3">
+            <div class="product-card-price">
+              <span class="product-price-label">Tarif</span>
+              <div class="price-tag text-[26px] font-black text-navy leading-none">${displayPrice}</div>
+            </div>
+            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full ${stockBadgeCls}">${stockLabel}</span>
+            <button
+              onclick="openProductModal(${p.id})"
+              class="product-card-cta"
+            >
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              Détails
+            </button>
+          </div>
+          <button
+            onclick="openProductModal(${p.id})"
+            class="w-full bg-primary hover:bg-primary-dark text-white text-xs font-bold py-2.5 rounded-xl transition-all flex items-center justify-center gap-1.5"
+          >
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            Voir Produit
+          </button>
+        </div>
+      </div>
+    </article>`;
   // ── Card variants HTML ───────────────────────────────────
   let variantsHtml = '';
   if (hasVariants) {
