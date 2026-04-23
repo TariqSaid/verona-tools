@@ -35,6 +35,39 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       ]
     },
     "variants": null
+  },
+  {
+    "id": 1776983649577,
+    "category": "Électricité",
+    "subcategory": "Disjoncteur différentiel",
+    "brand": "Schneider Electric",
+    "title": "Vigi iCG40",
+    "description_fr": "Dispositif différentiel résiduel (DDR) Vigi iCG40 de Schneider Electric, conçu pour la protection contre les courants de fuite à la terre. Ce module s'installe sur rail DIN dans un tableau électrique et combine protection différentielle et séparation des circuits. Équipé d'un mécanisme de déclenchement fiable, il assure la sécurité des personnes et des installations électriques.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/vigi-icg40-residual-current-device-1-645319.png",
+      "/images/products/vigi-icg40-residual-current-device-2-645319.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1776983649577",
+    "specs": {
+      "highlight1_label": "Type de dispositif",
+      "highlight1_value": "Disjoncteur différentiel",
+      "highlight2_label": "Modèle",
+      "highlight2_value": "iCG40",
+      "highlight3_label": "Fabricant",
+      "highlight3_value": "Schneider Electric",
+      "details": {
+        "Installation": "Rail DIN",
+        "Fonction": "Protection différentielle résiduelle"
+      },
+      "compatibility": [
+        "Tableaux électriques",
+        "Rails DIN standard",
+        "Circuits électriques monophasés et triphasés"
+      ]
+    },
+    "variants": null
   }
 ]);
 
