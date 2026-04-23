@@ -2,7 +2,7 @@
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
     "id": 1776717953747,
-    "category": "Rangement",
+    "category": "Rangement & Organisation",
     "subcategory": "Accessoires de skateboard",
     "brand": "Unknown",
     "title": "Roues de Skateboard avec Roulements",
@@ -21,31 +21,21 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       "highlight2_value": "Orange avec noyau noir",
       "highlight3_label": "Roulements",
       "highlight3_value": "ABEC intégrés",
-      "details": [
-        {
-          "label": "Matériau extérieur",
-          "value": "Polyuréthane"
-        },
-        {
-          "label": "Noyau",
-          "value": "Nylon renforcé"
-        }
-      ],
-      "compatibles": [
+      "details": {
+        "Matériau extérieur": "Polyuréthane",
+        "Noyau": "Nylon renforcé"
+      },
+      "compatibility": [
         "Trucks de skateboard standard",
         "Axes de skateboard 8mm",
         "Roulements ABEC supplémentaires"
-      ],
-      "incompatibles": [
-        "Longboards standard - roues de diamètre incompatible",
-        "Roller inline - monture différente"
       ]
     },
     "variants": null
   },
   {
     "id": 1776978156723,
-    "category": "Rangement",
+    "category": "Rangement & Organisation",
     "subcategory": "Coulisses et accessoires de tiroir",
     "brand": "SELLLI",
     "title": "Ensemble de Coulisses de Tiroir",
@@ -60,12 +50,17 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "specs": {
       "highlight1_label": "Type de coulisse",
       "highlight1_value": "Coulisse à billes avec fermeture douce",
-      "highlight2_label": "Nombre de paires incluses",
+      "highlight2_label": "Nombre de paires",
       "highlight2_value": "2 paires",
       "highlight3_label": "Matériau",
-      "highlight3_value": "Aluminium et acier"
+      "highlight3_value": "Aluminium et acier",
+      "details": {
+        "Type de coulisse": "À billes avec fermeture douce",
+        "Paires incluses": "2",
+        "Matériau": "Aluminium et acier"
+      },
+      "compatibility": []
     },
     "variants": null
   }
 ]);
-
