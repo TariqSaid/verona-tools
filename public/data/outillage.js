@@ -89,6 +89,52 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       "incompatibles": []
     },
     "variants": null
+  },
+  {
+    "id": 1776977875383,
+    "category": "Outillage",
+    "subcategory": "Outils électriques de polissage",
+    "brand": "Bosch",
+    "title": "Polisseuse Rotative",
+    "description_fr": "Polisseuse rotative électrique Bosch conçue pour le polissage et l'application de produits de finition sur surfaces planes. Dotée d'une poignée ergonomique et d'un plateau de polissage blanc adaptable, cet outil électrique permet un travail efficace et précis. Idéale pour préparer, polir ou appliquer des revêtements sur carrosseries, bois ou autres surfaces.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/rotary-polisher-1-870806.png",
+      "/images/products/rotary-polisher-2-870806.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1776977875383",
+    "specs": {
+      "highlight1_label": "Type d'outil",
+      "highlight1_value": "Polisseuse rotative électrique",
+      "highlight2_label": "Marque",
+      "highlight2_value": "Bosch",
+      "highlight3_label": "Plateau de polissage",
+      "highlight3_value": "Circulaire blanc amovible",
+      "details": [
+        {
+          "label": "Type de mouvement",
+          "value": "Rotatif"
+        },
+        {
+          "label": "Alimentation",
+          "value": "Électrique (cordon)"
+        },
+        {
+          "label": "Poignée",
+          "value": "Ergonomique"
+        }
+      ],
+      "compatibles": [
+        "Disques de polissage circulaires",
+        "Produits de polissage et finition",
+        "Pads de polissage différentes duretés"
+      ],
+      "incompatibles": [
+        "Surfaces courbes complexes (efficacité réduite)"
+      ]
+    },
+    "variants": null
   }
 ]);
 
