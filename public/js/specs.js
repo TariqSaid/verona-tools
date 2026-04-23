@@ -1,8 +1,8 @@
-/* ============================================================
-   VERONA TOOLS — Product Specs Tabs Logic
-   Renders the "Fiche technique" and "Compatibilité" tabs
-   inside the product detail modal.
-============================================================ */
+/* ═══════════════════════════════════════════════════════════
+   VERONA TOOLS — Product Specs Tabs
+   Handles both old array format and new object format
+   Supports: compatibles, incompatibles, compatibility fields
+═══════════════════════════════════════════════════════════ */
 
 function renderSpecsTabs(product) {
   var section = document.getElementById('specs-section');
@@ -14,10 +14,9 @@ function renderSpecsTabs(product) {
   }
 
   section.style.display = 'block';
-
   var s = product.specs || {};
 
-  // Highlights
+  // ── Highlights ─────────────────────────────────────────
   var hlHTML = '';
   if (s.highlight1_value) hlHTML += buildHighlight(s.highlight1_value, s.highlight1_label);
   if (s.highlight2_value) hlHTML += buildHighlight(s.highlight2_value, s.highlight2_label);
@@ -29,7 +28,7 @@ function renderSpecsTabs(product) {
     hlContainer.style.display = hlHTML ? 'grid' : 'none';
   }
 
-  // Details
+  // ── Details table ──────────────────────────────────────
   var detailItems = normalizeDetails(s.details);
   var detHTML = '';
   if (detailItems.length) {
@@ -46,9 +45,10 @@ function renderSpecsTabs(product) {
   var detContainer = document.getElementById('specs-details');
   if (detContainer) detContainer.innerHTML = detHTML;
 
-  // Compatibility
-  var compatibles = normalizeList(s.compatibles);
-  var incompatibles = normalizeList(s.incompatibles);
+  // ── Compatibility ──────────────────────────────────────
+  // Support both old fields (compatibles/incompatibles) and new (compatibility)
+  var compatibles = normalizeList(s.compatibles || s.compatibility || []);
+  var incompatibles = normalizeList(s.incompatibles || []);
   var compatHTML = '';
 
   if (compatibles.length) {
@@ -85,15 +85,8 @@ function renderSpecsTabs(product) {
 function showSpecsTab(tabId) {
   var allTabs = document.querySelectorAll('.specs-tab');
   var allPanels = document.querySelectorAll('.specs-panel');
-
-  for (var i = 0; i < allTabs.length; i++) {
-    allTabs[i].classList.remove('active');
-  }
-
-  for (var j = 0; j < allPanels.length; j++) {
-    allPanels[j].classList.remove('active');
-  }
-
+  for (var i = 0; i < allTabs.length; i++) allTabs[i].classList.remove('active');
+  for (var j = 0; j < allPanels.length; j++) allPanels[j].classList.remove('active');
   var btn = document.querySelector('.specs-tab[data-tab="' + tabId + '"]');
   var panel = document.getElementById('specs-panel-' + tabId);
   if (btn) btn.classList.add('active');
@@ -103,12 +96,28 @@ function showSpecsTab(tabId) {
 function buildHighlight(value, label) {
   return '<div class="specs-hl">' +
     '<div class="specs-hl-val">' + escH(value) + '</div>' +
-    '<div class="specs-hl-label">' + escH(label || '') + '</div>' +
+    '<div class="specs-hl-label">' + prettifyKey(label || '') + '</div>' +
     '</div>';
 }
 
+/* ── Handles BOTH array [{label,value}] AND object {"key":"value"} ── */
 function normalizeDetails(details) {
   var rows = [];
+  if (!details) return rows;
+
+  // NEW FORMAT: plain object {"Puissance": "750 W", "Poids": "2.3 Kg"}
+  if (!Array.isArray(details) && typeof details === 'object') {
+    for (var key in details) {
+      if (!Object.prototype.hasOwnProperty.call(details, key)) continue;
+      rows.push({
+        label: prettifyKey(key),
+        value: stringifyValue(details[key])
+      });
+    }
+    return rows;
+  }
+
+  // OLD FORMAT: array of objects/strings
   if (!Array.isArray(details)) return rows;
 
   for (var i = 0; i < details.length; i++) {
@@ -120,49 +129,35 @@ function normalizeDetails(details) {
       continue;
     }
 
-    if (Array.isArray(item)) {
-      rows.push({ label: 'Détail', value: stringifyValue(item) });
-      continue;
-    }
-
-    if (typeof item === 'object') {
+    if (typeof item === 'object' && !Array.isArray(item)) {
       var label = item.label || item.name || item.key || item.title || '';
       var value = item.value;
-
       if (value == null && 'values' in item) value = item.values;
       if (value == null && 'description' in item) value = item.description;
-      if (value == null && 'content' in item) value = item.content;
 
       if (label || value != null) {
         rows.push({
-          label: label || 'Détail',
+          label: prettifyKey(label || 'Détail'),
           value: stringifyValue(value)
         });
-        continue;
-      }
-
-      for (var key in item) {
-        if (!Object.prototype.hasOwnProperty.call(item, key)) continue;
-        rows.push({
-          label: prettifyKey(key),
-          value: stringifyValue(item[key])
-        });
+      } else {
+        for (var k in item) {
+          if (!Object.prototype.hasOwnProperty.call(item, k)) continue;
+          rows.push({ label: prettifyKey(k), value: stringifyValue(item[k]) });
+        }
       }
     }
   }
-
   return rows;
 }
 
 function normalizeList(items) {
   if (!Array.isArray(items)) return [];
   var out = [];
-
   for (var i = 0; i < items.length; i++) {
-    var value = stringifyValue(items[i]);
-    if (value) out.push(value);
+    var v = stringifyValue(items[i]);
+    if (v) out.push(v);
   }
-
   return out;
 }
 
@@ -170,39 +165,30 @@ function stringifyValue(value) {
   if (value == null) return '';
   if (typeof value === 'string') return value;
   if (typeof value === 'number' || typeof value === 'boolean') return String(value);
-
   if (Array.isArray(value)) {
-    var normalized = [];
-    for (var i = 0; i < value.length; i++) {
-      var nested = stringifyValue(value[i]);
-      if (nested) normalized.push(nested);
-    }
-    return normalized.join(' • ');
+    return value.map(function(v) { return stringifyValue(v); }).filter(Boolean).join(' · ');
   }
-
   if (typeof value === 'object') {
-    if (value.label && value.value != null) {
-      return stringifyValue(value.value);
-    }
-
+    if (value.label && value.value != null) return stringifyValue(value.value);
     var parts = [];
-    for (var key in value) {
-      if (!Object.prototype.hasOwnProperty.call(value, key)) continue;
-      var partValue = stringifyValue(value[key]);
-      if (partValue) parts.push(prettifyKey(key) + ': ' + partValue);
+    for (var k in value) {
+      if (!Object.prototype.hasOwnProperty.call(value, k)) continue;
+      var pv = stringifyValue(value[k]);
+      if (pv) parts.push(prettifyKey(k) + ': ' + pv);
     }
-    return parts.join(' • ');
+    return parts.join(' · ');
   }
-
   return String(value);
 }
 
 function prettifyKey(key) {
   return String(key || '')
-    .replace(/_/g, ' ')
+    .replace(/[_-]/g, ' ')
     .replace(/([a-z])([A-Z])/g, '$1 $2')
     .replace(/\s+/g, ' ')
-    .replace(/^\w/, function (c) { return c.toUpperCase(); });
+    .trim()
+    .toLowerCase()
+    .replace(/^\w/, function(c) { return c.toUpperCase(); });
 }
 
 function escH(str) {
