@@ -53,6 +53,35 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       "highlight3_value": "2 trucks"
     },
     "variants": null
+  },
+  {
+    "id": 1776983360460,
+    "category": "Rangement & Organisation",
+    "subcategory": "Coulisses et mécanismes de tiroir",
+    "brand": "Unknown",
+    "title": "Coulisses de tiroir avec fermeture progressive",
+    "description_fr": "Ensemble de coulisses de tiroir haute qualité équipées d'un système de fermeture progressive et silencieuse. Ces coulisses métalliques gris clair incluent deux mécanismes de frein en orange/rouge pour amortir la fermeture. Idéales pour moderniser vos tiroirs de cuisine, salle de bain ou meuble avec un confort de fermeture supérieur.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/drawer-slides-with-soft-close-mechanism-1-355494.png",
+      "/images/products/drawer-slides-with-soft-close-mechanism-2-355494.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1776983360460",
+    "specs": {
+      "details": {
+        "Finition": "Gris métallisé",
+        "Système de fermeture": "Amortisseur intégré",
+        "Nombre de paires": "1"
+      },
+      "compatibility": [
+        "Tiroirs de cuisine",
+        "Tiroirs de salle de bain",
+        "Meubles de rangement",
+        "Tiroirs de commode"
+      ]
+    },
+    "variants": null
   }
 ]);
 
