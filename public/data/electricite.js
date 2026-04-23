@@ -68,6 +68,41 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       ]
     },
     "variants": null
+  },
+  {
+    "id": 1776983966920,
+    "category": "Électricité",
+    "subcategory": "Disjoncteurs et Protections électriques",
+    "brand": "FG",
+    "title": "Dispositif de Protection contre les Arcs de Défaut avec Protection de Surcharge",
+    "description_fr": "Dispositif de protection modulaire AFDD (Arc Fault Detection Device) avec protection contre les courants résiduels et surcharges. Conçu pour prévenir les incendies causés par les arcs électriques défectueux. Équipé d'un bouton de test manuel (T) et de voyants de statut pour une sécurité maximale du circuit électrique. Installation sur rail DIN dans les tableaux de distribution.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/afdd-residual-current-device-with-overcurrent-protection-1-962739.png",
+      "/images/products/afdd-residual-current-device-with-overcurrent-protection-2-962739.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1776983966920",
+    "specs": {
+      "highlight1_label": "Type de Protection",
+      "highlight1_value": "AFDD avec Protection RCD et Surcharge",
+      "highlight2_label": "Installation",
+      "highlight2_value": "Rail DIN",
+      "highlight3_label": "Fonction",
+      "highlight3_value": "Test manuel intégré",
+      "details": {
+        "Bouton de test": "T manuel",
+        "Indicateurs": "Voyants de statut",
+        "Montage": "Vertical sur rail"
+      },
+      "compatibility": [
+        "Tableaux électriques",
+        "Rails DIN standards",
+        "Circuits résidentiels",
+        "Systèmes TT, TN-C, TN-S"
+      ]
+    },
+    "variants": null
   }
 ]);
 
