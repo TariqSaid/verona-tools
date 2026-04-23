@@ -1,6 +1,5 @@
 'use strict';
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
-
   {
     "id": 1776978156723,
     "category": "Rangement & Organisation",
@@ -30,5 +29,30 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       "compatibility": []
     },
     "variants": null
+  },
+  {
+    "id": 1776983226311,
+    "category": "Rangement & Organisation",
+    "subcategory": "Accessoires de skateboard",
+    "brand": "Unknown",
+    "title": "Set de Trucks de Skateboard",
+    "description_fr": "Ensemble de deux trucks de skateboard avec roues oranges et roulements. Les trucks sont équipés de roues durables de couleur orange et de roulements de qualité pour une glisse optimale. Ce set complet est prêt à être installé sur un plateau de skateboard pour une utilisation immédiate.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/skateboard-truck-set-1-221278.png",
+      "/images/products/skateboard-truck-set-2-221278.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1776983226311",
+    "specs": {
+      "highlight1_label": "Type de produit",
+      "highlight1_value": "Trucks de skateboard",
+      "highlight2_label": "Couleur des roues",
+      "highlight2_value": "Orange",
+      "highlight3_label": "Quantité",
+      "highlight3_value": "2 trucks"
+    },
+    "variants": null
   }
 ]);
+
