@@ -34,7 +34,7 @@
 
   <script>
     (function () {
-      function hideLoaderNow() {
+      function hideLoader() {
         var loader = document.getElementById('page-loader');
         if (!loader) return;
         loader.classList.add('hidden');
@@ -43,24 +43,29 @@
         }, 700);
       }
 
-      window.__vtHideLoader = hideLoaderNow;
+      window.__vtHideLoader = hideLoader;
 
-      window.addEventListener('error', function () {
-        hideLoaderNow();
-      });
-
-      window.addEventListener('DOMContentLoaded', function () {
-        setTimeout(hideLoaderNow, 2200);
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(hideLoader, 2500);
       });
 
       window.addEventListener('load', function () {
-        setTimeout(hideLoaderNow, 500);
+        setTimeout(hideLoader, 400);
+      });
+
+      window.addEventListener('error', function () {
+        hideLoader();
+      });
+
+      window.addEventListener('unhandledrejection', function () {
+        hideLoader();
       });
     })();
   </script>
 </head>
 <body class="bg-surface text-gray-900 antialiased">
 
+<!-- STICKY HEADER -->
 <header id="main-header" class="bg-navy shadow-xl border-b border-navy-light">
   <div class="max-w-[1400px] mx-auto px-4 py-3 flex items-center gap-4">
     <a href="#" class="flex items-center gap-2 min-w-max">
@@ -102,7 +107,7 @@
 
   <div class="border-t border-white/10 bg-navy-light">
     <div class="max-w-[1400px] mx-auto px-4 flex items-center gap-0">
-      <button type="button" onclick="toggleMobileNav()" class="lg:hidden flex-shrink-0 flex items-center justify-center w-9 h-9 text-white hover:text-primary transition-colors mr-2" aria-label="Menu">
+      <button onclick="toggleMobileNav()" class="lg:hidden flex-shrink-0 flex items-center justify-center w-9 h-9 text-white hover:text-primary transition-colors mr-2" aria-label="Menu">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
 
@@ -172,21 +177,22 @@
       </div>
 
       <div class="pills-scroll flex items-center gap-1 overflow-x-auto py-2 pr-2 flex-1">
-        <button type="button" onclick="resetView()" data-cat="" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0" data-i18n="all">Tout voir</button>
-        <button type="button" onclick="scrollToCategory('Électricité')" data-cat="Électricité" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Électricité</button>
-        <button type="button" onclick="scrollToCategory('Outillage')" data-cat="Outillage" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Outillage</button>
-        <button type="button" onclick="scrollToCategory('Quincaillerie')" data-cat="Quincaillerie" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Quincaillerie</button>
-        <button type="button" onclick="scrollToCategory('Peinture')" data-cat="Peinture" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Peinture</button>
-        <button type="button" onclick="scrollToCategory('Luminaire')" data-cat="Luminaire" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Luminaire</button>
-        <button type="button" onclick="scrollToCategory('Droguerie')" data-cat="Droguerie" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Droguerie</button>
-        <button type="button" onclick="scrollToCategory('Échelles & Travaux en Hauteur')" data-cat="Échelles & Travaux en Hauteur" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Échelles</button>
-        <button type="button" onclick="scrollToCategory('Rangement & Organisation')" data-cat="Rangement & Organisation" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Rangement</button>
-        <button type="button" onclick="scrollToCategory('Jardinage & Plein Air')" data-cat="Jardinage & Plein Air" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Jardinage</button>
+        <button onclick="resetView()" data-cat="" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0" data-i18n="all">Tout voir</button>
+        <button onclick="scrollToCategory('Électricité')" data-cat="Électricité" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Électricité</button>
+        <button onclick="scrollToCategory('Outillage')" data-cat="Outillage" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Outillage</button>
+        <button onclick="scrollToCategory('Quincaillerie')" data-cat="Quincaillerie" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Quincaillerie</button>
+        <button onclick="scrollToCategory('Peinture')" data-cat="Peinture" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Peinture</button>
+        <button onclick="scrollToCategory('Luminaire')" data-cat="Luminaire" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Luminaire</button>
+        <button onclick="scrollToCategory('Droguerie')" data-cat="Droguerie" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Droguerie</button>
+        <button onclick="scrollToCategory('Échelles & Travaux en Hauteur')" data-cat="Échelles & Travaux en Hauteur" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Échelles</button>
+        <button onclick="scrollToCategory('Rangement & Organisation')" data-cat="Rangement & Organisation" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Rangement</button>
+        <button onclick="scrollToCategory('Jardinage & Plein Air')" data-cat="Jardinage & Plein Air" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Jardinage</button>
       </div>
     </div>
   </div>
 </header>
 
+<!-- PAGE LOADER -->
 <div id="page-loader">
   <div class="loader-logo flex flex-col items-center gap-3">
     <div style="position:relative;width:72px;height:72px;">
@@ -209,6 +215,7 @@
   </div>
 </div>
 
+<!-- HERO SLIDER -->
 <section id="hero-section" class="hero-slider relative min-h-[580px] flex flex-col justify-center bg-navy">
   <div class="hero-slide active" aria-label="Slide 1"><img src="https://images.unsplash.com/photo-1671543565338-8b22a87b8359?q=80&w=1170&auto=format&fit=crop" alt="Atelier professionnel outillage" loading="eager" /><div class="slide-overlay"></div></div>
   <div class="hero-slide" aria-label="Slide 2"><img src="https://images.unsplash.com/photo-1635335874521-7987db781153?q=80&w=1170&auto=format&fit=crop" alt="Matériel électrique professionnel" loading="lazy" /><div class="slide-overlay"></div></div>
@@ -237,13 +244,14 @@
   </div>
 
   <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10" id="hero-dots">
-    <button type="button" class="hero-nav-dot active" onclick="goToSlide(0)" aria-label="Diapositive 1"></button>
-    <button type="button" class="hero-nav-dot" onclick="goToSlide(1)" aria-label="Diapositive 2"></button>
-    <button type="button" class="hero-nav-dot" onclick="goToSlide(2)" aria-label="Diapositive 3"></button>
-    <button type="button" class="hero-nav-dot" onclick="goToSlide(3)" aria-label="Diapositive 4"></button>
+    <button class="hero-nav-dot active" onclick="goToSlide(0)" aria-label="Diapositive 1"></button>
+    <button class="hero-nav-dot" onclick="goToSlide(1)" aria-label="Diapositive 2"></button>
+    <button class="hero-nav-dot" onclick="goToSlide(2)" aria-label="Diapositive 3"></button>
+    <button class="hero-nav-dot" onclick="goToSlide(3)" aria-label="Diapositive 4"></button>
   </div>
 </section>
 
+<!-- Stats bar -->
 <div class="bg-primary text-white">
   <div class="max-w-[1400px] mx-auto px-4 py-3 flex flex-wrap items-center justify-center gap-6 md:gap-12">
     <div class="flex items-center gap-2 text-sm font-semibold"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5z" clip-rule="evenodd"/></svg><span>1000+ Références</span></div>
@@ -253,6 +261,7 @@
   </div>
 </div>
 
+<!-- BRANDS STRIP -->
 <div class="brands-strip bg-white border-b border-gray-100 py-3 shadow-sm">
   <div class="max-w-[1400px] mx-auto px-4 flex items-center gap-3">
     <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest whitespace-nowrap flex-shrink-0 hidden sm:block">Marques</span>
@@ -271,6 +280,7 @@
   </div>
 </div>
 
+<!-- CATEGORY GRID -->
 <section id="cat-grid-section" class="max-w-[1400px] mx-auto px-4 py-12">
   <div class="flex items-center justify-between mb-8">
     <div>
@@ -291,12 +301,14 @@
   </div>
 </section>
 
+<!-- MAIN CONTENT -->
 <main id="products-section" class="max-w-[1400px] mx-auto px-4 pb-16 pt-4">
   <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-6 pb-4 border-b border-gray-100">
     <div>
       <h2 id="products-heading" class="text-2xl font-black text-navy" data-i18n="our_products">Nos Produits</h2>
       <p class="text-gray-500 text-sm mt-0.5" id="result-count">0 produits</p>
     </div>
+
     <div class="flex items-center gap-3 flex-wrap">
       <div class="flex items-center gap-2">
         <label class="text-sm text-gray-600 font-medium whitespace-nowrap" for="sort-select">Trier :</label>
@@ -333,11 +345,13 @@
   <div id="category-sections"></div>
 </main>
 
+<!-- TOAST -->
 <div id="toast" class="bg-navy text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 max-w-xs">
   <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
   <span id="toast-msg" class="text-sm font-semibold">OK</span>
 </div>
 
+<!-- NOTRE MAGASIN -->
 <section class="store-section py-16 mt-4 border-t border-gray-100">
   <div class="max-w-[1400px] mx-auto px-4">
     <div class="mb-10 text-center">
@@ -377,7 +391,7 @@
 
           <div class="store-link" style="cursor:default;">
             <span class="store-icon" style="background:#F5F3FF;"><svg class="w-4 h-4 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></span>
-            <div><div class="font-semibold text-sm text-gray-700">Horaires d&apos;ouverture</div><div class="text-xs text-gray-400 mt-0.5">Lun–Sam : 8h00–19h00 · <span class="text-red-500 font-semibold">Dim : Fermé</span></div></div>
+            <div><div class="font-semibold text-sm text-gray-700">Horaires d&apos;ouverture</div><div class="text-xs text-gray-400 mt-0.5">Lun–Sam : 8h00–19h00 &nbsp;·&nbsp; <span class="text-red-500 font-semibold">Dim : Fermé</span></div></div>
           </div>
         </div>
 
@@ -390,6 +404,7 @@
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="bg-navy text-white mt-20">
   <div class="max-w-[1400px] mx-auto px-4 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
     <div>
@@ -397,7 +412,7 @@
       <p class="text-gray-400 text-sm leading-relaxed mb-5">Votre partenaire de confiance pour tous vos besoins en outillage, quincaillerie et matériaux de construction à Casablanca depuis 2010.</p>
       <div class="flex items-center gap-3">
         <a href="#" aria-label="Facebook" class="w-9 h-9 bg-white/10 hover:bg-primary rounded-lg flex items-center justify-center transition-all"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-        <a href="#" aria-label="Instagram" class="w-9 h-9 bg-white/10 hover:bg-primary rounded-lg flex items-center justify-center transition-all"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5.5A4.5 4.5 0 1016.5 12 4.5 4.5 0 0012 7.5zm6-.75a1.25 1.25 0 11-1.25 1.25A1.25 1.25 0 0118 6.75zM12 9a3 3 0 103 3 3 3 0 00-3-3z"/></svg></a>
+        <a href="#" aria-label="Instagram" class="w-9 h-9 bg-white/10 hover:bg-primary rounded-lg flex items-center justify-center transition-all"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5A5.5 5.5 0 1111.999 18 5.5 5.5 0 0112 7.5zm0 2A3.5 3.5 0 1015.5 13 3.5 3.5 0 0012 9.5zm5.75-3.25a1.25 1.25 0 11-1.25 1.25 1.25 1.25 0 011.25-1.25z"/></svg></a>
         <a href="https://wa.me/212600960924" aria-label="WhatsApp" class="w-9 h-9 bg-white/10 hover:bg-[#25D366] rounded-lg flex items-center justify-center transition-all"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg></a>
       </div>
     </div>
@@ -435,7 +450,7 @@
         <li class="flex items-start gap-2.5"><svg class="w-4 h-4 text-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="text-gray-400 text-sm">Lot B111, Lot ASK Tranche B<br/>Casablanca 20450, Maroc</span></li>
         <li class="flex items-center gap-2.5"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 12.85 19.79 19.79 0 01.83 4.18 2 2 0 012.81 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l.97-.97a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+212522976636" class="text-gray-400 hover:text-primary text-sm transition-colors">+212 522 97 66 36</a></li>
         <li class="flex items-center gap-2.5"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:contact@veronatools.ma" class="text-gray-400 hover:text-primary text-sm transition-colors">contact@veronatools.ma</a></li>
-        <li class="flex items-center gap-2.5"><svg class="w-4 h-4 text-[#25D366] flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.9450 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg><a href="https://wa.me/212600960924" class="text-gray-400 hover:text-[#25D366] text-sm transition-colors">WhatsApp: +212 6 00 96 09 24</a></li>
+        <li class="flex items-center gap-2.5"><svg class="w-4 h-4 text-[#25D366] flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg><a href="https://wa.me/212600960924" class="text-gray-400 hover:text-[#25D366] text-sm transition-colors">WhatsApp: +212 6 00 96 09 24</a></li>
         <li class="flex items-center gap-2.5"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg><span class="text-gray-400 text-sm">Lun–Sam : 8h00–19h00</span></li>
       </ul>
     </div>
@@ -444,22 +459,141 @@
   <div class="border-t border-white/10">
     <div class="max-w-[1400px] mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
       <p class="text-gray-500 text-xs">© 2026 Verona Tools. Tous droits réservés. Casablanca, Maroc.</p>
-      <div class="flex items-center gap-4">
-        <a href="#" class="text-gray-500 hover:text-gray-300 text-xs transition-colors">CGV</a>
-        <a href="#" class="text-gray-500 hover:text-gray-300 text-xs transition-colors">Confidentialité</a>
-        <a href="#" class="text-gray-500 hover:text-gray-300 text-xs transition-colors">Cookies</a>
-      </div>
+      <div class="flex items-center gap-4"><a href="#" class="text-gray-500 hover:text-gray-300 text-xs transition-colors">CGV</a><a href="#" class="text-gray-500 hover:text-gray-300 text-xs transition-colors">Confidentialité</a><a href="#" class="text-gray-500 hover:text-gray-300 text-xs transition-colors">Cookies</a></div>
     </div>
   </div>
 </footer>
 
+<!-- WHATSAPP FAB -->
 <button id="wa-fab" onclick="openWhatsApp()" aria-label="Contacter via WhatsApp">
   <span id="wa-fab-tooltip">Contacter via WhatsApp</span>
   <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg>
 </button>
 
+<!-- MOBILE NAV -->
 <div id="mobile-nav" role="dialog" aria-modal="true" aria-label="Menu navigation">
   <div id="mobile-nav-backdrop" onclick="toggleMobileNav()"></div>
   <div id="mobile-nav-panel">
     <div class="flex items-center justify-between px-5 py-4 border-b border-white/10 flex-shrink-0">
-      <div class="flex items-center gap-2"><svg class="w-7 h-7 text-primary" viewBox="0 0 32 32" fill="none"><path d="M8 14h16l-2 14H10L8 14z" stroke="
+      <div class="flex items-center gap-2"><svg class="w-7 h-7 text-primary" viewBox="0 0 32 32" fill="none"><path d="M8 14h16l-2 14H10L8 14z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 14v-3a4 4 0 018 0v3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M14 20l4 4M18 20l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="text-white font-black text-base tracking-tight">VERONA <span class="text-primary">TOOLS</span></span></div>
+      <button type="button" onclick="toggleMobileNav()" class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-white transition-colors" aria-label="Fermer le menu"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+
+    <div class="px-4 py-3 flex-1 overflow-y-auto">
+      <div class="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-3 px-1">Catégories</div>
+      <nav class="space-y-1">
+        <button type="button" onclick="scrollToCategory('Électricité');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Électricité</button>
+        <button type="button" onclick="scrollToCategory('Outillage');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>Outillage</button>
+        <button type="button" onclick="scrollToCategory('Quincaillerie');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4"/></svg>Quincaillerie</button>
+        <button type="button" onclick="scrollToCategory('Peinture');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M2 13.5V20a2 2 0 002 2h16a2 2 0 002-2v-6.5"/><path d="M12 2v13"/><path d="M8 6l4-4 4 4"/></svg>Peinture</button>
+        <button type="button" onclick="scrollToCategory('Luminaire');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 006 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6M10 22h4"/></svg>Luminaire</button>
+        <button type="button" onclick="scrollToCategory('Droguerie');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 11-4 0"/></svg>Droguerie</button>
+        <button type="button" onclick="scrollToCategory('Échelles & Travaux en Hauteur');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="18" x2="16" y2="18"/><line x1="6" y1="3" x2="6" y2="21"/><line x1="18" y1="3" x2="18" y2="21"/></svg>Échelles & Travaux en Hauteur</button>
+        <button type="button" onclick="scrollToCategory('Rangement & Organisation');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg>Rangement & Organisation</button>
+        <button type="button" onclick="scrollToCategory('Jardinage & Plein Air');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M12 22V12M12 12C12 7 7 3 2 3c0 5 4 9 10 9M12 12c0-5 5-9 10-9-1 5-5 9-10 9"/></svg>Jardinage & Plein Air</button>
+      </nav>
+
+      <div class="text-[10px] font-black text-gray-500 uppercase tracking-widest mt-5 mb-3 px-1">Contact</div>
+      <a href="https://wa.me/212600960924" target="_blank" rel="noopener" class="flex items-center gap-3 px-3 py-3 rounded-xl transition-all text-sm font-bold" style="background:#25D366;color:#fff;"><svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg>WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- BACK TO TOP -->
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Retour en haut">
+  <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<!-- PRODUCT DETAIL MODAL -->
+<div id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-product-title">
+  <div class="modal-backdrop" onclick="closeProductModal()"></div>
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeProductModal()" aria-label="Fermer">
+      <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+
+    <div class="modal-body">
+      <div class="modal-image-col">
+        <div class="modal-main-img" style="padding:0;">
+          <div class="zoom-container" id="zoom-container" style="width:100%;height:100%;min-height:280px;">
+            <div class="zoom-lens" id="zoom-lens"></div>
+            <img id="modal-main-img" src="" alt="" class="zoomable" style="max-height:340px;object-fit:contain;padding:16px;" />
+          </div>
+        </div>
+        <div class="modal-thumbs" id="modal-thumbs"></div>
+      </div>
+
+      <div class="modal-info-col">
+        <nav class="modal-breadcrumb" aria-label="Fil d'Ariane">
+          <a href="#" onclick="closeProductModal(); return false;" style="color:#94a3b8;text-decoration:none;">Accueil</a>
+          <span>›</span>
+          <span id="modal-bc-cat" style="cursor:pointer;color:#94a3b8;"></span>
+          <span>›</span>
+          <span id="modal-bc-sub" style="color:#64748b"></span>
+          <span>›</span>
+          <span id="modal-bc-title" style="color:#1B2D3E;font-weight:700;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;vertical-align:middle"></span>
+        </nav>
+
+        <div><span id="modal-brand-tag" class="modal-brand-tag"></span></div>
+        <h2 id="modal-product-title" class="modal-title"></h2>
+        <p class="modal-sku" id="modal-sku"></p>
+
+        <div class="modal-price-line">
+          <span class="modal-price" id="modal-price"></span>
+          <span class="modal-currency">MAD</span>
+        </div>
+
+        <div id="modal-stock" class="modal-stock-badge"></div>
+        <hr class="modal-divider" />
+        <p class="modal-desc" id="modal-desc"></p>
+
+        <div id="variants-section" style="display:none;"></div>
+
+        <hr class="modal-divider" />
+
+        <button type="button" class="modal-wa-btn" onclick="modalSendWhatsApp()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg>
+          Nous Contacter via WhatsApp
+        </button>
+
+        <a id="modal-call-btn" href="tel:+212522976636" style="width:100%;background:#1B2D3E;color:#fff;font-weight:700;font-size:13px;padding:11px 20px;border-radius:14px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;transition:background 0.18s;" onmouseover="this.style.background='#243B50'" onmouseout="this.style.background='#1B2D3E'">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 12.85 19.79 19.79 0 01.83 4.18 2 2 0 012.81 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l.97-.97a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Appeler le Magasin
+        </a>
+      </div>
+    </div>
+
+    <div id="specs-section" class="specs-section" style="display:none;">
+      <div class="specs-tabs">
+        <button type="button" class="specs-tab active" data-tab="fiche" onclick="showSpecsTab('fiche')">Fiche technique</button>
+        <button type="button" class="specs-tab" data-tab="compat" onclick="showSpecsTab('compat')">Compatibilité</button>
+      </div>
+      <div class="specs-panel active" id="specs-panel-fiche">
+        <div class="specs-highlights" id="specs-highlights"></div>
+        <div id="specs-details"></div>
+      </div>
+      <div class="specs-panel" id="specs-panel-compat">
+        <ul class="specs-compat-list" id="specs-compat"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>window.VT_PRODUCTS = [];</script>
+<script src="js/config.js?v=3"></script>
+<script src="data/electricite.js?v=3"></script>
+<script src="data/outillage.js?v=3"></script>
+<script src="data/quincaillerie.js?v=3"></script>
+<script src="data/peinture.js?v=3"></script>
+<script src="data/luminaire.js?v=3"></script>
+<script src="data/droguerie.js?v=3"></script>
+<script src="data/echelles.js?v=3"></script>
+<script src="data/rangement.js?v=3"></script>
+<script src="data/jardinage.js?v=3"></script>
+<script src="js/app.js?v=3"></script>
+<script src="js/specs.js?v=3"></script>
+<script src="js/variants.js?v=3"></script>
+
+</body>
+</html>
