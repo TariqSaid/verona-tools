@@ -12,13 +12,80 @@
 
 'use strict';
 
-// ─── Global references (set by config.js before this runs) ──────────────
-const products = window.VT_PRODUCTS || [];
-const translations = window.VT_TRANSLATIONS || { fr: {}, en: {} };
-const CATEGORY_CONFIG = window.VT_CATEGORY_CONFIG || [];
+/ ─── Global references (set by config.js before this runs) ──────────────
+const products          = window.VT_PRODUCTS       || [];
+const translations      = window.VT_TRANSLATIONS   || { fr: {}, en: {} };
+
+function getProducts() {
+  return Array.isArray(window.VT_PRODUCTS) ? window.VT_PRODUCTS : [];
+}
 
 // ─── IDs of the 3 most recent products (largest ids) ────────────────────
 const maxIds = products.map(p => p.id).sort((a, b) => b - a).slice(0, 3);
+function getMaxIds() {
+  return getProducts().map(p => p.id).sort((a, b) => b - a).slice(0, 3);
+}
+
+function renderProductCard(p, i) {
+  const maxIds         = getMaxIds();
+  const brandClass    = getBrandClass(p.brand);
+function renderCategorySections() {
+  const products   = getProducts();
+  const inStockEl  = document.getElementById('in-stock-toggle');
+function openProductModal(productId) {
+  const products = getProducts();
+  const p = products.find(x => x.id === productId);
+
+let catalogReloadAttempted = false;
+
+function reloadCatalogScriptsOnce() {
+  if (catalogReloadAttempted) return;
+  catalogReloadAttempted = true;
+
+  var files = [
+    'data/electricite.js',
+    'data/outillage.js',
+    'data/quincaillerie.js',
+    'data/peinture.js',
+    'data/luminaire.js',
+    'data/droguerie.js',
+    'data/echelles.js',
+    'data/rangement.js',
+    'data/jardinage.js'
+  ];
+
+  window.VT_PRODUCTS = [];
+
+  var index = 0;
+  function loadNext() {
+    if (index >= files.length) {
+      try { renderCategorySections(); } catch (e) { /* silent */ }
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.src = files[index] + '?reload=' + Date.now();
+    script.onload = function () {
+      index += 1;
+      loadNext();
+    };
+    script.onerror = function () {
+      index += 1;
+      loadNext();
+    };
+    document.body.appendChild(script);
+  }
+
+  loadNext();
+}
+
+// ─── Image zoom (magnifier lens) ─────────────────────────────────────────
+
+if (getProducts().length === 0) {
+  setTimeout(reloadCatalogScriptsOnce, 250);
+}
+
+// Sync data-cat attributes on pills (in case HTML and JS differ)
 
 // ─── Application state ───────────────────────────────────────────────────
 let currentLang = 'fr';
