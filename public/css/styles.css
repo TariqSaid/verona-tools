@@ -434,6 +434,55 @@ body.dark .card-pill.active { background: #22b8cf; border-color: #22b8cf; color:
 body.dark .card-color-btn { border-color: #0f172a; box-shadow: 0 0 0 1px #475569; }
 
 /* ══════════════════════════════════════════════════════════
+   SCROLL REVEAL ANIMATIONS (driven by animations.js)
+══════════════════════════════════════════════════════════ */
+.vt-reveal {
+  opacity: 0;
+  transform: translateY(32px) scale(0.97);
+  transition: opacity 0.6s cubic-bezier(0.22,1,0.36,1),
+              transform 0.6s cubic-bezier(0.22,1,0.36,1);
+  will-change: opacity, transform;
+}
+.vt-reveal.vt-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Image skeleton shimmer while loading */
+.vt-skeleton-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.vt-skeleton-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(34,184,207,0.06) 20%,
+    rgba(34,184,207,0.12) 50%,
+    rgba(34,184,207,0.06) 80%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: vtShimmer 1.5s ease-in-out infinite;
+  border-radius: inherit;
+  z-index: 1;
+  pointer-events: none;
+}
+@keyframes vtShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Category card 3D tilt smooth reset */
+.cat-card {
+  transform-style: preserve-3d;
+  transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s ease;
+}
+
+/* ══════════════════════════════════════════════════════════
    RESPONSIVE — TABLET (≤1024px)
 ══════════════════════════════════════════════════════════ */
 @media (max-width: 1024px) {
