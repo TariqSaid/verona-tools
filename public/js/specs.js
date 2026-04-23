@@ -1,95 +1,226 @@
-/**
- * VERONA TOOLS - Unified Product Card Renderer
- * This version fixes the duplicate tags and variable mismatches.
- */
-function renderProductCard(p, i) {
-  // 1. Logic & Safety Checks
-  const brandClass    = getBrandClass(p.brand);
-  const stockLabel    = p.in_stock ? t('in_stock') : t('out_of_stock');
-  const stockBadgeCls = p.in_stock ? 'stock-in' : 'stock-out';
-  
-  // Use images array (from your scripts) with a fallback
-  const imgSrc = (Array.isArray(p.images) && p.images.length > 0) 
-    ? p.images[0] 
-    : 'https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&q=80';
+/* ============================================================
+   VERONA TOOLS — Product Specs Tabs Logic
+   Renders the "Fiche technique" and "Compatibilité" tabs
+   inside the product detail modal.
+============================================================ */
 
-  const isNew = (typeof maxIds !== 'undefined') ? maxIds.includes(p.id) : false;
-  const delay = `animation-delay:${i * 0.04}s`;
+function renderSpecsTabs(product) {
+  var section = document.getElementById('specs-section');
+  if (!section) return;
 
-  // 2. Price Logic: Handle 0 MAD (Price on request)
-  const displayPrice = (Number.isFinite(p.price_MAD) && p.price_MAD > 0)
-    ? `${p.price_MAD.toLocaleString('fr-MA')} <span class="text-sm font-semibold text-slate-400 ml-1">MAD</span>`
-    : '<span class="text-sm font-bold text-primary">Prix sur demande</span>';
+  if (!product || !product.specs) {
+    section.style.display = 'none';
+    return;
+  }
 
-  const thumbCount = Array.isArray(p.images) ? p.images.length : 0;
+  section.style.display = 'block';
 
-  // 3. The Cleaned HTML Template
-  return `
-    <article class="product-card bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col fade-in" style="${delay}">
-      
-      <div class="product-card-media relative bg-gray-50 overflow-hidden cursor-pointer" style="padding-top:75%;" onclick="openProductModal(${p.id})">
-        <img
-          src="${imgSrc}"
-          alt="${p.title}"
-          loading="lazy"
-          class="product-img absolute inset-0 w-full h-full object-contain p-4"
-          onerror="this.src='https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&q=80'"
-        />
-        
-        <div class="absolute top-2 left-2 right-2 flex justify-between items-start">
-          <span class="${brandClass} text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide shadow-sm"
-                style="${p.brand === 'Stanley' ? 'background:#FFD700; color:#1a1a1a;' : ''}">
-            ${p.brand}
-          </span>
-          <span class="bg-white/90 backdrop-blur-sm text-[9px] px-2 py-0.5 rounded-full font-bold text-navy shadow-sm">
-            ${p.subcategory || p.category}
-          </span>
-        </div>
+  var s = product.specs || {};
 
-        ${isNew ? '<span class="badge-new absolute top-10 left-2">Nouveau</span>' : ''}
-        ${thumbCount > 1 ? `<span class="absolute bottom-2 right-2 bg-black/60 text-white text-[9px] px-2 py-0.5 rounded">${thumbCount} vues</span>` : ''}
+  // Highlights
+  var hlHTML = '';
+  if (s.highlight1_value) hlHTML += buildHighlight(s.highlight1_value, s.highlight1_label);
+  if (s.highlight2_value) hlHTML += buildHighlight(s.highlight2_value, s.highlight2_label);
+  if (s.highlight3_value) hlHTML += buildHighlight(s.highlight3_value, s.highlight3_label);
 
-        <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-all duration-200 bg-navy/5">
-          <span class="bg-white text-navy text-[11px] font-extrabold px-4 py-2 rounded-full shadow-lg transform translate-y-2 hover:translate-y-0 transition-transform">
-            Voir Produit
-          </span>
-        </div>
-      </div>
+  var hlContainer = document.getElementById('specs-highlights');
+  if (hlContainer) {
+    hlContainer.innerHTML = hlHTML;
+    hlContainer.style.display = hlHTML ? 'grid' : 'none';
+  }
 
-      <div class="product-card-body p-4 flex flex-col flex-1">
-        <div class="mb-2">
-          <p class="text-gray-400 text-[10px] uppercase tracking-widest font-bold mb-1">${p.category}</p>
-          <h3 class="text-[14px] font-bold text-navy leading-snug line-clamp-2 min-h-[40px] cursor-pointer hover:text-primary transition-colors"
-              onclick="openProductModal(${p.id})">
-            ${p.title}
-          </h3>
-        </div>
+  // Details
+  var detailItems = normalizeDetails(s.details);
+  var detHTML = '';
+  if (detailItems.length) {
+    var icons = getSpecIcons();
+    for (var i = 0; i < detailItems.length; i++) {
+      var icon = icons[i % icons.length];
+      detHTML += '<div class="specs-row">' +
+        '<span class="specs-label">' + icon + ' ' + escH(detailItems[i].label) + '</span>' +
+        '<span class="specs-value">' + escH(detailItems[i].value) + '</span>' +
+        '</div>';
+    }
+  }
 
-        <p class="text-gray-500 text-xs leading-relaxed mb-4 line-clamp-2">${p.description_fr || ''}</p>
-        
-        <div class="flex justify-between items-center mb-4">
-          <span class="text-[10px] text-gray-400 font-mono">REF: ${p.ref || 'VT-' + String(p.id).slice(-6)}</span>
-          <span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${stockBadgeCls}">${stockLabel}</span>
-        </div>
+  var detContainer = document.getElementById('specs-details');
+  if (detContainer) detContainer.innerHTML = detHTML;
 
-        <div class="mt-auto pt-3 border-t border-gray-50">
-          <div class="flex items-end justify-between gap-2 mb-3">
-            <div class="product-card-price">
-              <span class="text-[9px] text-gray-400 font-bold uppercase block mb-1">Tarif HT</span>
-              <div class="price-tag text-[20px] font-black text-navy leading-none">
-                ${displayPrice}
-              </div>
-            </div>
-            <button onclick="openProductModal(${p.id})" class="bg-gray-100 hover:bg-gray-200 p-2 rounded-lg transition-colors">
-              <svg class="w-4 h-4 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-            </button>
-          </div>
-          
-          <button onclick="openProductModal(${p.id})" 
-                  class="w-full bg-primary hover:bg-primary-dark text-white text-xs font-bold py-2.5 rounded-xl transition-all shadow-md shadow-primary/20 flex items-center justify-center gap-2">
-            Consulter la fiche
-          </button>
-        </div>
-      </div>
-    </article>`;
+  // Compatibility
+  var compatibles = normalizeList(s.compatibles);
+  var incompatibles = normalizeList(s.incompatibles);
+  var compatHTML = '';
+
+  if (compatibles.length) {
+    for (var j = 0; j < compatibles.length; j++) {
+      compatHTML += '<li class="specs-compat-item">' +
+        '<svg class="specs-compat-ok" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>' +
+        escH(compatibles[j]) +
+        '</li>';
+    }
+  }
+
+  if (incompatibles.length) {
+    for (var k = 0; k < incompatibles.length; k++) {
+      compatHTML += '<li class="specs-compat-item">' +
+        '<svg class="specs-compat-no" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>' +
+        escH(incompatibles[k]) +
+        '</li>';
+    }
+  }
+
+  if (!compatHTML) {
+    compatHTML = '<div class="specs-empty">' +
+      '<svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">' +
+      '<circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>' +
+      'Aucune information de compatibilité disponible</div>';
+  }
+
+  var compatContainer = document.getElementById('specs-compat');
+  if (compatContainer) compatContainer.innerHTML = compatHTML;
+
+  showSpecsTab('fiche');
+}
+
+function showSpecsTab(tabId) {
+  var allTabs = document.querySelectorAll('.specs-tab');
+  var allPanels = document.querySelectorAll('.specs-panel');
+
+  for (var i = 0; i < allTabs.length; i++) {
+    allTabs[i].classList.remove('active');
+  }
+
+  for (var j = 0; j < allPanels.length; j++) {
+    allPanels[j].classList.remove('active');
+  }
+
+  var btn = document.querySelector('.specs-tab[data-tab="' + tabId + '"]');
+  var panel = document.getElementById('specs-panel-' + tabId);
+  if (btn) btn.classList.add('active');
+  if (panel) panel.classList.add('active');
+}
+
+function buildHighlight(value, label) {
+  return '<div class="specs-hl">' +
+    '<div class="specs-hl-val">' + escH(value) + '</div>' +
+    '<div class="specs-hl-label">' + escH(label || '') + '</div>' +
+    '</div>';
+}
+
+function normalizeDetails(details) {
+  var rows = [];
+  if (!Array.isArray(details)) return rows;
+
+  for (var i = 0; i < details.length; i++) {
+    var item = details[i];
+    if (item == null) continue;
+
+    if (typeof item === 'string' || typeof item === 'number' || typeof item === 'boolean') {
+      rows.push({ label: 'Détail', value: stringifyValue(item) });
+      continue;
+    }
+
+    if (Array.isArray(item)) {
+      rows.push({ label: 'Détail', value: stringifyValue(item) });
+      continue;
+    }
+
+    if (typeof item === 'object') {
+      var label = item.label || item.name || item.key || item.title || '';
+      var value = item.value;
+
+      if (value == null && 'values' in item) value = item.values;
+      if (value == null && 'description' in item) value = item.description;
+      if (value == null && 'content' in item) value = item.content;
+
+      if (label || value != null) {
+        rows.push({
+          label: label || 'Détail',
+          value: stringifyValue(value)
+        });
+        continue;
+      }
+
+      for (var key in item) {
+        if (!Object.prototype.hasOwnProperty.call(item, key)) continue;
+        rows.push({
+          label: prettifyKey(key),
+          value: stringifyValue(item[key])
+        });
+      }
+    }
+  }
+
+  return rows;
+}
+
+function normalizeList(items) {
+  if (!Array.isArray(items)) return [];
+  var out = [];
+
+  for (var i = 0; i < items.length; i++) {
+    var value = stringifyValue(items[i]);
+    if (value) out.push(value);
+  }
+
+  return out;
+}
+
+function stringifyValue(value) {
+  if (value == null) return '';
+  if (typeof value === 'string') return value;
+  if (typeof value === 'number' || typeof value === 'boolean') return String(value);
+
+  if (Array.isArray(value)) {
+    var normalized = [];
+    for (var i = 0; i < value.length; i++) {
+      var nested = stringifyValue(value[i]);
+      if (nested) normalized.push(nested);
+    }
+    return normalized.join(' • ');
+  }
+
+  if (typeof value === 'object') {
+    if (value.label && value.value != null) {
+      return stringifyValue(value.value);
+    }
+
+    var parts = [];
+    for (var key in value) {
+      if (!Object.prototype.hasOwnProperty.call(value, key)) continue;
+      var partValue = stringifyValue(value[key]);
+      if (partValue) parts.push(prettifyKey(key) + ': ' + partValue);
+    }
+    return parts.join(' • ');
+  }
+
+  return String(value);
+}
+
+function prettifyKey(key) {
+  return String(key || '')
+    .replace(/_/g, ' ')
+    .replace(/([a-z])([A-Z])/g, '$1 $2')
+    .replace(/\s+/g, ' ')
+    .replace(/^\w/, function (c) { return c.toUpperCase(); });
+}
+
+function escH(str) {
+  if (str == null) return '';
+  var d = document.createElement('div');
+  d.textContent = String(str);
+  return d.innerHTML;
+}
+
+function getSpecIcons() {
+  return [
+    '<svg width="16" height="16" fill="none" stroke="#94a3b8" stroke-width="1.5" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+    '<svg width="16" height="16" fill="none" stroke="#94a3b8" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>',
+    '<svg width="16" height="16" fill="none" stroke="#94a3b8" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>',
+    '<svg width="16" height="16" fill="none" stroke="#94a3b8" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20"/></svg>',
+    '<svg width="16" height="16" fill="none" stroke="#94a3b8" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 7V5a2 2 0 012-2h8a2 2 0 012 2v2"/></svg>',
+    '<svg width="16" height="16" fill="none" stroke="#94a3b8" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>',
+    '<svg width="16" height="16" fill="none" stroke="#94a3b8" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>',
+    '<svg width="16" height="16" fill="none" stroke="#94a3b8" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'
+  ];
 }
