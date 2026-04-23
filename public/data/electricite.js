@@ -103,6 +103,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       ]
     },
     "variants": null
+  },
+  {
+    "id": 1776984045305,
+    "category": "Électricité",
+    "subcategory": "Enrouleurs de Câble",
+    "brand": "Unknown",
+    "title": "Enrouleur de Câble",
+    "description_fr": "Enrouleur de câble électrique de format compact avec tambour rouge et noir. Équipé d'une prise femelle pour brancher vos appareils électriques. Parfait pour organiser et ranger vos câbles d'extension en toute sécurité. Pratique pour les chantiers, garages ou usage domestique.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/cable-reel-1-041305.png",
+      "/images/products/cable-reel-2-041305.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1776984045305",
+    "specs": {
+      "details": {
+        "Matériau Boîtier": "Plastique",
+        "Type de Connecteur": "Prise Schuko 3 Broches"
+      },
+      "compatibility": [
+        "Câbles d'extension électriques standard",
+        "Appareils électriques 220V",
+        "Prises électriques murales"
+      ]
+    },
+    "variants": null
   }
 ]);
 
