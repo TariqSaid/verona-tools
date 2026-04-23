@@ -135,6 +135,41 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       ]
     },
     "variants": null
+  },
+  {
+    "id": 1776983106354,
+    "category": "Outillage",
+    "subcategory": "Meuleuses d'angle",
+    "brand": "Bosch",
+    "title": "Meuleuse d'angle GWS 9-125 S",
+    "description_fr": "Meuleuse d'angle filaire Bosch GWS 9-125 S, compacte et puissante, idéale pour le meulage, le tronçonnage et le polissage. Équipée d'une poignée ergonomique et d'un système de protection innovant. Parfaite pour les travaux de finition et de préparation de surfaces sur divers matériaux.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/angle-grinder-gws-9-125-s-1-100563.png",
+      "/images/products/angle-grinder-gws-9-125-s-2-100563.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1776983106354",
+    "specs": {
+      "highlight1_label": "Diamètre du disque",
+      "highlight1_value": "125 mm",
+      "highlight2_label": "Puissance",
+      "highlight2_value": "900 W",
+      "highlight3_label": "Vitesse à vide",
+      "highlight3_value": "11500 tr/min",
+      "details": {
+        "Alimentation": "Électrique filaire",
+        "Poids": "2.4 kg",
+        "Type de travaux": "Meulage, tronçonnage, polissage"
+      },
+      "compatibility": [
+        "Disques de meulage 125 mm",
+        "Disques de tronçonnage 125 mm",
+        "Disques de polissage 125 mm",
+        "Brosses métalliques 125 mm"
+      ]
+    },
+    "variants": null
   }
 ]);
 
