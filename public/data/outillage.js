@@ -198,6 +198,39 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       ]
     },
     "variants": null
+  },
+  {
+    "id": 1777073511793,
+    "category": "Outillage",
+    "subcategory": "Clés et Outils de Serrage",
+    "brand": "WOKIN",
+    "title": "Jeu de Clés Anglaises Ajustables",
+    "description_fr": "Ensemble de deux clés anglaises ajustables de la marque WOKIN avec poignées ergonomiques bicolores orange et noir. Les clés disposent de mâchoires chromées résistantes et d'un mécanisme de réglage précis. Idéales pour les travaux de plomberie, mécanique et maintenance générale.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/adjustable-wrench-set-1-507647.png",
+      "/images/products/adjustable-wrench-set-2-507647.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1777073511793",
+    "specs": {
+      "highlight1_label": "Nombre de pièces",
+      "highlight1_value": "2",
+      "highlight2_label": "Type de mâchoires",
+      "highlight2_value": "Chromées ajustables",
+      "highlight3_label": "Matériau de la poignée",
+      "highlight3_value": "Plastique et caoutchouc",
+      "details": {
+        "Finition": "Chromée",
+        "Ergonomie": "Poignée bicolore antidérapante"
+      },
+      "compatibility": [
+        "Boulons et écrous standard",
+        "Tuyauterie",
+        "Raccords de plomberie"
+      ]
+    },
+    "variants": null
   }
 ]);
 
