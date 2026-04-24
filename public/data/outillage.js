@@ -170,6 +170,34 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       ]
     },
     "variants": null
+  },
+  {
+    "id": 1777070852954,
+    "category": "Outillage",
+    "subcategory": "Clés mixtes et ensembles d'outils",
+    "brand": "WOKIN",
+    "title": "Jeu de 7 Clés Mixtes Engrenage",
+    "description_fr": "Ensemble de 7 clés mixtes de qualité industrielle avec têtes engrenées pour une meilleure prise. Cet ensemble comprend les tailles 8, 10, 12, 13, 14, 17 et 19 mm. Les clés sont fabriquées en acier chromé et sont idéales pour les travaux de mécanique générale et d'entretien. Livrées sur un support de rangement pratique.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/7-piece-combination-gear-spanner-set-1-848138.png",
+      "/images/products/7-piece-combination-gear-spanner-set-2-848138.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1777070852954",
+    "specs": {
+      "details": {
+        "Nombre de pièces": "7",
+        "Finition": "Acier chromé poli",
+        "Type de tête": "Engrenée combinaison"
+      },
+      "compatibility": [
+        "Écrous standards",
+        "Boulons métriques",
+        "Équipement mécanique général"
+      ]
+    },
+    "variants": null
   }
 ]);
 
