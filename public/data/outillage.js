@@ -231,6 +231,30 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       ]
     },
     "variants": null
+  },
+  {
+    "id": 1777073939553,
+    "category": "Outillage",
+    "subcategory": "Lames et accessoires de cutter",
+    "brand": "WOKIN",
+    "title": "Lames de Cutter",
+    "description_fr": "Ensemble de lames de cutter de rechange de haute qualité pour travaux de précision et de coupe. Les lames sont tranchantes et durables, idéales pour les tâches de découpe sur divers matériaux. Compatible avec les cutters standards. Paquet contenant 60 lames de rechange.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/utility-knife-blades-1-935085.png",
+      "/images/products/utility-knife-blades-2-935085.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1777073939553",
+    "specs": {
+      "highlight1_label": "Nombre de lames",
+      "highlight1_value": "60 lames",
+      "highlight2_label": "Type de lame",
+      "highlight2_value": "Lame segmentée standard",
+      "highlight3_label": "Marque",
+      "highlight3_value": "WOKIN"
+    },
+    "variants": null
   }
 ]);
 
