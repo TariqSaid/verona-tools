@@ -255,6 +255,30 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       "highlight3_value": "WOKIN"
     },
     "variants": null
+  },
+  {
+    "id": 1777144729501,
+    "category": "Outillage",
+    "subcategory": "Couteaux à Mastic",
+    "brand": "WOKIN",
+    "title": "Ensemble de Couteaux à Mastic",
+    "description_fr": "Ensemble de 10 couteaux à mastic de 18x100mm de la marque WOKIN. Cet ensemble comprend plusieurs lames en acier trempé pour le grattage, le lissage et l'application de mastic ou de pâte à joint. Idéal pour les travaux de finition, de préparation de surface et de retouche de cloisons.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/putty-knife-set-1-725124.png",
+      "/images/products/putty-knife-set-2-725124.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1777144729501",
+    "specs": {
+      "highlight1_label": "Nombre de pièces",
+      "highlight1_value": "10 couteaux",
+      "highlight2_label": "Dimensions de la lame",
+      "highlight2_value": "18x100 mm",
+      "highlight3_label": "Matériau",
+      "highlight3_value": "Acier trempé"
+    },
+    "variants": null
   }
 ]);
 
