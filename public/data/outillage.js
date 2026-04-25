@@ -313,6 +313,30 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       ]
     },
     "variants": null
+  },
+  {
+    "id": 1777145129309,
+    "category": "Outillage",
+    "subcategory": "Tournevis",
+    "brand": "WOKIN INDUSTRIAL",
+    "title": "Jeu de Tournevis Isolés",
+    "description_fr": "Ensemble de 6 tournevis isolés WOKIN INDUSTRIAL avec poignées ergonomiques bi-matière rouge et jaune. Comprend 5 tournevis isolés de différentes tailles et un testeur électrique pour vérifier la présence de tension. Conçu pour les travaux électriques en toute sécurité.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/insulated-screwdriver-set-1-119532.png",
+      "/images/products/insulated-screwdriver-set-2-119532.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1777145129309",
+    "specs": {
+      "highlight1_label": "Nombre de pièces",
+      "highlight1_value": "6",
+      "highlight2_label": "Type d'isolation",
+      "highlight2_value": "Isolé 1000V",
+      "highlight3_label": "Poignée",
+      "highlight3_value": "Bi-matière ergonomique"
+    },
+    "variants": null
   }
 ]);
 
