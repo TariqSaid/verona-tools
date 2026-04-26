@@ -363,36 +363,6 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       "highlight3_value": "Bosch Professional"
     },
     "variants": null
-  },
-  {
-    "id": 1777244582788,
-    "category": "Outillage",
-    "subcategory": "Pistolets thermiques",
-    "brand": "Bosch",
-    "title": "Pistolet thermique GHG 180",
-    "description_fr": "Pistolet thermique professionnel Bosch GHG 180 conçu pour les travaux de décapage, de soudage et de retrait de peinture. Outil électrique compact et ergonomique avec cordon d'alimentation intégré. Idéal pour les applications professionnelles nécessitant une source de chaleur concentrée et contrôlable.",
-    "price_MAD": 0,
-    "images": [],
-    "in_stock": true,
-    "ref": "VT-AUTO-1777244582788",
-    "specs": {
-      "highlight1_label": "Modèle",
-      "highlight1_value": "GHG 180",
-      "highlight2_label": "Type",
-      "highlight2_value": "Pistolet thermique",
-      "highlight3_label": "Classe",
-      "highlight3_value": "Professionnel",
-      "details": {
-        "Marque": "Bosch",
-        "Alimentation": "Électrique filaire"
-      },
-      "compatibility": [
-        "Buses de rechange GHG 180",
-        "Accessoires Bosch Professional",
-        "Protections thermiques"
-      ]
-    },
-    "variants": null
   }
 ]);
 
