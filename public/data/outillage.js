@@ -281,40 +281,6 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "variants": null
   },
   {
-    "id": 1777145122845,
-    "category": "Outillage",
-    "subcategory": "Couteaux à mastic et raclettes",
-    "brand": "WOKIN",
-    "title": "Lot de 10 couteaux à mastic",
-    "description_fr": "Ensemble de 10 couteaux à mastic de 18x100mm de la marque WOKIN. Lames en acier inoxydable robustes, idéales pour appliquer, lisser et enlever le mastic, le plâtre ou les résidus. Parfait pour les travaux de finition, de rénovation et de préparation de surfaces. Fournis dans un emballage plastique pratique.",
-    "price_MAD": 0,
-    "images": [
-      "/images/products/putty-knife-set-10-pieces-1-118816.png",
-      "/images/products/putty-knife-set-10-pieces-2-118816.png"
-    ],
-    "in_stock": true,
-    "ref": "VT-AUTO-1777145122845",
-    "specs": {
-      "highlight1_label": "Dimensions",
-      "highlight1_value": "18 x 100 mm",
-      "highlight2_label": "Nombre de pièces",
-      "highlight2_value": "10 couteaux",
-      "highlight3_label": "Matériau de la lame",
-      "highlight3_value": "Acier inoxydable",
-      "details": {
-        "Marque": "WOKIN",
-        "Type de lame": "Acier inoxydable"
-      },
-      "compatibility": [
-        "Mastic acrylique",
-        "Plâtre",
-        "Résines de remplissage",
-        "Produits de jointoiement"
-      ]
-    },
-    "variants": null
-  },
-  {
     "id": 1777145129309,
     "category": "Outillage",
     "subcategory": "Tournevis",
