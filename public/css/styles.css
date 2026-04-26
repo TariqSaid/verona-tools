@@ -1,6 +1,7 @@
 /* ══════════════════════════════════════════════════════════
-   VERONA TOOLS — Production Stylesheet
+   VERONA TOOLS — Production Stylesheet v2.0
    Mobile-first · Animations · Touch-ready · Dark mode
+   UPDATED: Better image framing, mobile grids, typography
 ══════════════════════════════════════════════════════════ */
 
 * { font-family: 'Inter', system-ui, sans-serif; }
@@ -23,7 +24,8 @@ html { scroll-behavior: smooth; }
 .hero-nav-dot.active { background: #22B8CF; transform: scale(1.35); }
 
 /* ══════════════════════════════════════════════════════════
-   PRODUCT CARDS — Premium Interactive
+   PRODUCT CARDS — Premium Interactive (v2)
+   KEY FIX: Strict 1:1 image ratio, better mobile framing
 ══════════════════════════════════════════════════════════ */
 .product-card {
   position: relative;
@@ -32,6 +34,8 @@ html { scroll-behavior: smooth; }
   box-shadow: 0 12px 28px rgba(15,23,42,0.06);
   transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s ease, border-color 0.25s ease;
   will-change: transform;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .product-card::before {
   content: '';
@@ -50,12 +54,30 @@ html { scroll-behavior: smooth; }
 .product-card:hover .product-img { transform: scale(1.06); }
 .product-img { transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1); }
 
-/* ── Card component classes (used by renderProductCard) ── */
+/* ── Card Media: STRICT 1:1 ratio for image consistency ── */
 .product-card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   background:
     radial-gradient(circle at top left, rgba(34,184,207,0.10), transparent 38%),
     linear-gradient(180deg, #f8fbfd 0%, #eef4f8 100%);
+  overflow: hidden;
+  cursor: pointer;
 }
+.product-card-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 12px;
+}
+/* Mobile: slightly less padding so product fills more frame */
+@media (max-width: 480px) {
+  .product-card-media img { padding: 8px; }
+}
+
 .product-card-topbar {
   position: absolute;
   inset: 12px 12px auto 12px;
@@ -103,6 +125,14 @@ html { scroll-behavior: smooth; }
   -webkit-line-clamp: 3;
   overflow: hidden;
   min-height: 64px;
+}
+/* Mobile: reduce description lines */
+@media (max-width: 480px) {
+  .product-card-desc {
+    -webkit-line-clamp: 2;
+    min-height: auto;
+    font-size: 12px;
+  }
 }
 .product-card-meta {
   display: flex;
@@ -533,6 +563,7 @@ body.dark .card-color-btn { border-color: #0f172a; box-shadow: 0 0 0 1px #475569
 
 /* ══════════════════════════════════════════════════════════
    RESPONSIVE — PHONE (≤480px)
+   CRITICAL FIXES: 2-col grid, compact cards, better images
 ══════════════════════════════════════════════════════════ */
 @media (max-width: 480px) {
   /* Header compact */
@@ -562,7 +593,7 @@ body.dark .card-color-btn { border-color: #0f172a; box-shadow: 0 0 0 1px #475569
   .cat-section-header h2 { font-size: 14px; }
   .cat-section-block .grid { padding: 10px !important; gap: 8px !important; }
 
-  /* Cards compact */
+  /* Cards compact — KEY FIX for mobile readability */
   .product-card { border-radius: 14px; }
   .product-card h3 { font-size: 11px; line-height: 1.35; }
   .product-card .text-gray-500.text-xs { display: none; }
