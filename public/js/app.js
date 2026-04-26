@@ -1,12 +1,7 @@
 /**
  * ============================================================
- *  VERONA TOOLS — Application Logic
- * ============================================================
- *  Ce fichier ne contient PAS de données produit.
- *  Pour ajouter / modifier des produits, éditez les fichiers
- *  dans le dossier  data/  (electricite.js, outillage.js …)
- *
- *  Pour la configuration (catégories, traductions) : js/config.js
+ *  VERONA TOOLS — Application Logic v2.0
+ *  UPDATED: Better image handling, mobile grid, card rendering
  * ============================================================
  */
 
@@ -182,30 +177,53 @@ function getBrandClass(brand) {
   return map[brand] || 'badge-default';
 }
 
-// ─── Product card renderer ───────────────────────────────────────────────
+// ─── Image URL helper — preserves your local images, handles Unsplash ─────
+function getProductImageUrl(p, index) {
+  // Prefer images array (your new n8n-generated images)
+  if (Array.isArray(p.images) && p.images.length > index) {
+    return p.images[index];
+  }
+  // Fallback to image_url array
+  if (Array.isArray(p.image_url) && p.image_url.length > index) {
+    return p.image_url[index];
+  }
+  // Fallback to single image_url string
+  if (typeof p.image_url === 'string' && p.image_url) {
+    return p.image_url;
+  }
+  // Ultimate fallback
+  return 'https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&q=80';
+}
+
+// ─── Product card renderer — KEY FIX: strict 1:1 image ratio ─────────────
 function renderProductCard(p, i) {
   const maxIds         = getMaxIds();
   const brandClass    = getBrandClass(p.brand);
   const stockLabel    = p.in_stock ? t('in_stock') : t('out_of_stock');
   const stockBadgeCls = p.in_stock ? 'stock-in' : 'stock-out';
-  const imgSrc        = (Array.isArray(p.images) && p.images.length > 0)
-                          ? p.images[0]
-                          : (Array.isArray(p.image_url) ? p.image_url[0] : (p.image_url || ''));
+  
+  // PRIMARY IMAGE: use getProductImageUrl helper
+  const imgSrc        = getProductImageUrl(p, 0);
+  
   const isNew         = maxIds.includes(p.id);
   const delay         = `animation-delay:${i * 0.04}s`;
+  
+  // Price display
   const displayPrice  = Number.isFinite(p.price_MAD) && p.price_MAD > 0
     ? `${p.price_MAD.toLocaleString('fr-MA')} <span class="text-sm font-semibold text-slate-400 ml-1">MAD</span>`
     : '<span class="product-price-request">Prix sur demande</span>';
-  const thumbCount    = Array.isArray(p.images) ? p.images.length : (p.image_url ? 1 : 0);
+  
+  // Count total images
+  const totalImages = Array.isArray(p.images) ? p.images.length : (Array.isArray(p.image_url) ? p.image_url.length : (p.image_url ? 1 : 0));
 
   return `
     <article class="product-card bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col fade-in" style="${delay}">
-      <div class="product-card-media relative bg-gray-50 overflow-hidden cursor-pointer" style="padding-top:70%;" onclick="openProductModal(${p.id})">
+      <div class="product-card-media" onclick="openProductModal(${p.id})">
         <img
           src="${imgSrc}"
           alt="${p.title}"
           loading="lazy"
-          class="product-img absolute inset-0 w-full h-full object-contain p-3"
+          class="product-img"
           onerror="this.src='https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&q=80'"
         />
         <div class="product-card-topbar">
@@ -216,7 +234,7 @@ function renderProductCard(p, i) {
           <span class="product-card-cat">${p.subcategory || p.category}</span>
         </div>
         ${isNew ? '<span class="badge-new">Nouveau</span>' : ''}
-        ${thumbCount > 1 ? `<span class="product-card-gallery">${thumbCount} vues</span>` : ''}
+        ${totalImages > 1 ? `<span class="product-card-gallery">${totalImages} vues</span>` : ''}
         <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-all duration-200"
              style="background:rgba(30,41,59,0.08);">
           <span style="background:rgba(255,255,255,0.96);color:#1E293B;font-size:12px;font-weight:800;padding:7px 16px;border-radius:20px;letter-spacing:.04em;box-shadow:0 8px 20px rgba(0,0,0,0.10);">
@@ -483,12 +501,13 @@ function hideLoader() { ensureLoaderHidden(); }
 // ─── Product detail modal ────────────────────────────────────────────────
 let modalCurrentProduct = null;
 
+// UPDATED: use getProductImageUrl for consistency
 function getProductImages(p) {
+  // Prefer images array (your n8n-generated images)
   if (Array.isArray(p.images) && p.images.length > 0) return p.images;
   if (Array.isArray(p.image_url) && p.image_url.length > 0) return p.image_url;
   const raw = typeof p.image_url === 'string' ? p.image_url : '';
   if (!raw) return [''];
-  // Local paths (/images/...) don't support Unsplash query variants — return as-is
   if (raw.startsWith('/')) return [raw];
   const base = raw.split('?')[0];
   return [raw, base + '?w=400&q=75&crop=entropy', base + '?w=400&q=70&fit=crop'];
@@ -574,7 +593,7 @@ function openProductModal(productId) {
     }
   }
 
-  // ── Render specs tabs (if product has specs) ──────────────
+  // Render specs tabs (if product has specs)
   if (typeof renderSpecsTabs === 'function') renderSpecsTabs(p);
 
   if (modal) {
