@@ -303,6 +303,42 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       "highlight3_value": "Bi-matière ergonomique"
     },
     "variants": null
+  },
+  {
+    "id": 1777229590861,
+    "category": "Outillage",
+    "subcategory": "Jeux de tournevis",
+    "brand": "WOKIN",
+    "title": "Jeu de tournevis",
+    "description_fr": "Jeu complet de tournevis multifonction WOKIN avec manche rouge et noir et embouts jaunes. Set comprenant plusieurs tournevis de différentes tailles et types, idéal pour les travaux de maintenance générale. Livré dans un étui de transport en nylon pratique pour ranger et organiser tous les outils. Parfait pour l'électricité, l'électronique et la mécanique légère.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/screwdriver-set-1-586436.png",
+      "/images/products/screwdriver-set-2-586436.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1777229590861",
+    "specs": {
+      "highlight1_label": "Nombre de pièces",
+      "highlight1_value": "15 à 18 outils",
+      "highlight2_label": "Étui de transport",
+      "highlight2_value": "Étui nylon avec fermeture éclair",
+      "highlight3_label": "Types de tournevis",
+      "highlight3_value": "Plat, Phillips, précision",
+      "details": {
+        "Marque": "WOKIN",
+        "Couleur manche": "Rouge et noir",
+        "Couleur embout": "Jaune",
+        "Rangement": "Étui portable"
+      },
+      "compatibility": [
+        "Vis de tous types standards",
+        "Prises électriques",
+        "Appareils électroniques",
+        "Petits électroménagers"
+      ]
+    },
+    "variants": null
   }
 ]);
 
