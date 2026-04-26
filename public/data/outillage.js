@@ -363,6 +363,30 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       "highlight3_value": "Bosch Professional"
     },
     "variants": null
+  },
+  {
+    "id": 1777246169624,
+    "category": "Outillage",
+    "subcategory": "Pistolets thermiques",
+    "brand": "Bosch Professional",
+    "title": "Pistolet thermique GHG 180",
+    "description_fr": "Pistolet thermique professionnel Bosch GHG 180 conçu pour les travaux de décapage, séchage et chauffage. Équipé d'une poignée ergonomique antidérapante et d'un cordon d'alimentation. Idéal pour les applications de maintenance, restauration et travaux de construction professionnels.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/heat-gun-ghg-180-1-151492.png",
+      "/images/products/heat-gun-ghg-180-2-162279.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1777246169624",
+    "specs": {
+      "highlight1_label": "Modèle",
+      "highlight1_value": "GHG 180",
+      "highlight2_label": "Type",
+      "highlight2_value": "Pistolet thermique",
+      "highlight3_label": "Gamme",
+      "highlight3_value": "Professional"
+    },
+    "variants": null
   }
 ]);
 
