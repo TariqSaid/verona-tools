@@ -363,6 +363,31 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       "highlight3_value": "Bosch Professional"
     },
     "variants": null
+  },
+  {
+    "id": 1777239595800,
+    "category": "Outillage",
+    "subcategory": "Outils électriques thermiques",
+    "brand": "Bosch Professional",
+    "title": "Pistolet à air chaud GHG 180",
+    "description_fr": "Pistolet à air chaud professionnel Bosch GHG 180 pour décapage, soudage de plastique et travaux de chauffage. Outil électrique filaire avec poignée ergonomique et buse concentrée. Idéal pour les travaux de construction, rénovation et maintenance industrielle.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/heat-gun-ghg-180-1-592661.png",
+      "/images/products/heat-gun-ghg-180-2-592661.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1777239595800",
+    "specs": {
+      "highlight1_label": "Modèle",
+      "highlight1_value": "GHG 180",
+      "highlight2_label": "Type",
+      "highlight2_value": "Pistolet à air chaud filaire",
+      "highlight3_label": "Marque",
+      "highlight3_value": "Bosch Professional",
+      "details": {}
+    },
+    "variants": null
   }
 ]);
 
