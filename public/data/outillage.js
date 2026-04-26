@@ -339,6 +339,30 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       ]
     },
     "variants": null
+  },
+  {
+    "id": 1777229593765,
+    "category": "Outillage",
+    "subcategory": "Meuleuses d'angle",
+    "brand": "Bosch Professional",
+    "title": "Meuleuse d'angle",
+    "description_fr": "Meuleuse d'angle Bosch Professional équipée d'un disque de meulage. Cet outil électrique compact et performant est idéal pour le meulage, le tronçonnage et le polissage de métaux et minéraux. Livré avec accessoires : disques de meulage, flasques, garde-main et clé de serrage pour un usage immédiat.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/angle-grinder-1-586952.png",
+      "/images/products/angle-grinder-2-586952.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1777229593765",
+    "specs": {
+      "highlight1_label": "Diamètre du disque",
+      "highlight1_value": "125 mm",
+      "highlight2_label": "Type d'outil",
+      "highlight2_value": "Meuleuse d'angle filaire",
+      "highlight3_label": "Marque",
+      "highlight3_value": "Bosch Professional"
+    },
+    "variants": null
   }
 ]);
 
