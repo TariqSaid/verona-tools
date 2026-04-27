@@ -37,5 +37,38 @@ window.VT_PRODUCTS = [
     },
     "variants": null,
     "slug": "bosch-gsb-16-re-professional-impact-drill-1-648311"
+  },
+  {
+    "id": 1777328978357,
+    "category": "Outillage",
+    "subcategory": "Meuleuses d'angle",
+    "brand": "Bosch",
+    "title": "Angle Grinder",
+    "title_fr": "Meuleuse d'angle",
+    "description": "",
+    "description_fr": "Meuleuse d'angle compacte Bosch avec moteur puissant, idéale pour le meulage, le tronçonnage et le polissage. Livrée avec plusieurs disques de meulage et accessoires pour différentes applications. Conception ergonomique avec poignée de sécurité pour un contrôle optimal.",
+    "visualDescription": "Meuleuse d'angle Bosch bleu et noir avec carter de protection métallique. Moteur cylindrique bleu ciel avec poignée latérale rouge. Disques de meulage noir et gris, carter de protection blanc, clé de serrage métallique et poignée auxiliaire noire inclus. Câble d'alimentation noir.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-1-958230.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-2-970146.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777328978357",
+    "specs": {
+      "details": {
+        "Marque": "Bosch",
+        "Type d'outil": "Meuleuse d'angle",
+        "Accessoires fournis": "Disques de meulage, carter de protection blanc, clé de serrage, poignée auxiliaire"
+      },
+      "compatibility": [
+        "Disques de meulage 115 mm",
+        "Disques de tronçonnage",
+        "Brosses métalliques",
+        "Disques de polissage"
+      ]
+    },
+    "variants": null,
+    "slug": "angle-grinder-1-958230"
   }
 ];
