@@ -96,44 +96,5 @@ window.VT_PRODUCTS = [
     },
     "variants": null,
     "slug": "acti9-ic40n-c32-circuit-breaker-1-004848"
-  },
-  {
-    "id": 1777332025042,
-    "category": "Électricité",
-    "subcategory": "Disjoncteurs différentiels",
-    "brand": "Schneider Electric",
-    "title": "Vigi iCG40 Residual Current Device",
-    "title_fr": "Vigi iCG40",
-    "description": "",
-    "description_fr": "Disjoncteur différentiel Vigi iCG40 de marque Schneider Electric, conçu pour la protection contre les chocs électriques et les fuites à la terre. Ce module de protection différentielle s'installe sur rail DIN dans les tableaux électriques résidentiels et tertiaires. Offre une protection fiable et rapide pour les circuits électriques.",
-    "visualDescription": "Boîtier blanc modulaire pour rail DIN, hauteur 3 modules. Deux bornes de connexion supérieures (phase et neutre) avec vis de serrage. Bouton de test blanc en façade centrale. Indicateur visuel vert. Base avec contacts de terre orange et connecteurs de cuivre intégrés. Design compact et professionnel.",
-    "price_MAD": 0,
-    "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigi-icg40-residual-current-device-1-006356.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigi-icg40-residual-current-device-2-017262.png"
-    ],
-    "in_stock": true,
-    "ref": "VT-1777332025042",
-    "specs": {
-      "highlight1_label": "Type de protection",
-      "highlight1_value": "Différentiel 40A",
-      "highlight2_label": "Sensibilité",
-      "highlight2_value": "30 mA",
-      "highlight3_label": "Installation",
-      "highlight3_value": "Rail DIN",
-      "details": {
-        "Marque": "Schneider Electric",
-        "Modèle": "Vigi iCG40",
-        "Modules": "3 modules"
-      },
-      "compatibility": [
-        "Rails DIN",
-        "Tableaux électriques résidentiels",
-        "Tableaux électriques tertiaires",
-        "Câbles phase/neutre standard"
-      ]
-    },
-    "variants": null,
-    "slug": "vigi-icg40-residual-current-device-1-006356"
   }
 ];
