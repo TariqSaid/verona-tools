@@ -104,5 +104,33 @@ window.VT_PRODUCTS = [
     },
     "variants": null,
     "slug": "vigi-icg40-residual-current-circuit-breaker-1-290991"
+  },
+  {
+    "id": 1777331408093,
+    "category": "Électricité",
+    "subcategory": "Disjoncteurs différentiels et dispositifs de protection",
+    "brand": "Schneider Electric",
+    "title": "Vigi iCG40 Residual Current Device",
+    "title_fr": "Vigi iCG40",
+    "description": "",
+    "description_fr": "Dispositif de protection différentielle Vigi iCG40 de Schneider Electric pour installation électrique. Cet appareil assure la protection contre les fuites de courant et les défauts d'isolement. Il s'intègre directement dans le tableau électrique et garantit la sécurité des installations et des utilisateurs.",
+    "visualDescription": "Module électrique blanc de forme rectangulaire, fixation sur rail DIN. Partie supérieure avec deux bornes de connexion (L et N) munies de vis de serrage en cuivre. Corps principal blanc avec bandeau vert marqué 'Vigi iCG40', écran d'affichage noir, manette de test blanche, base de montage grise avec connecteurs de câblage.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigi-icg40-residual-current-device-1-387576.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigi-icg40-residual-current-device-2-400069.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777331408093",
+    "specs": {
+      "highlight1_label": "Type de protection",
+      "highlight1_value": "Différentiel haute sensibilité",
+      "highlight2_label": "Modèle",
+      "highlight2_value": "Vigi iCG40",
+      "highlight3_label": "Technologie",
+      "highlight3_value": "Détection de défaut d'isolement"
+    },
+    "variants": null,
+    "slug": "vigi-icg40-residual-current-device-1-387576"
   }
 ];
