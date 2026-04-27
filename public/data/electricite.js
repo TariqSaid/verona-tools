@@ -38,5 +38,43 @@ window.VT_PRODUCTS = [
     },
     "variants": null,
     "slug": "acti9-ic40n-c32-circuit-breaker-1-216173"
+  },
+  {
+    "id": 1777331311038,
+    "category": "Électricité",
+    "subcategory": "Disjoncteurs modulaires",
+    "brand": "Schneider Electric",
+    "title": "Acti9 iC40N C32 Circuit Breaker",
+    "title_fr": "Disjoncteur Acti9 iC40N C32",
+    "description": "",
+    "description_fr": "Disjoncteur modulaire triphasé + neutre Schneider Electric Acti9 iC40N de 32A courbe C. Cet appareil de protection modulaire assure la protection des circuits électriques contre les surcharges et les courts-circuits. Conforme aux normes de sécurité électrique, il s'installe facilement sur rail DIN dans les tableaux de distribution.",
+    "visualDescription": "Boîtier blanc modulaire rectangulaire, 4 modules de largeur, équipé de 4 bornes de connexion (3 phases + neutre) en haut et en bas. Trois leviers verts avec bande noire inférieure. Marquage Schneider Electric en vert horizontal sur le côté. Deux encoches jaunes en haut pour accrochage. Référence A9P54732 visible sur l'emballage.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/acti9-ic40n-c32-circuit-breaker-1-289951.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/acti9-ic40n-c32-circuit-breaker-2-302824.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777331311038",
+    "specs": {
+      "highlight1_label": "Intensité nominale",
+      "highlight1_value": "32 A",
+      "highlight2_label": "Courbe de déclenchement",
+      "highlight2_value": "C",
+      "highlight3_label": "Nombre de pôles",
+      "highlight3_value": "3P + N",
+      "details": {
+        "Référence": "A9P54732",
+        "Type": "iC40N C32",
+        "Installation": "Rail DIN"
+      },
+      "compatibility": [
+        "Tableaux de distribution Schneider",
+        "Rails DIN standard",
+        "Circuits triphasés 400V"
+      ]
+    },
+    "variants": null,
+    "slug": "acti9-ic40n-c32-circuit-breaker-1-289951"
   }
 ];
