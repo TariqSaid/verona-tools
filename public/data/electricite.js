@@ -132,5 +132,42 @@ window.VT_PRODUCTS = [
     },
     "variants": null,
     "slug": "vigi-icg40-residual-current-device-1-387576"
+  },
+  {
+    "id": 1777331411026,
+    "category": "Électricité",
+    "subcategory": "Enrouleurs de câble électrique",
+    "brand": "Unknown",
+    "title": "Electrical Power Strip Reel",
+    "title_fr": "Enrouleur de Câble Électrique",
+    "description": "",
+    "description_fr": "Enrouleur de câble électrique compact avec boîtier rouge et noir. Conçu pour organiser et ranger les câbles d'alimentation. Équipé d'une prise électrique intégrée et d'un câble d'alimentation avec connecteur standard. Idéal pour les chantiers, ateliers ou utilisation domestique.",
+    "visualDescription": "Enrouleur circulaire de couleur rouge vif avec base noire. Diamètre d'environ 30-35 cm. Boîtier de distribution central noir avec 4 prises de courant visibles. Câble d'alimentation noir avec prise européenne standard enroulé autour du corps circulaire. Design compact et portable.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/electrical-power-strip-reel-1-388101.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/electrical-power-strip-reel-2-402031.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777331411026",
+    "specs": {
+      "highlight1_label": "Nombre de prises",
+      "highlight1_value": "4 prises",
+      "highlight2_label": "Type de connexion",
+      "highlight2_value": "Prise européenne standard",
+      "highlight3_label": "Couleur",
+      "highlight3_value": "Rouge et noir",
+      "details": {
+        "Design": "Enrouleur compact circulaire",
+        "Application": "Chantier, atelier, usage domestique"
+      },
+      "compatibility": [
+        "Appareils électriques 220V",
+        "Outils de chantier",
+        "Électroménager"
+      ]
+    },
+    "variants": null,
+    "slug": "electrical-power-strip-reel-1-388101"
   }
 ];
