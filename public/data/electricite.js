@@ -76,5 +76,33 @@ window.VT_PRODUCTS = [
     },
     "variants": null,
     "slug": "acti9-ic40n-c32-circuit-breaker-1-289951"
+  },
+  {
+    "id": 1777331312500,
+    "category": "Électricité",
+    "subcategory": "Disjoncteurs différentiels",
+    "brand": "Schneider Electric",
+    "title": "Vigi iCG40 Residual Current Circuit Breaker",
+    "title_fr": "Vigi iCG40",
+    "description": "",
+    "description_fr": "Le Vigi iCG40 est un disjoncteur différentiel modulaire conçu pour la protection des circuits électriques contre les fuites de courant. Cet appareil assure la sécurité des personnes et des biens en détectant les défauts d'isolement. Compatible avec les installations électriques standard, il s'intègre facilement dans les tableaux de distribution.",
+    "visualDescription": "Boîtier blanc modulaire vertical, largeur standard rail DIN, avec deux bornes de connexion cuivre en haut (phase et neutre), écran digital gris avec affichage et bouton de test, manette de commande blanche centrale, base de connexion inférieure avec bornes de sortie, marquage vert 'Vigi iCG40' sur le panneau frontal",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigi-icg40-residual-current-circuit-breaker-1-290991.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigi-icg40-residual-current-circuit-breaker-2-304150.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777331312500",
+    "specs": {
+      "highlight1_label": "Type de protection",
+      "highlight1_value": "Différentiel",
+      "highlight2_label": "Sensibilité nominale",
+      "highlight2_value": "30 mA",
+      "highlight3_label": "Montage",
+      "highlight3_value": "Rail DIN"
+    },
+    "variants": null,
+    "slug": "vigi-icg40-residual-current-circuit-breaker-1-290991"
   }
 ];
