@@ -70,5 +70,33 @@ window.VT_PRODUCTS = [
     },
     "variants": null,
     "slug": "angle-grinder-1-958230"
+  },
+  {
+    "id": 1777331239702,
+    "category": "Outillage",
+    "subcategory": "Meuleuses d'angle",
+    "brand": "Bosch",
+    "title": "Angle Grinder",
+    "title_fr": "Meuleuse d'angle",
+    "description": "",
+    "description_fr": "Meuleuse d'angle Bosch Professional compacte et performante, idéale pour le meulage, le tronçonnage et le polissage. Livrée avec accessoires completsincluant disques de meulage, flasque de protection et poignée auxiliaire. Outil polyvalent adapté aux travaux de construction et de rénovation.",
+    "visualDescription": "Meuleuse d'angle Bosch de couleur bleu foncé avec moteur cylindrique, poignée noire ergonomique, meule de meulage noire montée, capot de protection blanc, fournie avec disques de meulage, flasque de protection, poignée latérale et clé de serrage",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-1-217860.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-2-228960.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777331239702",
+    "specs": {
+      "highlight1_label": "Diamètre de disque",
+      "highlight1_value": "125 mm",
+      "highlight2_label": "Type",
+      "highlight2_value": "Meuleuse filaire",
+      "highlight3_label": "Accessoires inclus",
+      "highlight3_value": "Disques, flasque, protection"
+    },
+    "variants": null,
+    "slug": "angle-grinder-1-217860"
   }
 ];
