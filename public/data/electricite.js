@@ -29,31 +29,44 @@ window.VT_PRODUCTS = [
     "slug": "cable-reel-with-4-sockets-1-661391"
   },
   {
-    "id": 1777331864935,
+    "id": 1777331865856,
     "category": "Électricité",
-    "subcategory": "Enrouleurs et rallonges électriques",
-    "brand": "Unknown",
-    "title": "Electrical Power Strip Reel",
-    "title_fr": "Enrouleur de câble électrique",
+    "subcategory": "Disjoncteurs différentiels",
+    "brand": "Schneider Electric",
+    "title": "Vigi iCG40 Residual Current Circuit Breaker with Overcurrent Protection",
+    "title_fr": "Vigi iCG40",
     "description": "",
-    "description_fr": "Enrouleur de câble électrique compact avec structure ronde en plastique rouge et noir. Dispose de quatre prises de courant pour la distribution électrique. Équipé d'un câble avec prise mâle pour une connexion facile à une source d'alimentation.",
-    "visualDescription": "Cylindrical power strip reel with bright red outer casing and black center cap featuring four black electrical outlets. Black power cable with molded EU plug attached. Compact drum-style design approximately 25-30cm in diameter.",
+    "description_fr": "Disjoncteur différentiel Vigi iCG40 de marque Schneider Electric, combinant protection contre les fuites de courant et les surcharges. Équipé d'un système de protection bipolaire avec neutre, il assure la sécurité des circuits électriques domestiques et tertiaires. Dispositif modulaire pour installation en tableau électrique.",
+    "visualDescription": "Boîtier blanc modulaire de disjoncteur différentiel, installé sur rail DIN. Deux bornes de connexion supérieures (phase et neutre) avec câbles rouges et noirs. Interrupteur blanc de commande manuelle au centre. Voyant vert de diagnostic. Base de montage jaune. Dimensions standard pour rail électrique.",
     "price_MAD": 0,
     "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/electrical-power-strip-reel-1-845587.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/electrical-power-strip-reel-2-856655.png"
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigi-icg40-residual-current-circuit-breaker-with-overcurrent-1-847129.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigi-icg40-residual-current-circuit-breaker-with-overcurrent-2-858152.png"
     ],
     "in_stock": true,
-    "ref": "VT-1777331864935",
+    "ref": "VT-1777331865856",
     "specs": {
-      "highlight1_label": "Nombre de prises",
-      "highlight1_value": "4 prises",
-      "highlight2_label": "Type de prises",
-      "highlight2_value": "Prise EU standard",
-      "highlight3_label": "Design",
-      "highlight3_value": "Enrouleur compact"
+      "highlight1_label": "Courant nominal",
+      "highlight1_value": "40 A",
+      "highlight2_label": "Type de protection",
+      "highlight2_value": "Différentiel + Surcharge",
+      "highlight3_label": "Configuration",
+      "highlight3_value": "Bipolaire avec neutre",
+      "details": {
+        "Marque": "Schneider Electric",
+        "Modèle": "Vigi iCG40",
+        "Nombre de modules": "2",
+        "Installation": "Rail DIN"
+      },
+      "compatibility": [
+        "Tableaux électriques",
+        "Rails DIN 35 mm",
+        "Câbles électriques 6-25 mm²",
+        "Protections différentielles",
+        "Circuits monophasés"
+      ]
     },
     "variants": null,
-    "slug": "electrical-power-strip-reel-1-845587"
+    "slug": "vigi-icg40-residual-current-circuit-breaker-with-overcurrent-1-847129"
   }
 ];
