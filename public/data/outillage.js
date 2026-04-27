@@ -1,5 +1,5 @@
 'use strict';
-window.VT_PRODUCTS = [
+window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
     "id": 1777326332807,
     "category": "Outillage",
@@ -36,4 +36,4 @@ window.VT_PRODUCTS = [
     },
     "slug": "professional-impact-drill-1-311904"
   }
-];
+]);
