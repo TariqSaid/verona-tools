@@ -68,5 +68,33 @@ window.VT_PRODUCTS = [
     },
     "variants": null,
     "slug": "vigi-icg40-residual-current-circuit-breaker-with-overcurrent-1-847129"
+  },
+  {
+    "id": 1777332023742,
+    "category": "Électricité",
+    "subcategory": "Disjoncteurs et coupe-circuits",
+    "brand": "Schneider Electric",
+    "title": "Acti9 iC40N C32 Circuit Breaker",
+    "title_fr": "Acti9 iC40N C32",
+    "description": "",
+    "description_fr": "Disjoncteur modulaire Acti9 iC40N 32A de la marque Schneider Electric, conçu pour la protection des circuits électriques domestiques et tertaires. Ce disjoncteur tripolaire + neutre offre une protection optimale contre les surcharges et les courts-circuits. Compatible avec les tableaux électriques standards, il garantit la sécurité de votre installation électrique.",
+    "visualDescription": "White modular circuit breaker with 4 poles (3 phases + neutral), green and white switches with black operating handle, Schneider Electric branding in green, reference A9P54732 visible on packaging, yellow mounting brackets on top, DIN rail mountable",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/acti9-ic40n-c32-circuit-breaker-1-004848.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/acti9-ic40n-c32-circuit-breaker-2-015658.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777332023742",
+    "specs": {
+      "highlight1_label": "Intensité nominale",
+      "highlight1_value": "32 A",
+      "highlight2_label": "Type de disjoncteur",
+      "highlight2_value": "Courbe C",
+      "highlight3_label": "Nombre de pôles",
+      "highlight3_value": "3P + N"
+    },
+    "variants": null,
+    "slug": "acti9-ic40n-c32-circuit-breaker-1-004848"
   }
 ];
