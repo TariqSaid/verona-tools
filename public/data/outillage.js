@@ -415,6 +415,43 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       ]
     },
     "variants": null
+  },
+  {
+    "id": 1777248879479,
+    "category": "Outillage",
+    "subcategory": "Perceuses à percussion",
+    "brand": "Bosch",
+    "title": "Perceuse à percussion GSB 13 RE Professional",
+    "description_fr": "Perceuse à percussion filaire Bosch GSB 13 RE Professional, équipée d'un mandrin auto-serrant pour une prise optimale des forets. Dotée d'une poignée auxiliaire et d'un système de sécurité pour les travaux de forage en maçonnerie, béton et acier. Idéale pour les professionnels du bâtiment et la menuiserie.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/gsb-13-re-professional-impact-drill-1-861593.png",
+      "/images/products/gsb-13-re-professional-impact-drill-2-871527.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1777248879479",
+    "specs": {
+      "highlight1_label": "Puissance",
+      "highlight1_value": "650 W",
+      "highlight2_label": "Capacité de forage béton",
+      "highlight2_value": "13 mm",
+      "highlight3_label": "Type de mandrin",
+      "highlight3_value": "Mandrin auto-serrant",
+      "details": {
+        "Type de outil": "Perceuse à percussion",
+        "Marque": "Bosch",
+        "Modèle": "GSB 13 RE",
+        "Alimentation": "Filaire (cordon électrique)"
+      },
+      "compatibility": [
+        "Forets pour béton",
+        "Forets pour acier",
+        "Forets pour bois",
+        "Poignée auxiliaire standard",
+        "Accessoires de sécurité Bosch"
+      ]
+    },
+    "variants": null
   }
 ]);
 
