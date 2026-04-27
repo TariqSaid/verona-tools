@@ -96,5 +96,44 @@ window.VT_PRODUCTS = [
     },
     "variants": null,
     "slug": "acti9-ic40n-c32-circuit-breaker-1-004848"
+  },
+  {
+    "id": 1777332203886,
+    "category": "Électricité",
+    "subcategory": "Disjoncteurs",
+    "brand": "Schneider Electric",
+    "title": "Acti9 iC40N C32 Circuit Breaker",
+    "title_fr": "Disjoncteur Acti9 iC40N C32",
+    "description": "",
+    "description_fr": "Disjoncteur modulaire Acti9 iC40N de marque Schneider Electric, 3 pôles + neutre, courbe C32. Ce dispositif de protection électrique assure la protection des circuits contre les surcharges et les courts-circuits. Il s'installe facilement sur rail DIN dans les tableaux électriques résidentiels et tertiaires.",
+    "visualDescription": "Disjoncteur blanc modulaire compact avec 3 leviers de commande verts et 1 neutre gris, montage sur rail DIN, marquages Schneider Electric en vert et noir, connexions à vis sur les côtés, petit logo jaune de marque en haut",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/acti9-ic40n-c32-circuit-breaker-1-184795.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/acti9-ic40n-c32-circuit-breaker-2-195771.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777332203886",
+    "specs": {
+      "highlight1_label": "Courant nominal",
+      "highlight1_value": "32 A",
+      "highlight2_label": "Nombre de pôles",
+      "highlight2_value": "3P + N",
+      "highlight3_label": "Courbe de déclenchement",
+      "highlight3_value": "C",
+      "details": {
+        "Modèle": "iC40N C32",
+        "Référence": "A9P54732",
+        "Type de montage": "Rail DIN"
+      },
+      "compatibility": [
+        "Tableaux électriques résidentiels",
+        "Tableaux électriques tertiaires",
+        "Rail DIN 35 mm",
+        "Accessoires Acti9 Schneider Electric"
+      ]
+    },
+    "variants": null,
+    "slug": "acti9-ic40n-c32-circuit-breaker-1-184795"
   }
 ];
