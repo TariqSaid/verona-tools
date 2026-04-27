@@ -387,6 +387,34 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       "highlight3_value": "Professional"
     },
     "variants": null
+  },
+  {
+    "id": 1777248877556,
+    "category": "Outillage",
+    "subcategory": "Perceuses à percussion",
+    "brand": "Bosch",
+    "title": "Perceuse à percussion GSB 16 RE",
+    "description_fr": "Perceuse à percussion professionnelle Bosch GSB 16 RE, idéale pour percer dans le béton, la brique et le bois. Dotée d'un moteur puissant et d'un système de percussion efficace, elle offre une grande précision et stabilité de travail. Équipée d'une poignée ergonomique et d'un mandrin à serrage rapide pour un changement facile des forets.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/impact-drill-gsb-16-re-1-860765.png",
+      "/images/products/impact-drill-gsb-16-re-2-869630.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1777248877556",
+    "specs": {
+      "details": {
+        "Fonction percussion": "Oui",
+        "Cordon électrique": "Avec fil"
+      },
+      "compatibility": [
+        "Forets béton",
+        "Forets bois",
+        "Forets métal",
+        "Mèches SDS"
+      ]
+    },
+    "variants": null
   }
 ]);
 
