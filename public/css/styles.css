@@ -1,7 +1,7 @@
 /* ══════════════════════════════════════════════════════════
-   VERONA TOOLS — Production Stylesheet v2.0
+   VERONA TOOLS — Production Stylesheet v2.1
    Mobile-first · Animations · Touch-ready · Dark mode
-   UPDATED: Better image framing, mobile grids, typography
+   UPDATED: Fixed mobile truncation, button widths, pill spacing
 ══════════════════════════════════════════════════════════ */
 
 * { font-family: 'Inter', system-ui, sans-serif; }
@@ -24,8 +24,8 @@ html { scroll-behavior: smooth; }
 .hero-nav-dot.active { background: #22B8CF; transform: scale(1.35); }
 
 /* ══════════════════════════════════════════════════════════
-   PRODUCT CARDS — Premium Interactive (v2)
-   KEY FIX: Strict 1:1 image ratio, better mobile framing
+   PRODUCT CARDS — Premium Interactive (v2.1)
+   KEY FIX: Better mobile text handling, button sizing
 ══════════════════════════════════════════════════════════ */
 .product-card {
   position: relative;
@@ -122,16 +122,17 @@ html { scroll-behavior: smooth; }
   line-height: 1.65;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 3;          /* ← DEFAULT for desktop */
   overflow: hidden;
   min-height: 64px;
 }
-/* Mobile: reduce description lines */
+/* Mobile: reduce description lines and height */
 @media (max-width: 480px) {
   .product-card-desc {
-    -webkit-line-clamp: 2;
-    min-height: auto;
-    font-size: 12px;
+    -webkit-line-clamp: 2;        /* ← FIX: 2 lines on mobile */
+    min-height: auto;             /* ← FIX: Remove fixed height */
+    font-size: 11px;              /* ← FIX: Slightly smaller */
+    line-height: 1.5;
   }
 }
 .product-card-meta {
@@ -147,6 +148,13 @@ html { scroll-behavior: smooth; }
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+/* ← FIX: Better ref sizing on mobile */
+@media (max-width: 480px) {
+  .product-card-ref {
+    font-size: 9px;
+    max-width: 80px;              /* ← FIX: Prevent overflow */
+  }
 }
 .product-card-price {
   display: flex;
@@ -165,6 +173,12 @@ html { scroll-behavior: smooth; }
   font-size: 20px;
   line-height: 1.2;
 }
+/* ← FIX: Smaller price text on mobile */
+@media (max-width: 480px) {
+  .product-price-request {
+    font-size: 16px;
+  }
+}
 .product-card-cta {
   background: linear-gradient(135deg, #1B2D3E 0%, #243B50 100%);
   color: #fff;
@@ -180,6 +194,17 @@ html { scroll-behavior: smooth; }
   cursor: pointer;
   transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
   box-shadow: 0 12px 24px rgba(27,45,62,0.18);
+  white-space: nowrap;            /* ← FIX: Prevent text wrap */
+  min-width: 80px;                /* ← FIX: Ensure "Détails" fits */
+}
+/* ← FIX: Larger tap target and full text on mobile */
+@media (max-width: 480px) {
+  .product-card-cta {
+    font-size: 11px;
+    padding: 9px 12px;
+    min-width: 72px;
+    border-radius: 10px;
+  }
 }
 .product-card-cta:hover {
   transform: translateY(-1px);
@@ -308,6 +333,20 @@ body.dark .product-price-request { color: #f1f5f9; }
 .mega-menu { opacity: 0; visibility: hidden; transform: translateY(-8px); transition: all 0.22s ease; }
 .mega-trigger:hover .mega-menu, .mega-menu:hover { opacity: 1; visibility: visible; transform: translateY(0); }
 .pill-btn.active { background: #22B8CF; border-color: #22B8CF; color: #fff; }
+
+/* ← FIX: Better pill scrolling and sizing */
+.pills-scroll {
+  padding-right: 16px;            /* ← FIX: Prevent last pill cutoff */
+  -webkit-overflow-scrolling: touch;
+}
+/* ← FIX: Pill text truncation for long names */
+.pill-btn {
+  max-width: 140px;               /* ← FIX: Prevent overflow */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+}
 .brands-strip-scroll::-webkit-scrollbar { display: none; }
 .brands-strip-scroll { -ms-overflow-style: none; scrollbar-width: none; }
 
@@ -563,7 +602,8 @@ body.dark .card-color-btn { border-color: #0f172a; box-shadow: 0 0 0 1px #475569
 
 /* ══════════════════════════════════════════════════════════
    RESPONSIVE — PHONE (≤480px)
-   CRITICAL FIXES: 2-col grid, compact cards, better images
+   CRITICAL FIXES: 2-col grid, compact cards, better images,
+   button widths, pill truncation, description clamp
 ══════════════════════════════════════════════════════════ */
 @media (max-width: 480px) {
   /* Header compact */
@@ -593,7 +633,7 @@ body.dark .card-color-btn { border-color: #0f172a; box-shadow: 0 0 0 1px #475569
   .cat-section-header h2 { font-size: 14px; }
   .cat-section-block .grid { padding: 10px !important; gap: 8px !important; }
 
-  /* Cards compact — KEY FIX for mobile readability */
+  /* Cards compact — KEY FIXES for mobile readability */
   .product-card { border-radius: 14px; }
   .product-card h3 { font-size: 11px; line-height: 1.35; }
   .product-card .text-gray-500.text-xs { display: none; }
@@ -602,18 +642,62 @@ body.dark .card-color-btn { border-color: #0f172a; box-shadow: 0 0 0 1px #475569
   .card-specs { display: none; }
   .card-variants { display: none; }
   .badge-new { font-size: 8px; padding: 2px 6px; }
-  .product-card-desc { -webkit-line-clamp: 2; min-height: auto; font-size: 11px; }
-  .product-card-ref { font-size: 9px; }
-  .product-card-cta { font-size: 10px; padding: 8px 10px; border-radius: 10px; }
-  .product-price-request { font-size: 16px; }
+
+  /* ← FIX: Description clamp and height */
+  .product-card-desc {
+    -webkit-line-clamp: 2;
+    min-height: auto;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  /* ← FIX: Ref size and truncation */
+  .product-card-ref {
+    font-size: 9px;
+    max-width: 80px;
+  }
+
+  /* ← FIX: Price layout */
+  .product-price-request {
+    font-size: 16px;
+  }
+
+  /* ← FIX: CTA button sizing */
+  .product-card-cta {
+    font-size: 10px;
+    padding: 8px 10px;
+    min-width: 72px;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+
   .product-card-kicker { font-size: 9px; margin-bottom: 4px; }
   .product-card-cat { font-size: 8px; padding: 4px 7px; }
-  .product-card-gallery { font-size: 8px; padding: 4px 7px; right: 8px; bottom: 8px; }
+
+  /* ← FIX: Gallery badge position */
+  .product-card-gallery {
+    font-size: 8px;
+    padding: 4px 7px;
+    right: 8px;
+    bottom: 8px;
+  }
   .product-card-topbar { inset: 8px 8px auto 8px; }
+
+  /* ← FIX: Pills scroll padding */
+  .pills-scroll {
+    padding-right: 16px;
+  }
+  /* ← FIX: Pill button sizing */
+  .pill-btn {
+    font-size: 10px;
+    padding: 4px 8px;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
   /* Brands */
   .brands-strip button { font-size: 11px; padding: 6px 10px; }
-  .pills-scroll .pill-btn { font-size: 10px; padding: 4px 8px; }
 
   /* Stats bar */
   .bg-primary .flex.flex-wrap { gap: 4px; padding: 8px 12px; }
@@ -660,6 +744,16 @@ body.dark .card-color-btn { border-color: #0f172a; box-shadow: 0 0 0 1px #475569
   .hero-slider { min-height: 300px; }
   .modal-title { font-size: 15px !important; }
   .modal-price { font-size: 20px !important; }
+
+  /* ← FIX: Even tighter card layout */
+  .product-card-cta {
+    font-size: 9px;
+    padding: 6px 8px;
+    min-width: 64px;
+  }
+  .product-price-request {
+    font-size: 14px;
+  }
 }
 
 /* ══════════════════════════════════════════════════════════
