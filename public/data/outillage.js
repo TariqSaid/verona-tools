@@ -363,6 +363,40 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
       "highlight3_value": "Bosch Professional"
     },
     "variants": null
+  },
+  {
+    "id": 1777319215325,
+    "category": "Outillage",
+    "subcategory": "Perceuses à percussion",
+    "brand": "Bosch",
+    "title": "Perceuse à percussion GSB 13 RE Professional",
+    "description_fr": "Perceuse à percussion filaire Bosch GSB 13 RE Professional, conçue pour les travaux de perçage et de vissage dans le béton, la pierre et le bois. Équipée d'un mandrin de 13 mm et d'une fonction de percussion pour un travail efficace sur matériaux durs. Outil robuste et professionnel idéal pour les chantiers et les professionnels du bâtiment.",
+    "price_MAD": 0,
+    "images": [
+      "/images/products/gsb-13-re-professional-impact-drill-1-196485.png",
+      "/images/products/gsb-13-re-professional-impact-drill-2-207147.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-AUTO-1777319215325",
+    "specs": {
+      "highlight1_label": "Diamètre de mandrin",
+      "highlight1_value": "13 mm",
+      "highlight2_label": "Type d'alimentation",
+      "highlight2_value": "Filaire électrique",
+      "highlight3_label": "Fonction principale",
+      "highlight3_value": "Perçage et percussion",
+      "details": {
+        "Marque": "Bosch",
+        "Modèle": "GSB 13 RE Professional",
+        "Utilisation": "Béton, pierre, bois"
+      },
+      "compatibility": [
+        "Mèches de 13 mm",
+        "Forets béton",
+        "Accessoires Bosch 13 mm"
+      ]
+    },
+    "variants": null
   }
 ]);
 
