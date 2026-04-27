@@ -70,5 +70,43 @@ window.VT_PRODUCTS = [
     },
     "variants": null,
     "slug": "angle-grinder-1-958230"
+  },
+  {
+    "id": 1777328982170,
+    "category": "Outillage",
+    "subcategory": "Meuleuses d'angle",
+    "brand": "Bosch",
+    "title": "Angle Grinder",
+    "title_fr": "Meuleuse d'angle",
+    "description": "",
+    "description_fr": "Meuleuse d'angle Bosch Professional dotée d'un moteur électrique puissant et d'une conception ergonomique. Cet outil polyvalent est idéal pour le meulage, le tronçonnage et le polissage de divers matériaux. Livrée avec plusieurs disques et accessoires pour une utilisation immédiate sur chantier ou en atelier.",
+    "visualDescription": "Meuleuse d'angle compacte de couleur bleu foncé et noir avec poignée ergonomique en caoutchouc noir, disque de meulage noir, moteur ventilé bleu, câble électrique noir. Incluant plusieurs accessoires : disques de meulage, flasques de fixation blanc et métallique, clé de serrage métallique, et poignée latérale de sécurité noire. Coffret de transport Bosch bleu visible.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-1-960188.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-2-970998.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777328982170",
+    "specs": {
+      "highlight1_label": "Diamètre du disque",
+      "highlight1_value": "125 mm",
+      "highlight2_label": "Type de produit",
+      "highlight2_value": "Meuleuse d'angle compacte",
+      "highlight3_label": "Marque",
+      "highlight3_value": "Bosch Professional",
+      "details": {
+        "Accessoires inclus": "Disques de meulage, flasques, clé de serrage, poignée latérale, coffret",
+        "Utilisation": "Meulage, tronçonnage, polissage"
+      },
+      "compatibility": [
+        "Disques de meulage 125 mm",
+        "Disques de tronçonnage 125 mm",
+        "Disques de polissage 125 mm",
+        "Flasques de fixation standard"
+      ]
+    },
+    "variants": null,
+    "slug": "angle-grinder-1-960188"
   }
 ];
