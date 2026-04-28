@@ -1,42 +1,40 @@
 'use strict';
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
-    "id": 1777405841909,
+    "id": 1777405845519,
     "category": "Électricité",
-    "subcategory": "Disjoncteurs",
+    "subcategory": "Disjoncteurs différentiels et protection",
     "brand": "Schneider Electric",
-    "title": "Acti9 iC40N Circuit Breaker 32A",
-    "title_fr": "Acti9 iC40N C32",
+    "title": "Vigil iCG40 Residual Current Circuit Breaker",
+    "title_fr": "Vigil iCG40 Disjoncteur différentiel",
     "description": "",
-    "description_fr": "Disjoncteur modulaire Acti9 iC40N de la marque Schneider Electric, calibre 32A, avec 3 pôles + neutre. Ce dispositif de protection électrique assure la sécurité des circuits et prévient les surcharges et courts-circuits. Montage simple sur rail DIN standard dans les tableaux électriques.",
-    "visualDescription": "Module électrique blanc et gris avec 4 leviers de commande verts et noirs, montage horizontal sur rail DIN. Marquage Schneider Electric en vert, connecteurs gris, bornes de raccordement visibles en haut et bas du module. Dimensions compactes, finition brillante.",
+    "description_fr": "Disjoncteur différentiel Vigil iCG40 de marque Schneider Electric, conçu pour la protection contre les défauts d'isolement et les fuites de courant dans les installations électriques. Équipé d'un sélecteur de sensibilité réglable et d'une fonction de test intégrée. Montage sur rail DIN pour tableau électrique, avec bornes de connexion cuivre.",
+    "visualDescription": "Disjoncteur différentiel blanc de forme compacte, montage vertical sur rail DIN. Deux bornes de connexion en haut (phase et neutre) avec vis de serrage. Sélecteur rotatif central avec marquage N et positions de test. Bouton de déclenchement blanc sur le côté inférieur. Marque Schneider Electric visible. Base de montage jaune vif.",
     "price_MAD": 0,
     "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/acti9-ic40n-circuit-breaker-32a-1-821031.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/acti9-ic40n-circuit-breaker-32a-2-833269.png"
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigil-icg40-residual-current-circuit-breaker-1-821688.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigil-icg40-residual-current-circuit-breaker-2-837384.png"
     ],
     "in_stock": true,
-    "ref": "VT-1777405841909",
+    "ref": "VT-1777405845519",
     "specs": {
-      "highlight1_label": "Calibre",
-      "highlight1_value": "32A",
-      "highlight2_label": "Nombre de pôles",
-      "highlight2_value": "3P+N",
-      "highlight3_label": "Courbe de déclenchement",
-      "highlight3_value": "C",
+      "highlight1_label": "Type de disjoncteur",
+      "highlight1_value": "Différentiel 30 mA",
+      "highlight2_label": "Marque",
+      "highlight2_value": "Schneider Electric",
+      "highlight3_label": "Modèle",
+      "highlight3_value": "Vigil iCG40",
       "details": {
-        "Référence": "A9P54732",
-        "Type de disjoncteur": "Modulaire",
-        "Tension nominale": "230/400V",
-        "Fréquence": "50/60 Hz"
+        "Montage": "Rail DIN",
+        "Fonction": "Protection contre les défauts d'isolement"
       },
       "compatibility": [
+        "Tableaux électriques résidentiels",
         "Rail DIN standard",
-        "Tableaux électriques Schneider",
-        "Accessoires Acti9"
+        "Circuits 230V monophasé"
       ]
     },
     "variants": null,
-    "slug": "acti9-ic40n-circuit-breaker-32a-1-821031"
+    "slug": "vigil-icg40-residual-current-circuit-breaker-1-821688"
   }
 ]);
