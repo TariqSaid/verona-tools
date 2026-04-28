@@ -76,5 +76,44 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "vigi-icg40-rcbo-1-568485"
+  },
+  {
+    "id": 1777419798017,
+    "category": "Électricité",
+    "subcategory": "Disjoncteurs différentiels",
+    "brand": "Schneider Electric",
+    "title": "Vigi iCG40 Residual Current Device",
+    "title_fr": "Vigi iCG40",
+    "description": "",
+    "description_fr": "Le Vigi iCG40 est un disjoncteur différentiel haute sensibilité conçu pour la protection contre les contacts directs et indirects dans les installations électriques résidentielles. Cet appareil modulaire se fixe sur rail DIN et intègre une protection différentielle pour sécuriser les circuits électriques. Il garantit une détection rapide des défauts d'isolement et une interruption immédiate du circuit en cas de danger.",
+    "visualDescription": "Module électrique blanc de forme rectangulaire compacte, montage DIN. Deux bornes de connexion cuivre en haut (phase et neutre), affichage numérique central avec indicateur vert, poignée de commande blanche au centre-bas, base avec deux pattes de fixation. Marquage 'Vigi iCG40' visible sur le boîtier. Dimensions compactes, design industriel standard.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigi-icg40-residual-current-device-1-779107.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigi-icg40-residual-current-device-2-790046.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777419798017",
+    "specs": {
+      "highlight1_label": "Type de dispositif",
+      "highlight1_value": "Disjoncteur différentiel",
+      "highlight2_label": "Montage",
+      "highlight2_value": "Rail DIN",
+      "highlight3_label": "Marque",
+      "highlight3_value": "Schneider Electric",
+      "details": {
+        "Modèle": "Vigi iCG40",
+        "Protection": "Différentielle haute sensibilité",
+        "Application": "Installation résidentielle"
+      },
+      "compatibility": [
+        "Rails DIN standard",
+        "Tableaux électriques résidentiels",
+        "Câbles électriques cuivre",
+        "Disjoncteurs auxiliaires"
+      ]
+    },
+    "variants": null,
+    "slug": "vigi-icg40-residual-current-device-1-779107"
   }
 ]);
