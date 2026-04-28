@@ -1,41 +1,42 @@
 'use strict';
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
-    "id": 1777418725464,
+    "id": 1777418850014,
     "category": "Électricité",
-    "subcategory": "Disjoncteurs",
+    "subcategory": "Disjoncteur différentiel",
     "brand": "Schneider Electric",
-    "title": "Acti9 iC40N C32 Circuit Breaker",
-    "title_fr": "Disjoncteur Acti9 iC40N C32",
+    "title": "Vigi iCG40 Residual Current Device",
+    "title_fr": "Vigi iCG40",
     "description": "",
-    "description_fr": "Disjoncteur modulaire Schneider Electric Acti9 iC40N avec courbe C et calibre 32A. Dispositif de protection électrique 4 pôles avec neutre, conçu pour les installations domestiques et tertiaires. Montage sur rail DIN standard pour tableaux de distribution.",
-    "visualDescription": "Disjoncteur blanc modulaire 4 pôles + neutre, largeur 4 modules DIN, boutons de manœuvre verts avec levier noir intégré, bornes à vis gris métal, marquage vert Schneider, référence A9P54732 visible, deux bornes d'accès supérieures jaunes",
+    "description_fr": "Le Vigi iCG40 est un disjoncteur différentiel modulaire haute sensibilité conçu pour la protection contre les contacts directs et indirects en installations électriques. Cet appareil combine les fonctions de disjoncteur et de détecteur de défaut à la terre pour sécuriser les circuits résidentiels et tertiaires. Il s'installe facilement sur rail DIN dans les tableaux électriques standard.",
+    "visualDescription": "Disjoncteur différentiel blanc modulaire compact, montage rail DIN, 2 modules de largeur, bornes de connexion cuivre visibles en haut, poignée de commande blanche/grise au centre, voyant lumineux vert, étiquetage technique Schneider Electric, base de raccordement jaune",
     "price_MAD": 0,
     "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/acti9-ic40n-c32-circuit-breaker-1-706435.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/acti9-ic40n-c32-circuit-breaker-2-717092.png"
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigi-icg40-residual-current-device-1-830425.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigi-icg40-residual-current-device-2-841738.png"
     ],
     "in_stock": true,
-    "ref": "VT-1777418725464",
+    "ref": "VT-1777418850014",
     "specs": {
-      "highlight1_label": "Calibre",
-      "highlight1_value": "32 A",
-      "highlight2_label": "Nombre de pôles",
-      "highlight2_value": "4P + N",
-      "highlight3_label": "Courbe de déclenchement",
-      "highlight3_value": "C",
+      "highlight1_label": "Type de courant",
+      "highlight1_value": "AC",
+      "highlight2_label": "Sensibilité",
+      "highlight2_value": "40 mA",
+      "highlight3_label": "Nombre de pôles",
+      "highlight3_value": "2 (1P+N)",
       "details": {
-        "Référence": "A9P54732",
-        "Série": "Acti9 iC40N",
-        "Montage": "Rail DIN"
+        "Marque": "Schneider Electric",
+        "Modèle": "Vigi iCG40",
+        "Installation": "Rail DIN"
       },
       "compatibility": [
-        "Tableaux électriques Schneider Electric",
-        "Rails DIN standard",
-        "Accessoires Acti9"
+        "Tableau électrique standard",
+        "Rail DIN 35 mm",
+        "Circuits résidentiels 230V",
+        "Circuits tertiaires"
       ]
     },
     "variants": null,
-    "slug": "acti9-ic40n-c32-circuit-breaker-1-706435"
+    "slug": "vigi-icg40-residual-current-device-1-830425"
   }
 ]);
