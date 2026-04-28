@@ -1,41 +1,31 @@
 'use strict';
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
-    "id": 1777405912565,
+    "id": 1777406027744,
     "category": "Outillage",
     "subcategory": "Meuleuses d'angle",
     "brand": "Bosch",
-    "title": "Angle Grinder",
-    "title_fr": "Meuleuse d'angle",
+    "title": "GWS 7-125 Angle Grinder",
+    "title_fr": "Meuleuse d'angle GWS 7-125",
     "description": "",
-    "description_fr": "Meuleuse d'angle filaire Bosch Professional avec moteur puissant et contrôle de vitesse. Cet outil polyvalent est idéal pour le meulage, le ponçage et la coupe de matériaux divers. Livré avec plusieurs accessoires incluant disques de meulage, flasques et dispositif de protection pour une utilisation sécurisée.",
-    "visualDescription": "Meuleuse d'angle Bosch bleu et noir avec moteur cylindrique bleu, poignée ergonomique noire, câble électrique noir, pied en métal chromé. Diamètre du disque apparent environ 115mm. Livré avec boîte de carton bleu Bosch, deux disques de meulage noirs, flasque métallique chromé, pare-étincelles blanc, clé de fixation et poignée de maintien.",
+    "description_fr": "Meuleuse d'angle Bosch GWS 7-125 compacte et polyvalente, idéale pour le meulage, le tronçonnage et le décapage. Livrée avec disques de meulage, flasques de serrage et protège-mains. Parfaite pour les travaux de finition et de préparation de surfaces sur métal, pierre et béton.",
+    "visualDescription": "Meuleuse d'angle compacte Bosch de couleur bleu royal et noir, diamètre de disque 125 mm, avec poignée latérale ergonomique, câble d'alimentation noir. Livrée avec accessoires : deux disques de meulage (un noir, un gris), flasques de serrage métalliques, protège-mains blanc, clé de serrage métallique et poignée auxiliaire.",
     "price_MAD": 0,
     "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-1-893761.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-2-904579.png"
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/gws-7-125-angle-grinder-1-008122.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/gws-7-125-angle-grinder-2-019501.png"
     ],
     "in_stock": true,
-    "ref": "VT-1777405912565",
+    "ref": "VT-1777406027744",
     "specs": {
-      "highlight1_label": "Puissance",
-      "highlight1_value": "non spécifiée sur l'emballage visible",
-      "highlight2_label": "Diamètre du disque",
-      "highlight2_value": "115 mm",
-      "highlight3_label": "Type d'alimentation",
-      "highlight3_value": "Filaire (cordon électrique)",
-      "details": {
-        "Configuration": "Meuleuse d'angle compacte",
-        "Inclusions": "Disques de meulage, flasques, pare-étincelles, clé, poignée"
-      },
-      "compatibility": [
-        "Disques de meulage 115 mm",
-        "Disques de coupe pour métal",
-        "Disques de ponçage",
-        "Flasques de serrage standard 115 mm"
-      ]
+      "highlight1_label": "Diamètre du disque",
+      "highlight1_value": "125 mm",
+      "highlight2_label": "Puissance",
+      "highlight2_value": "720 W",
+      "highlight3_label": "Vitesse à vide",
+      "highlight3_value": "11000 tr/min"
     },
     "variants": null,
-    "slug": "angle-grinder-1-893761"
+    "slug": "gws-7-125-angle-grinder-1-008122"
   }
 ]);
