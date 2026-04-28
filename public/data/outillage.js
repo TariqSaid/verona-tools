@@ -76,5 +76,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "gsb-13-re-professional-impact-drill-1-898301"
+  },
+  {
+    "id": 1777419919490,
+    "category": "Outillage",
+    "subcategory": "Perceuses sans fil",
+    "brand": "Bosch",
+    "title": "GSR 18V-50 Cordless Drill Driver",
+    "title_fr": "Perceuse-visseuse sans fil GSR 18V-50",
+    "description": "",
+    "description_fr": "Perceuse-visseuse compacte sans fil de la gamme Bosch Professional, alimentée par batterie 18V. Cet outil polyvalent permet le perçage et le vissage dans divers matériaux. Le mandrin auto-serrant assure une bonne stabilité des forets et embouts. Parfaite pour les travaux de menuiserie, assemblage et maintenance générale.",
+    "visualDescription": "Perceuse-visseuse compacte de forme ergonomique, coloris bleu et noir dominant avec accents rouge. Mandrin auto-serrant noir en avant, poignée caoutchouc texturée en noir sur l'arrière. Batterie lithium-ion rouge et noir amovible à la base. Logo Bosch rouge en relief sur le corps bleu. Interrupteur rouge sur la poignée pistolet.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/gsr-18v-50-cordless-drill-driver-1-898773.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/gsr-18v-50-cordless-drill-driver-2-911382.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777419919490",
+    "specs": {
+      "highlight1_label": "Tension batterie",
+      "highlight1_value": "18 V",
+      "highlight2_label": "Capacité mandrin",
+      "highlight2_value": "1,5 - 13 mm",
+      "highlight3_label": "Type de batterie",
+      "highlight3_value": "Lithium-ion"
+    },
+    "variants": null,
+    "slug": "gsr-18v-50-cordless-drill-driver-1-898773"
   }
 ]);
