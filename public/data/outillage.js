@@ -1,45 +1,41 @@
 'use strict';
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
-    "id": 1777414851448,
+    "id": 1777415484429,
     "category": "Outillage",
-    "subcategory": "Meuleuses d'angle",
+    "subcategory": "Perceuses à percussion",
     "brand": "Bosch",
-    "title": "Angle Grinder GWS 750-125",
-    "title_fr": "Meuleuse d'angle GWS 750-125",
+    "title": "Bosch GSB 13 RE Corded Impact Drill",
+    "title_fr": "Perceuse à percussion Bosch GSB 13 RE",
     "description": "",
-    "description_fr": "Meuleuse d'angle filaire Bosch GWS 750-125 conçue pour le meulage, le tronçonnage et le décapage. Avec une puissance de 750 W et un disque de 125 mm, elle est idéale pour les travaux de finition et de préparation de surfaces. L'équipement inclut plusieurs disques de meulage et un carter de protection.",
-    "visualDescription": "Meuleuse d'angle compacte Bosch avec corps principal bleu électrique, grip noir, tête angulaire argentée et noire. Disque de meulage noir de 125 mm. Livrée avec accessoires : disque de meulage standard, disque diamanté, carter de protection blanc, clé d'installation en métal et poignée auxiliaire noire.",
+    "description_fr": "Perceuse à percussion filaire professionnelle Bosch GSB 13 RE, idéale pour les travaux de forage et perçage dans le béton, la maçonnerie et l'acier. Équipée d'un mandrin rapide et d'une poignée auxiliaire pour un contrôle optimal. Parfaite pour les chantiers et les applications professionnelles intensives.",
+    "visualDescription": "Perceuse à percussion électrique de couleur bleu et noir, de taille moyenne à importante. Corps en plastique bleu robuste avec détails noirs, mandrin métallique chromé à l'avant, poignée auxiliaire noire en bas, bouton de déclenchement rouge sur le côté droit, cordon d'alimentation noir. Mors de mandrin de 13 mm environ. Logo Bosch rouge et blanc visible sur le corps.",
     "price_MAD": 0,
     "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-gws-750-125-1-825658.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-gws-750-125-2-840383.png"
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-gsb-13-re-corded-impact-drill-1-462875.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-gsb-13-re-corded-impact-drill-2-476509.png"
     ],
     "in_stock": true,
-    "ref": "VT-1777414851448",
+    "ref": "VT-1777415484429",
     "specs": {
-      "highlight1_label": "Puissance nominale",
-      "highlight1_value": "750 W",
-      "highlight2_label": "Diamètre du disque",
-      "highlight2_value": "125 mm",
-      "highlight3_label": "Vitesse à vide",
-      "highlight3_value": "11000 tr/min",
+      "highlight1_label": "Puissance",
+      "highlight1_value": "600 W",
+      "highlight2_label": "Capacité de mandrin",
+      "highlight2_value": "13 mm",
+      "highlight3_label": "Type",
+      "highlight3_value": "Perceuse à percussion filaire",
       "details": {
-        "Diamètre du disque": "125 mm",
-        "Alésage du disque": "22,23 mm",
-        "Puissance": "750 W",
-        "Vitesse de rotation": "11000 tr/min",
-        "Poids": "2,0 kg environ"
+        "Fonction percussion": "Oui",
+        "Type de mandrin": "Mandrin rapide"
       },
       "compatibility": [
-        "Disques de meulage 125 mm",
-        "Disques diamantés 125 mm",
-        "Disques de tronçonnage 125 mm",
-        "Carter de protection standard",
-        "Poignée auxiliaire"
+        "Forets pour béton",
+        "Forets pour acier",
+        "Forets pour bois",
+        "Mèches de perçage jusqu'à 13 mm"
       ]
     },
     "variants": null,
-    "slug": "angle-grinder-gws-750-125-1-825658"
+    "slug": "bosch-gsb-13-re-corded-impact-drill-1-462875"
   }
 ]);
