@@ -1,42 +1,42 @@
 'use strict';
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
-    "id": 1777406910961,
+    "id": 1777414847680,
     "category": "Outillage",
-    "subcategory": "Meuleuses d'angle",
+    "subcategory": "Perceuses à percussion",
     "brand": "Bosch",
-    "title": "Angle Grinder GWS 7-125",
-    "title_fr": "Meuleuse d'angle GWS 7-125",
+    "title": "Bosch GSB 13 RE Professional Impact Drill",
+    "title_fr": "Perceuse à percussion Bosch GSB 13 RE Professional",
     "description": "",
-    "description_fr": "Meuleuse d'angle filaire Bosch GWS 7-125 compacte et performante, conçue pour les travaux de meulage, de tronçonnage et de décapage. Livrée avec plusieurs accessoires : disques de meulage, flasque de protection et poignée auxiliaire. Idéale pour les travaux de bricolage et les petits chantiers.",
-    "visualDescription": "Meuleuse d'angle compacte avec corps bleu et gris métallisé, disque de meulage noir de 125 mm de diamètre, poignée ergonomique noire, câble d'alimentation noir. Accessoires inclus : deux disques de meulage, flasque de protection blanche, poignée auxiliaire noire, clé de démontage et clé de serrage.",
+    "description_fr": "Perceuse à percussion filaire professionnelle Bosch GSB 13 RE conçue pour les travaux de perçage et de vissage intensifs. Dotée d'une puissance de 600 W et d'un mandrin rapide de 13 mm, elle offre une performance optimale sur béton, pierre et acier. Équipée d'une poignée auxiliaire pour une meilleure stabilité et d'une fonction de percussion réversible.",
+    "visualDescription": "Perceuse à percussion compacte avec corps bleu et noir, mandrin métallique chromé de 13 mm, poignée auxiliaire noire en caoutchouc, déclencheur rouge, cordon d'alimentation noir, logo Bosch Professional visible sur le côté du corps",
     "price_MAD": 0,
     "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-gws-7-125-1-891511.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-gws-7-125-2-902532.png"
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-gsb-13-re-professional-impact-drill-1-826145.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-gsb-13-re-professional-impact-drill-2-839467.png"
     ],
     "in_stock": true,
-    "ref": "VT-1777406910961",
+    "ref": "VT-1777414847680",
     "specs": {
-      "highlight1_label": "Diamètre du disque",
-      "highlight1_value": "125 mm",
-      "highlight2_label": "Puissance",
-      "highlight2_value": "720 W",
-      "highlight3_label": "Vitesse de rotation",
-      "highlight3_value": "11000 tr/min",
+      "highlight1_label": "Puissance",
+      "highlight1_value": "600 W",
+      "highlight2_label": "Diamètre du mandrin",
+      "highlight2_value": "13 mm",
+      "highlight3_label": "Fonction",
+      "highlight3_value": "Percussion",
       "details": {
-        "Alimentation": "Filaire 230V",
-        "Type de meuleuse": "Meuleuse d'angle compacte",
-        "Accessoires inclus": "Disques de meulage, flasque de protection, poignée auxiliaire"
+        "Type": "Perceuse à percussion filaire",
+        "Mandrin": "Mandrin rapide 13 mm",
+        "Poignée auxiliaire": "Incluse"
       },
       "compatibility": [
-        "Disques de meulage 125 mm",
-        "Disques de tronçonnage 125 mm",
-        "Flasque de protection standard",
-        "Poignée auxiliaire M14"
+        "Mèches de 13 mm",
+        "Forets béton",
+        "Forets acier",
+        "Forets pierre"
       ]
     },
     "variants": null,
-    "slug": "angle-grinder-gws-7-125-1-891511"
+    "slug": "bosch-gsb-13-re-professional-impact-drill-1-826145"
   }
 ]);
