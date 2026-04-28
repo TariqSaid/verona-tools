@@ -1,41 +1,41 @@
 'use strict';
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
-    "id": 1777418730473,
+    "id": 1777418846918,
     "category": "Outillage",
     "subcategory": "Perceuses à percussion",
     "brand": "Bosch",
     "title": "GSB 16 RE Professional Impact Drill",
-    "title_fr": "Perceuse à percussion GSB 16 RE Professional",
+    "title_fr": "GSB 16 RE Professional",
     "description": "",
-    "description_fr": "Perceuse à percussion filaire Bosch GSB 16 RE Professional conçue pour les travaux de perçage et de vissage dans les matériaux de construction. Équipée d'un mandrin de 13 mm et d'une fonction de percussion, elle est idéale pour percer le béton, la pierre et l'acier. Dotée d'une poignée ergonomique et d'un système de sécurité à collet de serrage.",
-    "visualDescription": "Perceuse à percussion Bosch GSB 16 RE de couleur bleu et noir, avec un corps en plastique nervuré bleu, poignée inférieure noire ergonomique, mandrin métallique argenté de 13 mm, foret hélicoïdal visible, interrupteur à gâchette rouge sur le dessus, plaque signalétique Bosch Professional visible, cordon d'alimentation noir.",
+    "description_fr": "Perceuse à percussion professionnelle Bosch GSB 16 RE avec mandrin auto-serrant et poignée auxiliaire. Conçue pour le forage et la percussion dans la maçonnerie, le béton et les matériaux de construction. Équipée d'une gâchette variateur de vitesse et d'un système de sécurité anti-choc. Idéale pour les travaux professionnels en bâtiment et en rénovation.",
+    "visualDescription": "Perceuse à percussion de couleur bleu et noir, de taille moyenne (environ 35 cm de longueur). Corps en plastique bleu avec détails rouges. Mandrin métallique argenté avec foret en spirale. Poignée noire caoutchoutée ergonomique. Cordon électrique noir. Logo Bosch visible sur le corps de l'outil.",
     "price_MAD": 0,
     "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/gsb-16-re-professional-impact-drill-1-708161.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/gsb-16-re-professional-impact-drill-2-718262.png"
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/gsb-16-re-professional-impact-drill-1-826999.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/gsb-16-re-professional-impact-drill-2-839013.png"
     ],
     "in_stock": true,
-    "ref": "VT-1777418730473",
+    "ref": "VT-1777418846918",
     "specs": {
       "highlight1_label": "Puissance",
-      "highlight1_value": "750 W",
-      "highlight2_label": "Diamètre de mandrin",
-      "highlight2_value": "13 mm",
-      "highlight3_label": "Type",
-      "highlight3_value": "Perceuse à percussion filaire",
+      "highlight1_value": "710 W",
+      "highlight2_label": "Type de mandrin",
+      "highlight2_value": "Auto-serrant",
+      "highlight3_label": "Diamètre de forage béton",
+      "highlight3_value": "16 mm",
       "details": {
-        "Fonction percussion": "Oui",
-        "Cordon": "Filaire"
+        "Fonction": "Forage et percussion",
+        "Régime à vide": "3000 tr/min",
+        "Classe": "Professionnel"
       },
       "compatibility": [
-        "Forets béton",
-        "Forets acier",
-        "Forets pierre",
-        "Accessoires 13 mm"
+        "Forets béton et maçonnerie",
+        "Accessoires à mandrin auto-serrant jusqu'à 13 mm",
+        "Poignée auxiliaire de sécurité"
       ]
     },
     "variants": null,
-    "slug": "gsb-16-re-professional-impact-drill-1-708161"
+    "slug": "gsb-16-re-professional-impact-drill-1-826999"
   }
 ]);
