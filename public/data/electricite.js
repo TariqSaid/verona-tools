@@ -1,40 +1,41 @@
 'use strict';
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
-    "id": 1777405845519,
+    "id": 1777405914179,
     "category": "Électricité",
-    "subcategory": "Disjoncteurs différentiels et protection",
+    "subcategory": "Disjoncteurs et Interrupteurs différentiels",
     "brand": "Schneider Electric",
-    "title": "Vigil iCG40 Residual Current Circuit Breaker",
-    "title_fr": "Vigil iCG40 Disjoncteur différentiel",
+    "title": "Vigil iCG40 RCD Module",
+    "title_fr": "Module RCD Vigil iCG40",
     "description": "",
-    "description_fr": "Disjoncteur différentiel Vigil iCG40 de marque Schneider Electric, conçu pour la protection contre les défauts d'isolement et les fuites de courant dans les installations électriques. Équipé d'un sélecteur de sensibilité réglable et d'une fonction de test intégrée. Montage sur rail DIN pour tableau électrique, avec bornes de connexion cuivre.",
-    "visualDescription": "Disjoncteur différentiel blanc de forme compacte, montage vertical sur rail DIN. Deux bornes de connexion en haut (phase et neutre) avec vis de serrage. Sélecteur rotatif central avec marquage N et positions de test. Bouton de déclenchement blanc sur le côté inférieur. Marque Schneider Electric visible. Base de montage jaune vif.",
+    "description_fr": "Module interrupteur différentiel Vigil iCG40 de Schneider Electric, conçu pour la protection contre les fuites à la terre dans les installations électriques résidentielles et commerciales. Ce dispositif se monte sur rail DIN et offre une protection fiable des circuits électriques. Il est équipé d'un mécanisme de test intégré et de bornes de connexion pour les conducteurs de phase et neutre.",
+    "visualDescription": "Module électrique blanc de forme rectangulaire montable sur rail DIN. Deux bornes de connexion supérieures (phase N et neutre), un bouton de test blanc prominent au centre, un levier blanc de commande inférieur, et des bornes de câble en cuivre à la base. Marquage vert 'Vigil iCG40' visible sur le boîtier blanc.",
     "price_MAD": 0,
     "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigil-icg40-residual-current-circuit-breaker-1-821688.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigil-icg40-residual-current-circuit-breaker-2-837384.png"
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigil-icg40-rcd-module-1-894878.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigil-icg40-rcd-module-2-906089.png"
     ],
     "in_stock": true,
-    "ref": "VT-1777405845519",
+    "ref": "VT-1777405914179",
     "specs": {
-      "highlight1_label": "Type de disjoncteur",
-      "highlight1_value": "Différentiel 30 mA",
+      "highlight1_label": "Type de produit",
+      "highlight1_value": "Interrupteur différentiel RCD",
       "highlight2_label": "Marque",
       "highlight2_value": "Schneider Electric",
       "highlight3_label": "Modèle",
       "highlight3_value": "Vigil iCG40",
       "details": {
-        "Montage": "Rail DIN",
-        "Fonction": "Protection contre les défauts d'isolement"
+        "Installation": "Rail DIN",
+        "Nombre de pôles": "2 pôles (phase + neutre)"
       },
       "compatibility": [
         "Tableaux électriques résidentiels",
-        "Rail DIN standard",
-        "Circuits 230V monophasé"
+        "Tableaux électriques commerciaux",
+        "Rails DIN standard",
+        "Disjoncteurs compatibles"
       ]
     },
     "variants": null,
-    "slug": "vigil-icg40-residual-current-circuit-breaker-1-821688"
+    "slug": "vigil-icg40-rcd-module-1-894878"
   }
 ]);
