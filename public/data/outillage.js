@@ -1,41 +1,41 @@
 'use strict';
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
-    "id": 1777405520318,
+    "id": 1777405912565,
     "category": "Outillage",
-    "subcategory": "Perceuses sans fil",
+    "subcategory": "Meuleuses d'angle",
     "brand": "Bosch",
-    "title": "Bosch GSR 18V-50 Cordless Drill-Driver",
-    "title_fr": "Perceuse-visseuse sans fil Bosch GSR 18V-50",
+    "title": "Angle Grinder",
+    "title_fr": "Meuleuse d'angle",
     "description": "",
-    "description_fr": "Perceuse-visseuse sans fil compacte de la série Bosch Professional, alimentée par batterie 18V. Cet outil combine puissance et compacité pour le perçage et le vissage en une seule machine. Idéale pour les travaux de bricolage, construction légère et assemblage. Équipée d'un mandrin auto-serrant pour une fixation sécurisée des forets et embouts.",
-    "visualDescription": "Perceuse-visseuse sans fil Bosch bleue et noire, design ergonomique compact, mandrin noir métallisé, batterie 18V rouge et noire amovible, poignée antidérapante noire, bouton de commande sur le côté, logo Bosch rouge visible sur le corps.",
+    "description_fr": "Meuleuse d'angle filaire Bosch Professional avec moteur puissant et contrôle de vitesse. Cet outil polyvalent est idéal pour le meulage, le ponçage et la coupe de matériaux divers. Livré avec plusieurs accessoires incluant disques de meulage, flasques et dispositif de protection pour une utilisation sécurisée.",
+    "visualDescription": "Meuleuse d'angle Bosch bleu et noir avec moteur cylindrique bleu, poignée ergonomique noire, câble électrique noir, pied en métal chromé. Diamètre du disque apparent environ 115mm. Livré avec boîte de carton bleu Bosch, deux disques de meulage noirs, flasque métallique chromé, pare-étincelles blanc, clé de fixation et poignée de maintien.",
     "price_MAD": 0,
     "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-gsr-18v-50-cordless-drill-driver-1-498260.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-gsr-18v-50-cordless-drill-driver-2-511967.png"
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-1-893761.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-2-904579.png"
     ],
     "in_stock": true,
-    "ref": "VT-1777405520318",
+    "ref": "VT-1777405912565",
     "specs": {
-      "highlight1_label": "Tension nominale",
-      "highlight1_value": "18 V",
-      "highlight2_label": "Type de batterie",
-      "highlight2_value": "Lithium-ion",
-      "highlight3_label": "Capacité du mandrin",
-      "highlight3_value": "13 mm",
+      "highlight1_label": "Puissance",
+      "highlight1_value": "non spécifiée sur l'emballage visible",
+      "highlight2_label": "Diamètre du disque",
+      "highlight2_value": "115 mm",
+      "highlight3_label": "Type d'alimentation",
+      "highlight3_value": "Filaire (cordon électrique)",
       "details": {
-        "Classe": "Professionnel",
-        "Type": "Perceuse-visseuse sans fil"
+        "Configuration": "Meuleuse d'angle compacte",
+        "Inclusions": "Disques de meulage, flasques, pare-étincelles, clé, poignée"
       },
       "compatibility": [
-        "Forets standards 13 mm",
-        "Embouts de vissage 1/4 pouces",
-        "Batteries Bosch 18V",
-        "Chargeurs Bosch 18V"
+        "Disques de meulage 115 mm",
+        "Disques de coupe pour métal",
+        "Disques de ponçage",
+        "Flasques de serrage standard 115 mm"
       ]
     },
     "variants": null,
-    "slug": "bosch-gsr-18v-50-cordless-drill-driver-1-498260"
+    "slug": "angle-grinder-1-893761"
   }
 ]);
