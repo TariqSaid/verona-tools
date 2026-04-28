@@ -1,41 +1,41 @@
 'use strict';
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
-    "id": 1777415481955,
+    "id": 1777415643266,
     "category": "Électricité",
-    "subcategory": "Disjoncteurs et Parafoudres",
+    "subcategory": "Disjoncteurs différentiels",
     "brand": "Schneider Electric",
-    "title": "Acti9 iC40N C32 Circuit Breaker",
-    "title_fr": "Disjoncteur Acti9 iC40N C32",
+    "title": "Vigil iCG40 Residual Current Device",
+    "title_fr": "Vigil iCG40",
     "description": "",
-    "description_fr": "Disjoncteur modulaire Schneider Electric Acti9 iC40N de courbe C, 32 ampères. Cet appareil de protection électrique assure la sécurité des circuits contre les surcharges et les courts-circuits. Compatible avec les tableaux électriques standards, il offre une protection fiable pour les installations résidentielles et tertiaires.",
-    "visualDescription": "Disjoncteur blanc modulaire à 4 pôles (3P+N) avec manettes basculantes vertes et grises, marquage Schneider Electric en vert, montage rail DIN, dimensions standardisées, connecteurs de câble vissés en haut et bas",
+    "description_fr": "Disjoncteur différentiel Vigil iCG40 de Schneider Electric, conçu pour la protection contre les fuites de courant et les surcharges électriques. Cet appareil modulaire se fixe sur rail DIN et assure la sécurité des installations électriques résidentielles et tertiaires. Équipé d'un mécanisme de déclenchement sensible et d'une poignée de commande manuelle pour une manipulation aisée.",
+    "visualDescription": "Disjoncteur différentiel blanc modulaire de marque Schneider Electric, modèle Vigil iCG40, avec deux bornes de connexion supérieures (phase et neutre en cuivre), poignée de commande grise au centre, indicateur vert de statut, et base grise avec connecteurs de rail DIN. Dimensions compactes pour montage sur rail standard.",
     "price_MAD": 0,
     "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/acti9-ic40n-c32-circuit-breaker-1-462368.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/acti9-ic40n-c32-circuit-breaker-2-473889.png"
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigil-icg40-residual-current-device-1-624769.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/vigil-icg40-residual-current-device-2-635115.png"
     ],
     "in_stock": true,
-    "ref": "VT-1777415481955",
+    "ref": "VT-1777415643266",
     "specs": {
-      "highlight1_label": "Courbe de déclenchement",
-      "highlight1_value": "C",
-      "highlight2_label": "Intensité nominale",
-      "highlight2_value": "32 A",
-      "highlight3_label": "Nombre de pôles",
-      "highlight3_value": "4P (3P+N)",
+      "highlight1_label": "Type de protection",
+      "highlight1_value": "Différentiel",
+      "highlight2_label": "Sensibilité différentielle",
+      "highlight2_value": "30 mA",
+      "highlight3_label": "Montage",
+      "highlight3_value": "Rail DIN",
       "details": {
-        "Référence": "A9P54732",
-        "Tension nominale": "230/400 V",
-        "Capacité de coupure": "6000 A"
+        "Marque": "Schneider Electric",
+        "Modèle": "Vigil iCG40",
+        "Nombre de modules": "2"
       },
       "compatibility": [
-        "Tableaux électriques modulaires",
-        "Rails DIN",
-        "Câbles électriques cuivre ou aluminium jusqu'à 25 mm²"
+        "Rail DIN 35 mm",
+        "Tableaux électriques résidentiels",
+        "Installations électriques 230V"
       ]
     },
     "variants": null,
-    "slug": "acti9-ic40n-c32-circuit-breaker-1-462368"
+    "slug": "vigil-icg40-residual-current-device-1-624769"
   }
 ]);
