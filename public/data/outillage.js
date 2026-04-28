@@ -1,31 +1,40 @@
 'use strict';
 window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
   {
-    "id": 1777334483236,
+    "id": 1777334485777,
     "category": "Outillage",
-    "subcategory": "Perceuses-visseuses sans fil",
+    "subcategory": "Perceuses sans fil",
     "brand": "Bosch",
-    "title": "GSR 18V-50 Cordless Drill Driver",
-    "title_fr": "Perceuse-visseuse sans fil GSR 18V-50",
+    "title": "Cordless Drill Driver",
+    "title_fr": "Perceuse-visseuse sans fil",
     "description": "",
-    "description_fr": "Perceuse-visseuse sans fil Bosch GSR 18V-50 alimentée par batterie lithium-ion. Cet outil polyvalent est conçu pour le perçage et le vissage dans une variété de matériaux. Doté d'une batterie 1.3 Ah et d'un chargeur rapide, il offre une solution pratique pour les travaux de bricolage et de construction légers à moyens.",
-    "visualDescription": "Compact cordless drill driver with bright blue and black body, red trigger and battery release button, metallic chuck with keyed bit holder, 1.3 Ah red lithium-ion battery pack with Bosch branding, integrated battery level indicator on pack, rubberized grip handle, approximately 8 inches in length",
+    "description_fr": "Perceuse-visseuse sans fil compacte Bosch avec batterie lithium-ion intégrée. Outil polyvalent conçu pour le perçage et le vissage dans divers matériaux. Équipée d'un mandrin auto-serrant et d'une poignée ergonomique avec zones de préhension antidérapantes pour un contrôle optimal.",
+    "visualDescription": "Perceuse-visseuse sans fil de marque Bosch de couleur bleu et noir avec accents rouges. Corps compact et ergonomique en plastique résistant. Batterie lithium-ion rouge intégrée à la base. Mandrin noir avec forets visibles. Poignée pistolet avec gâchette de déclenchement rouge. Marquage Bosch en rouge sur le corps bleu.",
     "price_MAD": 0,
     "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/gsr-18v-50-cordless-drill-driver-1-463982.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/gsr-18v-50-cordless-drill-driver-2-474269.png"
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/cordless-drill-driver-1-464673.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/cordless-drill-driver-2-477812.png"
     ],
     "in_stock": true,
-    "ref": "VT-1777334483236",
+    "ref": "VT-1777334485777",
     "specs": {
-      "highlight1_label": "Tension nominale",
-      "highlight1_value": "18 V",
-      "highlight2_label": "Capacité de batterie",
-      "highlight2_value": "1.3 Ah",
-      "highlight3_label": "Type de batterie",
-      "highlight3_value": "Lithium-ion"
+      "highlight1_label": "Type de batterie",
+      "highlight1_value": "Lithium-ion",
+      "highlight2_label": "Alimentation",
+      "highlight2_value": "Sans fil",
+      "highlight3_label": "Type de mandrin",
+      "highlight3_value": "Auto-serrant",
+      "details": {
+        "Marque": "Bosch",
+        "Classe": "Compacte"
+      },
+      "compatibility": [
+        "Forets de perçage standard",
+        "Embouts de vissage",
+        "Accessoires Bosch 18V"
+      ]
     },
     "variants": null,
-    "slug": "gsr-18v-50-cordless-drill-driver-1-463982"
+    "slug": "cordless-drill-driver-1-464673"
   }
 ]);
