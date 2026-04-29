@@ -113,6 +113,45 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "tesys-lc1d09-control-contactor-1-104768"
+  },
+  {
+    "id": 1777498531228,
+    "category": "Électricité",
+    "subcategory": "Disjoncteurs différentiels",
+    "brand": "Schneider Electric",
+    "title": "Residual Current Circuit Breaker 25A 30mA",
+    "title_fr": "Disjoncteur Différentiel 25A 30mA",
+    "description": "",
+    "description_fr": "Disjoncteur différentiel de marque Schneider Electric, modèle Easy9, conçu pour protéger les circuits électriques contre les fuites de courant. Avec une intensité nominale de 25A et une sensibilité de 30mA, il offre une protection efficace des personnes et des équipements. Raccordement par bornes à vis sur deux pôles pour installation en tableau électrique.",
+    "visualDescription": "Disjoncteur blanc compact, deux pôles, avec mécanisme de déclenchement noir central, bouton test blanc, marquages verts 'Easy9' et 'CCB', bornes à vis argentées en haut et bas, dimensions standardisées pour rail DIN 35mm",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/residual-current-circuit-breaker-25a-30ma-1-513142.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/residual-current-circuit-breaker-25a-30ma-2-523268.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777498531228",
+    "specs": {
+      "highlight1_label": "Intensité nominale",
+      "highlight1_value": "25A",
+      "highlight2_label": "Sensibilité de déclenchement",
+      "highlight2_value": "30mA",
+      "highlight3_label": "Nombre de pôles",
+      "highlight3_value": "2",
+      "details": {
+        "Type de protection": "Différentielle",
+        "Marque": "Schneider Electric",
+        "Série": "Easy9",
+        "Référence produit": "29632225",
+        "Montage": "Rail DIN"
+      },
+      "compatibility": [
+        "Tableaux électriques DIN",
+        "Circuits 230V",
+        "Conducteurs de section 1,5 à 25mm²"
+      ]
+    },
+    "variants": null,
+    "slug": "residual-current-circuit-breaker-25a-30ma-1-513142"
   }
-  
 ]);
