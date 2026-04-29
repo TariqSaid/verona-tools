@@ -37,5 +37,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "soft-close-cabinet-hinges-1-863118"
+  },
+  {
+    "id": 1777500072772,
+    "category": "Quincaillerie",
+    "subcategory": "Charnières",
+    "brand": "Salice",
+    "title": "Concealed Cabinet Hinge",
+    "title_fr": "Charnière invisible pour meuble",
+    "description": "",
+    "description_fr": "Charnière invisible de qualité professionnelle pour portes de meubles de cuisine et salle de bain. Système de fermeture douce et silencieuse avec amortissement intégré. Montage simple sur les portes et cadres de meuble avec fixations discrètes.",
+    "visualDescription": "Hinge in brushed nickel finish, vertical T-shaped mechanism with top and bottom mounting plates containing screw holes, central adjustment mechanism, smooth metal construction, professional cabinet hardware",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/concealed-cabinet-hinge-1-053271.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/concealed-cabinet-hinge-2-064978.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777500072772",
+    "specs": {
+      "highlight1_label": "Type de charnière",
+      "highlight1_value": "Invisible / Clip-on",
+      "highlight2_label": "Finition",
+      "highlight2_value": "Nickel brossé",
+      "highlight3_label": "Système de fermeture",
+      "highlight3_value": "Fermeture douce"
+    },
+    "variants": null,
+    "slug": "concealed-cabinet-hinge-1-053271"
   }
 ]);
