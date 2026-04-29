@@ -77,46 +77,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "variants": null,
     "slug": "bosch-professional-angle-grinder-gws-750-125-1-470202"
   },
-  {
-    "id": 1777493493277,
-    "category": "Outillage",
-    "subcategory": "Perceuses à percussion",
-    "brand": "Bosch",
-    "title": "Impact Drill GSB 550",
-    "title_fr": "Perceuse à Percussion GSB 550",
-    "description": "",
-    "description_fr": "Perceuse à percussion filaire Bosch GSB 550 conçue pour les travaux de perçage et de vissage dans le bois, le métal et la maçonnerie. Dotée d'un chuck à clé et d'une poignée de maintien pour une meilleure stabilité. Équipée d'un cordon d'alimentation pour une utilisation continue sur chantier ou en atelier.",
-    "visualDescription": "Perceuse à percussion professionnelle Bosch GSB 550 avec corps bleu et noir, poignée ergonomique en caoutchouc noir, chuck métallique chromé avec forets inclus, cordon d'alimentation noir, bouton rouge de commande, design compact et robuste.",
-    "price_MAD": 0,
-    "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/impact-drill-gsb-550-1-471520.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/impact-drill-gsb-550-2-484306.png"
-    ],
-    "in_stock": true,
-    "ref": "VT-1777493493277",
-    "specs": {
-      "highlight1_label": "Puissance",
-      "highlight1_value": "550 W",
-      "highlight2_label": "Type de mandrin",
-      "highlight2_value": "Chuck à clé 13 mm",
-      "highlight3_label": "Vitesse de rotation",
-      "highlight3_value": "Vitesse variable",
-      "details": {
-        "Fonction percussion": "Oui",
-        "Type d'alimentation": "Filaire",
-        "Poignée auxiliaire": "Incluse"
-      },
-      "compatibility": [
-        "Forets pour perceuse",
-        "Mèches béton",
-        "Forets métal",
-        "Forets bois",
-        "Embouts de vissage"
-      ]
-    },
-    "variants": null,
-    "slug": "impact-drill-gsb-550-1-471520"
-  },
+  
   {
     "id": 1777493751572,
     "category": "Outillage",
