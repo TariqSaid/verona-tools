@@ -181,5 +181,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "electrical-junction-box-1-708589"
+  },
+  {
+    "id": 1777499600321,
+    "category": "Électricité",
+    "subcategory": "Boîtes de dérivation et accessoires électriques",
+    "brand": "Generic/Standard",
+    "title": "Surface Junction Box with Cable Glands",
+    "title_fr": "Boîte de Dérivation Étanche avec Presse-Étoupe",
+    "description": "",
+    "description_fr": "Boîte de dérivation étanche de surface en matière plastique blanc rigide, équipée de presse-étoupe pour le passage de câbles électriques. Conçue pour l'installation en extérieur ou en milieu humide, elle protège les connexions électriques des intempéries et de l'humidité. Fixation murale facilitée par les points de fixation intégrés.",
+    "visualDescription": "Boîte carrée blanche en plastique rigide, environ 100x100x75mm, avec couvercle plat maintenu par 4 vis en coin. Deux presse-étoupe circulaires striés sur la face avant et un sur la face latérale. Points de fixation métalliques aux quatre coins.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/surface-junction-box-with-cable-glands-1-581471.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/surface-junction-box-with-cable-glands-2-591647.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777499600321",
+    "specs": {
+      "highlight1_label": "Matériau",
+      "highlight1_value": "Plastique ABS blanc",
+      "highlight2_label": "Nombre de presse-étoupe",
+      "highlight2_value": "3",
+      "highlight3_label": "Type d'installation",
+      "highlight3_value": "Murale de surface"
+    },
+    "variants": null,
+    "slug": "surface-junction-box-with-cable-glands-1-581471"
   }
 ]);
