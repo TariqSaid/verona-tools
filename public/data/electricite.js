@@ -153,5 +153,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "residual-current-circuit-breaker-25a-30ma-1-513142"
+  },
+  {
+    "id": 1777498728925,
+    "category": "Électricité",
+    "subcategory": "Boîtes de jonction et de dérivation",
+    "brand": "Unknown",
+    "title": "Electrical Junction Box",
+    "title_fr": "Boîte de Jonction Électrique",
+    "description": "",
+    "description_fr": "Boîte de jonction électrique ronde en plastique blanc avec couvercle amovible. Équipée de plusieurs orifices de connexion latéraux pour l'installation de câbles électriques. Conçue pour les applications en surface, elle permet le raccordement et la distribution sécurisée des circuits électriques domestiques ou professionnels.",
+    "visualDescription": "Cylindrical white plastic electrical junction box with domed removable cover. Approximately 100-120mm diameter. Four circular conduit knockouts visible on the sides. Smooth plastic finish with ribbed sides for grip and mounting. Gray rubber sealing elements around knockout openings.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/electrical-junction-box-1-708589.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/electrical-junction-box-2-721177.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777498728925",
+    "specs": {
+      "highlight1_label": "Matériau",
+      "highlight1_value": "Plastique polycarbonate",
+      "highlight2_label": "Type",
+      "highlight2_value": "Boîte de jonction en surface",
+      "highlight3_label": "Orifices de connexion",
+      "highlight3_value": "4 knockouts latéraux"
+    },
+    "variants": null,
+    "slug": "electrical-junction-box-1-708589"
   }
 ]);
