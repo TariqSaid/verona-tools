@@ -38,7 +38,6 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "variants": null,
     "slug": "bosch-gsr-18v-50-cordless-drill-driver-1-878727"
   },
-  
   {
     "id": 1777493490847,
     "category": "Outillage",
@@ -117,5 +116,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "impact-drill-gsb-550-1-471520"
+  },
+  {
+    "id": 1777493751572,
+    "category": "Outillage",
+    "subcategory": "Perceuses à percussion",
+    "brand": "Bosch",
+    "title": "Impact Drill GSB 550",
+    "title_fr": "Perceuse à percussion GSB 550",
+    "description": "",
+    "description_fr": "Perceuse à percussion filaire Bosch GSB 550 conçue pour les travaux de perçage et de vissage dans les matériaux durs. Équipée d'un mandrin de précision et d'une poignée ergonomique pour un contrôle optimal. Idéale pour les applications professionnelles et de bricolage intensif sur béton, pierre et acier.",
+    "visualDescription": "Perceuse à percussion compacte de couleur bleu et noir avec logo Bosch blanc. Corps en plastique renforcé bleu avec détails noirs, mandrin métallique chrome, poignée auxiliaire noire, cordon d'alimentation noir, bouton de commande rouge sur le côté. Foret hélicoïdal inséré dans le mandrin.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/impact-drill-gsb-550-1-732504.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/impact-drill-gsb-550-2-743396.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777493751572",
+    "specs": {
+      "highlight1_label": "Puissance",
+      "highlight1_value": "550 W",
+      "highlight2_label": "Type de mandrin",
+      "highlight2_value": "Mandrin de précision",
+      "highlight3_label": "Fonction principale",
+      "highlight3_value": "Percussion"
+    },
+    "variants": null,
+    "slug": "impact-drill-gsb-550-1-732504"
   }
 ]);
