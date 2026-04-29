@@ -36,5 +36,43 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "residual-current-device-icg40-1-897415"
+  },
+  {
+    "id": 1777496770717,
+    "category": "Électricité",
+    "subcategory": "Disjoncteurs différentiels",
+    "brand": "Schneider Electric",
+    "title": "Residual Current Circuit Breaker with Overcurrent Protection",
+    "title_fr": "Vigi iC40",
+    "description": "",
+    "description_fr": "Le Vigi iC40 est un disjoncteur différentiel combinant protection contre les défauts d'isolement et les surcharges. Doté d'une sensibilité de 30 mA, il garantit une sécurité optimale contre les électrocutions et les risques d'incendie. Compatible avec les tableaux électriques modulaires, il assure une protection fiable des circuits électriques domestiques et tertiaires.",
+    "visualDescription": "White modular circuit breaker with brown copper bus bars, green indicator stripe marked 'Vigi iC40', white toggle switch, four terminal sockets at bottom, yellow plastic clip at top, designed for DIN rail mounting",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/residual-current-circuit-breaker-with-overcurrent-protection-1-752399.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/residual-current-circuit-breaker-with-overcurrent-protection-2-762866.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777496770717",
+    "specs": {
+      "highlight1_label": "Sensibilité différentielle",
+      "highlight1_value": "30 mA",
+      "highlight2_label": "Type de produit",
+      "highlight2_value": "Disjoncteur différentiel",
+      "highlight3_label": "Nombre de pôles",
+      "highlight3_value": "4 pôles",
+      "details": {
+        "Fonction": "Protection contre les défauts d'isolement et surcharges",
+        "Montage": "Rail DIN"
+      },
+      "compatibility": [
+        "Tableaux électriques modulaires",
+        "Rails DIN standard",
+        "Circuits électriques domestiques",
+        "Installations tertiaires"
+      ]
+    },
+    "variants": null,
+    "slug": "residual-current-circuit-breaker-with-overcurrent-protection-1-752399"
   }
 ]);
