@@ -200,44 +200,6 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "heat-gun-professional-1-827910"
-  },
-  {
-    "id": 1777494850372,
-    "category": "Outillage",
-    "subcategory": "Scies sauteuses",
-    "brand": "Bosch",
-    "title": "Bosch GST 90 BE Jigsaw",
-    "title_fr": "Scie sauteuse Bosch GST 90 BE",
-    "description": "",
-    "description_fr": "Scie sauteuse électrique Bosch GST 90 BE avec coffret de transport. Outil polyvalent conçu pour découper le bois, le plastique et les matériaux composites. Équipée d'un système de guidage de lame et d'une semelle basculante pour des coupes précises. Livrée avec étui de protection et accessoires.",
-    "visualDescription": "Scie sauteuse de couleur bleu foncé avec poignée ergonomique noire, logo Bosch blanc et rouge sur le capot, cordon d'alimentation noir, semelle métallique argentée, coffret de rangement bleu plastique rigide avec logo Bosch, poignée supérieure intégrée, détails en rouge sur les éléments de contrôle",
-    "price_MAD": 0,
-    "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-gst-90-be-jigsaw-1-828248.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-gst-90-be-jigsaw-2-842234.png"
-    ],
-    "in_stock": true,
-    "ref": "VT-1777494850372",
-    "specs": {
-      "highlight1_label": "Puissance",
-      "highlight1_value": "650 W",
-      "highlight2_label": "Courses par minute",
-      "highlight2_value": "3000 tr/min",
-      "highlight3_label": "Profondeur de coupe maximale",
-      "highlight3_value": "90 mm",
-      "details": {
-        "Type de lame": "Lames de scie sauteuse standard",
-        "Système de serrage": "Serrage sans outil",
-        "Semelle": "Basculante et ajustable"
-      },
-      "compatibility": [
-        "Lames de scie sauteuse T-shank",
-        "Lames pour bois",
-        "Lames pour plastique",
-        "Lames pour métaux non ferreux"
-      ]
-    },
-    "variants": null,
-    "slug": "bosch-gst-90-be-jigsaw-1-828248"
   }
+  
 ]);
