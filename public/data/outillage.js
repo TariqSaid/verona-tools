@@ -144,5 +144,44 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "impact-drill-gsb-550-1-732504"
+  },
+  {
+    "id": 1777493755191,
+    "category": "Outillage",
+    "subcategory": "Perforateurs",
+    "brand": "Bosch Professional",
+    "title": "Bosch Boschhammer Professional Rotary Hammer Drill",
+    "title_fr": "Perforateur Bosch Boschhammer Professional",
+    "description": "",
+    "description_fr": "Perforateur filaire Bosch Professional série Boschhammer, conçu pour le forage et le piquage dans les matériaux durs comme le béton, la pierre et la maçonnerie. Équipé d'une poignée auxiliaire pour plus de contrôle et de sécurité lors des travaux. Outil robuste et fiable, idéal pour les professionnels du bâtiment et les travaux de rénovation.",
+    "visualDescription": "Perforateur électrique filaire de couleur bleu et noir avec marquage rouge Bosch. Corps compact et ergonomique avec poignée auxiliaire noire amovible. Mandrin de forage noir en bas. Câble d'alimentation noir enroulé. Dimensions compactes adaptées aux travaux en intérieur.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-boschhammer-professional-rotary-hammer-drill-1-732913.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-boschhammer-professional-rotary-hammer-drill-2-746792.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777493755191",
+    "specs": {
+      "highlight1_label": "Type d'outil",
+      "highlight1_value": "Perforateur filaire",
+      "highlight2_label": "Marque",
+      "highlight2_value": "Bosch Professional",
+      "highlight3_label": "Poignée auxiliaire",
+      "highlight3_value": "Incluse",
+      "details": {
+        "Utilisation principale": "Forage et piquage béton, pierre, maçonnerie",
+        "Alimentation": "Filaire électrique",
+        "Poignée auxiliaire": "Amovible"
+      },
+      "compatibility": [
+        "Forets pour béton",
+        "Mèches de perçage",
+        "Accessoires Bosch Professional",
+        "Pointes de piquage"
+      ]
+    },
+    "variants": null,
+    "slug": "bosch-boschhammer-professional-rotary-hammer-drill-1-732913"
   }
 ]);
