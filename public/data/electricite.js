@@ -113,5 +113,42 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "tesys-lc1d09-control-contactor-1-104768"
+  },
+  {
+    "id": 1777497126145,
+    "category": "Électricité",
+    "subcategory": "Disjoncteur différentiel",
+    "brand": "Schneider Electric",
+    "title": "Residual Current Device with Overcurrent Protection IC40",
+    "title_fr": "Vigi IC40",
+    "description": "",
+    "description_fr": "Disjoncteur différentiel Vigi IC40 de Schneider Electric combinant protection contre les fuites de courant et les surcharges. Appareil modulaire destiné à l'installation sur rail DIN dans les tableaux électriques résidentiels. Assure la sécurité des circuits électriques contre les défauts d'isolement et les surcharges.",
+    "visualDescription": "Boîtier blanc modulaire DIN avec bande verte supérieure portant l'inscription 'Vigi IC40', manette de commande blanche, bornes de connexion cuivre, connecteurs d'entrée/sortie jaunes, rail de montage DIN visible en bas",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/residual-current-device-with-overcurrent-protection-ic40-1-106265.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/residual-current-device-with-overcurrent-protection-ic40-2-117141.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777497126145",
+    "specs": {
+      "highlight1_label": "Type de protection",
+      "highlight1_value": "Différentiel + Surcharge",
+      "highlight2_label": "Marque",
+      "highlight2_value": "Schneider Electric",
+      "highlight3_label": "Montage",
+      "highlight3_value": "Rail DIN",
+      "details": {
+        "Modèle": "Vigi IC40",
+        "Fonction": "Disjoncteur différentiel"
+      },
+      "compatibility": [
+        "Rail DIN standard",
+        "Tableaux électriques résidentiels",
+        "Circuits 230V monophasés"
+      ]
+    },
+    "variants": null,
+    "slug": "residual-current-device-with-overcurrent-protection-ic40-1-106265"
   }
 ]);
