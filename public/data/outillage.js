@@ -77,7 +77,6 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "variants": null,
     "slug": "bosch-professional-angle-grinder-gws-750-125-1-470202"
   },
-  
   {
     "id": 1777493751572,
     "category": "Outillage",
@@ -144,5 +143,34 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "bosch-boschhammer-professional-rotary-hammer-drill-1-732913"
+  },
+  {
+    "id": 1777494129843,
+    "category": "Outillage",
+    "subcategory": "Scies Sauteuses",
+    "brand": "Bosch",
+    "title": "Bosch Orbital Jigsaw",
+    "title_fr": "Scie Sauteuse Orbitale Bosch",
+    "description": "",
+    "description_fr": "Scie sauteuse orbitale Bosch de qualité professionnelle, idéale pour découper le bois, le métal et les matériaux composites. Livrée complète avec malette de transport protectrice et accessoires. Parfaite pour les projets de menuiserie, de rénovation et de bricolage précis.",
+    "visualDescription": "Scie sauteuse Bosch bleue foncée avec poignée ergonomique noire, plaque de base métallique chromée, moteur puissant intégré. Lame oscillante visible. Accompagnée d'une malette de transport robuste en plastique bleu avec logo Bosch blanc et poignée de transport, avec fermoirs rouges.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-orbital-jigsaw-1-109855.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-orbital-jigsaw-2-120577.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777494129843",
+    "specs": {
+      "highlight1_label": "Type d'outil",
+      "highlight1_value": "Scie sauteuse orbitale",
+      "highlight2_label": "Livraison",
+      "highlight2_value": "Avec malette de transport",
+      "highlight3_label": "Application",
+      "highlight3_value": "Bois, métal, matériaux composites",
+      "details": {}
+    },
+    "variants": null,
+    "slug": "bosch-orbital-jigsaw-1-109855"
   }
 ]);
