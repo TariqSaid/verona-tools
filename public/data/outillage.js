@@ -172,5 +172,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "bosch-orbital-jigsaw-1-109855"
+  },
+  {
+    "id": 1777494848212,
+    "category": "Outillage",
+    "subcategory": "Pistolets thermiques",
+    "brand": "Bosch",
+    "title": "Heat Gun Professional",
+    "title_fr": "Pistolet thermique professionnel",
+    "description": "",
+    "description_fr": "Pistolet thermique professionnel Bosch pour applications de décapage, soudage et séchage. Outil électrique portable avec poignée ergonomique et cordon d'alimentation. Idéal pour les travaux de construction, rénovation et bricolage nécessitant une source de chaleur contrôlée.",
+    "visualDescription": "Pistolet thermique bleu Bosch Professional avec corps ergonomique en plastique bleu foncé et noir, poignée gâchette, embout de sortie d'air noir, cordon d'alimentation noir enroulé, design compact et professionnel",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/heat-gun-professional-1-827910.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/heat-gun-professional-2-839905.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777494848212",
+    "specs": {
+      "highlight1_label": "Type d'outil",
+      "highlight1_value": "Pistolet thermique électrique",
+      "highlight2_label": "Marque",
+      "highlight2_value": "Bosch Professional",
+      "highlight3_label": "Alimentation",
+      "highlight3_value": "Cordon électrique"
+    },
+    "variants": null,
+    "slug": "heat-gun-professional-1-827910"
   }
 ]);
