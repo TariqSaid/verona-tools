@@ -74,45 +74,5 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "residual-current-circuit-breaker-with-overcurrent-protection-1-752399"
-  },
-  {
-    "id": 1777496774456,
-    "category": "Électricité",
-    "subcategory": "Disjoncteur différentiel et protection électrique",
-    "brand": "Schneider Electric",
-    "title": "Residual Current Device (RCD) iCG40 40A",
-    "title_fr": "Vigi iCG40",
-    "description": "",
-    "description_fr": "Disjoncteur différentiel Vigi iCG40 de marque Schneider Electric, conçu pour la protection contre les fuites de courant et les courts-circuits dans les installations électriques domestiques et tertiaires. Équipé d'une fonction test intégrée et d'un déclenchement sélectif. Module de protection électrique haute performance pour tableaux de distribution.",
-    "visualDescription": "Boîtier blanc de protection électrique modulaire, dimension rail DIN standard, deux bornes de connexion cuivre supérieures (phase et neutre N), écran LCD vert avec texte 'vigi iCG40', bouton de test blanc, levier de commande/arrêt blanc, base avec connecteurs de raccordement et étiquette de repérage jaune",
-    "price_MAD": 0,
-    "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/residual-current-device-rcd-icg40-40a-1-755724.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/residual-current-device-rcd-icg40-40a-2-766099.png"
-    ],
-    "in_stock": true,
-    "ref": "VT-1777496774456",
-    "specs": {
-      "highlight1_label": "Courant nominal",
-      "highlight1_value": "40 A",
-      "highlight2_label": "Sensibilité différentielle",
-      "highlight2_value": "30 mA",
-      "highlight3_label": "Type de protection",
-      "highlight3_value": "AC",
-      "details": {
-        "Marque": "Schneider Electric",
-        "Modèle": "Vigi iCG40",
-        "Format": "Rail DIN",
-        "Fonction": "Disjoncteur différentiel"
-      },
-      "compatibility": [
-        "Tableaux électriques 230V monophasé",
-        "Rails DIN standard",
-        "Circuits électriques domestiques et tertiaires",
-        "Protection différentielle AC"
-      ]
-    },
-    "variants": null,
-    "slug": "residual-current-device-rcd-icg40-40a-1-755724"
   }
 ]);
