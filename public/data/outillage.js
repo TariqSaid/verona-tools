@@ -38,35 +38,7 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     "variants": null,
     "slug": "bosch-gsr-18v-50-cordless-drill-driver-1-878727"
   },
-  {
-    "id": 1777493267142,
-    "category": "Outillage",
-    "subcategory": "Meuleuses d'angle",
-    "brand": "Bosch",
-    "title": "Angle Grinder",
-    "title_fr": "Meuleuse d'angle",
-    "description": "",
-    "description_fr": "Meuleuse d'angle Bosch Professional avec moteur puissant pour le meulage, le tronçonnage et le polissage. Livrée avec disque de meulage, flasques de maintien et protecteur d'étincelles. Idéale pour les travaux de finition sur métal, pierre et béton.",
-    "visualDescription": "Meuleuse d'angle de marque Bosch couleur bleu professionnel avec poignée noire et carter de protection gris. Disque de meulage noir en position de travail. Accessoires inclus : deux flasques métalliques argentés, disque de meulage noir, et protecteur blanc.",
-    "price_MAD": 0,
-    "images": [
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-1-247515.png",
-      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/angle-grinder-2-259342.png"
-    ],
-    "in_stock": true,
-    "ref": "VT-1777493267142",
-    "specs": {
-      "highlight1_label": "Diamètre du disque",
-      "highlight1_value": "125 mm",
-      "highlight2_label": "Type de produit",
-      "highlight2_value": "Meuleuse d'angle",
-      "highlight3_label": "Marque",
-      "highlight3_value": "Bosch Professional",
-      "details": {}
-    },
-    "variants": null,
-    "slug": "angle-grinder-1-247515"
-  },
+  
   {
     "id": 1777493490847,
     "category": "Outillage",
