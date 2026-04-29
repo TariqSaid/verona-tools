@@ -66,5 +66,44 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "angle-grinder-1-247515"
+  },
+  {
+    "id": 1777493490847,
+    "category": "Outillage",
+    "subcategory": "Meuleuses d'angle",
+    "brand": "Bosch",
+    "title": "Bosch Professional Angle Grinder GWS 750-125",
+    "title_fr": "Meuleuse d'angle Bosch Professional GWS 750-125",
+    "description": "",
+    "description_fr": "Meuleuse d'angle filaire Bosch Professional GWS 750-125 conçue pour le meulage, le polissage et la coupe de matériaux de construction. Dotée d'un moteur puissant et d'un système de protection intégré, elle est idéale pour les professionnels et les travaux de chantier. L'équipement inclut un disque de meulage, un disque de polissage, un plateau de ponçage et un protège-disque pour une utilisation polyvalente.",
+    "visualDescription": "Meuleuse d'angle filaire compacte au corps bleu marine Bosch avec poignée noire ergonomique, moteur axial, câble d'alimentation noir, accompagnée de trois disques de rechange (disque de meulage noir, plateau de polissage chromé) et d'un protège-disque en plastique blanc.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-professional-angle-grinder-gws-750-125-1-470202.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-professional-angle-grinder-gws-750-125-2-481580.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777493490847",
+    "specs": {
+      "highlight1_label": "Diamètre du disque",
+      "highlight1_value": "125 mm",
+      "highlight2_label": "Puissance moteur",
+      "highlight2_value": "750 W",
+      "highlight3_label": "Type d'alimentation",
+      "highlight3_value": "Filaire 220V",
+      "details": {
+        "Vitesse à vide": "12000 tr/min",
+        "Poids": "2,3 kg",
+        "Classe de protection": "II"
+      },
+      "compatibility": [
+        "Disques de meulage 125 mm",
+        "Disques de polissage 125 mm",
+        "Plateaux de ponçage 125 mm",
+        "Protège-disques 125 mm"
+      ]
+    },
+    "variants": null,
+    "slug": "bosch-professional-angle-grinder-gws-750-125-1-470202"
   }
 ]);
