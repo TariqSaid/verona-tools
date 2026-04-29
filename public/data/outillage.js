@@ -200,6 +200,34 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "heat-gun-professional-1-827910"
+  },
+  {
+    "id": 1777495916550,
+    "category": "Outillage",
+    "subcategory": "Décapeurs thermiques",
+    "brand": "Bosch",
+    "title": "Heat Gun",
+    "title_fr": "Décapeur thermique",
+    "description": "",
+    "description_fr": "Décapeur thermique professionnel Bosch pour enlever peinture, vernis et adhésifs. Outil électrique compact et ergonomique idéal pour les travaux de décapage et de soudage. Équipé d'une poignée confortable pour un contrôle optimal lors des applications prolongées.",
+    "visualDescription": "Décapeur thermique de couleur bleu Bosch avec poignée ergonomique noire, bouche de sortie circulaire noire, cordon d'alimentation noir, design professionnel compact et robuste",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/heat-gun-1-897683.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/heat-gun-2-908574.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777495916550",
+    "specs": {
+      "highlight1_label": "Type d'outil",
+      "highlight1_value": "Décapeur thermique",
+      "highlight2_label": "Marque",
+      "highlight2_value": "Bosch Professional",
+      "highlight3_label": "Alimentation",
+      "highlight3_value": "Électrique filaire",
+      "details": {}
+    },
+    "variants": null,
+    "slug": "heat-gun-1-897683"
   }
-  
 ]);
