@@ -74,5 +74,44 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "residual-current-circuit-breaker-with-overcurrent-protection-1-752399"
+  },
+  {
+    "id": 1777497122944,
+    "category": "Électricité",
+    "subcategory": "Contacteurs et relais de commande",
+    "brand": "Schneider Electric",
+    "title": "TeSys LC1D09 Control Contactor",
+    "title_fr": "Contacteur TeSys LC1D09",
+    "description": "",
+    "description_fr": "Contacteur de commande TeSys LC1D09 de Schneider Electric, conçu pour les applications de contrôle industriel. Cet appareil modulaire propose plusieurs points de contact (NO et NC) pour la commutation de circuits électriques. Équipé de bobines de commande et de bornes de connexion visibles, il est destiné à l'installation sur rail DIN en armoires électriques.",
+    "visualDescription": "Contacteur électrique rectangulaire de couleur gris foncé/noir avec bande verte TeSys et logo Schneider Electric blanc. Face avant avec 3 bornes de phase supérieures (1L1, 3L2, 5L3), 6 bornes de contact central (13 NO, 21 NC, A1), 3 bornes inférieures (2T1, 4T2, 6T3), et 2 bornes de commande (A2, 14 NO, 22 NC). Orifices de montage rail DIN sur les côtés. Dimensions environ 45mm de largeur.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/tesys-lc1d09-control-contactor-1-104768.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/tesys-lc1d09-control-contactor-2-115171.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777497122944",
+    "specs": {
+      "highlight1_label": "Modèle",
+      "highlight1_value": "LC1D09",
+      "highlight2_label": "Marque",
+      "highlight2_value": "Schneider Electric TeSys",
+      "highlight3_label": "Type de montage",
+      "highlight3_value": "Rail DIN",
+      "details": {
+        "Contacts principaux": "3 NO (1L1-2T1, 3L2-4T2, 5L3-6T3)",
+        "Contacts auxiliaires": "1 NO + 1 NC (13-14, 21-22)",
+        "Bobines de commande": "A1 - A2"
+      },
+      "compatibility": [
+        "Moteurs électriques monophasés et triphasés",
+        "Circuits de commande auxiliaires",
+        "Rail DIN 35mm",
+        "Bornes de raccordement standard"
+      ]
+    },
+    "variants": null,
+    "slug": "tesys-lc1d09-control-contactor-1-104768"
   }
 ]);
