@@ -66,5 +66,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "angle-grinder-1-247515"
+  },
+  {
+    "id": 1777493270788,
+    "category": "Outillage",
+    "subcategory": "Perceuses sans fil",
+    "brand": "Bosch",
+    "title": "Cordless Drill Driver",
+    "title_fr": "Perceuse-Visseuse sans fil",
+    "description": "",
+    "description_fr": "Perceuse-visseuse sans fil Bosch Professional GSR avec batterie intégrée. Cet outil polyvalent est conçu pour le perçage et le vissage dans divers matériaux. Équipé d'une batterie rechargeable et d'un mandrin de précision, il offre une solution pratique pour les travaux de bricolage et de construction.",
+    "visualDescription": "Perceuse-visseuse sans fil de marque Bosch, coloris bleu et noir avec accents rouges. Corps ergonomique en plastique bleu avec poignée antidérapante noire. Mandrin de précision noir en haut, bouton de commande rouge sur le côté. Batterie intégrée de couleur bleu et noir à la base. Design professionnel avec logo Bosch blanc sur le corps.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/cordless-drill-driver-1-248199.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/cordless-drill-driver-2-261511.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777493270788",
+    "specs": {
+      "highlight1_label": "Type d'alimentation",
+      "highlight1_value": "Sans fil avec batterie",
+      "highlight2_label": "Marque",
+      "highlight2_value": "Bosch Professional",
+      "highlight3_label": "Usage",
+      "highlight3_value": "Perçage et vissage"
+    },
+    "variants": null,
+    "slug": "cordless-drill-driver-1-248199"
   }
 ]);
