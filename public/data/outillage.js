@@ -172,5 +172,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "bosch-orbital-jigsaw-1-109855"
+  },
+  {
+    "id": 1777494132052,
+    "category": "Outillage",
+    "subcategory": "Perforateurs",
+    "brand": "Bosch Professional",
+    "title": "Bosch Professional GBH 2-26 SDS Plus Rotary Hammer Drill",
+    "title_fr": "Perforateur Bosch Professional GBH 2-26 SDS Plus",
+    "description": "",
+    "description_fr": "Perforateur filaire professionnel Bosch GBH 2-26 avec système SDS Plus pour un changement d'outil rapide et facile. Idéal pour percer et enfoncer dans la maçonnerie, le béton et la pierre. Doté d'une poignée ergonomique et d'une protection anti-chocs pour un confort de travail optimal.",
+    "visualDescription": "Perforateur compact de couleur bleu et noir, corps en aluminium avec poignée caoutchoutée noire, mandrin SDS Plus, cordon électrique, étiquettes de marque Bosch Professional avec logo rouge, dimensions compactes environ 35 cm de longueur",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-professional-gbh-2-26-sds-plus-rotary-hammer-drill-1-111180.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/bosch-professional-gbh-2-26-sds-plus-rotary-hammer-drill-2-123458.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777494132052",
+    "specs": {
+      "highlight1_label": "Système de fixation",
+      "highlight1_value": "SDS Plus",
+      "highlight2_label": "Type",
+      "highlight2_value": "Perforateur filaire",
+      "highlight3_label": "Puissance",
+      "highlight3_value": "800 W"
+    },
+    "variants": null,
+    "slug": "bosch-professional-gbh-2-26-sds-plus-rotary-hammer-drill-1-111180"
   }
 ]);
