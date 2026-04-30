@@ -105,5 +105,37 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "concealed-hinge-1-176114"
+  },
+  {
+    "id": 1777586279080,
+    "category": "Quincaillerie",
+    "subcategory": "Charnières",
+    "brand": "Unknown",
+    "title": "Concealed Cabinet Hinges",
+    "title_fr": "Charnières invisibles pour armoire",
+    "description": "",
+    "description_fr": "Paire de charnières invisibles en métal zingué pour portes d'armoires et meubles. Ces charnières dissimulées offrent un rendu épuré sans éléments visibles une fois la porte fermée. Fixation par vis sur les montants du meuble et la porte. Idéales pour les installations de mobilier moderne et contemporain.",
+    "visualDescription": "Two concealed hinges made of zinc-plated metal, consisting of cup-shaped top portions with mounting holes and angled arm mechanisms, shown from front view against white background",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/concealed-cabinet-hinges-1-259218.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/concealed-cabinet-hinges-2-271202.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777586279080",
+    "specs": {
+      "details": {
+        "Finition": "Zingué",
+        "Type de fermeture": "Invisible"
+      },
+      "compatibility": [
+        "Portes d'armoires",
+        "Meubles de cuisine",
+        "Portes de placards",
+        "Meubles modulaires"
+      ]
+    },
+    "variants": null,
+    "slug": "concealed-cabinet-hinges-1-259218"
   }
 ]);
