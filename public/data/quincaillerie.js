@@ -310,5 +310,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "brass-cabinet-handles-1-013629"
+  },
+  {
+    "id": 1777589102128,
+    "category": "Quincaillerie",
+    "subcategory": "Poignées et boutons",
+    "brand": "Unknown",
+    "title": "Black Furniture Handles Set",
+    "title_fr": "Ensemble de poignées de mobilier noir",
+    "description": "",
+    "description_fr": "Ensemble de quatre poignées de mobilier en métal noir mat, de différentes longueurs. Ces poignées cylindriques avec supports en T sont idéales pour les tiroirs, portes d'armoires et meubles modernes. Elles offrent une prise ergonomique et un design épuré.",
+    "visualDescription": "Four black cylindrical metal pull handles with T-shaped mounting brackets, varying in length from approximately 8cm to 16cm, arranged in descending order",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/black-furniture-handles-set-1-083322.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/black-furniture-handles-set-2-094271.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777589102128",
+    "specs": {
+      "highlight1_label": "Nombre de poignées",
+      "highlight1_value": "4 pièces",
+      "highlight2_label": "Matériau",
+      "highlight2_value": "Métal",
+      "highlight3_label": "Couleur",
+      "highlight3_value": "Noir"
+    },
+    "variants": null,
+    "slug": "black-furniture-handles-set-1-083322"
   }
 ]);
