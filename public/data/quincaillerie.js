@@ -338,5 +338,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "black-furniture-handles-set-1-083322"
+  },
+  {
+    "id": 1777592210983,
+    "category": "Quincaillerie",
+    "subcategory": "Équerres et Supports d'Angle",
+    "brand": "IKEA",
+    "title": "Corner Brace Bracket Set",
+    "title_fr": "Équerre d'Angle",
+    "description": "",
+    "description_fr": "Ensemble d'équerres d'angle disponibles en plusieurs finitions : galvanisée, blanche, naturelle et acajou. Ces supports structuraux en L permettent de renforcer et stabiliser les assemblages de meubles et structures en bois. Dotées de trous de fixation pré-percés, elles s'adaptent à divers projets de menuiserie et d'assemblage.",
+    "visualDescription": "Four corner brackets shown in a row: galvanized metal bracket with pre-drilled holes (left), white plastic bracket (second from left), natural/beige plastic bracket (second from right), and dark brown/mahogany plastic bracket (right). Each bracket is L-shaped with a reinforcing interior flange.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/corner-brace-bracket-set-1-192889.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/corner-brace-bracket-set-2-203080.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777592210983",
+    "specs": {
+      "highlight1_label": "Matériau Disponible",
+      "highlight1_value": "Métal galvanisé, Plastique blanc, Plastique naturel, Plastique acajou",
+      "highlight2_label": "Type de Fixation",
+      "highlight2_value": "Trous pré-percés",
+      "highlight3_label": "Application",
+      "highlight3_value": "Assemblage de meubles et structures"
+    },
+    "variants": null,
+    "slug": "corner-brace-bracket-set-1-192889"
   }
 ]);
