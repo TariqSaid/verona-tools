@@ -254,5 +254,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "cylindrical-cabinet-knob-1-601512"
+  },
+  {
+    "id": 1777588917680,
+    "category": "Quincaillerie",
+    "subcategory": "Poignées et boutons de meuble",
+    "brand": "Unknown",
+    "title": "Stainless Steel Cabinet Handles",
+    "title_fr": "Poignées de Meuble en Acier Inoxydable",
+    "description": "",
+    "description_fr": "Ensemble de quatre poignées de meuble en acier inoxydable brossé. Ces poignées cylindriques modernes conviennent parfaitement aux portes et tiroirs de cuisines, salles de bain et meubles contemporains. Finition durable et résistante à la corrosion, idéales pour un usage résidentiel ou commercial.",
+    "visualDescription": "Four stainless steel bar handles with cylindrical profile, brushed finish, varying lengths from shortest to longest (approximately 96mm, 128mm, 160mm, 192mm). Each handle has two circular mounting posts. Professional industrial design with clean lines and uniform diameter throughout the bars.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/stainless-steel-cabinet-handles-1-896340.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/stainless-steel-cabinet-handles-2-909872.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777588917680",
+    "specs": {
+      "highlight1_label": "Matériau",
+      "highlight1_value": "Acier inoxydable",
+      "highlight2_label": "Finition",
+      "highlight2_value": "Brossée",
+      "highlight3_label": "Type de montage",
+      "highlight3_value": "À vis (entretoises)"
+    },
+    "variants": null,
+    "slug": "stainless-steel-cabinet-handles-1-896340"
   }
 ]);
