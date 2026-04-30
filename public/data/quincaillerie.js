@@ -221,5 +221,38 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "ball-bearing-slide-rails-1-631959"
+  },
+  {
+    "id": 1777588621490,
+    "category": "Quincaillerie",
+    "subcategory": "Boutons et poignées",
+    "brand": "Unknown",
+    "title": "Cylindrical Cabinet Knob",
+    "title_fr": "Bouton de meuble cylindrique",
+    "description": "",
+    "description_fr": "Bouton de meuble cylindrique disponible en trois finitions métalliques : noir, doré et chrome. Conçu pour les portes d'armoires, tiroirs et meubles. Installation simple par vis. Finition durable et design épuré.",
+    "visualDescription": "Three small cylindrical knobs with flat circular tops and vertical handles, approximately 20-25mm diameter. Left: black matte finish. Center: brushed gold finish. Right: brushed chrome/silver finish. Each has a horizontal grip stripe pattern on the cylindrical body.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/cylindrical-cabinet-knob-1-601512.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/cylindrical-cabinet-knob-2-613881.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777588621490",
+    "specs": {
+      "details": {
+        "Matériau": "Alliage métallique",
+        "Style": "Cylindrique moderne",
+        "Utilisation": "Intérieur"
+      },
+      "compatibility": [
+        "Portes de meuble",
+        "Tiroirs",
+        "Armoires de cuisine",
+        "Meubles de rangement"
+      ]
+    },
+    "variants": null,
+    "slug": "cylindrical-cabinet-knob-1-601512"
   }
 ]);
