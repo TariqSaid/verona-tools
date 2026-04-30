@@ -165,5 +165,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "cabinet-hinge-1-374909"
+  },
+  {
+    "id": 1777586528970,
+    "category": "Quincaillerie",
+    "subcategory": "Coulisses de tiroir",
+    "brand": "Unknown",
+    "title": "Ball Bearing Drawer Slides",
+    "title_fr": "Coulisses de tiroir à billes",
+    "description": "",
+    "description_fr": "Ensemble de coulisses de tiroir à roulement à billes en acier galvanisé, disponibles en plusieurs longueurs standards. Ces coulisses offrent une fermeture douce et progressive avec un guidage précis. Conçues pour une installation facile dans les meubles, elles permettent une ouverture et fermeture fluides des tiroirs.",
+    "visualDescription": "Six metal drawer slides of varying lengths arranged vertically, each with galvanized steel construction, ball bearing mechanisms visible, metal brackets with screw holes on both sides, ranging from approximately 20cm to 60cm in length",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/ball-bearing-drawer-slides-1-509996.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/ball-bearing-drawer-slides-2-521274.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777586528970",
+    "specs": {
+      "highlight1_label": "Type de fermeture",
+      "highlight1_value": "Fermeture progressive",
+      "highlight2_label": "Matériau",
+      "highlight2_value": "Acier galvanisé",
+      "highlight3_label": "Système",
+      "highlight3_value": "Roulement à billes"
+    },
+    "variants": null,
+    "slug": "ball-bearing-drawer-slides-1-509996"
   }
 ]);
