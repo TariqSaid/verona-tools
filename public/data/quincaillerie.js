@@ -282,5 +282,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "stainless-steel-cabinet-handles-1-896340"
+  },
+  {
+    "id": 1777589032480,
+    "category": "Quincaillerie",
+    "subcategory": "Poignées et Boutons",
+    "brand": "Generic",
+    "title": "Brass Cabinet Handles",
+    "title_fr": "Poignées de Meuble en Laiton",
+    "description": "",
+    "description_fr": "Ensemble de quatre poignées de meuble en laiton doré, de style épuré et moderne. Ces poignées tubulaires conviennent parfaitement aux tiroirs et portes d'armoires, de commodes et de meubles de rangement. Finition laiton poli durable et facile à entretenir.",
+    "visualDescription": "Four cylindrical brass tube handles with small rectangular brass feet, polished gold finish. Tubular design with minimalist aesthetic. Handles increase in size from left to right, photographed against white background in isometric view.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/brass-cabinet-handles-1-013629.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/brass-cabinet-handles-2-024766.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777589032480",
+    "specs": {
+      "highlight1_label": "Matériau",
+      "highlight1_value": "Laiton",
+      "highlight2_label": "Finition",
+      "highlight2_value": "Doré poli",
+      "highlight3_label": "Nombre de poignées",
+      "highlight3_value": "4"
+    },
+    "variants": null,
+    "slug": "brass-cabinet-handles-1-013629"
   }
 ]);
