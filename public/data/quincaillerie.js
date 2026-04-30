@@ -137,5 +137,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "concealed-cabinet-hinges-1-259218"
+  },
+  {
+    "id": 1777586393222,
+    "category": "Quincaillerie",
+    "subcategory": "Charnières",
+    "brand": "Unknown",
+    "title": "Cabinet Hinge",
+    "title_fr": "Charnière d'armoire",
+    "description": "",
+    "description_fr": "Charnière métallique pour armoire et meuble de cuisine. Finition nickelée avec système de fixation à vis. Conception robuste pour portes de placard standard. Installation facile et discrète.",
+    "visualDescription": "T-shaped metal hinge with silvery nickel finish, vertical stem with horizontal mounting plate at top and bottom, mounting holes visible, industrial hardware style",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/cabinet-hinge-1-374909.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/cabinet-hinge-2-385460.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777586393222",
+    "specs": {
+      "highlight1_label": "Type",
+      "highlight1_value": "Charnière d'armoire",
+      "highlight2_label": "Finition",
+      "highlight2_value": "Nickelée",
+      "highlight3_label": "Fixation",
+      "highlight3_value": "À vis"
+    },
+    "variants": null,
+    "slug": "cabinet-hinge-1-374909"
   }
 ]);
