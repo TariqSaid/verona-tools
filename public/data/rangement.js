@@ -27,5 +27,38 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "drawer-slide-set-1-810560"
+  },
+  {
+    "id": 1777587028292,
+    "category": "Rangement & Organisation",
+    "subcategory": "Coulisses de tiroir",
+    "brand": "SELLI",
+    "title": "Drawer Slide Set",
+    "title_fr": "Ensemble de Coulisses de Tiroir",
+    "description": "",
+    "description_fr": "Ensemble complet de coulisses de tiroir de qualité professionnelle de la marque SELLI. Comprend les rails, les supports et les accessoires de montage nécessaires pour l'installation. Idéal pour la réparation ou la fabrication de meubles et d'armoires de rangement.",
+    "visualDescription": "Two full extension drawer slide rails in metallic gray with black plastic end stops, mounting brackets with pre-drilled holes, metal ball bearing rollers, and installation hardware including clips and fasteners. SELLI branding visible on blue labels.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/drawer-slide-set-1-007176.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/drawer-slide-set-2-020503.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777587028292",
+    "specs": {
+      "details": {
+        "Fermeture": "Soft close",
+        "Matériau": "Acier galvanisé",
+        "Type de montage": "Latéral"
+      },
+      "compatibility": [
+        "Meubles de rangement",
+        "Armoires",
+        "Tiroirs",
+        "Caissons"
+      ]
+    },
+    "variants": null,
+    "slug": "drawer-slide-set-1-007176"
   }
 ]);
