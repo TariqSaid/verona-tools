@@ -209,5 +209,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "surface-junction-box-with-cable-glands-1-581471"
+  },
+  {
+    "id": 1777589139769,
+    "category": "Électricité",
+    "subcategory": "Gaines et Accessoires de Câblage",
+    "brand": "Unknown",
+    "title": "Heat Shrink Tubing Assortment",
+    "title_fr": "Assortiment de Gaines Thermrétractables",
+    "description": "",
+    "description_fr": "Assortiment de gaines thermrétractables noires de différents diamètres. Ces gaines se rétrécissent à la chaleur pour isoler et protéger les connexions électriques et les câbles. Idéales pour les travaux d'électricité, de réparation ou de bricolage. Ensemble économique avec plusieurs tailles.",
+    "visualDescription": "Five black heat shrink tubes of progressively decreasing diameter arranged in a row on a white background. Each tube has a cylindrical shape with slightly tapered ends, showing the typical appearance of thermally shrinkable tubing before application.",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/heat-shrink-tubing-assortment-1-120749.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/heat-shrink-tubing-assortment-2-132081.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777589139769",
+    "specs": {
+      "highlight1_label": "Nombre de pièces",
+      "highlight1_value": "5 gaines",
+      "highlight2_label": "Matériau",
+      "highlight2_value": "Polyoléfine thermrétractable",
+      "highlight3_label": "Couleur",
+      "highlight3_value": "Noir"
+    },
+    "variants": null,
+    "slug": "heat-shrink-tubing-assortment-1-120749"
   }
 ]);
