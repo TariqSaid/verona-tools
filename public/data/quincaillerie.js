@@ -193,5 +193,33 @@ window.VT_PRODUCTS = (window.VT_PRODUCTS || []).concat([
     },
     "variants": null,
     "slug": "ball-bearing-drawer-slides-1-509996"
+  },
+  {
+    "id": 1777586653207,
+    "category": "Quincaillerie",
+    "subcategory": "Glissières et accessoires de meuble",
+    "brand": "Unknown",
+    "title": "Ball Bearing Slide Rails",
+    "title_fr": "Glissières à Roulement à Billes",
+    "description": "",
+    "description_fr": "Ensemble de glissières à roulement à billes de qualité professionnelle pour tiroirs et meubles. Ces rails de précision offrent un coulissement fluide et silencieux. Disponibles en plusieurs longueurs pour s'adapter à différents formats de tiroirs. Installation facile avec fixations standard.",
+    "visualDescription": "Five black metal ball bearing drawer slides of varying lengths arranged vertically, showing the typical channel profile with ball bearing mechanisms visible, professional industrial appearance with metal construction and mounting holes",
+    "price_MAD": 0,
+    "images": [
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/ball-bearing-slide-rails-1-631959.png",
+      "https://raw.githubusercontent.com/TariqSaid/verona-tools/main/public/images/products/ball-bearing-slide-rails-2-644692.png"
+    ],
+    "in_stock": true,
+    "ref": "VT-1777586653207",
+    "specs": {
+      "highlight1_label": "Type de glissière",
+      "highlight1_value": "Roulement à billes",
+      "highlight2_label": "Matériau",
+      "highlight2_value": "Métal",
+      "highlight3_label": "Finition",
+      "highlight3_value": "Noir"
+    },
+    "variants": null,
+    "slug": "ball-bearing-slide-rails-1-631959"
   }
 ]);
