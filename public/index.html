@@ -1,3 +1,663 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Verona Tools | Quincaillerie & Outillage Professionnel à Casablanca</title>
+  <meta name="description" content="Verona Tools — Votre droguerie et quincaillerie professionnelle à Casablanca. Plus de 1000 références en outillage, électricité, plomberie, peinture et bien plus. Livraison rapide à Casablanca." />
+  <meta name="theme-color" content="#1B2D3E" />
+  <link rel="icon" type="image/png" href="images/logo-upgraded.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#22B8CF',
+            'primary-dark': '#1A9AAE',
+            navy: '#1B2D3E',
+            'navy-light': '#243B50',
+            surface: '#F0F6FA',
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/specs.css" />
+  <link rel="stylesheet" href="css/variants.css" />
+
+  <!-- ══════════════════════════════════════════════════════════
+       MOBILE REFINEMENTS — Clean, organized, touch-optimized
+  ══════════════════════════════════════════════════════════ -->
+  <style>
+    @media (max-width: 768px) {
+      /* HEADER */
+      #main-header > div:first-child { padding: 8px 10px !important; gap: 6px !important; }
+      #main-header input[type="text"] {
+        padding: 5px 8px 5px 10px !important;
+        font-size: 12px !important;
+        border-radius: 8px !important;
+        height: 32px !important;
+      }
+      #main-header input[type="text"] + button { right: 6px !important; }
+      #main-header input[type="text"] + button svg { width: 14px !important; height: 14px !important; }
+      #main-header > div:first-child > div:last-child { gap: 3px !important; }
+      #main-header > div:first-child > div:last-child > a:last-child {
+        padding: 5px 8px !important;
+        border-radius: 8px !important;
+        font-size: 0 !important;
+        width: 32px !important;
+        height: 32px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+      }
+      #main-header > div:first-child > div:last-child > a:last-child svg { width: 16px !important; height: 16px !important; }
+      #main-header > div:first-child > div:last-child > a:last-child span { display: none !important; }
+      #main-header > div:first-child > div:last-child > button:first-child,
+      #main-header > div:first-child > div:last-child > button:nth-child(2) { width: 30px !important; height: 30px !important; padding: 0 !important; border-radius: 6px !important; }
+      #main-header > div:first-child > div:last-child > button:nth-child(2) span { display: none !important; }
+      #main-header > div:first-child > a { gap: 5px !important; }
+      #main-header > div:first-child > a > div:first-child { width: 30px !important; height: 30px !important; }
+      #main-header > div:first-child > a > div:last-child > div:first-child { font-size: 12px !important; }
+      #main-header > div:first-child > a > div:last-child > div:last-child { font-size: 6.5px !important; letter-spacing: 0.12em !important; }
+
+      /* CATEGORY PILLS */
+      .pills-scroll { gap: 3px !important; padding: 5px 0 !important; padding-right: 10px !important; }
+      .pill-btn { font-size: 10px !important; padding: 3px 9px !important; }
+
+      /* HERO */
+      .hero-slider { min-height: 320px !important; }
+      #hero-section > div.relative > div { padding: 28px 12px !important; }
+      #hero-title { font-size: 2.2rem !important; }
+      #hero-subtitle { font-size: 13px !important; margin-bottom: 14px !important; }
+      #hero-section > div.relative > div > div:last-child { flex-direction: column !important; gap: 6px !important; }
+      #hero-section > div.relative > div > div:last-child > a,
+      #hero-section > div.relative > div > div:last-child > button { padding: 8px 12px !important; font-size: 12px !important; width: 100% !important; justify-content: center !important; border-radius: 10px !important; }
+      #hero-dots { bottom: 10px !important; gap: 4px !important; }
+      .hero-nav-dot { width: 6px !important; height: 6px !important; }
+      .hero-nav-dot.active { width: 16px !important; }
+
+      /* STATS BAR */
+      .bg-primary .max-w-\[1400px\] > div { gap: 4px 14px !important; padding: 6px 10px !important; }
+      .bg-primary .max-w-\[1400px\] > div > div { font-size: 10px !important; }
+      .bg-primary .max-w-\[1400px\] > div > div svg { width: 12px !important; height: 12px !important; }
+
+      /* BRANDS STRIP */
+      .brands-strip > div > span:first-child,
+      .brands-strip > div > div:first-child { display: none !important; }
+      .brands-strip-scroll { gap: 0 !important; padding: 2px 0 !important; }
+      .brands-strip-scroll button { font-size: 10px !important; padding: 4px 8px !important; border-right: none !important; }
+
+      /* CATEGORY GRID */
+      #cat-grid-section { padding: 20px 10px !important; }
+      #cat-grid-section > div:first-child { margin-bottom: 12px !important; }
+      #cat-grid-section > div:first-child h2 { font-size: 16px !important; }
+      #cat-grid-section > div:first-child p { font-size: 11px !important; }
+      #cat-grid-section > div:last-child { gap: 6px !important; }
+      .cat-card { border-radius: 10px !important; }
+      .cat-card .cat-overlay { padding: 8px !important; gap: 4px !important; }
+      .cat-card .cat-overlay svg { width: 18px !important; height: 18px !important; }
+      .cat-card .cat-overlay span { font-size: 10px !important; }
+
+      /* PRODUCT SECTION */
+      #products-section { padding: 12px 10px 32px !important; }
+      #products-section > div:first-child { flex-direction: column !important; align-items: flex-start !important; gap: 8px !important; padding-bottom: 10px !important; }
+      #products-heading { font-size: 16px !important; }
+      #result-count { font-size: 11px !important; }
+      #products-section > div:first-child > div:last-child { width: 100% !important; justify-content: space-between !important; }
+      #products-section > div:first-child > div:last-child > div:first-child label { font-size: 11px !important; }
+      #products-section > div:first-child > div:last-child > div:first-child select { padding: 3px 6px !important; font-size: 10px !important; height: 28px !important; }
+      #products-section > div:first-child > div:last-child > label { font-size: 11px !important; }
+      #products-section > div:first-child > div:last-child > label > div { width: 32px !important; height: 18px !important; }
+      #products-section > div:first-child > div:last-child > label > div > div { width: 14px !important; height: 14px !important; }
+      #products-section > div:first-child > div:last-child > button { font-size: 11px !important; padding: 4px 8px !important; }
+
+      /* CATEGORY BLOCK */
+      .cat-section-block { margin-bottom: 10px !important; border-radius: 10px !important; }
+      .cat-section-header { padding: 8px 10px !important; }
+      .cat-section-header h2 { font-size: 12px !important; }
+      .cat-section-header svg { width: 14px !important; height: 14px !important; }
+      .cat-count-link { font-size: 9px !important; padding: 3px 7px !important; }
+
+      /* GRID */
+      .cat-section-block .grid,
+      #category-sections > .grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 6px !important;
+        padding: 6px !important;
+      }
+
+      /* PRODUCT CARD */
+      .product-card { border-radius: 10px !important; box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important; }
+      .product-card:active { transform: scale(0.97) !important; }
+      .product-card:hover { transform: none !important; box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important; }
+      .product-card-media { aspect-ratio: 1 / 1 !important; min-height: 120px !important; }
+      .product-img { padding: 4px !important; }
+      .product-card-topbar { inset: 4px 4px auto 4px !important; }
+      .product-card-cat { font-size: 6px !important; padding: 1px 4px !important; border-radius: 3px !important; letter-spacing: 0.03em !important; }
+      .badge-new { font-size: 6px !important; padding: 1px 4px !important; border-radius: 3px !important; top: 4px !important; right: 4px !important; }
+      .product-card-gallery { font-size: 6px !important; padding: 1px 4px !important; border-radius: 3px !important; right: 4px !important; bottom: 4px !important; }
+
+      /* CARD BODY */
+      .product-card-body { padding: 6px 6px 8px !important; gap: 2px !important; }
+      .product-card-kicker { font-size: 6px !important; margin-bottom: 1px !important; letter-spacing: 0.04em !important; }
+      .product-card h3 { font-size: 10px !important; line-height: 1.25 !important; margin-bottom: 1px !important; font-weight: 800 !important; }
+      .product-card-desc { font-size: 8px !important; line-height: 1.3 !important; color: #94a3b8 !important; display: -webkit-box !important; -webkit-line-clamp: 1 !important; -webkit-box-orient: vertical !important; overflow: hidden !important; margin-bottom: 1px !important; }
+
+      /* META */
+      .product-card-meta { gap: 3px !important; margin-top: 1px !important; }
+      .product-card-ref { font-size: 6px !important; max-width: 60px !important; }
+      .product-card-meta > span:last-child { font-size: 6px !important; padding: 1px 4px !important; border-radius: 4px !important; }
+
+      /* PRICE + CTA */
+      .product-card .mt-auto { margin-top: 3px !important; padding-top: 4px !important; }
+      .product-card .mt-auto > div { align-items: flex-end !important; gap: 4px !important; }
+      .product-card-price { gap: 0 !important; }
+      .product-price-label { font-size: 6px !important; margin-bottom: 0 !important; }
+      .price-tag { font-size: 15px !important; font-weight: 900 !important; }
+      .price-tag span { font-size: 9px !important; }
+      .product-price-request { font-size: 10px !important; font-weight: 800 !important; line-height: 1 !important; }
+      .product-card-cta {
+        font-size: 8px !important;
+        font-weight: 800 !important;
+        padding: 5px 6px !important;
+        min-height: 24px !important;
+        border-radius: 5px !important;
+        gap: 2px !important;
+      }
+      .product-card-cta svg { width: 10px !important; height: 10px !important; }
+      .product-card-cta:active { background: var(--primary) !important; transform: scale(0.95) !important; }
+
+      /* STORE */
+      .store-section { padding: 24px 10px !important; }
+      .store-section iframe { min-height: 200px !important; border-radius: 10px !important; }
+      .store-info-card { padding: 12px !important; border-radius: 10px !important; }
+      .store-link { padding: 6px 0 !important; gap: 6px !important; }
+      .store-icon { width: 24px !important; height: 24px !important; border-radius: 6px !important; }
+      .store-icon svg { width: 12px !important; height: 12px !important; }
+      .store-link div:first-child { font-size: 11px !important; }
+      .store-link div:last-child { font-size: 9px !important; }
+
+      /* FOOTER */
+      footer .max-w-\[1400px\] { padding: 24px 12px !important; gap: 20px !important; }
+      footer h4 { font-size: 11px !important; margin-bottom: 10px !important; }
+      footer ul li a,
+      footer ul li button,
+      footer ul li span { font-size: 11px !important; }
+      footer .border-t > div { padding: 10px !important; flex-direction: column !important; gap: 4px !important; text-align: center !important; }
+
+      /* WA FAB */
+      #wa-fab { width: 44px !important; height: 44px !important; bottom: 12px !important; right: 12px !important; }
+      #wa-fab svg { width: 20px !important; height: 20px !important; }
+      #wa-fab-tooltip { display: none !important; }
+
+      /* BACK TO TOP */
+      #back-to-top { width: 32px !important; height: 32px !important; bottom: 12px !important; left: 12px !important; }
+      #back-to-top svg { width: 14px !important; height: 14px !important; }
+    }
+  </style>
+<base target="_blank">
+</head>
+<body class="bg-surface text-gray-900 antialiased">
+
+<!-- UTILITY BAR -->
+<div class="bg-navy-light border-b border-white/5">
+  <div class="max-w-[1400px] mx-auto px-4 py-1.5 flex items-center justify-between text-[11px] text-gray-400">
+    <div class="flex items-center gap-4">
+      <span class="flex items-center gap-1"><svg class="w-3 h-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Livraison 24-48h Casablanca</span>
+      <span class="hidden sm:flex items-center gap-1"><svg class="w-3 h-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Devis gratuit</span>
+    </div>
+    <span class="hidden md:block">Compte pro disponible — contactez-nous</span>
+  </div>
+</div>
+
+<!-- STICKY HEADER -->
+<header id="main-header" class="bg-navy shadow-xl border-b border-navy-light sticky top-0 z-50">
+  <div class="max-w-[1400px] mx-auto px-4 py-3 flex items-center gap-3">
+    <a href="#" onclick="resetView(); return false;" class="flex items-center gap-2.5 min-w-max group">
+      <!-- Inline SVG Logo Mark — crisp at any size -->
+      <div class="relative w-10 h-10 flex items-center justify-center flex-shrink-0">
+        <svg viewBox="0 0 48 48" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="headerBag" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#2DD4F0"/>
+              <stop offset="100%" style="stop-color:#22B8CF"/>
+            </linearGradient>
+          </defs>
+          <!-- Speed lines -->
+          <rect x="2" y="16" width="14" height="2.5" rx="1.25" fill="#22B8CF" opacity="0.7"/>
+          <rect x="1" y="22" width="16" height="3" rx="1.5" fill="#22B8CF" opacity="0.9"/>
+          <rect x="3" y="28" width="12" height="2.5" rx="1.25" fill="#22B8CF" opacity="0.6"/>
+          <!-- Bag body -->
+          <path d="M16,14 L34,14 L36,32 Q36.5,35 33,35 L19,35 Q15.5,35 15,32 L13,18 Q12.5,15 14,14 Q15,14 16,14 Z" fill="url(#headerBag)"/>
+          <!-- Fold line -->
+          <path d="M14,20 Q24,26 34,23" fill="none" stroke="#168A9B" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+          <!-- Handle -->
+          <path d="M21,14 L21,9 Q21,5 25,5 Q29,5 29,9 L29,14" fill="none" stroke="#22B8CF" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Bag rim -->
+          <rect x="16" y="13" width="19" height="2.5" rx="1.25" fill="#1A9AAE" opacity="0.4"/>
+        </svg>
+      </div>
+      <!-- Brand Wordmark -->
+      <div class="leading-none flex flex-col">
+        <div class="text-white font-black text-[17px] tracking-tight leading-[0.95]">VERONA</div>
+        <div class="text-primary font-bold text-[9px] tracking-[0.2em] uppercase leading-none mt-[1px]">TOOLS</div>
+      </div>
+    </a>
+    <div class="flex-1 relative max-w-2xl mx-auto">
+      <input id="search-input" type="text" data-i18n-placeholder="search_placeholder" placeholder="Rechercher un produit, une marque..." class="w-full bg-white/10 border border-white/20 text-white placeholder-gray-400 rounded-xl px-4 py-2.5 pr-12 text-sm focus:outline-none focus:bg-white/15 focus:border-primary transition-all" />
+      <button class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+    </div>
+    <div class="flex items-center gap-2 min-w-max">
+      <button id="dark-toggle" aria-label="Basculer le mode sombre" class="w-9 h-9 flex items-center justify-center bg-white/10 border border-white/20 rounded-lg text-white hover:bg-white/20 transition-all">
+        <svg id="icon-sun" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg id="icon-moon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <button id="lang-toggle" class="hidden sm:flex items-center gap-1 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white text-xs font-semibold hover:bg-white/20 transition-all">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+        <span id="lang-label">EN</span>
+      </button>
+      <a href="https://wa.me/212600960924?text=Bonjour%20Verona%20Tools" target="_blank" rel="noopener" class="flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] rounded-xl px-4 py-2.5 text-white transition-all">
+        <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg>
+        <span class="text-sm font-semibold hidden md:inline">Nous Contacter</span>
+      </a>
+    </div>
+  </div>
+  <div class="border-t border-white/10 bg-navy-light">
+    <div class="max-w-[1400px] mx-auto px-4 flex items-center gap-0">
+      <button onclick="toggleMobileNav()" class="lg:hidden flex-shrink-0 flex items-center justify-center w-9 h-9 text-white hover:text-primary transition-colors mr-2" aria-label="Menu">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div class="mega-trigger relative flex-shrink-0 mr-2 hidden lg:block">
+        <button class="flex items-center gap-1.5 text-white text-sm font-semibold py-2.5 px-4 hover:text-primary transition-colors border-r border-white/10">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <span data-i18n="categories">Catégories</span>
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="mega-menu absolute top-full left-0 bg-white shadow-2xl border border-gray-100 rounded-b-2xl z-40 w-[780px] p-6">
+          <div class="grid grid-cols-4 gap-6">
+            <div>
+              <div class="text-xs font-black text-primary uppercase tracking-widest mb-3">Electricite & Outillage</div>
+              <ul class="space-y-1.5">
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Électricité'); return false;">Cables & Fils</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Électricité'); return false;">Disjoncteurs & Coffrets</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Électricité'); return false;">Interrupteurs & Prises</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Outillage'); return false;">Perceuses & Visseuses</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Outillage'); return false;">Meuleuses & Scies</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Outillage'); return false;">Tournevis & Cles</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Quincaillerie'); return false;">Visserie & Boulonnerie</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="text-xs font-black text-primary uppercase tracking-widest mb-3">Peinture & Luminaire</div>
+              <ul class="space-y-1.5">
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Peinture'); return false;">Peinture Acrylique</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Peinture'); return false;">Peinture Epoxy</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Peinture'); return false;">Rouleaux & Pinceaux</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Luminaire'); return false;">Spots LED</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Luminaire'); return false;">Ampoules & Tubes</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Droguerie'); return false;">Colles & Mastics</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Droguerie'); return false;">Produits Chimiques</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="text-xs font-black text-primary uppercase tracking-widest mb-3">Autres Rayons</div>
+              <ul class="space-y-1.5">
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Échelles & Travaux en Hauteur'); return false;">Escabeaux</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Échelles & Travaux en Hauteur'); return false;">Echafaudages</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Rangement & Organisation'); return false;">Servantes d'atelier</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Rangement & Organisation'); return false;">Boites a outils</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Jardinage & Plein Air'); return false;">Arrosage</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Jardinage & Plein Air'); return false;">Outils de jardin</a></li>
+                <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors" onclick="scrollToCategory('Quincaillerie'); return false;">Serrures & Securite</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="text-xs font-black text-primary uppercase tracking-widest mb-3">Marques Populaires</div>
+              <ul class="space-y-1.5">
+                <li><a href="#" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors" onclick="filterByBrand('Bosch');scrollToProducts(); return false;">Bosch</a></li>
+                <li><a href="#" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors" onclick="filterByBrand('Makita');scrollToProducts(); return false;">Makita</a></li>
+                <li><a href="#" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors" onclick="filterByBrand('Stanley');scrollToProducts(); return false;">Stanley</a></li>
+                <li><a href="#" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors" onclick="filterByBrand('Ingco');scrollToProducts(); return false;">Ingco</a></li>
+                <li><a href="#" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors" onclick="filterByBrand('Schneider');scrollToProducts(); return false;">Schneider</a></li>
+                <li><a href="#" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors" onclick="filterByBrand('Legrand');scrollToProducts(); return false;">Legrand</a></li>
+                <li><a href="#" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors" onclick="filterByBrand('Tolsen');scrollToProducts(); return false;">Tolsen</a></li>
+                <li><a href="#" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors" onclick="filterByBrand('Wokin');scrollToProducts(); return false;">Wokin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pills-scroll flex items-center gap-1 overflow-x-auto py-2 pr-2 flex-1">
+        <button onclick="resetView()" data-cat="" class="pill-btn active whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0" data-i18n="all">Tout voir</button>
+        <button onclick="scrollToCategory('Électricité')" data-cat="Électricité" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Électricité</button>
+        <button onclick="scrollToCategory('Outillage')" data-cat="Outillage" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Outillage</button>
+        <button onclick="scrollToCategory('Quincaillerie')" data-cat="Quincaillerie" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Quincaillerie</button>
+        <button onclick="scrollToCategory('Peinture')" data-cat="Peinture" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Peinture</button>
+        <button onclick="scrollToCategory('Luminaire')" data-cat="Luminaire" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Luminaire</button>
+        <button onclick="scrollToCategory('Droguerie')" data-cat="Droguerie" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Droguerie</button>
+        <button onclick="scrollToCategory('Échelles & Travaux en Hauteur')" data-cat="Échelles & Travaux en Hauteur" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Échelles</button>
+        <button onclick="scrollToCategory('Rangement & Organisation')" data-cat="Rangement & Organisation" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Rangement</button>
+        <button onclick="scrollToCategory('Jardinage & Plein Air')" data-cat="Jardinage & Plein Air" class="pill-btn whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-full border border-white/20 text-white/80 hover:bg-primary hover:border-primary hover:text-white transition-all flex-shrink-0">Jardinage</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE LOADER — Animated Logo Redesign Loop -->
+<div id="page-loader">
+  <div class="loader-logo">
+    <!-- Animated SVG: Logo redraws itself continuously -->
+    <div class="logo-anim-container">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" class="logo-anim-svg">
+        <defs>
+          <linearGradient id="bagGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2DD4F0"/>
+            <stop offset="100%" style="stop-color:#22B8CF"/>
+          </linearGradient>
+          <style>
+            .bag-body {
+              fill: none;
+              stroke: #22B8CF;
+              stroke-width: 2.5;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-dasharray: 400;
+              stroke-dashoffset: 400;
+              animation: drawBag 1.8s ease forwards, holdStroke 1.6s linear 1.8s forwards, undrawBag 1.2s ease 3.4s forwards;
+              animation-iteration-count: infinite;
+            }
+            .bag-fill {
+              fill: url(#bagGrad);
+              fill-opacity: 0;
+              animation: fadeInFill 0.5s ease 1.5s forwards, fadeOutFill 0.4s ease 3.2s forwards;
+              animation-iteration-count: infinite;
+            }
+            .handle {
+              fill: none;
+              stroke: #22B8CF;
+              stroke-width: 3;
+              stroke-linecap: round;
+              stroke-dasharray: 100;
+              stroke-dashoffset: 100;
+              animation: drawHandle 0.6s ease 0.4s forwards, undrawHandle 0.5s ease 3.7s forwards;
+              animation-iteration-count: infinite;
+            }
+            .fold-line {
+              fill: none;
+              stroke: #1A9AAE;
+              stroke-width: 2;
+              stroke-linecap: round;
+              stroke-dasharray: 80;
+              stroke-dashoffset: 80;
+              animation: drawFold 0.7s ease 1.2s forwards, undrawFold 0.5s ease 3.5s forwards;
+              animation-iteration-count: infinite;
+            }
+            .speed-line {
+              fill: none;
+              stroke: #22B8CF;
+              stroke-width: 3.5;
+              stroke-linecap: round;
+              stroke-dasharray: 60;
+              stroke-dashoffset: 60;
+              animation: drawLine 0.4s ease forwards, undrawLine 0.3s ease 3.6s forwards;
+              animation-iteration-count: infinite;
+            }
+            .speed-line:nth-of-type(1) { animation-delay: 0.8s, 3.8s; }
+            .speed-line:nth-of-type(2) { animation-delay: 1.0s, 3.6s; }
+            .speed-line:nth-of-type(3) { animation-delay: 1.2s, 3.4s; }
+            .logo-text-verona {
+              font-family: 'Inter', 'Arial Black', sans-serif;
+              font-weight: 900;
+              font-size: 26px;
+              fill: #ffffff;
+              opacity: 0;
+              animation: textReveal 0.5s ease 1.6s forwards, textHide 0.3s ease 3.1s forwards;
+              animation-iteration-count: infinite;
+            }
+            .logo-text-tools {
+              font-family: 'Inter', Arial, sans-serif;
+              font-weight: 700;
+              font-size: 12px;
+              fill: #22B8CF;
+              letter-spacing: 4px;
+              opacity: 0;
+              animation: textReveal 0.4s ease 1.9s forwards, textHide 0.3s ease 3.0s forwards;
+              animation-iteration-count: infinite;
+            }
+            .brand-dot {
+              fill: #22B8CF;
+              opacity: 0;
+              animation: dotReveal 0.3s ease 2.1s forwards, dotHide 0.2s ease 2.9s forwards;
+              animation-iteration-count: infinite;
+            }
+            @keyframes drawBag { to { stroke-dashoffset: 0; } }
+            @keyframes undrawBag { to { stroke-dashoffset: -400; } }
+            @keyframes drawHandle { to { stroke-dashoffset: 0; } }
+            @keyframes undrawHandle { to { stroke-dashoffset: -100; } }
+            @keyframes drawFold { to { stroke-dashoffset: 0; } }
+            @keyframes undrawFold { to { stroke-dashoffset: -80; } }
+            @keyframes drawLine { to { stroke-dashoffset: 0; } }
+            @keyframes undrawLine { to { stroke-dashoffset: -60; } }
+            @keyframes fadeInFill { to { fill-opacity: 0.85; } }
+            @keyframes fadeOutFill { to { fill-opacity: 0; } }
+            @keyframes textReveal { to { opacity: 1; } }
+            @keyframes textHide { to { opacity: 0; } }
+            @keyframes dotReveal { to { opacity: 1; } }
+            @keyframes dotHide { to { opacity: 0; } }
+            @keyframes holdStroke { }
+          </style>
+        </defs>
+        <!-- Speed lines -->
+        <line class="speed-line" x1="15" y1="82" x2="65" y2="82"/>
+        <line class="speed-line" x1="10" y1="96" x2="75" y2="96"/>
+        <line class="speed-line" x1="18" y1="110" x2="62" y2="110"/>
+        <!-- Bag fill -->
+        <path class="bag-fill" d="M 68,72 L 148,72 L 155,130 Q 156,138 148,140 L 92,140 Q 84,140 80,132 L 64,88 Q 62,80 66,74 Q 67,72 68,72 Z"/>
+        <!-- Bag outline -->
+        <path class="bag-body" d="M 68,72 L 148,72 L 155,130 Q 156,138 148,140 L 92,140 Q 84,140 80,132 L 64,88 Q 62,80 66,74 Q 67,72 68,72 Z"/>
+        <!-- Diagonal fold line -->
+        <path class="fold-line" d="M 66,92 Q 105,110 145,102"/>
+        <!-- Handle -->
+        <path class="handle" d="M 92,72 L 92,58 Q 92,44 108,44 Q 124,44 124,58 L 124,72"/>
+        <!-- Decorative dot -->
+        <circle class="brand-dot" cx="108" cy="44" r="2.5"/>
+        <!-- VERONA text -->
+        <text class="logo-text-verona" x="100" y="190" text-anchor="middle">VERONA</text>
+        <!-- TOOLS text -->
+        <text class="logo-text-tools" x="100" y="208" text-anchor="middle">TOOLS</text>
+      </svg>
+    </div>
+    <div style="color:#fff;font-weight:900;font-size:22px;letter-spacing:-0.5px;">VERONA <span style="color:#22B8CF;">TOOLS</span></div>
+    <div style="display:flex;gap:6px;margin-top:4px;">
+      <span style="width:6px;height:6px;border-radius:50%;background:#22B8CF;animation:loaderDot 1.2s ease-in-out infinite"></span>
+      <span style="width:6px;height:6px;border-radius:50%;background:#22B8CF;animation:loaderDot 1.2s ease-in-out 0.2s infinite"></span>
+      <span style="width:6px;height:6px;border-radius:50%;background:#22B8CF;animation:loaderDot 1.2s ease-in-out 0.4s infinite"></span>
+    </div>
+  </div>
+</div>
+
+<!-- HERO SLIDER -->
+<section id="hero-section" class="hero-slider relative min-h-[520px] md:min-h-[580px] flex flex-col justify-center bg-navy overflow-hidden">
+  <div class="hero-slide active" aria-label="Slide 1"><img src="https://images.unsplash.com/photo-1671543565338-8b22a87b8359?q=80&w=1170&auto=format&fit=crop" alt="Atelier professionnel outillage" loading="eager" /><div class="slide-overlay"></div></div>
+  <div class="hero-slide" aria-label="Slide 2"><img src="https://images.unsplash.com/photo-1635335874521-7987db781153?q=80&w=1170&auto=format&fit=crop" alt="Materiel electrique professionnel" loading="lazy" /><div class="slide-overlay"></div></div>
+  <div class="hero-slide" aria-label="Slide 3"><img src="https://images.unsplash.com/photo-1672659605632-895c18f09563?q=80&w=1170&auto=format&fit=crop" alt="Outillage a main qualite professionnelle" loading="lazy" /><div class="slide-overlay"></div></div>
+  <div class="hero-slide" aria-label="Slide 4"><img src="https://images.unsplash.com/photo-1652829069862-87874e119527?q=80&w=1170&auto=format&fit=crop" alt="Peinture et renovation" loading="lazy" /><div class="slide-overlay"></div></div>
+  <div class="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 py-16 md:py-24 w-full">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 bg-primary/20 border border-primary/40 rounded-full px-4 py-1.5 mb-5">
+        <span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
+        <span class="text-primary text-xs font-bold uppercase tracking-widest">Casablanca · Maroc</span>
+      </div>
+      <h1 id="hero-title" class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[0.95] tracking-tight mb-4">VERONA<br /><span class="text-primary">TOOLS</span></h1>
+      <p id="hero-subtitle" class="text-base sm:text-lg md:text-xl text-gray-200 font-medium mb-8 max-w-xl leading-relaxed">Quincaillerie &amp; Outillage Professionnel — Casablanca, Maroc.<br /><span class="text-gray-300 text-sm sm:text-base">Materiaux, outillage et equipements pour professionnels &amp; particuliers.</span></p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="#products-section" onclick="scrollToProducts(event)" class="bg-primary hover:bg-primary-dark text-white font-bold px-6 sm:px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-primary/30 flex items-center justify-center gap-2 text-sm sm:text-base">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path d="M4 6h16M4 12h16M4 18h7"/></svg>
+          <span data-i18n="see_catalog">Voir le Catalogue</span>
+        </a>
+        <button onclick="openWhatsApp()" class="bg-[#FF6B35] hover:bg-[#e55a2b] text-white font-bold px-6 sm:px-8 py-3.5 rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#FF6B35]/20 text-sm sm:text-base">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg>
+          <span data-i18n="request_quote">Demander un Devis</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10" id="hero-dots">
+    <button class="hero-nav-dot active" onclick="goToSlide(0)" aria-label="Diapositive 1"></button>
+    <button class="hero-nav-dot" onclick="goToSlide(1)" aria-label="Diapositive 2"></button>
+    <button class="hero-nav-dot" onclick="goToSlide(2)" aria-label="Diapositive 3"></button>
+    <button class="hero-nav-dot" onclick="goToSlide(3)" aria-label="Diapositive 4"></button>
+  </div>
+</section>
+
+<!-- Stats bar -->
+<div class="bg-primary text-white">
+  <div class="max-w-[1400px] mx-auto px-4 py-3 flex flex-wrap items-center justify-center gap-4 md:gap-10">
+    <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5z" clip-rule="evenodd"/></svg><span>1000+ References</span></div>
+    <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><span>50+ Marques Premium</span></div>
+    <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1v-1h2.05a2.5 2.5 0 014.9 0H19a1 1 0 001-1v-5a1 1 0 00-.293-.707l-3-3A1 1 0 0016 4H3z"/></svg><span>Livraison Casablanca</span></div>
+    <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>Qualite Garantie</span></div>
+  </div>
+</div>
+
+<!-- BRANDS STRIP -->
+<div class="brands-strip bg-white border-b border-gray-100 py-3 shadow-sm">
+  <div class="max-w-[1400px] mx-auto px-4 flex items-center gap-3">
+    <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest whitespace-nowrap flex-shrink-0 hidden sm:block">Marques</span>
+    <div class="w-px h-5 bg-gray-200 flex-shrink-0 hidden sm:block"></div>
+    <div class="brands-strip-scroll flex items-center overflow-x-auto w-full gap-1">
+      <button onclick="filterByBrand('Bosch');scrollToProducts()" class="flex-shrink-0 px-4 sm:px-5 py-2 font-black text-xs sm:text-sm text-navy hover:text-primary transition-colors border-r border-gray-200 tracking-tight">BOSCH</button>
+      <button onclick="filterByBrand('Makita');scrollToProducts()" class="flex-shrink-0 px-4 sm:px-5 py-2 font-black text-xs sm:text-sm text-navy hover:text-primary transition-colors border-r border-gray-200 tracking-tight">MAKITA</button>
+      <button onclick="filterByBrand('Stanley');scrollToProducts()" class="flex-shrink-0 px-4 sm:px-5 py-2 font-black text-xs sm:text-sm text-navy hover:text-primary transition-colors border-r border-gray-200 tracking-tight">STANLEY</button>
+      <button onclick="filterByBrand('Ingco');scrollToProducts()" class="flex-shrink-0 px-4 sm:px-5 py-2 font-black text-xs sm:text-sm text-navy hover:text-primary transition-colors border-r border-gray-200 tracking-tight">INGCO</button>
+      <button onclick="filterByBrand('Schneider');scrollToProducts()" class="flex-shrink-0 px-4 sm:px-5 py-2 font-black text-xs sm:text-sm text-navy hover:text-primary transition-colors border-r border-gray-200 tracking-tight">SCHNEIDER</button>
+      <button onclick="filterByBrand('Ingelec');scrollToProducts()" class="flex-shrink-0 px-4 sm:px-5 py-2 font-black text-xs sm:text-sm text-navy hover:text-primary transition-colors border-r border-gray-200 tracking-tight">INGELEC</button>
+      <button onclick="filterByBrand('Legrand');scrollToProducts()" class="flex-shrink-0 px-4 sm:px-5 py-2 font-black text-xs sm:text-sm text-navy hover:text-primary transition-colors border-r border-gray-200 tracking-tight">LEGRAND</button>
+      <button onclick="filterByBrand('Tolsen');scrollToProducts()" class="flex-shrink-0 px-4 sm:px-5 py-2 font-black text-xs sm:text-sm text-navy hover:text-primary transition-colors border-r border-gray-200 tracking-tight">TOLSEN</button>
+      <button onclick="filterByBrand('Wokin');scrollToProducts()" class="flex-shrink-0 px-4 sm:px-5 py-2 font-black text-xs sm:text-sm text-navy hover:text-primary transition-colors tracking-tight">WOKIN</button>
+    </div>
+  </div>
+</div>
+
+<!-- CATEGORY GRID -->
+<section id="cat-grid-section" class="max-w-[1400px] mx-auto px-4 py-10 md:py-12">
+  <div class="flex items-center justify-between mb-6 md:mb-8">
+    <div>
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-black text-navy" data-i18n="shop_by_cat">Parcourir par Categorie</h2>
+      <p class="text-gray-500 text-sm mt-1">Trouvez rapidement ce dont vous avez besoin</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4">
+    <button onclick="scrollToCategory('Électricité')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1553873002-785d775854c9?q=80&w=400" alt="Électricité" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Électricité</span></div></button>
+    <button onclick="scrollToCategory('Outillage')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?w=400&q=80" alt="Outillage" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Outillage</span></div></button>
+    <button onclick="scrollToCategory('Quincaillerie')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1617048530929-0edab8608369?q=80&w=400" alt="Quincaillerie" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Quincaillerie</span></div></button>
+    <button onclick="scrollToCategory('Peinture')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=400" alt="Peinture" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M2 13.5V20a2 2 0 002 2h16a2 2 0 002-2v-6.5"/><path d="M12 2v13"/><path d="M8 6l4-4 4 4"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Peinture</span></div></button>
+    <button onclick="scrollToCategory('Luminaire')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1601698015099-9459a95728fd?q=80&w=400" alt="Luminaire" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 006 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6M10 22h4"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Luminaire</span></div></button>
+    <button onclick="scrollToCategory('Droguerie')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1599256631012-9c2b32bfa8bc?q=80&w=400" alt="Droguerie" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 11-4 0"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Droguerie</span></div></button>
+    <button onclick="scrollToCategory('Échelles & Travaux en Hauteur')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1748344477811-ec6ec9a60c8b?q=80&w=400" alt="Échelles" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="18" x2="16" y2="18"/><line x1="6" y1="3" x2="6" y2="21"/><line x1="18" y1="3" x2="18" y2="21"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Échelles</span></div></button>
+    <button onclick="scrollToCategory('Rangement & Organisation')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1631342816586-30462a1d30d0?q=80&w=400" alt="Rangement" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Rangement</span></div></button>
+    <button onclick="scrollToCategory('Jardinage & Plein Air')" class="cat-card relative rounded-2xl overflow-hidden aspect-square cursor-pointer text-left group focus:outline-none focus:ring-2 focus:ring-primary"><img src="https://images.unsplash.com/photo-1523301551780-cd17359a95d0?q=80&w=400" alt="Jardinage" loading="lazy" class="w-full h-full object-cover" /><div class="cat-overlay absolute inset-0 bg-navy/60 flex flex-col items-center justify-center p-3 gap-2"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M12 22V12M12 12C12 7 7 3 2 3c0 5 4 9 10 9M12 12c0-5 5-9 10-9-1 5-5 9-10 9"/></svg><span class="text-white font-bold text-sm text-center leading-tight">Jardinage</span></div></button>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<main id="products-section" class="max-w-[1400px] mx-auto px-4 pb-16 pt-4">
+  <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-6 pb-4 border-b border-gray-100">
+    <div class="min-w-0">
+      <h2 id="products-heading" class="text-xl sm:text-2xl font-black text-navy" data-i18n="our_products">Nos Produits</h2>
+      <p class="text-gray-500 text-sm mt-0.5" id="result-count">0 produits</p>
+    </div>
+    <div class="flex items-center gap-2 flex-wrap">
+      <div class="flex items-center gap-2">
+        <label class="text-xs sm:text-sm text-gray-600 font-medium whitespace-nowrap">Trier :</label>
+        <select id="sort-select" onchange="renderCategorySections()" class="border border-gray-200 rounded-lg px-2 sm:px-3 py-2 text-xs sm:text-sm focus:outline-none focus:border-primary bg-white">
+          <option value="default">Pertinence</option>
+          <option value="price-asc">Prix croissant</option>
+          <option value="price-desc">Prix decroissant</option>
+          <option value="name">Nom A-Z</option>
+        </select>
+      </div>
+      <label class="flex items-center gap-2 cursor-pointer">
+        <div class="relative">
+          <input type="checkbox" id="in-stock-toggle" onchange="renderCategorySections()" class="sr-only peer" />
+          <div class="w-9 h-5 bg-gray-200 rounded-full peer peer-checked:after:translate-x-4 peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+        </div>
+        <span class="text-xs sm:text-sm font-semibold text-gray-700 whitespace-nowrap" data-i18n="in_stock_only">En stock</span>
+      </label>
+      <button onclick="resetView()" class="text-xs sm:text-sm font-bold text-primary hover:underline whitespace-nowrap" data-i18n="reset">Tout voir</button>
+      <button id="back-to-all" onclick="resetView()"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>Toutes categories</button>
+    </div>
+  </div>
+  <div id="cat-view-banner"></div>
+  <div id="search-empty" class="hidden text-center py-20">
+    <svg class="w-16 h-16 text-gray-200 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <h3 class="text-xl font-black text-navy mb-2">Aucun produit trouve</h3>
+    <p class="text-gray-500 mb-6">Essayez de modifier votre recherche ou vos filtres.</p>
+    <button onclick="resetView()" class="bg-primary text-white font-semibold px-6 py-3 rounded-xl hover:bg-primary-dark transition-all">Voir tous les produits</button>
+  </div>
+  <div id="category-sections"></div>
+</main>
+
+<!-- TOAST -->
+<div id="toast" class="bg-navy text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 max-w-xs">
+  <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+  <span id="toast-msg" class="text-sm font-semibold">OK</span>
+</div>
+
+<!-- NOTRE MAGASIN -->
+<section class="store-section py-12 md:py-16 mt-4 border-t border-gray-100">
+  <div class="max-w-[1400px] mx-auto px-4">
+    <div class="mb-8 md:mb-10 text-center">
+      <span class="inline-block text-xs font-black text-primary uppercase tracking-widest mb-2">Notre Adresse</span>
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-black text-navy">Notre Magasin</h2>
+      <p class="text-gray-500 mt-2 text-sm">Venez nous rendre visite — nous sommes la pour vous conseiller</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-stretch">
+      <div class="rounded-2xl overflow-hidden shadow-lg border border-gray-100 min-h-[300px] md:min-h-[360px]">
+        <iframe title="Verona Tools Casablanca" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.3621618809034!2d-7.6506862!3d33.5179684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62d46701ac6af%3A0xb12f7d75aac68688!2sVERONA%20TOOLS!5e0!3m2!1sfr!2sma!4v1776385391941!5m2!1sfr!2sma" width="100%" height="100%" style="border:0;min-height:300px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="flex flex-col gap-4">
+        <div class="store-info-card">
+          <div class="text-xs font-black text-primary uppercase tracking-widest mb-4">Informations &amp; Contact</div>
+          <a href="https://maps.app.goo.gl/9HHp8oNdy6jyPoWV7" target="_blank" rel="noopener" class="store-link">
+            <span class="store-icon" style="background:#FEF2F2;"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div><div class="font-semibold text-sm">Lot B111, Lot ASK Tranche B, Casablanca 20450</div><div class="text-xs text-gray-400 mt-0.5">Ouvrir dans Maps</div></div>
+          </a>
+          <a href="tel:+212522976636" class="store-link">
+            <span class="store-icon" style="background:#EFF6FF;"><svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 12.85 19.79 19.79 0 01.83 4.18 2 2 0 012.81 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l.97-.97a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></span>
+            <div><div class="font-semibold text-sm">+212 522 97 66 36</div><div class="text-xs text-gray-400 mt-0.5">Appeler le magasin</div></div>
+          </a>
+          <a href="https://wa.me/212600960924" target="_blank" rel="noopener" class="store-link">
+            <span class="store-icon" style="background:#F0FDF4;"><svg class="w-4 h-4" style="color:#25D366" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg></span>
+            <div><div class="font-semibold text-sm">+212 6 00 96 09 24</div><div class="text-xs text-gray-400 mt-0.5">Ecrire sur WhatsApp</div></div>
+          </a>
+          <a href="mailto:contact@veronatools.ma" class="store-link">
+            <span class="store-icon" style="background:#FFF7ED;"><svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+            <div><div class="font-semibold text-sm">contact@veronatools.ma</div><div class="text-xs text-gray-400 mt-0.5">Envoyer un e-mail</div></div>
+          </a>
+          <div class="store-link" style="cursor:default;">
+            <span class="store-icon" style="background:#F5F3FF;"><svg class="w-4 h-4 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></span>
+            <div><div class="font-semibold text-sm text-gray-700">Horaires d&apos;ouverture</div><div class="text-xs text-gray-400 mt-0.5">Lun–Sam : 8h00–19h00 &nbsp;·&nbsp; <span class="text-red-500 font-semibold">Dim : Ferme</span></div></div>
+          </div>
+        </div>
+        <div class="flex gap-3 flex-wrap">
+          <a href="tel:+212522976636" class="flex-1 min-w-[140px] flex items-center justify-center gap-2 bg-navy text-white font-bold py-3 px-5 rounded-xl hover:bg-navy-light transition-all text-sm"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 12.85 19.79 19.79 0 01.83 4.18 2 2 0 012.81 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l.97-.97a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Appeler le Magasin</a>
+          <a href="https://wa.me/212600960924" target="_blank" rel="noopener" class="flex-1 min-w-[140px] flex items-center justify-center gap-2 text-white font-bold py-3 px-5 rounded-xl transition-all text-sm" style="background:#25D366;" onmouseover="this.style.background='#1ebe5d'" onmouseout="this.style.background='#25D366'"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg>Ecrire sur WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer class="bg-navy text-white">
   <!-- Trust Bar — Industrial feel -->
@@ -75,7 +735,7 @@
           <span class="text-[10px] font-semibold text-gray-500 bg-white/5 px-2 py-1 rounded border border-white/10">IF: 3352970</span>
         </div>
         
-        <!-- Social — only WhatsApp is real -->
+        <!-- Social — only WhatsApp is real, rest are placeholder styling -->
         <div class="flex items-center gap-2">
           <a href="https://wa.me/212600960924" aria-label="WhatsApp" class="w-8 h-8 bg-[#25D366] hover:bg-[#1ebe5d] rounded-lg flex items-center justify-center transition-all">
             <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg>
@@ -189,3 +849,146 @@
     </div>
   </div>
 </footer>
+
+<!-- WHATSAPP FAB -->
+<button id="wa-fab" onclick="openWhatsApp()" aria-label="Contacter via WhatsApp">
+  <span id="wa-fab-tooltip">Contacter via WhatsApp</span>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg>
+</button>
+
+<!-- MOBILE NAV -->
+<div id="mobile-nav" role="dialog" aria-modal="true" aria-label="Menu navigation">
+  <div id="mobile-nav-backdrop" onclick="toggleMobileNav()"></div>
+  <div id="mobile-nav-panel">
+    <div class="flex items-center justify-between px-5 py-4 border-b border-white/10 flex-shrink-0">
+      <div class="flex items-center gap-2">
+        <!-- Mobile Nav Logo Mark -->
+        <div class="w-7 h-7 flex items-center justify-center flex-shrink-0">
+          <svg viewBox="0 0 48 48" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="mobBag" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#2DD4F0"/>
+                <stop offset="100%" style="stop-color:#22B8CF"/>
+              </linearGradient>
+            </defs>
+            <rect x="2" y="16" width="14" height="2.5" rx="1.25" fill="#22B8CF" opacity="0.7"/>
+            <rect x="1" y="22" width="16" height="3" rx="1.5" fill="#22B8CF" opacity="0.9"/>
+            <rect x="3" y="28" width="12" height="2.5" rx="1.25" fill="#22B8CF" opacity="0.6"/>
+            <path d="M16,14 L34,14 L36,32 Q36.5,35 33,35 L19,35 Q15.5,35 15,32 L13,18 Q12.5,15 14,14 Q15,14 16,14 Z" fill="url(#mobBag)"/>
+            <path d="M14,20 Q24,26 34,23" fill="none" stroke="#168A9B" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+            <path d="M21,14 L21,9 Q21,5 25,5 Q29,5 29,9 L29,14" fill="none" stroke="#22B8CF" stroke-width="2.5" stroke-linecap="round"/>
+            <rect x="16" y="13" width="19" height="2.5" rx="1.25" fill="#1A9AAE" opacity="0.4"/>
+          </svg>
+        </div>
+        <span class="text-white font-black text-base tracking-tight">VERONA <span class="text-primary">TOOLS</span></span>
+      </div>
+      <button onclick="toggleMobileNav()" class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-white transition-colors" aria-label="Fermer le menu"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <div class="px-4 py-3 flex-1 overflow-y-auto">
+      <div class="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-3 px-1">Categories</div>
+      <nav class="space-y-1">
+        <button onclick="scrollToCategory('Électricité');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Électricité</button>
+        <button onclick="scrollToCategory('Outillage');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>Outillage</button>
+        <button onclick="scrollToCategory('Quincaillerie');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>Quincaillerie</button>
+        <button onclick="scrollToCategory('Peinture');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M2 13.5V20a2 2 0 002 2h16a2 2 0 002-2v-6.5"/><path d="M12 2v13"/><path d="M8 6l4-4 4 4"/></svg>Peinture</button>
+        <button onclick="scrollToCategory('Luminaire');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 006 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6M10 22h4"/></svg>Luminaire</button>
+        <button onclick="scrollToCategory('Droguerie');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 11-4 0"/></svg>Droguerie</button>
+        <button onclick="scrollToCategory('Échelles & Travaux en Hauteur');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="18" x2="16" y2="18"/><line x1="6" y1="3" x2="6" y2="21"/><line x1="18" y1="3" x2="18" y2="21"/></svg>Échelles & Travaux en Hauteur</button>
+        <button onclick="scrollToCategory('Rangement & Organisation');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg>Rangement & Organisation</button>
+        <button onclick="scrollToCategory('Jardinage & Plein Air');toggleMobileNav()" class="w-full flex items-center gap-3 px-3 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl text-sm font-semibold transition-all text-left"><svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M12 22V12M12 12C12 7 7 3 2 3c0 5 4 9 10 9M12 12c0-5 5-9 10-9-1 5-5 9-10 9"/></svg>Jardinage & Plein Air</button>
+      </nav>
+      <div class="text-[10px] font-black text-gray-500 uppercase tracking-widest mt-5 mb-3 px-1">Contact</div>
+      <a href="https://wa.me/212600960924" target="_blank" rel="noopener" class="flex items-center gap-3 px-3 py-3 rounded-xl transition-all text-sm font-bold" style="background:#25D366;color:#fff;"><svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg>WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- BACK TO TOP -->
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Retour en haut">
+  <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<!-- PRODUCT DETAIL MODAL -->
+<div id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-product-title">
+  <div class="modal-backdrop" onclick="closeProductModal()"></div>
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeProductModal()" aria-label="Fermer">
+      <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-body">
+      <div class="modal-image-col">
+        <div class="modal-main-img" style="padding:0;">
+          <div class="zoom-container" id="zoom-container" style="width:100%;height:100%;min-height:280px;">
+            <div class="zoom-lens" id="zoom-lens"></div>
+            <img id="modal-main-img" src="" alt="" class="zoomable" style="max-height:340px;object-fit:contain;padding:16px;" />
+          </div>
+        </div>
+        <div class="modal-thumbs" id="modal-thumbs"></div>
+      </div>
+      <div class="modal-info-col">
+        <nav class="modal-breadcrumb" aria-label="Fil d'Ariane">
+          <a href="#" onclick="closeProductModal(); return false;" style="color:#94a3b8;text-decoration:none;">Accueil</a>
+          <span>›</span>
+          <span id="modal-bc-cat" style="cursor:pointer;color:#94a3b8;"></span>
+          <span>›</span>
+          <span id="modal-bc-sub" style="color:#64748b"></span>
+          <span>›</span>
+          <span id="modal-bc-title" style="color:#1B2D3E;font-weight:700;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;vertical-align:middle"></span>
+        </nav>
+        <div><span id="modal-brand-tag" class="modal-brand-tag"></span></div>
+        <h2 id="modal-product-title" class="modal-title"></h2>
+        <p class="modal-sku" id="modal-sku"></p>
+        <div class="modal-price-line">
+          <span class="modal-price" id="modal-price"></span>
+          <span class="modal-currency">MAD</span>
+        </div>
+        <div id="modal-stock" class="modal-stock-badge"></div>
+        <hr class="modal-divider" />
+        <p class="modal-desc" id="modal-desc"></p>
+        <div id="variants-section" style="display:none;"></div>
+        <hr class="modal-divider" />
+        <button class="modal-wa-btn" onclick="modalSendWhatsApp()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 2C6.468 2 2 6.468 2 11.99c0 1.999.584 3.863 1.59 5.435L2 22l4.726-1.558A9.945 9.945 0 0011.99 22C17.512 22 22 17.532 22 12.01 22 6.49 17.512 2 11.99 2zm0 18.018a8.005 8.005 0 01-4.086-1.12l-.292-.174-3.033 1.001.978-2.97-.191-.305A8.012 8.012 0 013.982 12c0-4.418 3.596-8.018 8.008-8.018 4.418 0 8.018 3.6 8.018 8.018 0 4.418-3.6 8.018-8.018 8.018z"/></svg>
+          Nous Contacter via WhatsApp
+        </button>
+        <a id="modal-call-btn" href="tel:+212522976636" style="width:100%;background:#1B2D3E;color:#fff;font-weight:700;font-size:13px;padding:11px 20px;border-radius:14px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;transition:background 0.18s;" onmouseover="this.style.background='#243B50'" onmouseout="this.style.background='#1B2D3E'">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 12.85 19.79 19.79 0 01.83 4.18 2 2 0 012.81 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l.97-.97a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Appeler le Magasin
+        </a>
+      </div>
+    </div>
+    <div id="specs-section" class="specs-section" style="display:none;">
+      <div class="specs-tabs">
+        <button class="specs-tab active" data-tab="fiche" onclick="showSpecsTab('fiche')">Fiche technique</button>
+        <button class="specs-tab" data-tab="compat" onclick="showSpecsTab('compat')">Compatibilite</button>
+      </div>
+      <div class="specs-panel active" id="specs-panel-fiche">
+        <div class="specs-highlights" id="specs-highlights"></div>
+        <div id="specs-details"></div>
+      </div>
+      <div class="specs-panel" id="specs-panel-compat">
+        <ul class="specs-compat-list" id="specs-compat"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>window.VT_PRODUCTS = [];</script>
+<script src="js/config.js"></script>
+<script src="data/electricite.js"></script>
+<script src="data/outillage.js"></script>
+<script src="data/quincaillerie.js"></script>
+<script src="data/peinture.js"></script>
+<script src="data/luminaire.js"></script>
+<script src="data/droguerie.js"></script>
+<script src="data/echelles.js"></script>
+<script src="data/rangement.js"></script>
+<script src="data/jardinage.js"></script>
+<script src="js/app.js"></script>
+<script src="js/specs.js"></script>
+<script src="js/variants.js"></script>
+<script src="js/animations.js"></script>
+
+</body>
+</html>
